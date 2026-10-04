@@ -1,0 +1,113 @@
+{
+ "المغني لابن قدامة": {
+  "slug": "al-mughni-sharh-mukhtasar-al-khiraqi",
+  "versionId": "5HK0y3GSR2",
+  "rows": 39,
+  "editionEn": "Maktabat al-Qahira, 1st ed., 1388-1389 AH",
+  "editionAr": "مكتبة القاهرة، الأولى، 1388 - 1389",
+  "editionAsserted": true,
+  "ownerConfirmed": true,
+  "downloaded": true
+ },
+ "المجموع للنووي": {
+  "slug": "al-majmu-sharh-al-madhhab",
+  "versionId": "PbfpimTmc3",
+  "rows": 11,
+  "editionEn": "al-Matba`a al-Muniriyya",
+  "editionAr": "إدارة الطباعة المنيرية - مطبعة التضامن الأخوي",
+  "editionAsserted": true,
+  "ownerConfirmed": true,
+  "downloaded": true
+ },
+ "المجموع شرح المهذب للنووي": {
+  "slug": "al-majmu-sharh-al-madhhab",
+  "versionId": "PbfpimTmc3",
+  "rows": 5,
+  "editionEn": "al-Matba`a al-Muniriyya",
+  "editionAr": "إدارة الطباعة المنيرية - مطبعة التضامن الأخوي",
+  "editionAsserted": true,
+  "ownerConfirmed": true,
+  "downloaded": true
+ },
+ "الموسوعة الفقهية الكويتية": {
+  "slug": "kuwaiti-encyclopedia-of-jurisprudence",
+  "versionId": "MT3i8pDNoM",
+  "rows": 13,
+  "editionEn": "Kuwait Ministry of Awqaf, 2nd ed., 1404-1427 AH",
+  "editionAr": "من ١٤٠٤، ١٤٢٧ هـ",
+  "editionAsserted": true,
+  "ownerConfirmed": true,
+  "downloaded": true
+ },
+ "زاد المعاد لابن القيم": {
+  "slug": "zad-al-maad-fi-hady-khayr-al-ibad",
+  "versionId": "WSf0JYN_je",
+  "rows": 2,
+  "editionEn": "Dar `Ata'at al-`Ilm & Dar Ibn Hazm, 3rd ed., 1440 AH",
+  "editionAr": "دار عطاءات العلم ودار ابن حزم، الثالثة (الأولى لدار ابن حزم)، 1440",
+  "editionAsserted": true,
+  "ownerConfirmed": true,
+  "downloaded": true
+ },
+ "زاد المعاد": {
+  "slug": "zad-al-maad-fi-hady-khayr-al-ibad",
+  "versionId": "WSf0JYN_je",
+  "rows": 1,
+  "editionEn": "Dar `Ata'at al-`Ilm & Dar Ibn Hazm, 3rd ed., 1440 AH",
+  "editionAr": "دار عطاءات العلم ودار ابن حزم، الثالثة (الأولى لدار ابن حزم)، 1440",
+  "editionAsserted": true,
+  "ownerConfirmed": true,
+  "downloaded": true
+ },
+ "الأشباه والنظائر للسيوطي": {
+  "slug": "al-ashbah-wa'l-nazair-1",
+  "versionId": "6eav2s3cQR",
+  "rows": 2,
+  "editionEn": "Dar al-Kutub al-`Ilmiyya, 1st ed., 1403 AH",
+  "editionAr": "دار الكتب العلمية، الأولى، 1403",
+  "editionAsserted": true,
+  "ownerConfirmed": true,
+  "downloaded": true
+ },
+ "سيرة ابن هشام": {
+  "slug": "al-sira-al-nabawiyya-1",
+  "versionId": "J12DhNftIZ",
+  "rows": 2,
+  "editionEn": "ed. al-Saqqa, al-Abyari & Shalabi",
+  "editionAr": "شركة مكتبة ومطبعة مصطفى البابي الحلبي وأولاده، الثانية، 1375",
+  "versionOverride": "J12DhNftIZ",
+  "editionAsserted": true,
+  "ownerConfirmed": true,
+  "downloaded": true
+ },
+ "تفسير البغوي": {
+  "slug": "tafsir-al-baghawi",
+  "versionId": "2Ne0qTu9VW",
+  "rows": 2,
+  "editionEn": "Dar Ihya' al-Turath al-`Arabi, 1st ed., 1420 AH, ed. `Abd al-Razzaq al-Mahdi",
+  "editionAr": "دار إحياء التراث العربي، الأولى، ١٤٢٠ هـ",
+  "editionAsserted": true,
+  "ownerConfirmed": true,
+  "downloaded": true
+ },
+ "تفسير الطبري": {
+  "slug": "tafsir-al-tabari-jami-al-bayan",
+  "versionId": "OdKMqDaKpW",
+  "rows": 2,
+  "editionEn": null,
+  "editionAr": "بدون تاريخ نشر",
+  "editionAsserted": false,
+  "ownerConfirmed": true,
+  "downloaded": true
+ },
+ "تاريخ الطبري": {
+  "slug": "tarikh-al-tabari",
+  "versionId": "RufjdRPoLW",
+  "rows": 2,
+  "editionEn": "Dar al-Ma`arif bi-Misr, 2nd ed., 1387 AH / 1967 CE",
+  "editionAr": "دار المعارف بمصر، الثانية ١٣٨٧ هـ، ١٩٦٧ م",
+  "editionAsserted": true,
+  "ownerConfirmed": true,
+  "downloaded": true
+ }
+}
