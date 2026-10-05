@@ -30,7 +30,7 @@ function verseRecord(c, r) {
 }
 
 // -> the workflow's return shape: { videos: [{ id, result: { id, claims, video_note }, checkedRaw }] , route }
-export async function runChecker3(runDir, batchFile, batch, { spend, log, onProgress, onPhase } = {}) {
+export async function runChecker3(runDir, batchFile, batch, { spend, log, onProgress, onPhase, capUsd } = {}) {
   prepareRunDir(runDir);
   const ledger = path.join(runDir, 'dorar-ledger.jsonl');
   const claims = batch.claims || [];
@@ -62,12 +62,20 @@ export async function runChecker3(runDir, batchFile, batch, { spend, log, onProg
     const subFile = `batch-c2-${batch.id}.json`;
     fs.writeFileSync(path.join(runDir, subFile), JSON.stringify(sub, null, 1));
     log?.(`Checker 3 -> Checker 2 for ${toC2.length} of ${claims.length} quotes: ${toC2.join(', ')}`);
-    const ret = await runChecker2(runDir, [{ id: batch.id, file: subFile }], { spend, log, onPhase });
+    const ret = await runChecker2(runDir, [{ id: batch.id, file: subFile }], { spend, log, onPhase, capUsd });
     c2 = ret?.videos?.[0];
     for (const c of c2?.result?.claims || []) if (toC2.includes(c.i)) done.set(c.i, { ...c, by: 'checker2' });
   }
   onProgress?.(done.size);
 
+  // A quote Checker 2 did not finish (the per-check cap, or no answer) is shown as not finished, never dropped.
+  for (const i of toC2) if (!done.has(i)) {
+    const c = claims.find((x) => x.i === i);
+    done.set(i, { i, flow_kind: c.kind === 'quran' ? 'quran' : c.kind === 'hadith' || c.kind === 'saying' ? 'hadith' : 'report', sub_kind: null, state: 'pending', level: 0,
+      line_ar: '', line_en: '', reason_ar: 'لم يكتمل البحث ضمن حدّ الفحص', reason_en: 'not finished within the cap of the check', harm: 'none', harm_basis_ar: null, harm_basis_en: null, load_bearing: false, continues: null, by: 'cap',
+      parts: [{ position: 1, kind: 'quote', origin: 'spoken', said_text: c.quote, text_ar: c.quote, text_en: c.claim_en || '', flow_kind: 'report', exit_id: 'x_pending', state: 'pending', level: 0, difference_ar: null, difference_en: null, source: null, search_log: [] }] });
+    route[i] = (route[i] || '') + ' (not finished: cap)';
+  }
   const merged = claims.map((c) => done.get(c.i)).filter(Boolean);
   fs.writeFileSync(path.join(runDir, 'route.json'), JSON.stringify(route, null, 1));
   return { videos: [{ id: batch.id, result: { id: batch.id, claims: merged, video_note: null }, checkedRaw: c2?.checkedRaw ?? null }], route };

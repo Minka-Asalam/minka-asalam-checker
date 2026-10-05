@@ -47,7 +47,7 @@ const PREAMBLE = (ctx) => `You are running inside the Minka Asalam Checker worke
 - The tools folder is ${ctx.tools}. The check's folder is ${ctx.dir}.
 When you are finished, call submit_result exactly once with the final JSON object. Do not write the result as text.`;
 
-export async function runAgent(prompt, { schema, effort = 'high', label = 'agent', ctx, spend, log }) {
+export async function runAgent(prompt, { schema, effort = 'high', label = 'agent', ctx, spend, log, capUsd }) {
   const client = anthropic();
   const tools = [
     { name: 'read_file', description: 'Read a text file inside the check folder.', input_schema: { type: 'object', properties: { path: { type: 'string' } }, required: ['path'] } },
@@ -96,7 +96,22 @@ export async function runAgent(prompt, { schema, effort = 'high', label = 'agent
     }
   }
 
+  // THE PER-CHECK CAP (owner, 6 Oct: "we need to cap the spending per video"): once the check's money
+  // reaches capUsd, the helper is told to hand in what it has now (unfinished parts as pending / not
+  // checked, never an unprinted source) and gets two turns to do it; past capUsd x 1.25 it is stopped.
+  let wrapping = false, wrapTurns = 0;
+  const WRAP = 'BUDGET REACHED: this check has used its money. Do not search any more. Call submit_result NOW with every claim as it stands: a part you finished keeps its result; a part you did not finish ends at its sheet\'s pending or not-checked exit (state pending or not_checked, level 0, source null). Never cite a source a tool did not print.';
   for (let turn = 0; turn < MAX_TURNS; turn++) {
+    if (capUsd && spend) {
+      if (spend.usd >= capUsd * 1.25 || (wrapping && ++wrapTurns > 2)) { log?.(`${label}: stopped at the cap ($${spend.usd.toFixed(3)})`); return null; }
+      if (!wrapping && spend.usd >= capUsd) {
+        wrapping = true;
+        const last = messages[messages.length - 1];
+        if (Array.isArray(last.content)) last.content.push({ type: 'text', text: WRAP });
+        else last.content = `${last.content}\n\n${WRAP}`;
+        log?.(`${label}: cap reached ($${spend.usd.toFixed(3)}), asking for the result now`);
+      }
+    }
     const stream = client.messages.stream({
       model: MODELS.opus,
       max_tokens: 32000,

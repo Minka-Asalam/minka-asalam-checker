@@ -28,7 +28,7 @@ export function prepareRunDir(runDir) {
 }
 
 // videos: [{ id, file }] (batch files inside runDir). onPhase(name) reports progress.
-export async function runChecker2(runDir, videos, { spend, log, onPhase, poetryTool } = {}) {
+export async function runChecker2(runDir, videos, { spend, log, onPhase, poetryTool, capUsd } = {}) {
   prepareRunDir(runDir);
   const ctx = {
     dir: runDir,
@@ -38,9 +38,13 @@ export async function runChecker2(runDir, videos, { spend, log, onPhase, poetryT
     poetryTool,
   };
   const args = { dir: fwd(runDir), tools: fwd(ctx.tools), videos, bookTool: 'usul-online.mjs', scratch: fwd(ctx.scratch) };
+  // The per-check cap: the checker may use up to 70% of it; the sceptic runs only while at least 20%
+  // is left, else the checker's result goes on alone (the two automatic gates still run on it).
   const agent = (prompt, opts = {}) => {
+    const verify = (opts.phase || 'Check') === 'Verify';
+    if (verify && capUsd && spend && spend.usd >= capUsd * 0.8) { log?.(`${opts.label}: skipped, the check is near its cap ($${spend.usd.toFixed(3)})`); return Promise.resolve(null); }
     onPhase?.(opts.phase || 'Check');
-    return runAgent(prompt, { schema: opts.schema, effort: opts.effort || 'high', label: opts.label, ctx, spend, log });
+    return runAgent(prompt, { schema: opts.schema, effort: opts.effort || 'high', label: opts.label, ctx, spend, log, capUsd: capUsd ? (verify ? capUsd : capUsd * 0.7) : undefined });
   };
   const pipeline = (items, ...stages) => Promise.all(items.map(async (v) => {
     let out = v, first = true;

@@ -18,6 +18,8 @@ import { runGates, applyGates } from './gates.mjs';
 import { buildResult } from './result.mjs';
 
 export const MAX_SECONDS = 180;
+// The most one check may spend (owner, 6 Oct). Set CHECKER_CAP_USD in .env to change it.
+export const CAP_USD = Number(process.env.CHECKER_CAP_USD || 1.0);
 const SLACK = 5; // YouTube rounds; a "3:00" clip may report 181 s
 
 // progress({ step, done, total }) ; log(text)
@@ -59,10 +61,10 @@ export async function runCheck({ runId, youtubeId, engine = 'checker2', rulesVer
   let ret;
   if (engine === 'checker3') {
     const { runChecker3 } = await import('./checker3.mjs');
-    ret = await runChecker3(runDir, batchFile, batch, { spend, log: say, onProgress: (d) => progress?.({ step: 'checking', done: d, total: quotable }), onPhase: (p) => { if (p === 'Verify') progress?.({ step: 'second_look' }); } });
+    ret = await runChecker3(runDir, batchFile, batch, { spend, log: say, capUsd: CAP_USD, onProgress: (d) => progress?.({ step: 'checking', done: d, total: quotable }), onPhase: (p) => { if (p === 'Verify') progress?.({ step: 'second_look' }); } });
   } else {
     ret = await runChecker2(runDir, [{ id: batch.id, file: batchFile }], {
-      spend, log: say,
+      spend, log: say, capUsd: CAP_USD,
       onPhase: (p) => { if (p === 'Verify') progress?.({ step: 'second_look' }); },
     });
   }
