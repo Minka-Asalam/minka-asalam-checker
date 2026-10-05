@@ -204,6 +204,90 @@
      ]
     }
    ]
+  },
+  {
+   "video": "040b936e-74e1-4ea3-a418-b06bdb3ccfbc",
+   "i": 1,
+   "by": "the owner (5 Oct): al-Hikam confirmed as the place the words are found, with his note",
+   "claim": {
+    "note_ar": "ثبوت وجود العبارة في الكتاب لا يعني صحة مضمونها شرعًا أو اتفاق العلماء عليه.",
+    "note_en": "That the words are found in the book does not mean their content is sound in the Sharia, or that scholars agree on it."
+   },
+   "parts_replace": [
+    {
+     "position": 1,
+     "kind": "saying",
+     "origin": "spoken",
+     "said_text": "ومن وجد الله فماذا فقد؟ ومن فقد الله فماذا وجد؟",
+     "text_ar": "من وجد الله لم يفقد شيئًا، ومن فقد الله لم يجد شيئًا.",
+     "text_en": "Whoever finds Allah has lost nothing, and whoever loses Allah has found nothing.",
+     "flow_kind": "report",
+     "exit_id": "x_saying_own_work",
+     "state": "matches",
+     "level": 1,
+     "difference_ar": "في كتابه بلفظه. ثبوت وجود العبارة في الكتاب لا يعني صحة مضمونها شرعًا أو اتفاق العلماء عليه.",
+     "difference_en": "In his own work, in his words. That the words are found in the book does not mean their content is sound in the Sharia, or that scholars agree on it.",
+     "source": {
+      "site": "usul.ai",
+      "link": "https://usul.ai/t/al-hikam-al-ataiyya/9?versionId=I0rAzTA3UZ",
+      "quote": "ماذا وجد من فقدك وما الذي فقد من وجدك",
+      "collection": null,
+      "number": null,
+      "grader": null,
+      "grading": null,
+      "narrator": null,
+      "work_ar": "الحكم العطائية لابن عطاء الله السكندري (ط دار الإيمان، دمشق، 1406هـ)",
+      "ref_ar": "الحكم العطائية، ج1 ص290",
+      "volume": "1",
+      "page": 290,
+      "page_url": "https://usul.ai/t/al-hikam-al-ataiyya/9?versionId=I0rAzTA3UZ",
+      "confirm_url": null,
+      "gradings": null
+     },
+     "search_log": [
+      {
+       "source": "usul:zad-al-maad-fi-hady-khayr-al-ibad",
+       "query": "ماذا وجد من فقدك",
+       "found": false
+      },
+      {
+       "source": "usul:tafsir-al-baghawi",
+       "query": "ماذا وجد من فقدك",
+       "found": false
+      },
+      {
+       "source": "usul:tafsir-al-tabari-jami-al-bayan",
+       "query": "ماذا وجد من فقدك",
+       "found": false
+      },
+      {
+       "source": "usul:kuwaiti-encyclopedia-of-jurisprudence",
+       "query": "ماذا وجد من فقدك",
+       "found": false
+      },
+      {
+       "source": "usul:zad-al-maad-fi-hady-khayr-al-ibad",
+       "query": "وجد الله فماذا فقد (a word match only: vol 2 p.482 does not carry the saying)",
+       "found": false
+      },
+      {
+       "source": "usul:kuwaiti-encyclopedia-of-jurisprudence",
+       "query": "وجد الله فماذا فقد",
+       "found": false
+      },
+      {
+       "source": "usul.ai (book search)",
+       "query": "الحكم العطائية",
+       "found": true
+      },
+      {
+       "source": "usul:al-hikam-al-ataiyya (versionId I0rAzTA3UZ), pages 0-8 read",
+       "query": "فقدك",
+       "found": true
+      }
+     ]
+    }
+   ]
   }
  ]
 }
