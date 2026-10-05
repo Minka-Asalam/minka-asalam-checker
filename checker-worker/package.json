@@ -1,0 +1,14 @@
+{
+  "name": "minka-asalam-checker-worker",
+  "private": true,
+  "type": "module",
+  "description": "The Checker tab's worker: runs on the owner's PC, picks check requests up from the database, runs the checker on the clip, writes the result back.",
+  "scripts": {
+    "start": "node src/worker.mjs",
+    "check-one": "node src/check-one.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "@supabase/supabase-js": "^2.117.2"
+  }
+}
