@@ -16,3 +16,10 @@ Challenge day 2. The owner's call: every clip in the library is placed on the ma
 ## Next, committed as it happens
 
 The owner's review decisions, then the records published from them.
+
+## The owner's review (5 October, evening)
+
+- **Placements:** all 27 clips reviewed; 50 topics accepted, 1 rejected; live in the app.
+- **Sources:** all 70 claims decided (`review/claims/`): 65 accepted as the checker wrote them, 5 changed from his notes (a matching narration found, al-Tirmidhi 3393; a woven-in verse approved as a verse in that one case; three books confirmed, which joined the app's cleared sources). The poetry line (clip 11) was re-checked with the new poetry kind and accepted as the same meaning.
+- **His rule for books outside the verified ones** (`review/book-rule.md`): a book confirmed in review shows no note; one not confirmed shows "Book not yet reviewed by a specialist" with the reason on tap.
+- **The sources were not written into the app** (his decision): the reviewed records stand here and on the review page.
