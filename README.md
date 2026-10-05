@@ -1,5 +1,7 @@
 # Minka Asalam · the Checker («منك السلام» · «التبيّن»)
 
+*Knowledge the Heart Rests In*
+
 The Checker listens to an Islamic lesson or clip, writes down every checkable thing the speaker said (a verse, a hadith, a ruling, a report, a number), and finds where each one comes from in an agreed list of trusted sources. A person reviews the result before anything is shown in the app. AI used: Google Gemini (listening) and Anthropic Claude (checking).
 
 This repository is Minka Asalam's entry in the Bāzil Foundation challenge "AI in Service of Islamic Content" (4–6 October 2026). A full README in Arabic and English, how to run it, and the sources, tools and licences log will be added during the challenge days.
@@ -16,6 +18,8 @@ All rights reserved; read and run for evaluation only. See `LICENSE.md`.
 ---
 
 # «منك السلام» · «التبيّن»
+
+*علمٌ تطمئنُّ به القلوب*
 
 تستمع أداة «التبيّن» إلى الدرس أو المقطع الإسلامي، فتكتب كل ما يمكن التحقق منه مما قاله المتكلم (آية، حديث، حكم، خبر، رقم)، وتبحث عن موضعه في قائمة متفق عليها من المصادر الموثوقة. ويراجع إنسانٌ النتيجةَ قبل أن يظهر أي شيء في التطبيق. الذكاء الاصطناعي المستعمل: «جيميناي» من «جوجل» للاستماع، و«كلود» من «أنثروبيك» للتحقق.
 
