@@ -9,7 +9,7 @@ const m = /(?:v=|youtu\.be\/|shorts\/|live\/|^)([A-Za-z0-9_-]{11})(?:[?&#/]|$)/.
 if (!m) { console.error('usage: node src/check-one.mjs <youtube id or link> [--engine=checker2|checker3]'); process.exit(2); }
 
 const t0 = Date.now();
-const r = await runCheck({
+const r = await runCheck({ runId: `cli-${engine}-${m[1]}`,
   youtubeId: m[1], engine,
   progress: (p) => console.log(`  step: ${p.step}${p.total ? ` ${p.done}/${p.total}` : ''}`),
   log: (t) => console.log(t.split('\n')[0]),

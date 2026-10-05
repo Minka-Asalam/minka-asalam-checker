@@ -9,7 +9,8 @@ import { need } from './env.mjs';
 import { runCheck } from './run-check.mjs';
 
 const VERSION = 'worker-1 (5 Oct 2026)';
-const ENGINE = process.env.CHECKER_ENGINE || 'checker2';
+// Checker 3 since 6 Oct ~01:45 (the owner's 09:00 safety line passed: 31/31 verses and 11/11 hadith as in his review, 0 wrong hadith).
+const ENGINE = process.env.CHECKER_ENGINE || 'checker3';
 const POLL_MS = 5000;
 const BEAT_MS = 60000;
 

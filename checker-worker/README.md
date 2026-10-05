@@ -14,7 +14,7 @@ The app writes a request into the database (`checker_runs`, migration 247). The 
 | 2 | **Gate 1:** a very small model (Claude Haiku) reads the title, the description and the channel's own description: is this Islamic content? Only a clear "no" is refused, and it does not count against the person's three a day. The channel is never a reason by itself. | seconds | about 0.1¢ |
 | 3 | **The listen:** Gemini listens to the clip and writes each quote with its moment, cut by source unit (`D:/Deeni/mobile/scripts/tag-with-gemini.ts --claims-only`); the canonical verse text comes from quran.com (`src/build-batch.mjs`) | about a minute | about 5¢ |
 | 4 | **Gate 2:** nothing to look up → stop, not counted | instant | — |
-| 5 | **The engine** (one setting, `CHECKER_ENGINE`): Checker 2 or Checker 3, below | minutes | most of the cost |
+| 5 | **The engine** (one setting, `CHECKER_ENGINE`; Checker 3 since 6 Oct): Checker 2 or Checker 3, below | minutes | most of the cost |
 | 6 | **The two automatic gates** of the library run: no dorar link, grade or quote the dorar tool did not print (`check-dorar-links.mjs`), every grade equal to its dorar page (`check-gradings.mjs`). A failing quote becomes "pending", never shown with an invented source. | about a minute | free |
 | 7 | The counts and rows, written for that person only, stamped with the engine and the rules version | instant | — |
 

@@ -229,16 +229,35 @@ async function secondLook(items, picks, model, spend) {
 }
 
 // The C2-shaped claim for a finished pick (the record fields the gates and the result need).
+// THE OWNER'S RULE WHEN GRADERS DIFFER (5 Oct 2026, pending the shaykh; D:/Deeni Docs/Claims_Redesign_2026-10/
+// graders-differ-rule.md), chosen for the Checker tab on 6 Oct over "rank at the weaker":
+//   B  a grade on the hadith beats a remark on one chain («إسناده ضعيف», «رجاله ثقات»): the chain remark is a note;
+//   A  every accepted grader accepts it (sahih/hasan mix) → accepted, at the lower rank;
+//   C  one accepts and another rejects → "graders differ" (level 3), both named, no verdict from the app.
+const chainRemark = (grading) => /^(اسناده|سنده|رجاله|رواته|اسناد)/.test(norm(grading).replace(/^[[\s(]+/, ''));
+export function levelByRule(cards) {
+  const graded = cards.map((y) => ({ y, lv: levelOf(y) })).filter((c) => c.lv > 0);
+  const onHadith = graded.filter((c) => !chainRemark(c.y.grading) || tierOf({ grader: c.y.grader, source: c.y.source }).tier === 1);
+  const decide = onHadith.length ? onHadith : graded;
+  const lvs = decide.map((c) => c.lv);
+  const accept = lvs.filter((v) => v <= 2), reject = lvs.filter((v) => v >= 4);
+  if (accept.length && reject.length) return { level: 3, rule: 'C' };
+  return { level: lvs.length ? Math.max(...lvs) : levelOf(cards[0]), rule: accept.length ? 'A' : 'weak' };
+}
+
 function recordOf(x, pick, look) {
   const h = pick.hit; const cards = [h, ...pick.others]; const lv = cards.map(levelOf).filter((v) => v > 0);
   let level = levelOf(h); const notes = [pick.flag].filter(Boolean);
-  if (new Set(lv).size > 1) { notes.push(`graders differ: ${cards.map((y) => `${y.grader} «${y.grading}»`).join(' · ')}`); level = Math.max(...lv); }
+  if (new Set(lv).size > 1) {
+    const r = levelByRule(cards); level = r.level;
+    notes.push(`graders differ (rule ${r.rule}): ${cards.map((y) => `${y.grader} «${y.grading}»`).join(' · ')}`);
+  }
   const partly = pick.same === 'partly' || look?.same === 'partly';
   const state = partly ? 'by_meaning' : 'matches';
   if (look?.who_matches === 'no') notes.push(`who said it: the narration is ${look.who}, he named someone else`);
   const part = {
     position: 1, kind: 'hadith', origin: 'spoken', said_text: x.c.quote, text_ar: x.c.quote, text_en: x.c.claim_en || '',
-    flow_kind: 'hadith', exit_id: EXIT[level] || 'x_sahih', state, level, difference_ar: null, difference_en: null,
+    flow_kind: 'hadith', exit_id: EXIT[level] || (level === 3 ? 'x_graders_differ' : 'x_sahih'), state, level, difference_ar: null, difference_en: null,
     source: { site: 'dorar.net', link: h.permalink, quote: h.text, collection: h.source, number: h.number || null, grader: h.grader, grading: h.grading, narrator: h.narrator || null, work_ar: null, ref_ar: null, volume: null, page: null, page_url: null, confirm_url: null,
       gradings: pick.others.length ? pick.others.map((y) => ({ grader: y.grader, grading: y.grading, link: y.permalink, collection: y.source, number: y.number || null })) : null },
     search_log: [{ source: 'dorar.net', query: 'Checker 3 hadith tree', found: true }],
