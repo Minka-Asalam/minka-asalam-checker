@@ -1,0 +1,63 @@
+{
+  "language": "ar-msa",
+  "summary_ar": "يوضح المتحدث مقياسًا عمليًا للتمييز بين الصديق الصالح وصديق السوء؛ فالصديق الصالح هو من تستحي أن تعصي الله أمامه، بينما صديق السوء هو من تستحي أن تطيع الله أمامه.",
+  "summary_en": "The speaker provides a practical metric to distinguish between a good friend and a bad friend: a good friend is someone in whose presence you feel too ashamed to sin, whereas a bad friend is someone in whose presence you feel too ashamed to perform acts of obedience.",
+  "tags": [
+    {
+      "node_path": "التزكية والأخلاق/مجاهدة النفس/صحبة الصالحين",
+      "timestamp": "00:02",
+      "quote_ar": "الصديق الصالح هو الذي تستحي أن تفعل معصية أمامه وصديق السوء هو الذي تستحي أن تفعل طاعة أمامه",
+      "why": "The video defines the standard for choosing righteous companions and avoiding bad company.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/مجاهدة النفس/صحبة الصالحين",
+      "tag_ar": "صحبة الصالحين",
+      "new_tag": false
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens",
+      "new_to_islam"
+    ],
+    "assumes": "none",
+    "why": "The speaker uses extremely simple language and a straightforward, relatable social rule without any complex terminology."
+  },
+  "claims": [
+    {
+      "kind": "saying",
+      "unit": "The definition and metric of a good versus bad friend",
+      "pieces": [
+        {
+          "timestamp": "00:02",
+          "timestamp_end": "00:27",
+          "quote": "الصديق الصالح هو الذي تستحي أن تفعل معصية أمامه وصديق السوء هو الذي تستحي أن تفعل طاعة أمامه هذا مقياس يفرز لك الناس",
+          "voice": "source",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "A righteous friend is one in whose presence you are ashamed to commit a sin, while a bad friend is one in whose presence you are ashamed to perform acts of obedience.",
+      "timestamp": "00:02",
+      "timestamp_end": "00:27",
+      "quote": "الصديق الصالح هو الذي تستحي أن تفعل معصية أمامه وصديق السوء هو الذي تستحي أن تفعل طاعة أمامه هذا مقياس يفرز لك الناس"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.5-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 31644
+}

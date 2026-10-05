@@ -1,0 +1,93 @@
+{
+  "language": "ar-mixed",
+  "summary_ar": "يتناول المتحدث خطبة الشيطان يوم القيامة المذكورة في سورة إبراهيم، مبيناً أن الشيطان لا يملك سلطاناً ولا إجباراً على الإنسان وإنما يكتفي بالوسوسة والتزيين والتسويف، ومحذراً من الاستجابة لوساوسه.",
+  "summary_en": "The speaker reflects on Satan's speech in the Hereafter as recounted in Surah Ibrahim, explaining that Satan holds no coercive power over human beings but merely whispers and tempts them, warning against falling into his trap.",
+  "tags": [
+    {
+      "node_path": "القرآن وعلومه/تدبّر القرآن",
+      "timestamp": "00:00",
+      "quote_ar": "آية إبراهيم هذي كل مسلم لازم يقراها",
+      "why": "Urges Muslims to read and ponder the meaning of the verse in Surah Ibrahim.",
+      "confidence": "high",
+      "path_ar": "القرآن وعلومه/تدبّر القرآن",
+      "tag_ar": "تدبّر القرآن",
+      "new_tag": true
+    },
+    {
+      "node_path": "العقيدة/أركان الإيمان/الإيمان بالملائكة/الجنّ والشياطين",
+      "timestamp": "00:31",
+      "quote_ar": "وما كان لي عليكم من سلطان إلا أن دعوتكم فاستجبتم لي",
+      "why": "Explains Satan's lack of real authority over humans and the reality of his temptation.",
+      "confidence": "high",
+      "path_ar": "العقيدة/أركان الإيمان/الإيمان بالملائكة/الجنّ والشياطين",
+      "tag_ar": "الجنّ والشياطين",
+      "new_tag": false
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "basic",
+    "why": "Presents a direct, colloquial reflection on a well-known Quranic verse using simple everyday examples."
+  },
+  "claims": [
+    {
+      "kind": "quran",
+      "unit": "Surah Ibrahim, verse 22",
+      "pieces": [
+        {
+          "timestamp": "00:04",
+          "timestamp_end": "00:06",
+          "quote": "وقال الشيطان لما قضي الأمر",
+          "voice": "source",
+          "cue": ""
+        },
+        {
+          "timestamp": "00:12",
+          "timestamp_end": "00:18",
+          "quote": "وقال الشيطان لما قضي الأمر أن الله وعدكم وعد الحق ووعدتكم فأخلفتكم",
+          "voice": "source",
+          "cue": ""
+        },
+        {
+          "timestamp": "00:31",
+          "timestamp_end": "00:36",
+          "quote": "وما كان لي عليكم من سلطان إلا أن دعوتكم فاستجبتم لي",
+          "voice": "source",
+          "cue": "شوف اللي بعدها"
+        },
+        {
+          "timestamp": "00:53",
+          "timestamp_end": "01:07",
+          "quote": "فلا تلوموني ولوموا أنفسكم ما أنا بمصرخكم وما أنتم بمصرخي إني كفرت سبحان الله بما أشركتموني من قبل وإن الظالمين لهم عذاب أليم",
+          "voice": "source",
+          "cue": "بعدين شو يقول لنا؟"
+        }
+      ],
+      "inside": 0,
+      "attribution": "آية إبراهيم",
+      "reference": "14:22",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Recitation of Surah Ibrahim verse 22 recounting Satan's confession and disavowal of his followers on the Day of Judgment.",
+      "timestamp": "00:04",
+      "timestamp_end": "01:07",
+      "quote": "وقال الشيطان لما قضي الأمر … وقال الشيطان لما قضي الأمر أن الله وعدكم وعد الحق ووعدتكم فأخلفتكم … وما كان لي عليكم من سلطان إلا أن دعوتكم فاستجبتم لي … فلا تلوموني ولوموا أنفسكم ما أنا بمصرخكم وما أنتم بمصرخي إني كفرت سبحان الله بما أشركتموني من قبل وإن الظالمين لهم عذاب أليم"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 33793
+}

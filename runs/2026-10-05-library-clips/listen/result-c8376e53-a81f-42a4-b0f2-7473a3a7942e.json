@@ -1,0 +1,69 @@
+{
+  "language": "ar-egyptian",
+  "summary_ar": "يوضح المتحدث صعوبة مجاهدة النفس وضرورتها البالغة، محذراً من اتباع أهوائها لأن النار حُفّت بالشهوات التي تميل إليها النفس بطبيعتها.",
+  "summary_en": "The speaker emphasizes the difficulty and necessity of striving against the soul, warning that following its desires leads to Hellfire because Hell is surrounded by worldly desires.",
+  "tags": [
+    {
+      "node_path": "التزكية والأخلاق/مجاهدة النفس/مجاهدة الهوى",
+      "timestamp": "00:00",
+      "quote_ar": "مجاهدة النفس مش حاجة سهلة، وعشان كده اتسمت إيه؟ هه، مجاهدة.",
+      "why": "The clip directly addresses the concept and challenge of striving against the lower self and resisting its desires.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/مجاهدة النفس/مجاهدة الهوى",
+      "tag_ar": "مجاهدة الهوى",
+      "new_tag": false
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "none",
+    "why": "The talk uses accessible Egyptian dialect and simple analogies suitable for any audience without assuming prior Islamic studies background."
+  },
+  "claims": [
+    {
+      "kind": "hadith",
+      "unit": "Hadith that the Hellfire is surrounded by desires",
+      "pieces": [
+        {
+          "timestamp": "00:28",
+          "timestamp_end": "00:31",
+          "quote": "إن حفت النار بالإيه؟ بالشهوات",
+          "voice": "retelling",
+          "cue": "إن"
+        },
+        {
+          "timestamp": "00:38",
+          "timestamp_end": "00:41",
+          "quote": "لأن النار حفت بالشهوات",
+          "voice": "source",
+          "cue": "لأن"
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "حفت النار بالشهوات وحفت الجنة بالمكاره",
+      "stated_as": "definitive",
+      "claim_en": "The Hellfire is encompassed and veiled by worldly desires.",
+      "timestamp": "00:28",
+      "timestamp_end": "00:41",
+      "quote": "إن حفت النار بالإيه؟ بالشهوات … لأن النار حفت بالشهوات"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 31607
+}

@@ -1,0 +1,130 @@
+{
+  "language": "ar-mixed",
+  "summary_ar": "يبين المتحدث كيف خاطب القرآن الكريم العقل البشري بالبراهين والمنطق بدلاً من مجرد إصدار الأوامر، مستشهداً بآيات سورتي الطارق والطور التي تطرح الاحتمالات العقلية لنشأة الإنسان وخلقه لإلزامه منطقياً بوجود الخالق وتفرده.",
+  "summary_en": "The speaker illustrates how the Quran addresses the human intellect through rational debate and logic rather than bare commands, citing verses from Surah al-Tariq and Surah al-Tur that present rational possibilities regarding human creation to convincingly prove the existence of the Creator.",
+  "tags": [
+    {
+      "node_path": "العقيدة/أركان الإيمان/الإيمان بالله/وجود الله/دلالة العقل",
+      "timestamp": "00:32",
+      "quote": "لاحظوا الاحتمالات العقلية اللي طرحها القرآن للعقل، هناك احتمالات للعقل",
+      "why": "The speaker focuses on the rational arguments and logical possibilities presented in the Quran to prove the existence of the Creator.",
+      "confidence": "high",
+      "path_ar": "العقيدة/أركان الإيمان/الإيمان بالله/وجود الله/دلالة العقل",
+      "tag_ar": "دلالة العقل",
+      "new_tag": false
+    },
+    {
+      "node_path": "القرآن وعلومه/علوم القرآن/الجدل في القرآن",
+      "timestamp": "00:07",
+      "quote": "لكنه ناقش العقل وأقنعه بقناعات وافية",
+      "why": "The speaker discusses the Quran's argumentative style and methodology in debating and persuading the human mind.",
+      "confidence": "medium",
+      "path_ar": "القرآن وعلومه/علوم القرآن/الجدل في القرآن",
+      "tag_ar": "الجدل في القرآن",
+      "new_tag": true
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "basic",
+    "why": "The speaker presents a clear, engaging theological reflection using colloquial phrasing accessible to general listeners and youth."
+  },
+  "claims": [
+    {
+      "kind": "quran",
+      "unit": "Surah At-Tariq, verses 5-6",
+      "pieces": [
+        {
+          "timestamp": "00:10",
+          "timestamp_end": "00:12",
+          "quote": "فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ",
+          "voice": "source",
+          "cue": ""
+        },
+        {
+          "timestamp": "00:20",
+          "timestamp_end": "00:24",
+          "quote": "فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ خُلِقَ مِن مَّاءٍ دَافِقٍ",
+          "voice": "source",
+          "cue": "ما قالش"
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "86:5-6",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "The Quran calls upon human beings to reflect upon what they were created from, specifically that they were created from an ejected fluid.",
+      "timestamp": "00:10",
+      "timestamp_end": "00:24",
+      "quote": "فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ … فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ خُلِقَ مِن مَّاءٍ دَافِقٍ"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah At-Tur, verse 35",
+      "pieces": [
+        {
+          "timestamp": "00:29",
+          "timestamp_end": "00:31",
+          "quote": "أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ",
+          "voice": "source",
+          "cue": "لتأتي آية أخرى تقول"
+        },
+        {
+          "timestamp": "00:40",
+          "timestamp_end": "00:41",
+          "quote": "أَمْ هُمُ الْخَالِقُونَ",
+          "voice": "source",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "52:35",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "The Quran presents logical alternatives challenging disbelief: were they created from nothing, or were they themselves the creators?",
+      "timestamp": "00:29",
+      "timestamp_end": "00:41",
+      "quote": "أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ … أَمْ هُمُ الْخَالِقُونَ"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah Az-Zukhruf, verse 87",
+      "pieces": [
+        {
+          "timestamp": "01:07",
+          "timestamp_end": "01:10",
+          "quote": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَهُمْ لَيَقُولُنَّ اللَّهُ",
+          "voice": "source",
+          "cue": "ليصل بالعقل في النهاية"
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "43:87",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "The Quran affirms that if the disbelievers are asked who created them, they will concede that it is Allah.",
+      "timestamp": "01:07",
+      "timestamp_end": "01:10",
+      "quote": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَهُمْ لَيَقُولُنَّ اللَّهُ"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 34547
+}

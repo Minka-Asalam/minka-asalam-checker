@@ -1,0 +1,1496 @@
+{
+ "videos": [
+  {
+   "id": "1c54d810-45c5-4c12-a5fb-440bdbedb902",
+   "result": {
+    "id": "1c54d810-45c5-4c12-a5fb-440bdbedb902",
+    "video_note": "A recitation video with one claim: Surah Maryam 19:77-96 recited without commentary. The extractor named the verse range but gave no word-for-word transcript. The match therefore rests on its identification of a single continuous passage, checked against the canonical verse_text. A moderator may listen at 00:00-02:56 to confirm.",
+    "claims": [
+     {
+      "i": 1,
+      "flow_kind": "quran",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "تلاوة الآيات ٧٧–٩٦ من سورة مريم كاملةً دون تعليق",
+      "line_en": "Recitation of Surah Maryam verses 77 to 96, a continuous passage recited without commentary.",
+      "reason_ar": "مقطع متصل من سورة مريم (٧٧–٩٦)، حدّده المستخرج بالسماع، ونصّه نص المصحف برواية حفص.",
+      "reason_en": "One continuous passage, Maryam 19:77-96, identified by the extractor from the audio; its text is the mushaf's (Hafs); no word-level transcript was supplied.",
+      "load_bearing": true,
+      "continues": null,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "verse",
+        "origin": "spoken",
+        "said_text": "recites Maryam 19:77-96",
+        "text_ar": "تلاوة قوله تعالى من سورة مريم: «أفرأيت الذي كفر بآياتنا…» إلى «…سيجعل لهم الرحمن ودًّا» (الآيات ٧٧–٩٦).",
+        "text_en": "Recitation of Surah Maryam 19:77-96, from 'Have you seen him who disbelieved in Our Ayat' to 'the Most Gracious will bestow love for them'.",
+        "flow_kind": "quran",
+        "exit_id": "x_exact",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "مطابق لنص المصحف.",
+        "difference_en": "Matches the mushaf text.",
+        "source": {
+         "site": "quran.com",
+         "link": "https://quran.com/19/77-96",
+         "quote": "أَفَرَأَيْتَ الَّذِي كَفَرَ بِآيَاتِنَا وَقَالَ لَأُوتَيَنَّ مَالًا وَوَلَدًا … إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ سَيَجْعَلُ لَهُمُ الرَّحْمَٰنُ وُدًّا",
+         "collection": null,
+         "number": "19:77-96",
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": "المصحف الشريف (رواية حفص)",
+         "ref_ar": "سورة مريم، الآيات ٧٧–٩٦",
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "quran.com (verse_text carried in the batch)",
+          "query": "19:77-96 — a continuous range in one surah, not stitched from separate passages; no surah or number was named that differs from it",
+          "found": true
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "checkedRaw": {
+    "id": "1c54d810-45c5-4c12-a5fb-440bdbedb902",
+    "video_note": "A recitation video with one claim: Surah Maryam 19:77-96 recited without commentary. The extractor named the verse range but gave no word-for-word transcript. The match therefore rests on its identification of a single continuous passage, checked against the canonical verse_text. A moderator may listen at 00:00-02:56 to confirm.",
+    "claims": [
+     {
+      "i": 1,
+      "flow_kind": "quran",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "تلاوة الآيات ٧٧–٩٦ من سورة مريم كاملةً دون تعليق",
+      "line_en": "Recitation of Surah Maryam verses 77 to 96, a continuous passage recited without commentary.",
+      "reason_ar": "مقطع متصل من سورة مريم (٧٧–٩٦)، حدّده المستخرج بالسماع، ونصّه نص المصحف برواية حفص.",
+      "reason_en": "One continuous passage, Maryam 19:77-96, identified by the extractor from the audio; its text is the mushaf's (Hafs); no word-level transcript was supplied.",
+      "load_bearing": true,
+      "continues": null,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "verse",
+        "origin": "spoken",
+        "said_text": "recites Maryam 19:77-96",
+        "text_ar": "تلاوة قوله تعالى من سورة مريم: «أفرأيت الذي كفر بآياتنا…» إلى «…سيجعل لهم الرحمن ودًّا» (الآيات ٧٧–٩٦).",
+        "text_en": "Recitation of Surah Maryam 19:77-96, from 'Have you seen him who disbelieved in Our Ayat' to 'the Most Gracious will bestow love for them'.",
+        "flow_kind": "quran",
+        "exit_id": "x_exact",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "مطابق لنص المصحف.",
+        "difference_en": "Matches the mushaf text.",
+        "source": {
+         "site": "quran.com",
+         "link": "https://quran.com/19/77-96",
+         "quote": "أَفَرَأَيْتَ الَّذِي كَفَرَ بِآيَاتِنَا وَقَالَ لَأُوتَيَنَّ مَالًا وَوَلَدًا … إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ سَيَجْعَلُ لَهُمُ الرَّحْمَٰنُ وُدًّا",
+         "collection": null,
+         "number": "19:77-96",
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": "المصحف الشريف (رواية حفص)",
+         "ref_ar": "سورة مريم، الآيات ٧٧–٩٦",
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "quran.com (verse_text carried in the batch)",
+          "query": "19:77-96 — a continuous range in one surah, not stitched from separate passages; no surah or number was named that differs from it",
+          "found": true
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "eb31fe16-1aec-443c-b9ed-368ff7e04e08",
+   "result": {
+    "id": "eb31fe16-1aec-443c-b9ed-368ff7e04e08",
+    "video_note": "One claim, told in three stretches, checked against one source, Sahih al-Bukhari 6306 (Shaddad ibn Aws). Dorar found it on the first query. The words of the supplication keep the hadith's meaning. The speaker dropped «لا إله إلا أنت» and «عليّ», and said «بنعمتي» before correcting himself to «بنعمتك». His retelling of the reward drops the hadith's condition «موقنًا بها», which the flow treats as a dropped condition, so that part is marked corrected.",
+    "claims": [
+     {
+      "i": 1,
+      "flow_kind": "hadith",
+      "sub_kind": null,
+      "state": "corrected",
+      "level": 1,
+      "line_ar": "دعاء سيد الاستغفار وفضله منسوبًا إلى النبي ﷺ، وهو في صحيح البخاري ٦٣٠٦",
+      "line_en": "Sayyid al-Istighfar supplication and its Paradise reward, cited as the Prophet's words; found in Sahih al-Bukhari 6306.",
+      "reason_ar": "الحديث في صحيح البخاري (٦٣٠٦) فهو صحيح؛ ونصّ الدعاء موافق بالمعنى، أمّا الفضل فذُكر دون شرط اليقين «موقنًا بها» الذي في الحديث.",
+      "reason_en": "Sahih al-Bukhari 6306, so sahih. The supplication matches by meaning, but the reward was told without the hadith's condition of certainty («موقنًا بها»).",
+      "load_bearing": true,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "hadith",
+        "origin": "spoken",
+        "said_text": "من قال هذا الدعاء في يومه ومات دخل الجنة، ومن قاله في ليلته ومات دخل الجنة",
+        "text_ar": "من قال سيد الاستغفار في نهاره فمات من يومه، أو في ليله فمات من ليلته، دخل الجنة.",
+        "text_en": "Whoever says Sayyid al-Istighfar in the day and dies that day, or at night and dies that night, enters Paradise.",
+        "flow_kind": "hadith",
+        "exit_id": "x_misworded",
+        "state": "corrected",
+        "level": 1,
+        "difference_ar": "اللفظ كما قيل ليس في المصادر التي نملكها. الفرق: أسقط «موقنًا بها» فتغيّر المعنى، وهو شرطٌ في الجزاء. النصّ الثابت هو ما في المصدر أعلاه، ودرجته «[صحيح]».",
+        "difference_en": "The wording as said is not in the cleared sources. The difference: the speaker dropped «موقنًا بها» (with certainty in it), a condition of the reward. The established text is the source's above, graded «[صحيح]».",
+        "source": {
+         "site": "dorar.net",
+         "link": "https://dorar.net/h/1Xe5exzh",
+         "quote": "… قال: ومَن قالها مِنَ النَّهارِ موقِنًا بها، فماتَ مِن يَومِه قَبلَ أن يُمسيَ، فهو مِن أهلِ الجَنَّةِ، ومَن قالها مِنَ اللَّيلِ وهو موقِنٌ بها، فماتَ قَبلَ أن يُصبِحَ، فهو مِن أهلِ الجَنَّةِ.",
+         "collection": "صحيح البخاري",
+         "number": "6306",
+         "grader": "البخاري",
+         "grading": "[صحيح]",
+         "narrator": "شداد بن أوس",
+         "work_ar": null,
+         "ref_ar": null,
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "dorar.net",
+          "query": "سيد الاستغفار أن تقول اللهم أنت ربي",
+          "found": true
+         }
+        ]
+       },
+       {
+        "position": 2,
+        "kind": "hadith",
+        "origin": "spoken",
+        "said_text": "اللهم أنت ربي، خلقتني وأنا عبدك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شر ما صنعت، أبوء لك بنعمتي بنعمتك … وأبوء لك بذنبي، فاغفر لي، فإنه لا يغفر الذنوب إلا أنت.",
+        "text_ar": "نصّ دعاء سيد الاستغفار من قول النبي ﷺ: اللهم أنت ربي… فاغفر لي فإنه لا يغفر الذنوب إلا أنت.",
+        "text_en": "The Prophet's wording of Sayyid al-Istighfar: O Allah, You are my Lord… forgive me, for none forgives sins but You.",
+        "flow_kind": "hadith",
+        "exit_id": "x_sahih",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "موافق للمصدر. رُوي بالمعنى. جزءٌ من الحديث؛ تمامه في المصدر.",
+        "difference_en": "Matches the source. Quoted by meaning. A portion of the hadith; the whole is in the source.",
+        "source": {
+         "site": "dorar.net",
+         "link": "https://dorar.net/h/1Xe5exzh",
+         "quote": "سَيِّدُ الاستِغفارِ أن تَقولَ : اللهُمَّ أنتَ رَبِّي لا إلَهَ إلَّا أنتَ، خَلَقتَني وأنا عَبدُك، وأنا على عَهدِك ووَعدِك ما استَطَعتُ، أعوذُ بك مِن شَرِّ ما صَنَعتُ، أبوءُ لك بنِعمَتِك عَلَيَّ، وأبوءُ لك بذَنبي، فاغفِرْ لي؛ فإنَّه لا يَغفِرُ الذُّنوبَ إلَّا أنتَ. …",
+         "collection": "صحيح البخاري",
+         "number": "6306",
+         "grader": "البخاري",
+         "grading": "[صحيح]",
+         "narrator": "شداد بن أوس",
+         "work_ar": null,
+         "ref_ar": null,
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "dorar.net",
+          "query": "سيد الاستغفار أن تقول اللهم أنت ربي",
+          "found": true
+         }
+        ]
+       }
+      ],
+      "continues": null
+     }
+    ]
+   },
+   "checkedRaw": {
+    "id": "eb31fe16-1aec-443c-b9ed-368ff7e04e08",
+    "video_note": "One claim, told in three stretches, checked against one source, Sahih al-Bukhari 6306 (Shaddad ibn Aws). Dorar found it on the first query. The words of the supplication keep the hadith's meaning. The speaker dropped «لا إله إلا أنت» and «عليّ», and said «بنعمتي» before correcting himself to «بنعمتك». His retelling of the reward drops the hadith's condition «موقنًا بها», which the flow treats as a dropped condition, so that part is marked corrected.",
+    "claims": [
+     {
+      "i": 1,
+      "flow_kind": "hadith",
+      "sub_kind": null,
+      "state": "corrected",
+      "level": 1,
+      "line_ar": "دعاء سيد الاستغفار وفضله منسوبًا إلى النبي ﷺ، وهو في صحيح البخاري ٦٣٠٦",
+      "line_en": "Sayyid al-Istighfar supplication and its Paradise reward, cited as the Prophet's words; found in Sahih al-Bukhari 6306.",
+      "reason_ar": "الحديث في صحيح البخاري (٦٣٠٦) فهو صحيح؛ ونصّ الدعاء موافق بالمعنى، أمّا الفضل فذُكر دون شرط اليقين «موقنًا بها» الذي في الحديث.",
+      "reason_en": "Sahih al-Bukhari 6306, so sahih. The supplication matches by meaning, but the reward was told without the hadith's condition of certainty («موقنًا بها»).",
+      "load_bearing": true,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "hadith",
+        "origin": "spoken",
+        "said_text": "من قال هذا الدعاء في يومه ومات دخل الجنة، ومن قاله في ليلته ومات دخل الجنة",
+        "text_ar": "من قال سيد الاستغفار في نهاره فمات من يومه، أو في ليله فمات من ليلته، دخل الجنة.",
+        "text_en": "Whoever says Sayyid al-Istighfar in the day and dies that day, or at night and dies that night, enters Paradise.",
+        "flow_kind": "hadith",
+        "exit_id": "x_misworded",
+        "state": "corrected",
+        "level": 1,
+        "difference_ar": "اللفظ كما قيل ليس في المصادر التي نملكها. الفرق: أسقط «موقنًا بها» فتغيّر المعنى، وهو شرطٌ في الجزاء. النصّ الثابت هو ما في المصدر أعلاه، ودرجته «[صحيح]».",
+        "difference_en": "The wording as said is not in the cleared sources. The difference: the speaker dropped «موقنًا بها» (with certainty in it), a condition of the reward. The established text is the source's above, graded «[صحيح]».",
+        "source": {
+         "site": "dorar.net",
+         "link": "https://dorar.net/h/1Xe5exzh",
+         "quote": "… قال: ومَن قالها مِنَ النَّهارِ موقِنًا بها، فماتَ مِن يَومِه قَبلَ أن يُمسيَ، فهو مِن أهلِ الجَنَّةِ، ومَن قالها مِنَ اللَّيلِ وهو موقِنٌ بها، فماتَ قَبلَ أن يُصبِحَ، فهو مِن أهلِ الجَنَّةِ.",
+         "collection": "صحيح البخاري",
+         "number": "6306",
+         "grader": "البخاري",
+         "grading": "[صحيح]",
+         "narrator": "شداد بن أوس",
+         "work_ar": null,
+         "ref_ar": null,
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "dorar.net",
+          "query": "سيد الاستغفار أن تقول اللهم أنت ربي",
+          "found": true
+         }
+        ]
+       },
+       {
+        "position": 2,
+        "kind": "hadith",
+        "origin": "spoken",
+        "said_text": "اللهم أنت ربي، خلقتني وأنا عبدك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شر ما صنعت، أبوء لك بنعمتي بنعمتك … وأبوء لك بذنبي، فاغفر لي، فإنه لا يغفر الذنوب إلا أنت.",
+        "text_ar": "نصّ دعاء سيد الاستغفار من قول النبي ﷺ: اللهم أنت ربي… فاغفر لي فإنه لا يغفر الذنوب إلا أنت.",
+        "text_en": "The Prophet's wording of Sayyid al-Istighfar: O Allah, You are my Lord… forgive me, for none forgives sins but You.",
+        "flow_kind": "hadith",
+        "exit_id": "x_sahih",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "موافق للمصدر. رُوي بالمعنى. جزءٌ من الحديث؛ تمامه في المصدر.",
+        "difference_en": "Matches the source. Quoted by meaning. A portion of the hadith; the whole is in the source.",
+        "source": {
+         "site": "dorar.net",
+         "link": "https://dorar.net/h/1Xe5exzh",
+         "quote": "سَيِّدُ الاستِغفارِ أن تَقولَ : اللهُمَّ أنتَ رَبِّي لا إلَهَ إلَّا أنتَ، خَلَقتَني وأنا عَبدُك، وأنا على عَهدِك ووَعدِك ما استَطَعتُ، أعوذُ بك مِن شَرِّ ما صَنَعتُ، أبوءُ لك بنِعمَتِك عَلَيَّ، وأبوءُ لك بذَنبي، فاغفِرْ لي؛ فإنَّه لا يَغفِرُ الذُّنوبَ إلَّا أنتَ. …",
+         "collection": "صحيح البخاري",
+         "number": "6306",
+         "grader": "البخاري",
+         "grading": "[صحيح]",
+         "narrator": "شداد بن أوس",
+         "work_ar": null,
+         "ref_ar": null,
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "dorar.net",
+          "query": "سيد الاستغفار أن تقول اللهم أنت ربي",
+          "found": true
+         }
+        ]
+       }
+      ],
+      "continues": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd76f9a7-0986-4610-9b34-15816100caad",
+   "result": {
+    "id": "dd76f9a7-0986-4610-9b34-15816100caad",
+    "video_note": "Three recited verses (al-Tariq 86:5-6, al-Tur 52:35, al-Zukhruf 43:87), each matching the mushaf word for word; no claim continues another (continuation tool: no, no).",
+    "claims": [
+     {
+      "i": 1,
+      "flow_kind": "quran",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "تلاوة آيتي سورة الطارق ٥–٦ في النظر إلى أصل خلق الإنسان",
+      "line_en": "Recites al-Tariq 86:5-6, calling man to consider what he was created from.",
+      "reason_ar": "اللفظ المتلوّ مطابق لنص المصحف في الطارق ٥–٦ كلمةً كلمة.",
+      "reason_en": "The recited words match the mushaf text of al-Tariq 86:5-6 word for word.",
+      "load_bearing": true,
+      "continues": null,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "verse",
+        "origin": "spoken",
+        "said_text": "فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ … فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ خُلِقَ مِن مَّاءٍ دَافِقٍ",
+        "text_ar": "آيتا سورة الطارق: فلينظر الإنسان مم خلق، خلق من ماء دافق.",
+        "text_en": "Al-Tariq 86:5-6: So let man see from what he is created; he is created from a water gushing forth.",
+        "flow_kind": "quran",
+        "exit_id": "x_exact",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "مطابق لنص المصحف.",
+        "difference_en": "Matches the mushaf text.",
+        "source": {
+         "site": "quran.com",
+         "link": "https://quran.com/86/5-6",
+         "quote": "فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ خُلِقَ مِن مَّاءٍ دَافِقٍ",
+         "collection": null,
+         "number": null,
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": null,
+         "ref_ar": "الطارق ٥–٦",
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "verse_text (batch, canonical)",
+          "query": "86:5-6 compared word for word after stripping vocalisation",
+          "found": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "i": 2,
+      "flow_kind": "quran",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "تلاوة آية سورة الطور ٣٥ في السؤال عن أصل خلقهم",
+      "line_en": "Recites al-Tur 52:35 in two stretches: created from nothing, or themselves the creators?",
+      "reason_ar": "الآية متلوّة كاملة على مقطعين، ولفظها مطابق للمصحف في الطور ٣٥.",
+      "reason_en": "The whole verse is recited across two stretches and matches the mushaf text of al-Tur 52:35.",
+      "load_bearing": true,
+      "continues": null,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "verse",
+        "origin": "spoken",
+        "said_text": "أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ … أَمْ هُمُ الْخَالِقُونَ",
+        "text_ar": "آية سورة الطور: أم خلقوا من غير شيء أم هم الخالقون.",
+        "text_en": "Al-Tur 52:35: Were they created by nothing, or were they themselves the creators?",
+        "flow_kind": "quran",
+        "exit_id": "x_exact",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "مطابق لنص المصحف.",
+        "difference_en": "Matches the mushaf text.",
+        "source": {
+         "site": "quran.com",
+         "link": "https://quran.com/52/35",
+         "quote": "أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ أَمْ هُمُ الْخَالِقُونَ",
+         "collection": null,
+         "number": null,
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": null,
+         "ref_ar": "الطور ٣٥",
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "continuation.mjs",
+          "query": "open text 86:5-6 vs claim 2 quote",
+          "found": false
+         },
+         {
+          "source": "verse_text (batch, canonical)",
+          "query": "52:35 compared word for word after stripping vocalisation",
+          "found": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "i": 3,
+      "flow_kind": "quran",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "تلاوة جزء من آية الزخرف ٨٧ في إقرارهم بأن الله خالقهم",
+      "line_en": "Recites part of al-Zukhruf 43:87: asked who created them, they will say Allah.",
+      "reason_ar": "المقطع المتلوّ مطابق للمصحف، والوقف قبل «فأنى يؤفكون» لا يقلب المعنى.",
+      "reason_en": "The recited portion matches the mushaf; stopping before the verse's closing words does not invert its sense.",
+      "load_bearing": true,
+      "continues": null,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "verse",
+        "origin": "spoken",
+        "said_text": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَهُمْ لَيَقُولُنَّ اللَّهُ",
+        "text_ar": "جزء من آية سورة الزخرف: ولئن سألتهم من خلقهم ليقولن الله.",
+        "text_en": "Part of al-Zukhruf 43:87: And if you ask them who created them, they will surely say: Allah.",
+        "flow_kind": "quran",
+        "exit_id": "x_exact",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "مطابق لنص المصحف.",
+        "difference_en": "Matches the mushaf text.",
+        "source": {
+         "site": "quran.com",
+         "link": "https://quran.com/43/87",
+         "quote": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَهُمْ لَيَقُولُنَّ اللَّهُ",
+         "collection": null,
+         "number": null,
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": null,
+         "ref_ar": "الزخرف ٨٧",
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "continuation.mjs",
+          "query": "open text 52:35 vs claim 3 quote",
+          "found": false
+         },
+         {
+          "source": "verse_text (batch, canonical)",
+          "query": "43:87 portion compared word for word after stripping vocalisation",
+          "found": true
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "checkedRaw": {
+    "id": "dd76f9a7-0986-4610-9b34-15816100caad",
+    "video_note": "Three recited verses (al-Tariq 86:5-6, al-Tur 52:35, al-Zukhruf 43:87), each matching the mushaf word for word; no claim continues another (continuation tool: no, no).",
+    "claims": [
+     {
+      "i": 1,
+      "flow_kind": "quran",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "تلاوة آيتي سورة الطارق ٥–٦ في النظر إلى أصل خلق الإنسان",
+      "line_en": "Recites al-Tariq 86:5-6, calling man to consider what he was created from.",
+      "reason_ar": "اللفظ المتلوّ مطابق لنص المصحف في الطارق ٥–٦ كلمةً كلمة.",
+      "reason_en": "The recited words match the mushaf text of al-Tariq 86:5-6 word for word.",
+      "load_bearing": true,
+      "continues": null,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "verse",
+        "origin": "spoken",
+        "said_text": "فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ … فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ خُلِقَ مِن مَّاءٍ دَافِقٍ",
+        "text_ar": "آيتا سورة الطارق: فلينظر الإنسان مم خلق، خلق من ماء دافق.",
+        "text_en": "Al-Tariq 86:5-6: So let man see from what he is created; he is created from a water gushing forth.",
+        "flow_kind": "quran",
+        "exit_id": "x_exact",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "مطابق لنص المصحف.",
+        "difference_en": "Matches the mushaf text.",
+        "source": {
+         "site": "quran.com",
+         "link": "https://quran.com/86/5-6",
+         "quote": "فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ خُلِقَ مِن مَّاءٍ دَافِقٍ",
+         "collection": null,
+         "number": null,
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": null,
+         "ref_ar": "الطارق ٥–٦",
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "verse_text (batch, canonical)",
+          "query": "86:5-6 compared word for word after stripping vocalisation",
+          "found": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "i": 2,
+      "flow_kind": "quran",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "تلاوة آية سورة الطور ٣٥ في السؤال عن أصل خلقهم",
+      "line_en": "Recites al-Tur 52:35 in two stretches: created from nothing, or themselves the creators?",
+      "reason_ar": "الآية متلوّة كاملة على مقطعين، ولفظها مطابق للمصحف في الطور ٣٥.",
+      "reason_en": "The whole verse is recited across two stretches and matches the mushaf text of al-Tur 52:35.",
+      "load_bearing": true,
+      "continues": null,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "verse",
+        "origin": "spoken",
+        "said_text": "أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ … أَمْ هُمُ الْخَالِقُونَ",
+        "text_ar": "آية سورة الطور: أم خلقوا من غير شيء أم هم الخالقون.",
+        "text_en": "Al-Tur 52:35: Were they created by nothing, or were they themselves the creators?",
+        "flow_kind": "quran",
+        "exit_id": "x_exact",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "مطابق لنص المصحف.",
+        "difference_en": "Matches the mushaf text.",
+        "source": {
+         "site": "quran.com",
+         "link": "https://quran.com/52/35",
+         "quote": "أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ أَمْ هُمُ الْخَالِقُونَ",
+         "collection": null,
+         "number": null,
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": null,
+         "ref_ar": "الطور ٣٥",
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "continuation.mjs",
+          "query": "open text 86:5-6 vs claim 2 quote",
+          "found": false
+         },
+         {
+          "source": "verse_text (batch, canonical)",
+          "query": "52:35 compared word for word after stripping vocalisation",
+          "found": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "i": 3,
+      "flow_kind": "quran",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "تلاوة جزء من آية الزخرف ٨٧ في إقرارهم بأن الله خالقهم",
+      "line_en": "Recites part of al-Zukhruf 43:87: asked who created them, they will say Allah.",
+      "reason_ar": "المقطع المتلوّ مطابق للمصحف، والوقف قبل «فأنى يؤفكون» لا يقلب المعنى.",
+      "reason_en": "The recited portion matches the mushaf; stopping before the verse's closing words does not invert its sense.",
+      "load_bearing": true,
+      "continues": null,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "verse",
+        "origin": "spoken",
+        "said_text": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَهُمْ لَيَقُولُنَّ اللَّهُ",
+        "text_ar": "جزء من آية سورة الزخرف: ولئن سألتهم من خلقهم ليقولن الله.",
+        "text_en": "Part of al-Zukhruf 43:87: And if you ask them who created them, they will surely say: Allah.",
+        "flow_kind": "quran",
+        "exit_id": "x_exact",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "مطابق لنص المصحف.",
+        "difference_en": "Matches the mushaf text.",
+        "source": {
+         "site": "quran.com",
+         "link": "https://quran.com/43/87",
+         "quote": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَهُمْ لَيَقُولُنَّ اللَّهُ",
+         "collection": null,
+         "number": null,
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": null,
+         "ref_ar": "الزخرف ٨٧",
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "continuation.mjs",
+          "query": "open text 52:35 vs claim 3 quote",
+          "found": false
+         },
+         {
+          "source": "verse_text (batch, canonical)",
+          "query": "43:87 portion compared word for word after stripping vocalisation",
+          "found": true
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "4cedc3c7-48f1-4995-ae65-68e9e84e6f32",
+   "result": {
+    "id": "4cedc3c7-48f1-4995-ae65-68e9e84e6f32",
+    "video_note": "Two claims. The 33/33/34 dhikr is Ka'b ibn 'Ujra's hadith in Sahih Muslim 596, told by meaning without attribution (dorar cite re-run: link, quote, collection, number, grader, grading and narrator as printed). The verse is the opening portion of al-'Ankabut 29:69, word for word; the stop before its last clause does not invert the meaning. Claim 2 does not continue claim 1 (continuation tool re-run: verdict no, coverage 0). Sceptic pass: no faults found; line_ar of claim 1 reworded for clarity only.",
+    "claims": [
+     {
+      "i": 1,
+      "flow_kind": "hadith",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "ذكر دبر الصلاة: ثلاث وثلاثون تسبيحة ومثلها تحميدًا وأربع وثلاثون تكبيرة، في صحيح مسلم",
+      "line_en": "The after-prayer dhikr of 33 tasbih, 33 tahmid and 34 takbir, from Ka'b ibn 'Ujra's hadith in Sahih Muslim.",
+      "reason_ar": "الحديث في صحيح مسلم (596) من رواية كعب بن عجرة، فهو صحيح بقبول الأمة للصحيحين؛ وذكره المتحدث بمعناه وببعضه.",
+      "reason_en": "Sahih Muslim 596 from Ka'b ibn 'Ujra, sahih as a connected hadith of a Sahih; the speaker gave a portion of it by meaning, in English.",
+      "load_bearing": true,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "hadith",
+        "origin": "spoken",
+        "said_text": "until I finish the 33, 33, 34: 33 SubhanAllah, 33 Alhamdulillah, 34 Allahu Akbar.",
+        "text_ar": "يُقال بعد الصلاة: سبحان الله ثلاثًا وثلاثين، والحمد لله ثلاثًا وثلاثين، والله أكبر أربعًا وثلاثين.",
+        "text_en": "After the prayer one says SubhanAllah 33 times, Alhamdulillah 33 times and Allahu Akbar 34 times.",
+        "flow_kind": "hadith",
+        "exit_id": "x_sahih",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "موافق للمصدر. رُوي بالمعنى. جزءٌ من الحديث؛ تمامه في المصدر.",
+        "difference_en": "Matches the source. Quoted by meaning. A portion of the hadith; the whole is in the source.",
+        "source": {
+         "site": "dorar.net",
+         "link": "https://dorar.net/h/dgfrEeib",
+         "quote": "مُعَقِّباتٌ لا يَخيبُ قائِلُهنَّ أو فاعِلُهنَّ، ثَلاثٌ وثَلاثونَ تَسبيحةً، وثَلاثٌ وثَلاثونَ تَحميدةً، وأربَعٌ وثَلاثونَ تَكبيرةً، في دُبُرِ كُلِّ صَلاةٍ.",
+         "collection": "صحيح مسلم",
+         "number": "596",
+         "grader": "مسلم",
+         "grading": "[صحيح]",
+         "narrator": "كعب بن عجرة",
+         "work_ar": null,
+         "ref_ar": null,
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "dorar.net",
+          "query": "معقبات لا يخيب قائلهن",
+          "found": true
+         }
+        ]
+       }
+      ],
+      "continues": null
+     },
+     {
+      "i": 2,
+      "flow_kind": "quran",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "أول الآية التاسعة والستين من سورة العنكبوت في هداية المجاهدين",
+      "line_en": "The opening words of al-'Ankabut 29:69, Allah's promise to guide those who strive in His cause.",
+      "reason_ar": "الكلمات المتلوّة مطابقة لنص المصحف في العنكبوت 69، والوقف قبل «وإن الله لمع المحسنين» لا يغيّر المعنى.",
+      "reason_en": "The recited words match the mushaf text of 29:69 word for word; stopping before the verse's last clause leaves its meaning intact.",
+      "load_bearing": false,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "verse",
+        "origin": "spoken",
+        "said_text": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+        "text_ar": "قول الله تعالى: «والذين جاهدوا فينا لنهدينهم سبلنا» من سورة العنكبوت.",
+        "text_en": "Allah's words in al-'Ankabut: those who strive in Us, We will surely guide them to Our paths.",
+        "flow_kind": "quran",
+        "exit_id": "x_exact",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "مطابق لنص المصحف.",
+        "difference_en": "Matches the mushaf text.",
+        "source": {
+         "site": "quran.com",
+         "link": "https://quran.com/29/69",
+         "quote": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+         "collection": null,
+         "number": null,
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": null,
+         "ref_ar": null,
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "quran.com (verse_text 29:69 in the batch)",
+          "query": "والذين جاهدوا فينا لنهدينهم سبلنا",
+          "found": true
+         }
+        ]
+       }
+      ],
+      "continues": null
+     }
+    ]
+   },
+   "checkedRaw": {
+    "id": "4cedc3c7-48f1-4995-ae65-68e9e84e6f32",
+    "video_note": "Two claims. The 33/33/34 dhikr is Ka'b ibn 'Ujra's hadith in Sahih Muslim 596, told by meaning without attribution. The verse is the opening portion of al-'Ankabut 29:69, word for word. Claim 2 does not continue claim 1 (continuation tool verdict: no).",
+    "claims": [
+     {
+      "i": 1,
+      "flow_kind": "hadith",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "ذكر ما بعد الصلاة ثلاثًا وثلاثين تسبيحًا وتحميدًا وأربعًا وثلاثين تكبيرًا، حديث في صحيح مسلم",
+      "line_en": "The after-prayer dhikr of 33 tasbih, 33 tahmid and 34 takbir, from Ka'b ibn 'Ujra's hadith in Sahih Muslim.",
+      "reason_ar": "الحديث في صحيح مسلم (596) من رواية كعب بن عجرة، فهو صحيح بقبول الأمة للصحيحين؛ وذكره المتحدث بمعناه وببعضه.",
+      "reason_en": "Sahih Muslim 596 from Ka'b ibn 'Ujra, sahih as a connected hadith of a Sahih; the speaker gave a portion of it by meaning, in English.",
+      "load_bearing": true,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "hadith",
+        "origin": "spoken",
+        "said_text": "until I finish the 33, 33, 34: 33 SubhanAllah, 33 Alhamdulillah, 34 Allahu Akbar.",
+        "text_ar": "يُقال بعد الصلاة: سبحان الله ثلاثًا وثلاثين، والحمد لله ثلاثًا وثلاثين، والله أكبر أربعًا وثلاثين.",
+        "text_en": "After the prayer one says SubhanAllah 33 times, Alhamdulillah 33 times and Allahu Akbar 34 times.",
+        "flow_kind": "hadith",
+        "exit_id": "x_sahih",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "موافق للمصدر. رُوي بالمعنى. جزءٌ من الحديث؛ تمامه في المصدر.",
+        "difference_en": "Matches the source. Quoted by meaning. A portion of the hadith; the whole is in the source.",
+        "source": {
+         "site": "dorar.net",
+         "link": "https://dorar.net/h/dgfrEeib",
+         "quote": "مُعَقِّباتٌ لا يَخيبُ قائِلُهنَّ أو فاعِلُهنَّ، ثَلاثٌ وثَلاثونَ تَسبيحةً، وثَلاثٌ وثَلاثونَ تَحميدةً، وأربَعٌ وثَلاثونَ تَكبيرةً، في دُبُرِ كُلِّ صَلاةٍ.",
+         "collection": "صحيح مسلم",
+         "number": "596",
+         "grader": "مسلم",
+         "grading": "[صحيح]",
+         "narrator": "كعب بن عجرة",
+         "work_ar": null,
+         "ref_ar": null,
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "dorar.net",
+          "query": "معقبات لا يخيب قائلهن",
+          "found": true
+         }
+        ]
+       }
+      ],
+      "continues": null
+     },
+     {
+      "i": 2,
+      "flow_kind": "quran",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "أول الآية التاسعة والستين من سورة العنكبوت في هداية المجاهدين",
+      "line_en": "The opening words of al-'Ankabut 29:69, Allah's promise to guide those who strive in His cause.",
+      "reason_ar": "الكلمات المتلوّة مطابقة لنص المصحف في العنكبوت 69، والوقف قبل «وإن الله لمع المحسنين» لا يغيّر المعنى.",
+      "reason_en": "The recited words match the mushaf text of 29:69 word for word; stopping before the verse's last clause leaves its meaning intact.",
+      "load_bearing": false,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "verse",
+        "origin": "spoken",
+        "said_text": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+        "text_ar": "قول الله تعالى: «والذين جاهدوا فينا لنهدينهم سبلنا» من سورة العنكبوت.",
+        "text_en": "Allah's words in al-'Ankabut: those who strive in Us, We will surely guide them to Our paths.",
+        "flow_kind": "quran",
+        "exit_id": "x_exact",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "مطابق لنص المصحف.",
+        "difference_en": "Matches the mushaf text.",
+        "source": {
+         "site": "quran.com",
+         "link": "https://quran.com/29/69",
+         "quote": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+         "collection": null,
+         "number": null,
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": null,
+         "ref_ar": null,
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "quran.com (verse_text 29:69 in the batch)",
+          "query": "والذين جاهدوا فينا لنهدينهم سبلنا",
+          "found": true
+         }
+        ]
+       }
+      ],
+      "continues": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "c8376e53-a81f-42a4-b0f2-7473a3a7942e",
+   "result": {
+    "id": "c8376e53-a81f-42a4-b0f2-7473a3a7942e",
+    "video_note": "One claim. Dorar was searched once and the hits included Sahih Muslim 2822 (from Anas), which was pinned. A second card is Muslim 2823 (from Abu Hurayra), which dorar's takhrij also places in Bukhari 6487. The speaker gave only the half about the Fire.",
+    "claims": [
+     {
+      "i": 1,
+      "flow_kind": "hadith",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "حديث «حُفَّت النار بالشهوات» من صحيح مسلم، رواه المتحدث بشطره",
+      "line_en": "Hadith 'the Fire is surrounded by desires', from Sahih Muslim; the speaker gave its second half only.",
+      "reason_ar": "في صحيح مسلم (2822) عن أنس، وهو حديث متصل فيه، فهو صحيح بلا حاجة إلى حكم محدِّث.",
+      "reason_en": "Sahih Muslim 2822, from Anas, as a connected hadith, so it is sahih by the rule for the two Sahihs.",
+      "load_bearing": true,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "hadith",
+        "origin": "spoken",
+        "said_text": "إن حفت النار بالإيه؟ بالشهوات … لأن النار حفت بالشهوات",
+        "text_ar": "حُفَّت النار بالشهوات، وهو شطر حديث نبوي",
+        "text_en": "The Fire is surrounded by desires: one half of a hadith of the Prophet ﷺ.",
+        "flow_kind": "hadith",
+        "exit_id": "x_sahih",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "موافق للمصدر. جزءٌ من الحديث؛ تمامه في المصدر.",
+        "difference_en": "Matches the source. A portion of the hadith; the whole is in the source.",
+        "source": {
+         "site": "dorar.net",
+         "link": "https://dorar.net/h/jbAML0Wf",
+         "quote": "حُفَّتِ الجَنَّةُ بالمَكارِه، وحُفَّتِ النَّارُ بالشَّهَواتِ .",
+         "collection": "صحيح مسلم",
+         "number": "2822",
+         "grader": "مسلم",
+         "grading": "[صحيح]",
+         "narrator": "أنس بن مالك",
+         "work_ar": null,
+         "ref_ar": null,
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": "https://dorar.net/h/jAu3fLaP",
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "dorar.net",
+          "query": "حفت النار بالشهوات",
+          "found": true
+         }
+        ]
+       }
+      ],
+      "continues": null
+     }
+    ]
+   },
+   "checkedRaw": {
+    "id": "c8376e53-a81f-42a4-b0f2-7473a3a7942e",
+    "video_note": "One claim. Dorar was searched once and the hits included Sahih Muslim 2822 (from Anas), which was pinned. A second card is Muslim 2823 (from Abu Hurayra), which dorar's takhrij also places in Bukhari 6487. The speaker gave only the half about the Fire.",
+    "claims": [
+     {
+      "i": 1,
+      "flow_kind": "hadith",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "حديث «حُفَّت النار بالشهوات» من صحيح مسلم، رواه المتحدث بشطره",
+      "line_en": "Hadith 'the Fire is surrounded by desires', from Sahih Muslim; the speaker gave its second half only.",
+      "reason_ar": "في صحيح مسلم (2822) عن أنس، وهو حديث متصل فيه، فهو صحيح بلا حاجة إلى حكم محدِّث.",
+      "reason_en": "Sahih Muslim 2822, from Anas, as a connected hadith, so it is sahih by the rule for the two Sahihs.",
+      "load_bearing": true,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "hadith",
+        "origin": "spoken",
+        "said_text": "إن حفت النار بالإيه؟ بالشهوات … لأن النار حفت بالشهوات",
+        "text_ar": "حُفَّت النار بالشهوات، وهو شطر حديث نبوي",
+        "text_en": "The Fire is surrounded by desires: one half of a hadith of the Prophet ﷺ.",
+        "flow_kind": "hadith",
+        "exit_id": "x_sahih",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "موافق للمصدر. جزءٌ من الحديث؛ تمامه في المصدر.",
+        "difference_en": "Matches the source. A portion of the hadith; the whole is in the source.",
+        "source": {
+         "site": "dorar.net",
+         "link": "https://dorar.net/h/jbAML0Wf",
+         "quote": "حُفَّتِ الجَنَّةُ بالمَكارِه، وحُفَّتِ النَّارُ بالشَّهَواتِ .",
+         "collection": "صحيح مسلم",
+         "number": "2822",
+         "grader": "مسلم",
+         "grading": "[صحيح]",
+         "narrator": "أنس بن مالك",
+         "work_ar": null,
+         "ref_ar": null,
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": "https://dorar.net/h/jAu3fLaP",
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "dorar.net",
+          "query": "حفت النار بالشهوات",
+          "found": true
+         }
+        ]
+       }
+      ],
+      "continues": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "bdb4770b-d6aa-4999-a8e2-39599c78989f",
+   "result": {
+    "id": "bdb4770b-d6aa-4999-a8e2-39599c78989f",
+    "video_note": "Shamela returned empty for every query this run, including common test words, so all ruling sourcing came from the verified usul.ai copies. Claim 1 is about reward, not a classic ruling word; it was kept in the ruling flow as the extractor gave it. Sceptic pass: the Kuwaiti 15/59 quote and link were re-printed and confirmed; claim 1's difference slot said the page records no school holding otherwise, but the same page reports the Hanafis on reward for a believer's pain, so the slot now reports that instead.",
+    "claims": [
+     {
+      "i": 1,
+      "flow_kind": "ruling",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 5,
+      "line_ar": "التسخط يُذهب أجر المشقة؛ الكويتية تنقله عن القرافي والعز",
+      "line_en": "Discontent over hardship forfeits its reward; the Kuwaiti Encyclopaedia gives this as al-Qarafi's and al-Izz's view.",
+      "reason_ar": "الموسوعة الكويتية (ج15 ص59) تذكر أن الثواب يجتمع مع التكفير إن صبر ورضي، وتنسبه إلى القرافي والعز بن عبد السلام لا إلى مذهب، فهو في الرتبة الخامسة بحسب المسار.",
+      "reason_en": "Kuwaiti Encyclopaedia 15/59 says reward joins expiation only with patience and contentment, attributed to al-Qarafi and al-Izz rather than a school, so level 5 by the sheet.",
+      "load_bearing": true,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "ruling",
+        "origin": "spoken",
+        "said_text": "لا تفسد أجرك بالتعب والمشقة بكثرة التسخط، فإن التسخط تذهب الأجر",
+        "text_ar": "التسخّط على المشقة والبلاء يُذهب أجر الصبر عليهما",
+        "text_en": "Discontent at fatigue and hardship takes away the reward one would have for them",
+        "flow_kind": "ruling",
+        "exit_id": "x_outside_as_only",
+        "state": "matches",
+        "level": 5,
+        "difference_ar": "قيل على أنه الحكم؛ والمصدر لا ينسبه إلى مذهب من الأربعة بل إلى القرافي والعز بن عبد السلام (وبمعناه تحقيقُ ابن حجر): المصائب كفّارةٌ سخط صاحبها أم رضي، ولا ثواب إلا مع الصبر والرضا؛ وتنقل الصفحة عن الحنفية أن ما وُعد به من الثواب على ألم المؤمن، حتى الشوكة يُشاكها، محضُ فضلٍ من الله.",
+        "difference_en": "Stated as the ruling; the source attributes it to none of the four schools but to al-Qarafi and al-Izz ibn Abd al-Salam (Ibn Hajar's verdict is similar): afflictions expiate sins whether one is discontent or content, and reward comes only with patience and contentment; the page also reports the Hanafis saying that the reward promised for a believer's pain, even a thorn's prick, is pure grace from Allah.",
+        "source": {
+         "site": "usul.ai",
+         "link": "https://usul.ai/t/kuwaiti-encyclopedia-of-jurisprudence/4790?versionId=MT3i8pDNoM",
+         "quote": "الْمَصَائِبُ كَفَّارَاتٌ لِلذُّنُوبِ قَطْعًا، سَوَاءٌ أَسَخِطَ، أَمْ رَضِيَ، غَيْرَ أَنَّهُ إِنْ صَبَرَ وَرَضِيَ اجْتَمَعَ مَعَ التَّكْفِيرِ الثَّوَابُ",
+         "collection": null,
+         "number": null,
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": "الموسوعة الفقهية الكويتية",
+         "ref_ar": "ج 15، ص 59",
+         "volume": "15",
+         "page": 59,
+         "page_url": "https://usul.ai/t/kuwaiti-encyclopedia-of-jurisprudence/4790?versionId=MT3i8pDNoM",
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "usul.ai Kuwaiti (toc)",
+          "query": "شكوى",
+          "found": false
+         },
+         {
+          "source": "usul.ai Kuwaiti (toc)",
+          "query": "تسخط",
+          "found": false
+         },
+         {
+          "source": "usul.ai Kuwaiti (toc)",
+          "query": "صبر",
+          "found": false
+         },
+         {
+          "source": "usul.ai Kuwaiti (toc)",
+          "query": "مصيبة (vol 38 p.32 refers to استرجاع; vol 3 p.282 states patience is wajib, not the reward case)",
+          "found": false
+         },
+         {
+          "source": "usul.ai Kuwaiti (find)",
+          "query": "التسخط",
+          "found": false
+         },
+         {
+          "source": "shamela al-majmu / al-mughni / kuwaiti / al-ashbah",
+          "query": "الجزع يحبط الأجر",
+          "found": false
+         },
+         {
+          "source": "shamela al-majmu / al-mughni / kuwaiti",
+          "query": "التسخط (retried; Shamela empty even for common words, under load)",
+          "found": false
+         },
+         {
+          "source": "shamela kuwaiti / al-majmu / al-mughni",
+          "query": "فمن رضي فله الرضا; أجر المصيبة; الصبر على المصيبة",
+          "found": false
+         },
+         {
+          "source": "usul.ai al-Majmu (find)",
+          "query": "الجزع (vol 5 p.128: excessive complaint disliked for the sick; reward not stated)",
+          "found": false
+         },
+         {
+          "source": "usul.ai Zad al-Ma'ad (find)",
+          "query": "التسخط",
+          "found": false
+         },
+         {
+          "source": "usul.ai Kuwaiti (find)",
+          "query": "الصبر على البلاء (vol 7 p.241: patience expiates and raises rank)",
+          "found": false
+         },
+         {
+          "source": "usul.ai Kuwaiti (find)",
+          "query": "الأجر بالصبر",
+          "found": true
+         },
+         {
+          "source": "usul.ai Kuwaiti (page 4789, sceptic re-check)",
+          "query": "vol 15 p.59 re-printed: quote present; same page reports the Hanafis (Ibn Abidin) on promised reward for a believer's pain",
+          "found": true
+         }
+        ]
+       }
+      ],
+      "continues": null
+     },
+     {
+      "i": 2,
+      "flow_kind": "quran",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "تلاوة جزء من آية يوسف ٨٦ في الشكوى إلى الله",
+      "line_en": "Recites part of Yusuf 12:86, Ya'qub's words that he complains of his grief only to Allah.",
+      "reason_ar": "الكلمات مطابقة لنص المصحف حرفًا بحرف، والوقف قبل «وأعلم من الله» لا يقلب المعنى.",
+      "reason_en": "The words match the mushaf word for word; stopping before 'and I know from Allah' does not change the meaning.",
+      "load_bearing": true,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "verse",
+        "origin": "spoken",
+        "said_text": "إنما أشكو بثي وحزني إلى الله",
+        "text_ar": "قوله تعالى عن يعقوب: إنما أشكو بثي وحزني إلى الله (يوسف: 86)",
+        "text_en": "The verse: I only complain of my grief and sorrow to Allah (Yusuf 12:86)",
+        "flow_kind": "quran",
+        "exit_id": "x_exact",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "مطابق لنص المصحف.",
+        "difference_en": "Matches the mushaf text.",
+        "source": {
+         "site": "quran.com",
+         "link": "https://quran.com/12/86",
+         "quote": "إِنَّمَا أَشْكُو بَثِّي وَحُزْنِي إِلَى اللَّهِ",
+         "collection": null,
+         "number": null,
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": null,
+         "ref_ar": "يوسف 86",
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "continuation.mjs (open text: Kuwaiti 15/59)",
+          "query": "إنما أشكو بثي وحزني إلى الله",
+          "found": false
+         },
+         {
+          "source": "quran.com (verse_text 12:86)",
+          "query": "إنما أشكو بثي وحزني إلى الله",
+          "found": true
+         }
+        ]
+       }
+      ],
+      "continues": null
+     }
+    ]
+   },
+   "checkedRaw": {
+    "id": "bdb4770b-d6aa-4999-a8e2-39599c78989f",
+    "video_note": "Shamela returned empty for every query this run, including common test words, so all ruling sourcing came from the verified usul.ai copies. Claim 1 is about reward, not a classic ruling word; it was kept in the ruling flow as the extractor gave it.",
+    "claims": [
+     {
+      "i": 1,
+      "flow_kind": "ruling",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 5,
+      "line_ar": "التسخط يُذهب أجر المشقة؛ الكويتية تنقله عن القرافي والعز",
+      "line_en": "Discontent over hardship forfeits its reward; the Kuwaiti Encyclopaedia gives this as al-Qarafi's and al-Izz's view.",
+      "reason_ar": "الموسوعة الكويتية (ج15 ص59) تذكر أن الثواب يجتمع مع التكفير إن صبر ورضي، وتنسبه إلى القرافي والعز بن عبد السلام لا إلى مذهب، فهو في الرتبة الخامسة بحسب المسار.",
+      "reason_en": "Kuwaiti Encyclopaedia 15/59 says reward joins expiation only with patience and contentment, attributed to al-Qarafi and al-Izz rather than a school, so level 5 by the sheet.",
+      "load_bearing": true,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "ruling",
+        "origin": "spoken",
+        "said_text": "لا تفسد أجرك بالتعب والمشقة بكثرة التسخط، فإن التسخط تذهب الأجر",
+        "text_ar": "التسخّط على المشقة والبلاء يُذهب أجر الصبر عليهما",
+        "text_en": "Discontent at fatigue and hardship takes away the reward one would have for them",
+        "flow_kind": "ruling",
+        "exit_id": "x_outside_as_only",
+        "state": "matches",
+        "level": 5,
+        "difference_ar": "قيل على أنه الحكم؛ والمصدر لا ينسبه إلى مذهب من الأربعة بل إلى القرافي والعز بن عبد السلام (ومثله تحقيق ابن حجر): الثواب مع الصبر والرضا، والمصيبة كفّارةٌ سخط أم رضي؛ ولا تذكر الصفحة مذهبًا على خلافه.",
+        "difference_en": "Stated as the ruling; the source attributes it to none of the four schools but to al-Qarafi and al-Izz ibn Abd al-Salam (Ibn Hajar's verdict is similar): reward comes with patience and contentment, while the affliction expiates sins either way; the page records no school holding otherwise.",
+        "source": {
+         "site": "usul.ai",
+         "link": "https://usul.ai/t/kuwaiti-encyclopedia-of-jurisprudence/4790?versionId=MT3i8pDNoM",
+         "quote": "الْمَصَائِبُ كَفَّارَاتٌ لِلذُّنُوبِ قَطْعًا، سَوَاءٌ أَسَخِطَ، أَمْ رَضِيَ، غَيْرَ أَنَّهُ إِنْ صَبَرَ وَرَضِيَ اجْتَمَعَ مَعَ التَّكْفِيرِ الثَّوَابُ",
+         "collection": null,
+         "number": null,
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": "الموسوعة الفقهية الكويتية",
+         "ref_ar": "ج 15، ص 59",
+         "volume": "15",
+         "page": 59,
+         "page_url": "https://usul.ai/t/kuwaiti-encyclopedia-of-jurisprudence/4790?versionId=MT3i8pDNoM",
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "usul.ai Kuwaiti (toc)",
+          "query": "شكوى",
+          "found": false
+         },
+         {
+          "source": "usul.ai Kuwaiti (toc)",
+          "query": "تسخط",
+          "found": false
+         },
+         {
+          "source": "usul.ai Kuwaiti (toc)",
+          "query": "صبر",
+          "found": false
+         },
+         {
+          "source": "usul.ai Kuwaiti (toc)",
+          "query": "مصيبة (vol 38 p.32 refers to استرجاع; vol 3 p.282 states patience is wajib, not the reward case)",
+          "found": false
+         },
+         {
+          "source": "usul.ai Kuwaiti (find)",
+          "query": "التسخط",
+          "found": false
+         },
+         {
+          "source": "shamela al-majmu / al-mughni / kuwaiti / al-ashbah",
+          "query": "الجزع يحبط الأجر",
+          "found": false
+         },
+         {
+          "source": "shamela al-majmu / al-mughni / kuwaiti",
+          "query": "التسخط (retried; Shamela empty even for common words, under load)",
+          "found": false
+         },
+         {
+          "source": "shamela kuwaiti / al-majmu / al-mughni",
+          "query": "فمن رضي فله الرضا; أجر المصيبة; الصبر على المصيبة",
+          "found": false
+         },
+         {
+          "source": "usul.ai al-Majmu (find)",
+          "query": "الجزع (vol 5 p.128: excessive complaint disliked for the sick; reward not stated)",
+          "found": false
+         },
+         {
+          "source": "usul.ai Zad al-Ma'ad (find)",
+          "query": "التسخط",
+          "found": false
+         },
+         {
+          "source": "usul.ai Kuwaiti (find)",
+          "query": "الصبر على البلاء (vol 7 p.241: patience expiates and raises rank)",
+          "found": false
+         },
+         {
+          "source": "usul.ai Kuwaiti (find)",
+          "query": "الأجر بالصبر",
+          "found": true
+         }
+        ]
+       }
+      ],
+      "continues": null
+     },
+     {
+      "i": 2,
+      "flow_kind": "quran",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "تلاوة جزء من آية يوسف ٨٦ في الشكوى إلى الله",
+      "line_en": "Recites part of Yusuf 12:86, Ya'qub's words that he complains of his grief only to Allah.",
+      "reason_ar": "الكلمات مطابقة لنص المصحف حرفًا بحرف، والوقف قبل «وأعلم من الله» لا يقلب المعنى.",
+      "reason_en": "The words match the mushaf word for word; stopping before 'and I know from Allah' does not change the meaning.",
+      "load_bearing": true,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "verse",
+        "origin": "spoken",
+        "said_text": "إنما أشكو بثي وحزني إلى الله",
+        "text_ar": "قوله تعالى عن يعقوب: إنما أشكو بثي وحزني إلى الله (يوسف: 86)",
+        "text_en": "The verse: I only complain of my grief and sorrow to Allah (Yusuf 12:86)",
+        "flow_kind": "quran",
+        "exit_id": "x_exact",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "مطابق لنص المصحف.",
+        "difference_en": "Matches the mushaf text.",
+        "source": {
+         "site": "quran.com",
+         "link": "https://quran.com/12/86",
+         "quote": "إِنَّمَا أَشْكُو بَثِّي وَحُزْنِي إِلَى اللَّهِ",
+         "collection": null,
+         "number": null,
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": null,
+         "ref_ar": "يوسف 86",
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "continuation.mjs (open text: Kuwaiti 15/59)",
+          "query": "إنما أشكو بثي وحزني إلى الله",
+          "found": false
+         },
+         {
+          "source": "quran.com (verse_text 12:86)",
+          "query": "إنما أشكو بثي وحزني إلى الله",
+          "found": true
+         }
+        ]
+       }
+      ],
+      "continues": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "d975b346-49ce-4f24-bf6a-95ebab32237a",
+   "result": {
+    "id": "d975b346-49ce-4f24-bf6a-95ebab32237a",
+    "video_note": "One claim: the speaker recites Ibrahim 14:22 in four stretches with commentary between them. All four stretches are one unit and were checked against the verse_text supplied in the batch. Her «سبحان الله» inside the recitation is her own speech. The waw the transcript shows before «إن الظالمين» is most likely the damma of «قبلُ» heard in connected recitation. The ya in «أشركتموني» is likely the drawn-out kasra of «أشركتمونِ». Both are a matter of pronunciation, which this flow does not check, and neither changes a word of the verse. No dorar or book search was needed. Sceptic pass: exit, state, level, quote and claim state all agree with the Qur'an sheet; only the explanation of the waw was reworded.",
+    "claims": [
+     {
+      "i": 1,
+      "flow_kind": "quran",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "تلاوة الآية 22 من سورة إبراهيم في تبرّؤ الشيطان من أتباعه يوم القيامة",
+      "line_en": "Recitation of Surah Ibrahim 14:22: Satan disowns his followers once the matter is decided.",
+      "reason_ar": "الكلمات المتلوّة تطابق نص المصحف في سورة إبراهيم الآية 22. «سبحان الله» أثناء التلاوة من كلامها. والواو قبل «إن الظالمين» والياء في «أشركتموني» على الأرجح أثرُ الوصل في التفريغ (ضمّة «قبلُ» وكسرة «أشركتمونِ»)، لا تغييرٌ في لفظ الآية.",
+      "reason_en": "The recited words match the mushaf text of Ibrahim 14:22, and «subhan Allah» is her own aside. The waw before «inna al-zalimin» and the ya of «ashraktumuni» are most likely how the transcript caught connected recitation, not changed words.",
+      "load_bearing": true,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "verse",
+        "origin": "spoken",
+        "said_text": "وقال الشيطان لما قضي الأمر … وقال الشيطان لما قضي الأمر أن الله وعدكم وعد الحق ووعدتكم فأخلفتكم … وما كان لي عليكم من سلطان إلا أن دعوتكم فاستجبتم لي … فلا تلوموني ولوموا أنفسكم ما أنا بمصرخكم وما أنتم بمصرخي إني كفرت سبحان الله بما أشركتموني من قبل وإن الظالمين لهم عذاب أليم",
+        "text_ar": "تلاوة الآية 22 من سورة إبراهيم: قول الشيطان لأتباعه بعد القضاء إن الله وعدهم وعد الحق، وإنه لا سلطان له عليهم إلا أنه دعاهم فاستجابوا له، وإنه تبرّأ من إشراكهم إياه.",
+        "text_en": "Recitation of Ibrahim 14:22: once the matter is decided, Satan tells his followers that Allah's promise was true, that he had no authority over them beyond calling them, and that he disowns their associating him with Allah.",
+        "flow_kind": "quran",
+        "exit_id": "x_exact",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "مطابق لنص المصحف.",
+        "difference_en": "Matches the mushaf text.",
+        "source": {
+         "site": "quran.com",
+         "link": "https://quran.com/14/22",
+         "quote": "وَقَالَ الشَّيْطَانُ لَمَّا قُضِيَ الْأَمْرُ إِنَّ اللَّهَ وَعَدَكُمْ وَعْدَ الْحَقِّ وَوَعَدتُّكُمْ فَأَخْلَفْتُكُمْ ۖ وَمَا كَانَ لِيَ عَلَيْكُم مِّن سُلْطَانٍ إِلَّا أَن دَعَوْتُكُمْ فَاسْتَجَبْتُمْ لِي ۖ فَلَا تَلُومُونِي وَلُومُوا أَنفُسَكُم ۖ مَّا أَنَا بِمُصْرِخِكُمْ وَمَا أَنتُم بِمُصْرِخِيَّ ۖ إِنِّي كَفَرْتُ بِمَا أَشْرَكْتُمُونِ مِن قَبْلُ ۗ إِنَّ الظَّالِمِينَ لَهُمْ عَذَابٌ أَلِيمٌ",
+         "collection": null,
+         "number": null,
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": null,
+         "ref_ar": "سورة إبراهيم، الآية 22",
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "quran.com",
+          "query": "14:22: the batch's verse_text compared word for word with the quote, vocalisation stripped",
+          "found": true
+         }
+        ]
+       }
+      ],
+      "continues": null
+     }
+    ]
+   },
+   "checkedRaw": {
+    "id": "d975b346-49ce-4f24-bf6a-95ebab32237a",
+    "video_note": "One claim: the speaker recites Ibrahim 14:22 in four stretches with commentary between them. All four stretches are checked as one unit against the verse_text supplied in the batch. Her interjection «سبحان الله» inside the recitation, and the connective waw she says before «إن الظالمين», are her own speech. Neither is part of the verse, and neither changes it. No dorar or book search was needed.",
+    "claims": [
+     {
+      "i": 1,
+      "flow_kind": "quran",
+      "sub_kind": null,
+      "state": "matches",
+      "level": 1,
+      "line_ar": "تلاوة الآية 22 من سورة إبراهيم في تبرّؤ الشيطان من أتباعه يوم القيامة",
+      "line_en": "Recitation of Surah Ibrahim 14:22: Satan disowns his followers once the matter is decided.",
+      "reason_ar": "الكلمات المتلوّة تطابق نص المصحف في سورة إبراهيم الآية 22، والإحالة إلى سورة إبراهيم صحيحة. قولها «سبحان الله» أثناء التلاوة، والواو التي تقولها قبل «إن الظالمين»، من كلامها هي وليسا من الآية.",
+      "reason_en": "The recited words match the mushaf text of Ibrahim 14:22, and the reference to Surah Ibrahim is right. Her aside «subhan Allah» and the connective waw she says before «inna al-zalimin» are her own words, not part of the verse.",
+      "load_bearing": true,
+      "parts": [
+       {
+        "position": 1,
+        "kind": "verse",
+        "origin": "spoken",
+        "said_text": "وقال الشيطان لما قضي الأمر … وقال الشيطان لما قضي الأمر أن الله وعدكم وعد الحق ووعدتكم فأخلفتكم … وما كان لي عليكم من سلطان إلا أن دعوتكم فاستجبتم لي … فلا تلوموني ولوموا أنفسكم ما أنا بمصرخكم وما أنتم بمصرخي إني كفرت سبحان الله بما أشركتموني من قبل وإن الظالمين لهم عذاب أليم",
+        "text_ar": "تلاوة الآية 22 من سورة إبراهيم: قول الشيطان لأتباعه بعد القضاء إن الله وعدهم وعد الحق، وإنه لا سلطان له عليهم إلا أنه دعاهم فاستجابوا له، وإنه تبرّأ من إشراكهم إياه.",
+        "text_en": "Recitation of Ibrahim 14:22: once the matter is decided, Satan tells his followers that Allah's promise was true, that he had no authority over them beyond calling them, and that he disowns their associating him with Allah.",
+        "flow_kind": "quran",
+        "exit_id": "x_exact",
+        "state": "matches",
+        "level": 1,
+        "difference_ar": "مطابق لنص المصحف.",
+        "difference_en": "Matches the mushaf text.",
+        "source": {
+         "site": "quran.com",
+         "link": "https://quran.com/14/22",
+         "quote": "وَقَالَ الشَّيْطَانُ لَمَّا قُضِيَ الْأَمْرُ إِنَّ اللَّهَ وَعَدَكُمْ وَعْدَ الْحَقِّ وَوَعَدتُّكُمْ فَأَخْلَفْتُكُمْ ۖ وَمَا كَانَ لِيَ عَلَيْكُم مِّن سُلْطَانٍ إِلَّا أَن دَعَوْتُكُمْ فَاسْتَجَبْتُمْ لِي ۖ فَلَا تَلُومُونِي وَلُومُوا أَنفُسَكُم ۖ مَّا أَنَا بِمُصْرِخِكُمْ وَمَا أَنتُم بِمُصْرِخِيَّ ۖ إِنِّي كَفَرْتُ بِمَا أَشْرَكْتُمُونِ مِن قَبْلُ ۗ إِنَّ الظَّالِمِينَ لَهُمْ عَذَابٌ أَلِيمٌ",
+         "collection": null,
+         "number": null,
+         "grader": null,
+         "grading": null,
+         "narrator": null,
+         "work_ar": null,
+         "ref_ar": "سورة إبراهيم، الآية 22",
+         "volume": null,
+         "page": null,
+         "page_url": null,
+         "confirm_url": null,
+         "gradings": null
+        },
+        "search_log": [
+         {
+          "source": "quran.com",
+          "query": "14:22 — the batch's verse_text compared word for word with the quote, vocalisation stripped",
+          "found": true
+         }
+        ]
+       }
+      ],
+      "continues": null
+     }
+    ]
+   }
+  }
+ ]
+}

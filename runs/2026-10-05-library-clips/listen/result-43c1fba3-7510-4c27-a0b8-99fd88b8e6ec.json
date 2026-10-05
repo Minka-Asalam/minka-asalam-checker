@@ -1,0 +1,69 @@
+{
+  "language": "ar-mixed",
+  "summary_ar": "يتناول المتحدث قصة بكاء النبي صلى الله عليه وسلم عند القبر حتى بل الثرى، وتذكيره لأصحابه بالاستعداد للموت والقبر بقوله: 'لمثل هذا فأعدوا'.",
+  "summary_en": "The speaker recounts the story of the Prophet, peace be upon him, weeping at a grave until the soil became wet, and reminding his companions to prepare for death and the grave by saying, 'For the likes of this, prepare.'",
+  "tags": [
+    {
+      "node_path": "التزكية والأخلاق/الرقائق والزهد/ذكر الموت",
+      "timestamp": "00:51",
+      "quote_ar": "ثم قال أي إخواني لمثل هذا فأعدوا",
+      "why": "The speaker quotes the prophetic advice given at a grave, urging believers to prepare for death and the afterlife.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/الرقائق والزهد/ذكر الموت",
+      "tag_ar": "ذكر الموت",
+      "new_tag": true
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "basic",
+    "why": "The video uses simplified language and a touching storytelling format to convey a spiritual reminder, suitable for a general audience."
+  },
+  "claims": [
+    {
+      "kind": "hadith",
+      "unit": "The narration of the Prophet weeping at the grave and advising preparation for death",
+      "pieces": [
+        {
+          "timestamp": "00:00",
+          "timestamp_end": "00:41",
+          "quote": "رأى النبي صلى الله عليه وسلم أناسا مجتمعين فقال على ما اجتمع هؤلاء فقالوا يا رسول الله على قبر يحفرونه فهرول النبي صلى الله عليه وسلم إليهم ثم جلس على شفير القبر على حافة القبر ثم أخذ ينكأ بعصاة كانت معه عصاة صغيرة كانت معه الأرض قال الصحابي فاستقبلته من بين يديه حتى أرى ما يصنع قال فرأيته يبكي صلى الله عليه وسلم حتى بل الثرى",
+          "voice": "retelling",
+          "cue": ""
+        },
+        {
+          "timestamp": "00:47",
+          "timestamp_end": "00:59",
+          "quote": "يبكي حتى بل الثرى ثم قال أي إخواني لمثل هذا فأعدوا لمثل هذا فأعدوا لمثل هذا فأعدوا",
+          "voice": "source",
+          "cue": "ثم قال"
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "بكى حتى بل الثرى ثم قال يا إخواني لمثل هذا فأعدوا",
+      "stated_as": "definitive",
+      "claim_en": "The Prophet wept at a grave until the soil was wet and admonished his companions to prepare for the afterlife.",
+      "timestamp": "00:00",
+      "timestamp_end": "00:59",
+      "quote": "رأى النبي صلى الله عليه وسلم أناسا مجتمعين فقال على ما اجتمع هؤلاء فقالوا يا رسول الله على قبر يحفرونه فهرول النبي صلى الله عليه وسلم إليهم ثم جلس على شفير القبر على حافة القبر ثم أخذ ينكأ بعصاة كانت معه عصاة صغيرة كانت معه الأرض قال الصحابي فاستقبلته من بين يديه حتى أرى ما يصنع قال فرأيته يبكي صلى الله عليه وسلم حتى بل الثرى … يبكي حتى بل الثرى ثم قال أي إخواني لمثل هذا فأعدوا لمثل هذا فأعدوا لمثل هذا فأعدوا"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.5-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 33424
+}

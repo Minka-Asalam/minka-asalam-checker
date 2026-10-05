@@ -1,0 +1,44 @@
+{
+ "id": "21152a3d-a9ef-4d8c-853e-f185c8ffe280",
+ "title": "ما اصاب عبدا قط",
+ "speaker": "الشيخ أمجد سمير",
+ "speaker_kind": "scholar",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.6-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "hadith",
+   "timestamp": "00:00",
+   "timestamp_end": "00:50",
+   "quote": "عن النبي صلى الله عليه وسلم قال ما أصاب عبد قط هم ولا حزن فقال اللهم إني عبدك وابن عبدك وابن أمتك ناصيتي بيدك ماض في حكمك عدل في قضاؤك أسألك بكل اسم هو لك سميت به نفسك أو علمته أحداً من خلقك أو استأثرت به في علم الغيب عندك أن تجعل القرآن ربيع قلبي ونور صدري وذهاب غمي وهمي إلا أذهب الله غمه وهمه وأبدله بهما فرحا … فقالوا يا رسول الله أفلا نتعلمهن قال بلى ينبغي لمن يسمعهن أن يتعلمهن",
+   "attribution": "عن النبي صلى الله عليه وسلم",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "The Prophet ﷺ taught a supplication for removing anxiety and sorrow, stating that Allah relieves the distress of whoever says it and that anyone who hears it should learn it.",
+   "key_ar": "ما أصاب أحدا قط هم ولا حزن فقال اللهم إني عبدك",
+   "unit": "Hadith on the supplication for relieving distress and grief and the command to learn it",
+   "pieces": [
+    {
+     "timestamp": "00:00",
+     "timestamp_end": "00:39",
+     "quote": "عن النبي صلى الله عليه وسلم قال ما أصاب عبد قط هم ولا حزن فقال اللهم إني عبدك وابن عبدك وابن أمتك ناصيتي بيدك ماض في حكمك عدل في قضاؤك أسألك بكل اسم هو لك سميت به نفسك أو علمته أحداً من خلقك أو استأثرت به في علم الغيب عندك أن تجعل القرآن ربيع قلبي ونور صدري وذهاب غمي وهمي إلا أذهب الله غمه وهمه وأبدله بهما فرحا",
+     "voice": "source",
+     "cue": ""
+    },
+    {
+     "timestamp": "00:39",
+     "timestamp_end": "00:50",
+     "quote": "فقالوا يا رسول الله أفلا نتعلمهن قال بلى ينبغي لمن يسمعهن أن يتعلمهن",
+     "voice": "source",
+     "cue": "فقالوا يا رسول الله"
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  }
+ ],
+ "seconds": 63
+}

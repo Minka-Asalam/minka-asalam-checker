@@ -1,0 +1,117 @@
+{
+ "id": "8e797724-7beb-4059-9fbc-e67b4da3d9bf",
+ "title": "فتحنا عليهم",
+ "speaker": "الشيخ عثمان الخميس",
+ "speaker_kind": "scholar",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.8-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "quran",
+   "timestamp": "00:00",
+   "timestamp_end": "00:55",
+   "quote": "فلما نسوا ما ذكروا به فتحنا عليهم أبواب كل شيء … فلما نسوا ما ذكروا به فتحنا عليهم أبواب كل شيء حتى إذا فرحوا بما أوتوا أخذناهم بغتة فإذا هم مبلسون",
+   "attribution": "قوله تبارك وتعالى",
+   "reference": "6:44",
+   "stated_as": "definitive",
+   "claim_en": "Recitation of Quran 6:44 describing how worldly gates are opened for those who forget admonition before sudden punishment strikes them.",
+   "key_ar": null,
+   "unit": "Surah Al-An'am (6:44)",
+   "pieces": [
+    {
+     "timestamp": "00:00",
+     "timestamp_end": "00:05",
+     "quote": "فلما نسوا ما ذكروا به فتحنا عليهم أبواب كل شيء",
+     "voice": "source",
+     "cue": ""
+    },
+    {
+     "timestamp": "00:48",
+     "timestamp_end": "00:55",
+     "quote": "فلما نسوا ما ذكروا به فتحنا عليهم أبواب كل شيء حتى إذا فرحوا بما أوتوا أخذناهم بغتة فإذا هم مبلسون",
+     "voice": "source",
+     "cue": "ثم قرأ قوله تبارك وتعالى"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "6:44 فَلَمَّا نَسُوا مَا ذُكِّرُوا بِهِ فَتَحْنَا عَلَيْهِمْ أَبْوَابَ كُلِّ شَيْءٍ حَتَّىٰ إِذَا فَرِحُوا بِمَا أُوتُوا أَخَذْنَاهُم بَغْتَةً فَإِذَا هُم مُّبْلِسُونَ",
+   "verse_en": "So, when they forgot (the warning) with which they had been reminded, We opened for them the gates of every (pleasant) thing, until in the midst of their enjoyment in that which they were given, all of a sudden, We took them (in punishment), and lo! They were plunged into destruction with deep regrets and sorrows.",
+   "verse_key": "6:44",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 2,
+   "kind": "saying",
+   "timestamp": "00:17",
+   "timestamp_end": "00:20",
+   "quote": "قال أهل العلم: هذا من الابتلاء، هذا من الابتلاء",
+   "attribution": "أهل العلم",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "Scholars explain that opening worldly blessings for those who disobey Allah is a form of trial and test.",
+   "key_ar": null,
+   "unit": "Scholarly statement that granting blessings to the disobedient is a trial",
+   "pieces": [
+    {
+     "timestamp": "00:17",
+     "timestamp_end": "00:20",
+     "quote": "قال أهل العلم: هذا من الابتلاء، هذا من الابتلاء",
+     "voice": "source",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 3,
+   "kind": "hadith",
+   "timestamp": "00:25",
+   "timestamp_end": "00:55",
+   "quote": "إذا رأيت العبد … إذا رأيت العبد على المعصية والله يعطيه ما يحب … فإنما هو استدراج … ثم قرأ قوله تبارك وتعالى فلما نسوا ما ذكروا به فتحنا عليهم أبواب كل شيء حتى إذا فرحوا بما أوتوا أخذناهم بغتة فإذا هم مبلسون",
+   "attribution": "في الحديث عن النبي صلى الله عليه وسلم",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "The Prophet ﷺ stated that if a servant persists in sin while Allah continues to grant him what he desires, it is merely istidraj (luring to doom), reciting verse 6:44.",
+   "key_ar": "إذا رأيت الله يعطي العبد من الدنيا على معاصيه ما يحب فإنما هو استدراج",
+   "unit": "Prophetic hadith defining continuous worldly blessings during sin as istidraj",
+   "pieces": [
+    {
+     "timestamp": "00:25",
+     "timestamp_end": "00:29",
+     "quote": "إذا رأيت العبد",
+     "voice": "source",
+     "cue": "ولهذا جاء في الحديث عن النبي صلى الله عليه وسلم"
+    },
+    {
+     "timestamp": "00:30",
+     "timestamp_end": "00:38",
+     "quote": "إذا رأيت العبد على المعصية والله يعطيه ما يحب",
+     "voice": "source",
+     "cue": "يقول النبي صلى الله عليه وسلم"
+    },
+    {
+     "timestamp": "00:43",
+     "timestamp_end": "00:45",
+     "quote": "فإنما هو استدراج",
+     "voice": "source",
+     "cue": "يقول النبي صلى الله عليه وسلم"
+    },
+    {
+     "timestamp": "00:46",
+     "timestamp_end": "00:55",
+     "quote": "ثم قرأ قوله تبارك وتعالى فلما نسوا ما ذكروا به فتحنا عليهم أبواب كل شيء حتى إذا فرحوا بما أوتوا أخذناهم بغتة فإذا هم مبلسون",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  }
+ ],
+ "seconds": 56
+}

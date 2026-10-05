@@ -1,0 +1,124 @@
+<title>Clip Map Placements</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&family=Reem+Kufi:wght@600&display=swap">
+<style>
+/* Layout: the app's palette; a sticky tally, then one card per clip: what it says, the places Gemini proposes on the map (each with the sentence that justifies it), Accept / Not this per place, a box for a better place and a note. */
+:root{
+  --bg:#F7F3E9; --surface:#FFFFFF; --well:#EFE8D6; --rule:#E4DBC3;
+  --ink:#1B3A2F; --text:#2A2724; --muted:#5B7566; --faint:#8E8570; --gold:#B8935F; --gold-text:#86653A; --maroon:#7A2E2E;
+  --tint-gold:#F5EBD9; --tint-ink:#E3EFE7; --tint-maroon:#F6E3E3; --ok:#1E5A40; --ok-bg:#DCEDE2; --on-ink:#F7F3E9;
+  --f-body:"IBM Plex Sans Arabic","Segoe UI",system-ui,sans-serif; --f-display:"Reem Kufi","IBM Plex Sans Arabic",serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#000B1A; --surface:#0F1B2D; --well:#16253A; --rule:#223247; --ink:#EDE9DC; --text:#EDE9DC; --muted:#8FA396; --faint:#8A949E; --gold:#D4AC77; --gold-text:#D4AC77; --maroon:#D4736D; --tint-gold:#2A2214; --tint-ink:#10231C; --tint-maroon:#33181A; --ok:#8FE0B5; --ok-bg:#12301F; --on-ink:#001F49; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#000B1A; --surface:#0F1B2D; --well:#16253A; --rule:#223247; --ink:#EDE9DC; --text:#EDE9DC; --muted:#8FA396; --faint:#8A949E; --gold:#D4AC77; --gold-text:#D4AC77; --maroon:#D4736D; --tint-gold:#2A2214; --tint-ink:#10231C; --tint-maroon:#33181A; --ok:#8FE0B5; --ok-bg:#12301F; --on-ink:#001F49; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--f-body);font-size:15px;line-height:1.6;margin:0;padding-inline:16px}
+.wrap{max-width:760px;margin:0 auto;padding-block:24px 80px;display:flex;flex-direction:column;gap:18px}
+h1,h2{margin:0;color:var(--ink);text-wrap:balance}
+h1{font-family:var(--f-display);font-weight:600;font-size:clamp(28px,7vw,38px);line-height:1.15}
+p{margin:0}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-text);font-weight:600}
+.small{font-size:13px;color:var(--muted)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;display:flex;gap:8px 14px;flex-wrap:wrap;align-items:center;border-bottom:1px solid var(--rule);font-size:13px;color:var(--muted)}
+.bar b{font-family:var(--f-mono);font-size:17px;color:var(--ink);font-variant-numeric:tabular-nums;margin-inline-end:3px}
+.save{margin-inline-start:auto} .save.warn{color:var(--maroon);font-weight:600}
+.card{background:var(--surface);border-radius:16px;padding:14px 16px;display:flex;flex-direction:column;gap:10px;box-shadow:inset 4px 0 0 var(--well)}
+.card.done{box-shadow:inset 4px 0 0 var(--ok)}
+.card.wait{opacity:.7}
+.head{display:flex;gap:6px 10px;align-items:baseline;flex-wrap:wrap}
+.ttl{font-weight:700;color:var(--ink);font-size:16.5px}
+.who{font-size:13.5px;color:var(--muted)}
+.state{margin-inline-start:auto;font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--well);color:var(--muted);white-space:nowrap}
+.state.done{background:var(--ok-bg);color:var(--ok)}
+.sum{font-size:14.5px}
+.place{border-top:1px solid var(--rule);padding-top:10px;display:flex;flex-direction:column;gap:6px}
+.path{font-weight:600;color:var(--ink);font-size:15.5px}
+.path .sep{color:var(--faint);padding-inline:4px}
+.meta{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;background:var(--well);color:var(--muted);font-variant-numeric:tabular-nums}
+.chip.high{background:var(--ok-bg);color:var(--ok)} .chip.low{background:var(--tint-maroon);color:var(--maroon)}
+blockquote{margin:0;padding:6px 12px;border-inline-start:3px solid var(--gold);background:var(--tint-gold);border-radius:6px;font-size:14.5px}
+.why{font-size:13px;color:var(--muted)}
+.act{display:flex;gap:8px;flex-wrap:wrap}
+.act button{font:inherit;font-size:13.5px;font-weight:700;border-radius:10px;padding:6px 14px;cursor:pointer;border:1.5px solid var(--rule);background:var(--surface);color:var(--text)}
+.act button[aria-pressed="true"].y{background:var(--ok);border-color:var(--ok);color:var(--surface)}
+.act button[aria-pressed="true"].n{background:var(--maroon);border-color:var(--maroon);color:var(--surface)}
+label.lab{font-size:12px;font-weight:700;color:var(--muted)}
+textarea{font:inherit;font-size:14px;background:var(--bg);color:var(--text);border:1px solid var(--rule);border-radius:10px;padding:8px 10px;width:100%;min-height:40px;resize:vertical}
+button:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+</style>
+
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:8px">
+    <div class="eyebrow">Minka Asalam · clip library · 5 Oct</div>
+    <h1>Clip Map Placements</h1>
+    <p>Where each clip sits on the map. Gemini listened to each clip and proposed up to three topics, each with the sentence that justifies it. Tap <b>Accept</b> or <b>Not this</b> on each topic. If the right place is missing, write it in the box (a topic name is enough). Everything saves as you tap. Nothing reaches the app until you have reviewed it.</p>
+    <p class="small">These replace the hand-made tags on the four clips you tagged earlier, once you accept. Clips still waiting to be listened to show at the bottom.</p>
+  </header>
+  <div class="bar"><span><b id="nDone">0</b>reviewed</span><span><b id="nAll">0</b>clips</span><span class="save" id="save">Connecting…</span></div>
+  <main id="cards" style="display:flex;flex-direction:column;gap:14px"></main>
+</div>
+
+<script>
+const CLIPS = __CLIPS__;
+const $ = id => document.getElementById(id);
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+const st = {}; CLIPS.forEach(c => st[c.id] = { places: {}, better: '', note: '' });
+let db = null; const timers = {};
+const LS = 'clip-placements-v1';
+try { const d = JSON.parse(localStorage.getItem(LS) || '{}'); for (const k in d) if (st[k]) st[k] = Object.assign(st[k], d[k]); } catch (e) {}
+const done = c => c.tags.length ? c.tags.every(t => st[c.id].places[t.path]) : false;
+function save(c){
+  try { localStorage.setItem(LS, JSON.stringify(st)); } catch (e) {}
+  if (!db) return;
+  clearTimeout(timers[c.id]); $('save').textContent = 'Saving…';
+  timers[c.id] = setTimeout(async () => {
+    try { await db.doc('placements/' + c.id).set({ id: c.id, title: c.title, places: st[c.id].places, better: st[c.id].better, note: st[c.id].note, savedAt: new Date().toISOString() }); $('save').textContent = 'All saved'; $('save').classList.remove('warn'); }
+    catch (e) { $('save').textContent = 'Not saved: tell me in chat'; $('save').classList.add('warn'); }
+  }, 600);
+}
+function card(c){
+  const s = st[c.id];
+  const a = el('article', 'card' + (c.wait ? ' wait' : done(c) ? ' done' : '')); a.id = 'c-' + c.id;
+  const head = el('div', 'head');
+  const tt = el('span', 'ttl', c.title); tt.dir = 'auto';
+  head.append(tt, el('span', 'who', c.teacher + ' · ' + c.len), el('span', 'state' + (done(c) ? ' done' : ''), c.wait ? 'Waiting to be listened to' : done(c) ? 'Reviewed' : 'To review'));
+  a.append(head);
+  if (c.wait) return a;
+  const sum = el('p', 'sum', c.summary_ar); sum.dir = 'rtl'; a.append(sum);
+  if (!c.tags.length) a.append(el('p', 'small', 'Gemini proposed no topic for this clip. Write the right place below.'));
+  c.tags.forEach(t => {
+    const p = el('div', 'place');
+    const path = el('div', 'path'); path.dir = 'rtl';
+    t.path.split('/').forEach((seg, i) => { if (i) path.append(el('span', 'sep', '›')); path.append(document.createTextNode(seg)); });
+    const meta = el('div', 'meta'); meta.append(el('span', 'chip', 'at ' + t.ts), el('span', 'chip ' + (t.conf === 'high' ? 'high' : t.conf === 'low' ? 'low' : ''), { high: 'strong fit', medium: 'touched on', low: 'unsure' }[t.conf] || t.conf));
+    const q = el('blockquote', null, t.quote); q.dir = 'auto';
+    const act = el('div', 'act');
+    const y = el('button', 'y', 'Accept'), n = el('button', 'n', 'Not this'); y.type = n.type = 'button';
+    y.setAttribute('aria-pressed', String(s.places[t.path] === 'accept')); n.setAttribute('aria-pressed', String(s.places[t.path] === 'reject'));
+    y.addEventListener('click', () => { s.places[t.path] = s.places[t.path] === 'accept' ? undefined : 'accept'; if (!s.places[t.path]) delete s.places[t.path]; save(c); redraw(c); });
+    n.addEventListener('click', () => { s.places[t.path] = s.places[t.path] === 'reject' ? undefined : 'reject'; if (!s.places[t.path]) delete s.places[t.path]; save(c); redraw(c); });
+    act.append(y, n);
+    p.append(path, meta, q, el('p', 'why', t.why), act);
+    a.append(p);
+  });
+  const lb = el('label', 'lab', 'A better place, if the right one is missing'); lb.htmlFor = 'better-' + c.id;
+  const bt = el('textarea'); bt.id = 'better-' + c.id; bt.value = s.better; bt.addEventListener('input', () => { s.better = bt.value; save(c); });
+  const ln = el('label', 'lab', 'Note'); ln.htmlFor = 'note-' + c.id;
+  const nt = el('textarea'); nt.id = 'note-' + c.id; nt.value = s.note; nt.addEventListener('input', () => { s.note = nt.value; save(c); });
+  a.append(lb, bt, ln, nt);
+  return a;
+}
+function redraw(c){ const old = $('c-' + c.id); old.replaceWith(card(c)); tally(); }
+function tally(){ const live = CLIPS.filter(c => !c.wait); $('nAll').textContent = live.length; $('nDone').textContent = live.filter(done).length; }
+function render(){ const box = $('cards'); box.textContent = ''; [...CLIPS].sort((a, b) => (done(a) ? 1 : 0) - (done(b) ? 1 : 0)).forEach(c => box.append(card(c))); tally(); }
+render();
+(async () => {
+  try { db = window.claude && window.claude.use ? await window.claude.use('db') : null; } catch (e) { db = null; }
+  if (!db) { $('save').textContent = 'Saved in this browser only'; $('save').classList.add('warn'); return; }
+  try { const snap = await db.collection('placements').get(); snap.docs.forEach(d => { const v = d.data(); if (v && st[v.id]) st[v.id] = { places: v.places || {}, better: v.better || '', note: v.note || '' }; }); render(); $('save').textContent = 'Choices save as you tap'; }
+  catch (e) { $('save').textContent = 'Could not load saved choices'; $('save').classList.add('warn'); }
+})();
+</script>

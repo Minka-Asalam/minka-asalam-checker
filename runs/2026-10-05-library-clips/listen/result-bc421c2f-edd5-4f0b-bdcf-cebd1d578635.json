@@ -1,0 +1,49 @@
+{
+  "language": "ar-mixed",
+  "summary_ar": "يحذر المتحدث من عواقب معصية الله والتعرض لسخطه، مبيناً أن الكون بأسره والبدن والرزق ينفرون من العاصي ويغضبون لغضب الله، وأن النعم قد تستحيل نقمة وشقاءً على صاحبها، داعياً إلى التماس رضا الله في كل شأن.",
+  "summary_en": "The speaker warns against incurring Allah's wrath and explains that creation, sustenance, and one's own body reject the sinner when Allah is displeased with them. He notes that blessings can turn into misery for the disobedient and urges striving to attain Allah's pleasure.",
+  "tags": [
+    {
+      "node_path": "التزكية والأخلاق/الأخلاق/الأخلاق مع الله",
+      "timestamp": "00:46",
+      "quote": "ابحث عن رضا الله في كل شيء حتى يختارك ضمن عباده الذين رضي عنهم.",
+      "why": "The speaker concludes by enjoining the listener to seek Allah's pleasure and fulfill good conduct toward Him in all matters.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/الأخلاق/الأخلاق مع الله",
+      "tag_ar": "الأخلاق مع الله",
+      "new_tag": true
+    },
+    {
+      "node_path": "التزكية والأخلاق/القلب وأعماله/أعمال القلوب/الخوف والرجاء",
+      "timestamp": "00:26",
+      "quote": "ليس من صالحك أن يغضب الله عليك حتى وإن كان أمر الآخرة هو آخر همك.",
+      "why": "The speaker urges fear of Allah's anger and wrath, explaining its detrimental effects even in this worldly life.",
+      "confidence": "medium",
+      "path_ar": "التزكية والأخلاق/القلب وأعماله/أعمال القلوب/الخوف والرجاء",
+      "tag_ar": "الخوف والرجاء",
+      "new_tag": false
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "none",
+    "why": "The speech is an emotive, general spiritual reflection framed simply and accessible to any audience without technical background."
+  },
+  "claims": [],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 33012
+}

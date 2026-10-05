@@ -1,0 +1,93 @@
+{
+ "id": "89835fcd-766c-4000-af1d-ee8d333e831e",
+ "title": "الصلاة الصلاة",
+ "speaker": "فداء الدين يحيى",
+ "speaker_kind": "creator",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.8-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "quran",
+   "timestamp": "00:16",
+   "timestamp_end": "00:17",
+   "quote": "فاستبقوا الخيرات",
+   "attribution": "الله الذي يقول",
+   "reference": "2:148",
+   "stated_as": "definitive",
+   "claim_en": "God commands believers to race toward good deeds.",
+   "key_ar": null,
+   "unit": "Surah Al-Baqarah, verse 148 (or Al-Ma'idah, verse 48): competing in good deeds",
+   "pieces": [
+    {
+     "timestamp": "00:16",
+     "timestamp_end": "00:17",
+     "quote": "فاستبقوا الخيرات",
+     "voice": "source",
+     "cue": "الله الذي يقول"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "2:148 وَلِكُلٍّ وِجْهَةٌ هُوَ مُوَلِّيهَا ۖ فَاسْتَبِقُوا الْخَيْرَاتِ ۚ أَيْنَ مَا تَكُونُوا يَأْتِ بِكُمُ اللَّهُ جَمِيعًا ۚ إِنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+   "verse_en": "For every nation there is a direction to which they face (in their prayers). So hasten towards all that is good. Wheresoever you may be, Allâh will bring you together (on the Day of Resurrection). Truly, Allâh is Able to do all things.",
+   "verse_key": "2:148",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 2,
+   "kind": "quran",
+   "timestamp": "00:17",
+   "timestamp_end": "00:19",
+   "quote": "وسارعوا إلى مغفرة من ربكم",
+   "attribution": "",
+   "reference": "3:133",
+   "stated_as": "definitive",
+   "claim_en": "God commands believers to hasten to forgiveness from their Lord.",
+   "key_ar": null,
+   "unit": "Surah Ali 'Imran, verse 133: hastening to forgiveness",
+   "pieces": [
+    {
+     "timestamp": "00:17",
+     "timestamp_end": "00:19",
+     "quote": "وسارعوا إلى مغفرة من ربكم",
+     "voice": "source",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": "3:133 وَسَارِعُوا إِلَىٰ مَغْفِرَةٍ مِّن رَّبِّكُمْ وَجَنَّةٍ عَرْضُهَا السَّمَاوَاتُ وَالْأَرْضُ أُعِدَّتْ لِلْمُتَّقِينَ",
+   "verse_en": "And march forth in the way (which leads to) forgiveness from your Lord, and for Paradise as wide as the heavens and the earth, prepared for Al-Muttaqûn (the pious - See V.2:2).",
+   "verse_key": "3:133",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 3,
+   "kind": "quran",
+   "timestamp": "00:19",
+   "timestamp_end": "00:21",
+   "quote": "سابقوا إلى مغفرة من ربكم",
+   "attribution": "",
+   "reference": "57:21",
+   "stated_as": "definitive",
+   "claim_en": "God commands believers to vie with one another for forgiveness from their Lord.",
+   "key_ar": null,
+   "unit": "Surah Al-Hadid, verse 21: racing toward forgiveness",
+   "pieces": [
+    {
+     "timestamp": "00:19",
+     "timestamp_end": "00:21",
+     "quote": "سابقوا إلى مغفرة من ربكم",
+     "voice": "source",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": "57:21 سَابِقُوا إِلَىٰ مَغْفِرَةٍ مِّن رَّبِّكُمْ وَجَنَّةٍ عَرْضُهَا كَعَرْضِ السَّمَاءِ وَالْأَرْضِ أُعِدَّتْ لِلَّذِينَ آمَنُوا بِاللَّهِ وَرُسُلِهِ ۚ ذَٰلِكَ فَضْلُ اللَّهِ يُؤْتِيهِ مَن يَشَاءُ ۚ وَاللَّهُ ذُو الْفَضْلِ الْعَظِيمِ",
+   "verse_en": "Race with one another in hastening towards forgiveness from your Lord (Allâh), and Paradise the width whereof is as the width of the heaven and the earth, prepared for those who believe in Allâh and His Messengers. That is the Grace of Allâh which He bestows on whom He is pleased with. And Allâh is the Owner of Great Bounty.",
+   "verse_key": "57:21",
+   "verse_translation_id": "203"
+  }
+ ],
+ "seconds": 28
+}

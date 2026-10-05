@@ -1,0 +1,137 @@
+{
+ "id": "7dd1d6a5-c1ee-449d-97e9-d4dea2a8743d",
+ "title": "شقى او سعيد",
+ "speaker": "الشيخ ياسر الدوسري",
+ "speaker_kind": "scholar",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.8-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "hadith",
+   "timestamp": "00:02",
+   "timestamp_end": "00:28",
+   "quote": "أن الإنسان قد كتب هو شقي أو سعيد … بكتب رزقه",
+   "attribution": "الحديث",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "The hadith states that a person's provision, deeds, and status as wretched or blessed are written.",
+   "key_ar": "يؤمر بأربع كلمات بكتب رزقه وأجله وعمله وشقي أو سعيد",
+   "unit": "Hadith of Ibn Mas'ud on the writing of destiny (four matters: provision, lifespan, deeds, misery or happiness)",
+   "pieces": [
+    {
+     "timestamp": "00:02",
+     "timestamp_end": "00:05",
+     "quote": "أن الإنسان قد كتب هو شقي أو سعيد",
+     "voice": "retelling",
+     "cue": ""
+    },
+    {
+     "timestamp": "00:26",
+     "timestamp_end": "00:28",
+     "quote": "بكتب رزقه",
+     "voice": "source",
+     "cue": "قال"
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 2,
+   "kind": "saying",
+   "timestamp": "00:15",
+   "timestamp_end": "01:12",
+   "quote": "فقال الشيخ بن عثيمين لفتة جميلة جدا من هذا الحديث مع هذا الحديث، قال أنت أخذت جزءا من الحديث وتركت الجزء الآخر … طب لماذا لم تقل مثل هذا الكلام في الرزق؟ لماذا تخرج في كل صباح وتجتهد في البحث عن الرزق؟ وعندما يسألك أحد لماذا تبحث عن رزقك تقول أنا لابد أبذل السبب … الشيخ بن عثيمين يقول كما أنك مطالب بالاجتهاد بأخذ الأسباب لتحصيل الرزق فأنت أيضا مطالب بالأسباب التي توصلك إلى الهداية أن تتخذ كل السبل المتاحة لتصل إلى الهداية",
+   "attribution": "الشيخ بن عثيمين",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "Ibn Uthaymeen pointed out that just as people exert effort to seek provision because it is written, they must also take the means to attain guidance.",
+   "key_ar": null,
+   "unit": "Ibn Uthaymeen's analogy refuting the excuse of destiny by comparing striving for guidance to striving for provision",
+   "pieces": [
+    {
+     "timestamp": "00:15",
+     "timestamp_end": "00:25",
+     "quote": "فقال الشيخ بن عثيمين لفتة جميلة جدا من هذا الحديث مع هذا الحديث، قال أنت أخذت جزءا من الحديث وتركت الجزء الآخر",
+     "voice": "retelling",
+     "cue": "فقال الشيخ بن عثيمين"
+    },
+    {
+     "timestamp": "00:30",
+     "timestamp_end": "00:41",
+     "quote": "طب لماذا لم تقل مثل هذا الكلام في الرزق؟ لماذا تخرج في كل صباح وتجتهد في البحث عن الرزق؟ وعندما يسألك أحد لماذا تبحث عن رزقك تقول أنا لابد أبذل السبب",
+     "voice": "retelling",
+     "cue": ""
+    },
+    {
+     "timestamp": "00:53",
+     "timestamp_end": "01:12",
+     "quote": "الشيخ بن عثيمين يقول كما أنك مطالب بالاجتهاد بأخذ الأسباب لتحصيل الرزق فأنت أيضا مطالب بالأسباب التي توصلك إلى الهداية أن تتخذ كل السبل المتاحة لتصل إلى الهداية",
+     "voice": "retelling",
+     "cue": "الشيخ بن عثيمين يقول"
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 3,
+   "kind": "quran",
+   "timestamp": "01:13",
+   "timestamp_end": "01:17",
+   "quote": "والذين جاهدوا فينا لنهدينهم سبلنا",
+   "attribution": "قال الله جل وعلا",
+   "reference": "29:69",
+   "stated_as": "definitive",
+   "claim_en": "Allah promises to guide those who strive in His cause to His paths.",
+   "key_ar": null,
+   "unit": "Surah al-Ankabut verse 69",
+   "pieces": [
+    {
+     "timestamp": "01:13",
+     "timestamp_end": "01:17",
+     "quote": "والذين جاهدوا فينا لنهدينهم سبلنا",
+     "voice": "source",
+     "cue": "ولذلك قال الله جل وعلا"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "29:69 وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا ۚ وَإِنَّ اللَّهَ لَمَعَ الْمُحْسِنِينَ",
+   "verse_en": "As for those who strive hard in Us (Our Cause), We will surely guide them to Our Paths (i.e. Allâh’s religion - Islâmic Monotheism). And verily, Allâh is with the Muhsinûn (good doers).\"",
+   "verse_key": "29:69",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 4,
+   "kind": "quran",
+   "timestamp": "01:23",
+   "timestamp_end": "01:26",
+   "quote": "أحسب الناس أن يتركوا أن يقولوا آمنا وهم لا يفتنون",
+   "attribution": "",
+   "reference": "29:2",
+   "stated_as": "definitive",
+   "claim_en": "People will not be left unchallenged merely because they say they believe, but will be tested.",
+   "key_ar": null,
+   "unit": "Surah al-Ankabut verse 2",
+   "pieces": [
+    {
+     "timestamp": "01:23",
+     "timestamp_end": "01:26",
+     "quote": "أحسب الناس أن يتركوا أن يقولوا آمنا وهم لا يفتنون",
+     "voice": "source",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": "29:2 أَحَسِبَ النَّاسُ أَن يُتْرَكُوا أَن يَقُولُوا آمَنَّا وَهُمْ لَا يُفْتَنُونَ",
+   "verse_en": "Do people think that they will be left alone because they say: \"We believe,\" and will not be tested.",
+   "verse_key": "29:2",
+   "verse_translation_id": "203"
+  }
+ ],
+ "seconds": 90
+}

@@ -1,0 +1,44 @@
+{
+ "id": "c8376e53-a81f-42a4-b0f2-7473a3a7942e",
+ "title": "مجاهدة النفس",
+ "speaker": "الشيخ أمجد سمير",
+ "speaker_kind": "scholar",
+ "language": "ar-egyptian",
+ "units": true,
+ "extractor_model": "gemini-3.8-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "hadith",
+   "timestamp": "00:28",
+   "timestamp_end": "00:41",
+   "quote": "إن حفت النار بالإيه؟ بالشهوات … لأن النار حفت بالشهوات",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "The Hellfire is encompassed and veiled by worldly desires.",
+   "key_ar": "حفت النار بالشهوات وحفت الجنة بالمكاره",
+   "unit": "Hadith that the Hellfire is surrounded by desires",
+   "pieces": [
+    {
+     "timestamp": "00:28",
+     "timestamp_end": "00:31",
+     "quote": "إن حفت النار بالإيه؟ بالشهوات",
+     "voice": "retelling",
+     "cue": "إن"
+    },
+    {
+     "timestamp": "00:38",
+     "timestamp_end": "00:41",
+     "quote": "لأن النار حفت بالشهوات",
+     "voice": "source",
+     "cue": "لأن"
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  }
+ ],
+ "seconds": 43
+}

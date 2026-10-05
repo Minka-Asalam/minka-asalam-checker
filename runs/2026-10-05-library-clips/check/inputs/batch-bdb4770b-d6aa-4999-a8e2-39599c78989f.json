@@ -1,0 +1,64 @@
+{
+ "id": "bdb4770b-d6aa-4999-a8e2-39599c78989f",
+ "title": "الشكوى",
+ "speaker": "الشيخ عبد السلام الشويعر",
+ "speaker_kind": "scholar",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.8-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "ruling",
+   "timestamp": "00:00",
+   "timestamp_end": "00:05",
+   "quote": "لا تفسد أجرك بالتعب والمشقة بكثرة التسخط، فإن التسخط تذهب الأجر",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "Being discontented and complaining excessively about fatigue and hardship takes away one's spiritual reward.",
+   "key_ar": null,
+   "unit": "Ruling that expressing discontent over hardship deprives a person of their reward",
+   "pieces": [
+    {
+     "timestamp": "00:00",
+     "timestamp_end": "00:05",
+     "quote": "لا تفسد أجرك بالتعب والمشقة بكثرة التسخط، فإن التسخط تذهب الأجر",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 2,
+   "kind": "quran",
+   "timestamp": "00:11",
+   "timestamp_end": "00:13",
+   "quote": "إنما أشكو بثي وحزني إلى الله",
+   "attribution": "",
+   "reference": "12:86",
+   "stated_as": "definitive",
+   "claim_en": "Recitation of the verse expressing that complaint of grief and anguish should be directed solely to Allah.",
+   "key_ar": null,
+   "unit": "Surah Yusuf, verse 86",
+   "pieces": [
+    {
+     "timestamp": "00:11",
+     "timestamp_end": "00:13",
+     "quote": "إنما أشكو بثي وحزني إلى الله",
+     "voice": "source",
+     "cue": "قل"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "12:86 قَالَ إِنَّمَا أَشْكُو بَثِّي وَحُزْنِي إِلَى اللَّهِ وَأَعْلَمُ مِنَ اللَّهِ مَا لَا تَعْلَمُونَ",
+   "verse_en": "He said: \"I only complain of my grief and sorrow to Allâh, and I know from Allâh that which you know not.",
+   "verse_key": "12:86",
+   "verse_translation_id": "203"
+  }
+ ],
+ "seconds": 15
+}

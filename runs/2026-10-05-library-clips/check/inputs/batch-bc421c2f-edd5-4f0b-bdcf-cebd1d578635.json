@@ -1,0 +1,11 @@
+{
+ "id": "bc421c2f-edd5-4f0b-bdcf-cebd1d578635",
+ "title": "رضا اللّه",
+ "speaker": "فداء الدين يحيى",
+ "speaker_kind": "creator",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.8-flash",
+ "claims": [],
+ "seconds": 52
+}

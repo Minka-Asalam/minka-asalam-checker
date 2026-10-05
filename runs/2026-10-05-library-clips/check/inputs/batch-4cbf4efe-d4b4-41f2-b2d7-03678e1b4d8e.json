@@ -1,0 +1,37 @@
+{
+ "id": "4cbf4efe-d4b4-41f2-b2d7-03678e1b4d8e",
+ "title": "الصديق",
+ "speaker": "الشيخ ياسر الدوسري",
+ "speaker_kind": "scholar",
+ "language": "ar-msa",
+ "units": true,
+ "extractor_model": "gemini-3.5-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "saying",
+   "timestamp": "00:02",
+   "timestamp_end": "00:27",
+   "quote": "الصديق الصالح هو الذي تستحي أن تفعل معصية أمامه وصديق السوء هو الذي تستحي أن تفعل طاعة أمامه هذا مقياس يفرز لك الناس",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "A righteous friend is one in whose presence you are ashamed to commit a sin, while a bad friend is one in whose presence you are ashamed to perform acts of obedience.",
+   "key_ar": null,
+   "unit": "The definition and metric of a good versus bad friend",
+   "pieces": [
+    {
+     "timestamp": "00:02",
+     "timestamp_end": "00:27",
+     "quote": "الصديق الصالح هو الذي تستحي أن تفعل معصية أمامه وصديق السوء هو الذي تستحي أن تفعل طاعة أمامه هذا مقياس يفرز لك الناس",
+     "voice": "source",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  }
+ ],
+ "seconds": 29
+}

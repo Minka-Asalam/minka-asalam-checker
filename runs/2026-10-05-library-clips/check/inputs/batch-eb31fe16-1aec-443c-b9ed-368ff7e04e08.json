@@ -1,0 +1,51 @@
+{
+ "id": "eb31fe16-1aec-443c-b9ed-368ff7e04e08",
+ "title": "أعظم دعاء",
+ "speaker": "الشيخ بدر المشارى",
+ "speaker_kind": "scholar",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.8-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "hadith",
+   "timestamp": "00:00",
+   "timestamp_end": "00:32",
+   "quote": "من قال هذا الدعاء في يومه ومات دخل الجنة، ومن قاله في ليلته ومات دخل الجنة … اللهم أنت ربي، خلقتني وأنا عبدك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شر ما صنعت، أبوء لك بنعمتي بنعمتك … وأبوء لك بذنبي، فاغفر لي، فإنه لا يغفر الذنوب إلا أنت.",
+   "attribution": "الذي يقوله النبي",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "Reciting Sayyid al-Istighfar during the day or night grants Paradise to whoever dies during that day or night.",
+   "key_ar": "سيد الاستغفار أن تقول اللهم أنت ربي لا إله إلا أنت",
+   "unit": "Hadith of Sayyid al-Istighfar (The Master Supplication for Forgiveness)",
+   "pieces": [
+    {
+     "timestamp": "00:00",
+     "timestamp_end": "00:07",
+     "quote": "من قال هذا الدعاء في يومه ومات دخل الجنة، ومن قاله في ليلته ومات دخل الجنة",
+     "voice": "retelling",
+     "cue": ""
+    },
+    {
+     "timestamp": "00:12",
+     "timestamp_end": "00:24",
+     "quote": "اللهم أنت ربي، خلقتني وأنا عبدك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شر ما صنعت، أبوء لك بنعمتي بنعمتك",
+     "voice": "source",
+     "cue": "الذي يقوله النبي"
+    },
+    {
+     "timestamp": "00:25",
+     "timestamp_end": "00:32",
+     "quote": "وأبوء لك بذنبي، فاغفر لي، فإنه لا يغفر الذنوب إلا أنت.",
+     "voice": "source",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  }
+ ],
+ "seconds": 32
+}

@@ -1,0 +1,79 @@
+{
+  "language": "ar-mixed",
+  "summary_ar": "يتناول الفيديو حديث النبي ﷺ في دعاء جلاء الهم والغم («اللهم إني عبدك...»)، مع التنبيه على تأكيد النبي ﷺ على أهمية تعلم هذه الكلمات وفهم معانيها وعدم الاكتفاء بمجرد الحفظ.",
+  "summary_en": "The video presents the Prophet's ﷺ Hadith on the supplication for relieving anxiety and grief (\"O Allah, I am Your servant...\"), highlighting the Prophet's instruction to learn and comprehend these words rather than merely memorizing them.",
+  "tags": [
+    {
+      "node_path": "التزكية والأخلاق/الأذكار والأوراد/الدعاء وآدابه",
+      "timestamp": "00:00",
+      "quote_ar": "عن النبي صلى الله عليه وسلم قال ما أصاب عبد قط هم ولا حزن فقال اللهم إني عبدك وابن عبدك وابن أمتك",
+      "why": "The video revolves around a prophetic supplication for removing grief and sorrow.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/الأذكار والأوراد/الدعاء وآدابه",
+      "tag_ar": "الدعاء وآدابه",
+      "new_tag": false
+    },
+    {
+      "node_path": "التزكية والأخلاق/الأذكار والأوراد/فضل الذكر",
+      "timestamp": "00:32",
+      "quote_ar": "إلا أذهب الله غمه وهمه وأبدله بهما فرحا",
+      "why": "The Hadith mentions the virtue and reward of reciting this specific supplication when afflicted with anxiety.",
+      "confidence": "medium",
+      "path_ar": "التزكية والأخلاق/الأذكار والأوراد/فضل الذكر",
+      "tag_ar": "فضل الذكر",
+      "new_tag": false
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "new_to_islam"
+    ],
+    "assumes": "basic",
+    "why": "The content addresses a clear supplication for personal well-being using everyday language suitable for general audiences."
+  },
+  "claims": [
+    {
+      "kind": "hadith",
+      "unit": "Hadith on the supplication for relieving distress and grief and the command to learn it",
+      "pieces": [
+        {
+          "timestamp": "00:00",
+          "timestamp_end": "00:39",
+          "quote": "عن النبي صلى الله عليه وسلم قال ما أصاب عبد قط هم ولا حزن فقال اللهم إني عبدك وابن عبدك وابن أمتك ناصيتي بيدك ماض في حكمك عدل في قضاؤك أسألك بكل اسم هو لك سميت به نفسك أو علمته أحداً من خلقك أو استأثرت به في علم الغيب عندك أن تجعل القرآن ربيع قلبي ونور صدري وذهاب غمي وهمي إلا أذهب الله غمه وهمه وأبدله بهما فرحا",
+          "voice": "source",
+          "cue": ""
+        },
+        {
+          "timestamp": "00:39",
+          "timestamp_end": "00:50",
+          "quote": "فقالوا يا رسول الله أفلا نتعلمهن قال بلى ينبغي لمن يسمعهن أن يتعلمهن",
+          "voice": "source",
+          "cue": "فقالوا يا رسول الله"
+        }
+      ],
+      "inside": 0,
+      "attribution": "عن النبي صلى الله عليه وسلم",
+      "reference": "",
+      "key_ar": "ما أصاب أحدا قط هم ولا حزن فقال اللهم إني عبدك",
+      "stated_as": "definitive",
+      "claim_en": "The Prophet ﷺ taught a supplication for removing anxiety and sorrow, stating that Allah relieves the distress of whoever says it and that anyone who hears it should learn it.",
+      "timestamp": "00:00",
+      "timestamp_end": "00:50",
+      "quote": "عن النبي صلى الله عليه وسلم قال ما أصاب عبد قط هم ولا حزن فقال اللهم إني عبدك وابن عبدك وابن أمتك ناصيتي بيدك ماض في حكمك عدل في قضاؤك أسألك بكل اسم هو لك سميت به نفسك أو علمته أحداً من خلقك أو استأثرت به في علم الغيب عندك أن تجعل القرآن ربيع قلبي ونور صدري وذهاب غمي وهمي إلا أذهب الله غمه وهمه وأبدله بهما فرحا … فقالوا يا رسول الله أفلا نتعلمهن قال بلى ينبغي لمن يسمعهن أن يتعلمهن"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.6-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 33747
+}

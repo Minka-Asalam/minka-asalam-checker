@@ -1,0 +1,159 @@
+{
+ "id": "1bfc6dd4-0f65-487b-9c7b-406fb9c9cd3c",
+ "title": "إلى ما لا نهاية",
+ "speaker": "د. إياد قنيبي",
+ "speaker_kind": "scholar",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.6-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "hadith",
+   "timestamp": "00:59",
+   "timestamp_end": "01:04",
+   "quote": "ما الدنيا في الآخرة إلا كما يجعل أحدكم أصبعه في اليم فلينظر بم ترجع",
+   "attribution": "",
+   "reference": "صحيح مسلم",
+   "stated_as": "definitive",
+   "claim_en": "The Prophet ﷺ compared the proportion of this world relative to the Hereafter to dipping a finger into the ocean.",
+   "key_ar": "ما الدنيا في الآخرة إلا مثل ما يجعل أحدكم أصبعه في اليم",
+   "unit": "Hadith comparing the value of this worldly life to the Hereafter like a finger dipped into the ocean",
+   "pieces": [
+    {
+     "timestamp": "00:59",
+     "timestamp_end": "01:04",
+     "quote": "ما الدنيا في الآخرة إلا كما يجعل أحدكم أصبعه في اليم فلينظر بم ترجع",
+     "voice": "source",
+     "cue": "لذلك النبي عليه الصلاة والسلام قال"
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 2,
+   "kind": "quran",
+   "timestamp": "01:41",
+   "timestamp_end": "01:51",
+   "quote": "يُبَشِّرُهُمْ رَبُّهُم بِرَحْمَةٍ مِّنْهُ وَرِضْوَانٍ وَجَنَّاتٍ لَّهُمْ فِيهَا نَعِيمٌ مَُّقِيمٌ * خَالِدِينَ فِيهَا أَبَدًا إِنَّ اللَّهَ عِندَهُ أَجْرٌ عَظِيمٌ",
+   "attribution": "",
+   "reference": "9:21-22",
+   "stated_as": "definitive",
+   "claim_en": "Allah gives believers glad tidings of mercy, approval, and everlasting bliss in Paradise.",
+   "key_ar": null,
+   "unit": "Surah At-Tawbah 9:21-22",
+   "pieces": [
+    {
+     "timestamp": "01:41",
+     "timestamp_end": "01:51",
+     "quote": "يُبَشِّرُهُمْ رَبُّهُم بِرَحْمَةٍ مِّنْهُ وَرِضْوَانٍ وَجَنَّاتٍ لَّهُمْ فِيهَا نَعِيمٌ مَُّقِيمٌ * خَالِدِينَ فِيهَا أَبَدًا إِنَّ اللَّهَ عِندَهُ أَجْرٌ عَظِيمٌ",
+     "voice": "source",
+     "cue": "بين أناس يقول الله عز وجل فيهم"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "9:21 يُبَشِّرُهُمْ رَبُّهُم بِرَحْمَةٍ مِّنْهُ وَرِضْوَانٍ وَجَنَّاتٍ لَّهُمْ فِيهَا نَعِيمٌ مُّقِيمٌ\n9:22 خَالِدِينَ فِيهَا أَبَدًا ۚ إِنَّ اللَّهَ عِندَهُ أَجْرٌ عَظِيمٌ",
+   "verse_en": "Their Lord gives them glad tidings of Mercy from Him, and His being pleased (with them), and of Gardens (Paradise) for them wherein are everlasting delights. They will dwell therein forever. Verily, with Allâh is a great reward.",
+   "verse_key": "9:21-22",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 3,
+   "kind": "quran",
+   "timestamp": "01:54",
+   "timestamp_end": "02:11",
+   "quote": "إِنَّ الَّذِينَ يُؤْذُونَ اللَّهَ وَرَسُولَهُ … إِنَّ الَّذِينَ يُؤْذُونَ اللَّهَ وَرَسُولَهُ لَعَنَهُمُ اللَّهُ فِي الدُّنْيَا وَالْآخِرَةِ وَأَعَدَّ لَهُمْ عَذَابًا مُّهِينًا",
+   "attribution": "",
+   "reference": "33:57",
+   "stated_as": "definitive",
+   "claim_en": "Those who abuse Allah and His Messenger are cursed in this life and the Hereafter, and a humiliating punishment awaits them.",
+   "key_ar": null,
+   "unit": "Surah Al-Ahzab 33:57",
+   "pieces": [
+    {
+     "timestamp": "01:54",
+     "timestamp_end": "01:56",
+     "quote": "إِنَّ الَّذِينَ يُؤْذُونَ اللَّهَ وَرَسُولَهُ",
+     "voice": "source",
+     "cue": "وفي المقابل"
+    },
+    {
+     "timestamp": "02:04",
+     "timestamp_end": "02:11",
+     "quote": "إِنَّ الَّذِينَ يُؤْذُونَ اللَّهَ وَرَسُولَهُ لَعَنَهُمُ اللَّهُ فِي الدُّنْيَا وَالْآخِرَةِ وَأَعَدَّ لَهُمْ عَذَابًا مُّهِينًا",
+     "voice": "source",
+     "cue": "إِنَّ الَّذِينَ يُؤْذُونَ اللَّهَ يعني تطاولون على الله سبحانه وتعالى"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "33:57 إِنَّ الَّذِينَ يُؤْذُونَ اللَّهَ وَرَسُولَهُ لَعَنَهُمُ اللَّهُ فِي الدُّنْيَا وَالْآخِرَةِ وَأَعَدَّ لَهُمْ عَذَابًا مُّهِينًا",
+   "verse_en": "Verily, those who annoy Allâh and His Messenger (صلى الله عليه وسلم) Allâh has cursed them in this world, and in the Hereafter, and has prepared for them a humiliating torment.",
+   "verse_key": "33:57",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 4,
+   "kind": "quran",
+   "timestamp": "02:13",
+   "timestamp_end": "02:27",
+   "quote": "فَكُبْكِبُوا فِيهَا هُمْ وَالْغَاوُونَ … فَكُبْكِبُوا فِيهَا هُمْ وَالْغَاوُونَ * وَجُنُودُ إِبْلِيسَ أَجْمَعُونَ",
+   "attribution": "",
+   "reference": "26:94-95",
+   "stated_as": "definitive",
+   "claim_en": "The deviants and the soldiers of Iblis will be cast headlong into Hellfire.",
+   "key_ar": null,
+   "unit": "Surah Ash-Shu'ara 26:94-95",
+   "pieces": [
+    {
+     "timestamp": "02:13",
+     "timestamp_end": "02:16",
+     "quote": "فَكُبْكِبُوا فِيهَا هُمْ وَالْغَاوُونَ",
+     "voice": "source",
+     "cue": "شوف لما رب العالمين يقول عن أهل النار"
+    },
+    {
+     "timestamp": "02:21",
+     "timestamp_end": "02:27",
+     "quote": "فَكُبْكِبُوا فِيهَا هُمْ وَالْغَاوُونَ * وَجُنُودُ إِبْلِيسَ أَجْمَعُونَ",
+     "voice": "source",
+     "cue": "شوف الهوان كم سينزل هين على الله إذا تجرأ على الله"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "26:94 فَكُبْكِبُوا فِيهَا هُمْ وَالْغَاوُونَ\n26:95 وَجُنُودُ إِبْلِيسَ أَجْمَعُونَ",
+   "verse_en": "Then they will be thrown on their faces into the (Fire), they and the Ghâwûn (devils, and those who were in error). And the whole hosts of Iblîs (Satan) together.",
+   "verse_key": "26:94-95",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 5,
+   "kind": "quran",
+   "timestamp": "02:33",
+   "timestamp_end": "02:42",
+   "quote": "أَفَمَن يُلْقَى فِي النَّارِ خَيْرٌ أَم مَّن يَأْتِي آمِنًا يَوْمَ الْقِيَامَةِ اعْمَلُوا مَا شِئْتُمْ إِنَّهُ بِمَا تَعْمَلُونَ بَصِيرٌ",
+   "attribution": "",
+   "reference": "41:40",
+   "stated_as": "definitive",
+   "claim_en": "Allah contrasts the state of one cast into Hellfire with one who arrives safely on Resurrection Day.",
+   "key_ar": null,
+   "unit": "Surah Fussilat 41:40",
+   "pieces": [
+    {
+     "timestamp": "02:33",
+     "timestamp_end": "02:42",
+     "quote": "أَفَمَن يُلْقَى فِي النَّارِ خَيْرٌ أَم مَّن يَأْتِي آمِنًا يَوْمَ الْقِيَامَةِ اعْمَلُوا مَا شِئْتُمْ إِنَّهُ بِمَا تَعْمَلُونَ بَصِيرٌ",
+     "voice": "source",
+     "cue": "شوفت تعبير القرآن"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "41:40 إِنَّ الَّذِينَ يُلْحِدُونَ فِي آيَاتِنَا لَا يَخْفَوْنَ عَلَيْنَا ۗ أَفَمَن يُلْقَىٰ فِي النَّارِ خَيْرٌ أَم مَّن يَأْتِي آمِنًا يَوْمَ الْقِيَامَةِ ۚ اعْمَلُوا مَا شِئْتُمْ ۖ إِنَّهُ بِمَا تَعْمَلُونَ بَصِيرٌ",
+   "verse_en": "Verily, those who turn away from Our Ayât (proofs, evidence, verses, lessons, signs, revelations, etc. by attacking, distorting and denying them) are not hidden from Us. Is he who is cast into the Fire better or he who comes secure on the Day of Resurrection? Do what you will. Verily He is All-Seer of what you do (this is a severe threat to the disbelievers).",
+   "verse_key": "41:40",
+   "verse_translation_id": "203"
+  }
+ ],
+ "seconds": 163
+}

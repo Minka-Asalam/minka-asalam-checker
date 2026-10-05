@@ -1,0 +1,61 @@
+{
+  "language": "ar-msa",
+  "summary_ar": "تلاوة خاشعة لآيات من سورة مريم، تبدأ من قوله تعالى عن من كفر بالآيات وتستمر ببيان بطلان دعوى نسبة الولد لله تعالى وجلال ملكه وشمول عبوديته لخلقه.",
+  "summary_en": "A recitation of verses from Surah Maryam, rebuking those who disbelieve in the signs of Allah and refuting the claim that the Most Merciful has taken a son.",
+  "tags": [
+    {
+      "node_path": "القرآن وعلومه/التلاوة والتجويد",
+      "timestamp": "00:00",
+      "quote_ar": "recites Maryam 19:77-96",
+      "why": "The recording is a recitation of verses from Surah Maryam.",
+      "confidence": "high"
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens",
+      "new_to_islam",
+      "children",
+      "student_of_knowledge"
+    ],
+    "assumes": "none",
+    "why": "General Quranic recitation accessible to all listeners."
+  },
+  "claims": [
+    {
+      "kind": "quran",
+      "unit": "Surah Maryam verses 77 to 96",
+      "pieces": [
+        {
+          "timestamp": "00:00",
+          "timestamp_end": "02:56",
+          "quote": "recites Maryam 19:77-96",
+          "voice": "source",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "19:77-96",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Recitation of Surah Maryam (19:77-96) dealing with the denial of resurrection, refutation of taking idols or sons to Allah, and the final assembly of all creation as servants before Him.",
+      "timestamp": "00:00",
+      "timestamp_end": "02:56",
+      "quote": "recites Maryam 19:77-96"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.7-flash",
+  "mode": "recitation",
+  "units": true,
+  "claims_mode": "full"
+}

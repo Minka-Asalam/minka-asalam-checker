@@ -1,0 +1,138 @@
+{
+  "language": "ar-mixed",
+  "summary_ar": "يتناول المتحدث المحور الرئيس لسورة الرعد ومقصدها، وهو بيان الحكمة من عدم إتيان النبي ﷺ بمعجزات حسية كمن سبقه من الأنبياء، ويفسر قوله تعالى «لكل أجل كتاب»، موضحاً أن معجزة الرسالة الخاتمة ينبغي أن تكون عقلية متجددة كالقرآن لا حسية سريعة الزوال كالرعد.",
+  "summary_en": "The speaker explains the central objective of Surah Ar-Ra'd regarding why sensory miracles were not given to Prophet Muhammad like previous prophets, interpreting the verse 'For every term there is a decree,' and demonstrating why the final message requires a perpetual intellectual miracle like the Quran rather than fleeting physical signs.",
+  "tags": [
+    {
+      "node_path": "القرآن وعلومه/التفسير/مقاصد السور",
+      "timestamp": "00:03",
+      "quote_ar": "سورة الرعد موضوعها يدور على فكرة: لماذا لا تكون هناك معجزة حسية؟",
+      "why": "The speaker identifies the primary objective and overarching theme of Surah Ar-Ra'd.",
+      "confidence": "high",
+      "path_ar": "القرآن وعلومه/التفسير/مقاصد السور",
+      "tag_ar": "مقاصد السور",
+      "new_tag": false
+    },
+    {
+      "node_path": "العقيدة/أركان الإيمان/الإيمان بالرسل/المعجزات ودلائل النبوة",
+      "timestamp": "01:05",
+      "quote_ar": "وهي معجزة خاتمة، لابد أن تكون معجزة خاتمة، وحتى تكون معجزة خاتمة تستمر إلى يوم القيامة، يجب أن تستمر في حالة الإدهاش والإبهار، وهذا لا يمكن إلا أن تكون معجزة عقلية.",
+      "why": "The speaker discusses the nature of prophetic miracles, distinguishing sensory miracles from the lasting intellectual miracle of the final Prophet.",
+      "confidence": "high",
+      "path_ar": "العقيدة/أركان الإيمان/الإيمان بالرسل/المعجزات ودلائل النبوة",
+      "tag_ar": "المعجزات ودلائل النبوة",
+      "new_tag": false
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "basic",
+    "why": "The discussion uses accessible language and relatable analogies to convey thematic tafsir and prophetic proofs without technical jargon."
+  },
+  "claims": [
+    {
+      "kind": "history",
+      "unit": "Miracles of Moses and Jesus compared to the Prophet's signs",
+      "pieces": [
+        {
+          "timestamp": "00:18",
+          "timestamp_end": "00:23",
+          "quote": "موسى عنده عصا، عيسى كان يحيي الموتى، إلى آخره، أين معجزاتك الحسية؟",
+          "voice": "retelling",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Past prophets were given sensory miracles, such as Moses having the staff and Jesus resurrecting the dead.",
+      "timestamp": "00:18",
+      "timestamp_end": "00:23",
+      "quote": "موسى عنده عصا، عيسى كان يحيي الموتى، إلى آخره، أين معجزاتك الحسية؟"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah Ar-Ra'd ayah 38",
+      "pieces": [
+        {
+          "timestamp": "00:30",
+          "timestamp_end": "00:33",
+          "quote": "لكل أجل كتاب",
+          "voice": "source",
+          "cue": "لكن الله عز وجل قال"
+        }
+      ],
+      "inside": 0,
+      "attribution": "الله عز وجل",
+      "reference": "13:38",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Allah states: 'For every term there is a decree.'",
+      "timestamp": "00:30",
+      "timestamp_end": "00:33",
+      "quote": "لكل أجل كتاب"
+    },
+    {
+      "kind": "saying",
+      "unit": "Tafsir opinion on 'For every book there is a term'",
+      "pieces": [
+        {
+          "timestamp": "00:34",
+          "timestamp_end": "00:46",
+          "quote": "هي المفترض أن تكون لكل كتاب أجل، يعني الكتاب مثلا التوراة له أجل إلى مجيء الإنجيل ثم انتهى، والإنجيل إلى مجيء القرآن ثم ينتهي، والقرآن يستمر إلى يوم القيامة ثم ينتهي",
+          "voice": "retelling",
+          "cue": "بعض المفسرين والعلماء قالوا"
+        }
+      ],
+      "inside": 0,
+      "attribution": "بعض المفسرين والعلماء",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "opinion",
+      "claim_en": "Some exegetes interpret the verse as meaning every revealed scripture has a designated time span until abrogation.",
+      "timestamp": "00:34",
+      "timestamp_end": "00:46",
+      "quote": "هي المفترض أن تكون لكل كتاب أجل، يعني الكتاب مثلا التوراة له أجل إلى مجيء الإنجيل ثم انتهى، والإنجيل إلى مجيء القرآن ثم ينتهي، والقرآن يستمر إلى يوم القيامة ثم ينتهي"
+    },
+    {
+      "kind": "ruling",
+      "unit": "Linguistic meaning of kitab as hukm in the verse",
+      "pieces": [
+        {
+          "timestamp": "00:48",
+          "timestamp_end": "00:55",
+          "quote": "يعني لكل زمن حكم مختلف، الكتاب يأتي بمعنى أحيانا الحكم، كتابا موقوتا يعني حكم مؤقت",
+          "voice": "retelling",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "The word 'kitab' in the verse signifies a decree or ruling, meaning each era has a distinct divine ruling.",
+      "timestamp": "00:48",
+      "timestamp_end": "00:55",
+      "quote": "يعني لكل زمن حكم مختلف، الكتاب يأتي بمعنى أحيانا الحكم، كتابا موقوتا يعني حكم مؤقت"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 33341
+}

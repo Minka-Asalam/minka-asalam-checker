@@ -1,0 +1,160 @@
+{
+  "language": "ar-mixed",
+  "summary_ar": "يبيّن المتحدث التصور القرآني لطبيعة مسيرة الإنسان، حيث يولد في منتصف طريق جبلي بين القمة والقاع، وتتمثل غايته في الصعود للقمة رغم محاولات الشيطان والنفس لجره نحو المعاصي، موضحاً أن الشرك بالله هو السقوط الحر التام إلى القاع.",
+  "summary_en": "The speaker illustrates the Quranic view of human life using the metaphor of a mountain path where man is born midway between the peak and the bottom, striving to ascend while facing temptations from Satan and the inner self, and identifies polytheism (shirk) as the ultimate freefall to the abyss.",
+  "tags": [
+    {
+      "node_path": "التزكية والأخلاق/مجاهدة النفس/مجاهدة الهوى",
+      "timestamp": "00:50",
+      "quote_ar": "لكن أمامك عدوان: الشيطان والنفس.",
+      "why": "Addresses the spiritual struggle against internal desire and satanic whispers to prevent moral descent.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/مجاهدة النفس/مجاهدة الهوى",
+      "tag_ar": "مجاهدة الهوى",
+      "new_tag": false
+    },
+    {
+      "node_path": "العقيدة/الشرك ونواقضه",
+      "timestamp": "01:43",
+      "quote_ar": "سقوط حر هو الشرك، وهذا التعبير جاء به القرآن نفسه: ومن يشرك بالله فكأنما خر من السماء.",
+      "why": "Explains that shirk is the fatal spiritual fall that completely plunges a person into the abyss.",
+      "confidence": "medium",
+      "path_ar": "العقيدة/الشرك ونواقضه",
+      "tag_ar": "الشرك ونواقضه",
+      "new_tag": false
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "basic",
+    "why": "The presentation uses an intuitive, illustrative metaphor with commonly known Quranic verses and accessible phrasing."
+  },
+  "claims": [
+    {
+      "kind": "quran",
+      "unit": "Surah Ash-Shams ayah 8",
+      "pieces": [
+        {
+          "timestamp": "00:31",
+          "timestamp_end": "00:33",
+          "quote": "فألهمها فجورها وتقواها",
+          "voice": "source",
+          "cue": "كل واحد"
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "91:8",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Allah inspired the soul with both its wickedness and its righteousness.",
+      "timestamp": "00:31",
+      "timestamp_end": "00:33",
+      "quote": "فألهمها فجورها وتقواها"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah Fussilat ayah 36 / Al-A'raf ayah 200",
+      "pieces": [
+        {
+          "timestamp": "00:58",
+          "timestamp_end": "01:01",
+          "quote": "وإما ينزغنك من الشيطان نزغ فاستعذ بالله",
+          "voice": "source",
+          "cue": "تبدأ بالنزغ"
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "7:200",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "When prompted by a whisper from Satan, one must seek refuge in Allah.",
+      "timestamp": "00:58",
+      "timestamp_end": "01:01",
+      "quote": "وإما ينزغنك من الشيطان نزغ فاستعذ بالله"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah Al-An'am ayah 43 / Al-Anfal ayah 48",
+      "pieces": [
+        {
+          "timestamp": "01:08",
+          "timestamp_end": "01:09",
+          "quote": "زين لهم أعمالهم",
+          "voice": "source",
+          "cue": "بعدين يزينها لك ها"
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "6:43",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Satan beautifies evil deeds for people to lead them into sin.",
+      "timestamp": "01:08",
+      "timestamp_end": "01:09",
+      "quote": "زين لهم أعمالهم"
+    },
+    {
+      "kind": "hadith",
+      "unit": "Narration regarding Hellfire being veiled by lusts and desires",
+      "pieces": [
+        {
+          "timestamp": "01:21",
+          "timestamp_end": "01:23",
+          "quote": "حفت النار بالشهوات",
+          "voice": "source",
+          "cue": "ولذلك الرسول صلى الله عليه وسلم ماذا يقول"
+        }
+      ],
+      "inside": 0,
+      "attribution": "الرسول صلى الله عليه وسلم",
+      "reference": "",
+      "key_ar": "حفت النار بالشهوات وحفت الجنة بالمكاره",
+      "stated_as": "definitive",
+      "claim_en": "The Prophet ﷺ stated that the Hellfire is surrounded by desires.",
+      "timestamp": "01:21",
+      "timestamp_end": "01:23",
+      "quote": "حفت النار بالشهوات"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah Al-Hajj ayah 31",
+      "pieces": [
+        {
+          "timestamp": "01:47",
+          "timestamp_end": "01:55",
+          "quote": "ومن يشرك بالله فكأنما خر من السماء فتخطفه الطير أو تهوي به الريح في مكان سحيق",
+          "voice": "source",
+          "cue": "وهذا التعبير جاء به القرآن نفسه"
+        }
+      ],
+      "inside": 0,
+      "attribution": "القرآن نفسه",
+      "reference": "22:31",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Whoever associates partners with Allah is as if he fell from the sky, snatched by birds or cast away by wind into a distant place.",
+      "timestamp": "01:47",
+      "timestamp_end": "01:55",
+      "quote": "ومن يشرك بالله فكأنما خر من السماء فتخطفه الطير أو تهوي به الريح في مكان سحيق"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 35212
+}

@@ -1,0 +1,49 @@
+{
+  "language": "ar-mixed",
+  "summary_ar": "يضرب المتحدث مثلاً بموظف عبقري عُزل في مكتب فخم دون أن يُسمح له بالعمل الفعلي، ليبيّن حال كثير من المسلمين مع القرآن الكريم؛ حيث عظّموه واكتفوا بتلاوته في رمضان ومراكز التحفيظ، بينما أقصوه وعزلوه عن واقع الحياة والمؤسسات التعليمية وصناعة المعرفة.",
+  "summary_en": "The speaker draws an analogy of a brilliant hire isolated in a luxurious office without actual work to illustrate how Muslims treat the Quran: venerating it through recitation and memorization centers while exiling it from educational institutions, practical life, and knowledge production.",
+  "tags": [
+    {
+      "node_path": "القرآن وعلومه/مكانة القرآن",
+      "timestamp": "00:28",
+      "quote_ar": "هذا حال المسلمين مع القرآن. في ناس رفضوا القرآن الكفار وغير المسلمين رفضوا القرآن، لكن المسلمين قالوا احنا قبلنا القرآن، طيب خلوه موجود في واقعكم خلوه موجود في مؤسساتكم التعليمية",
+      "why": "The speaker critiques the practical sidelining of the Quran's authoritative role in modern Muslim life despite formal veneration.",
+      "confidence": "high",
+      "path_ar": "القرآن وعلومه/مكانة القرآن",
+      "tag_ar": "مكانة القرآن",
+      "new_tag": false
+    },
+    {
+      "node_path": "العصر الحديث/الفكر الإسلامي المعاصر/التكامل المعرفي",
+      "timestamp": "00:39",
+      "quote_ar": "دعوه يستثمر في في حقول المعرفة لا لا، أنت أعظم من أنك تستثمر... لكن لا تتدخل في صناعة المعرفة، شفت كيف؟ هذه إساءة",
+      "why": "The speaker criticizes the exclusion of revelation and Quranic guidance from contemporary academic and epistemological spheres.",
+      "confidence": "medium",
+      "path_ar": "العصر الحديث/الفكر الإسلامي المعاصر/التكامل المعرفي",
+      "tag_ar": "التكامل المعرفي",
+      "new_tag": true
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "student_of_knowledge"
+    ],
+    "assumes": "basic",
+    "why": "The speech employs an accessible colloquial dialect and an illustrative thought experiment to address a contemporary cultural and intellectual dilemma."
+  },
+  "claims": [],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 31406
+}

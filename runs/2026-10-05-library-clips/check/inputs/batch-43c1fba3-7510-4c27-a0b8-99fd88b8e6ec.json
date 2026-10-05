@@ -1,0 +1,44 @@
+{
+ "id": "43c1fba3-7510-4c27-a0b8-99fd88b8e6ec",
+ "title": "لمثل هذا فأعدوا !",
+ "speaker": "أحمد العربي",
+ "speaker_kind": "creator",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.5-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "hadith",
+   "timestamp": "00:00",
+   "timestamp_end": "00:59",
+   "quote": "رأى النبي صلى الله عليه وسلم أناسا مجتمعين فقال على ما اجتمع هؤلاء فقالوا يا رسول الله على قبر يحفرونه فهرول النبي صلى الله عليه وسلم إليهم ثم جلس على شفير القبر على حافة القبر ثم أخذ ينكأ بعصاة كانت معه عصاة صغيرة كانت معه الأرض قال الصحابي فاستقبلته من بين يديه حتى أرى ما يصنع قال فرأيته يبكي صلى الله عليه وسلم حتى بل الثرى … يبكي حتى بل الثرى ثم قال أي إخواني لمثل هذا فأعدوا لمثل هذا فأعدوا لمثل هذا فأعدوا",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "The Prophet wept at a grave until the soil was wet and admonished his companions to prepare for the afterlife.",
+   "key_ar": "بكى حتى بل الثرى ثم قال يا إخواني لمثل هذا فأعدوا",
+   "unit": "The narration of the Prophet weeping at the grave and advising preparation for death",
+   "pieces": [
+    {
+     "timestamp": "00:00",
+     "timestamp_end": "00:41",
+     "quote": "رأى النبي صلى الله عليه وسلم أناسا مجتمعين فقال على ما اجتمع هؤلاء فقالوا يا رسول الله على قبر يحفرونه فهرول النبي صلى الله عليه وسلم إليهم ثم جلس على شفير القبر على حافة القبر ثم أخذ ينكأ بعصاة كانت معه عصاة صغيرة كانت معه الأرض قال الصحابي فاستقبلته من بين يديه حتى أرى ما يصنع قال فرأيته يبكي صلى الله عليه وسلم حتى بل الثرى",
+     "voice": "retelling",
+     "cue": ""
+    },
+    {
+     "timestamp": "00:47",
+     "timestamp_end": "00:59",
+     "quote": "يبكي حتى بل الثرى ثم قال أي إخواني لمثل هذا فأعدوا لمثل هذا فأعدوا لمثل هذا فأعدوا",
+     "voice": "source",
+     "cue": "ثم قال"
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  }
+ ],
+ "seconds": 60
+}

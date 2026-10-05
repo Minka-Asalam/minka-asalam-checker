@@ -1,0 +1,95 @@
+{
+  "language": "en",
+  "summary_ar": "يحث المتحدث المسلم على مجاهدة نفسه بالبقاء في مكانه بعد الفريضة لإتمام أذكار الصلاة (التسبيح والتحميد والتكبير). ويوضح أن النور الإلهي يتنزل عند مجاهدة هوى النفس والتثاقل عن الطاعة، مستدلًا بقوله تعالى: {وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا}.",
+  "summary_en": "The speaker encourages believers to push themselves to remain seated after prayer to complete the post-prayer dhikr (tasbih, tahmid, and takbir) despite the urge to leave. He explains that divine light and guidance come through overcoming personal reluctance, citing Surah al-Ankabut (29:69).",
+  "tags": [
+    {
+      "node_path": "الفقه/الصلاة/أذكار بعد الصلاة",
+      "timestamp": "00:08",
+      "quote_ar": "until I finish the 33, 33, 34: 33 SubhanAllah, 33 Alhamdulillah, 34 Allahu Akbar.",
+      "why": "The speaker discusses reciting the post-prayer dhikr formulas before leaving one's prayer space.",
+      "confidence": "high",
+      "path_ar": "الفقه/الصلاة/أذكار بعد الصلاة",
+      "tag_ar": "أذكار بعد الصلاة",
+      "new_tag": true
+    },
+    {
+      "node_path": "التزكية والأخلاق/مجاهدة النفس/مجاهدة الهوى",
+      "timestamp": "00:25",
+      "quote_ar": "Sitting down, that's the mujahadah. In fact, there's so much nur when you do something, but you don't feel like doing it.",
+      "why": "The speaker defines resisting the urge to leave and persisting in worship as spiritual striving against the self.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/مجاهدة النفس/مجاهدة الهوى",
+      "tag_ar": "مجاهدة الهوى",
+      "new_tag": false
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens",
+      "new_to_islam"
+    ],
+    "assumes": "basic",
+    "why": "The advice is motivational, colloquial, and focuses on practical spiritual habit building using familiar Islamic terminology."
+  },
+  "claims": [
+    {
+      "kind": "hadith",
+      "unit": "Prophetic dhikr after prayer: 33 tasbih, 33 tahmid, and 34 takbir",
+      "pieces": [
+        {
+          "timestamp": "00:08",
+          "timestamp_end": "00:18",
+          "quote": "until I finish the 33, 33, 34: 33 SubhanAllah, 33 Alhamdulillah, 34 Allahu Akbar. There's different versions, that's good enough.",
+          "voice": "retelling",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "معقبات لا يخيب قائلهن ثلاث وثلاثون تسبيحة وثلاث وثلاثون تحميدة وأربع وثلاثون تكبيرة",
+      "stated_as": "definitive",
+      "claim_en": "Reciting SubhanAllah 33 times, Alhamdulillah 33 times, and Allahu Akbar 34 times is an established form of dhikr after prayer.",
+      "timestamp": "00:08",
+      "timestamp_end": "00:18",
+      "quote": "until I finish the 33, 33, 34: 33 SubhanAllah, 33 Alhamdulillah, 34 Allahu Akbar. There's different versions, that's good enough."
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah Al-Ankabut, verse 69",
+      "pieces": [
+        {
+          "timestamp": "00:37",
+          "timestamp_end": "00:40",
+          "quote": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+          "voice": "source",
+          "cue": "Because Allah says"
+        }
+      ],
+      "inside": 0,
+      "attribution": "Allah says",
+      "reference": "29:69",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Allah promises guidance along His paths to those who strive sincerely for His sake.",
+      "timestamp": "00:37",
+      "timestamp_end": "00:40",
+      "quote": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 32909
+}

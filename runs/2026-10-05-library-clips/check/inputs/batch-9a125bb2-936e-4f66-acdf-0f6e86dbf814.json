@@ -1,0 +1,89 @@
+{
+ "id": "9a125bb2-936e-4f66-acdf-0f6e86dbf814",
+ "title": "واخفظ لهما جناح الذل",
+ "speaker": "فداء الدين يحيى",
+ "speaker_kind": "creator",
+ "language": "ar-msa",
+ "units": true,
+ "extractor_model": "gemini-3.8-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "quran",
+   "timestamp": "00:00",
+   "timestamp_end": "00:03",
+   "quote": "واخفض لهما جناح الذل",
+   "attribution": "",
+   "reference": "17:24",
+   "stated_as": "definitive",
+   "claim_en": "A recitation of part of Quran 17:24 commanding humility toward parents.",
+   "key_ar": null,
+   "unit": "Surah Al-Isra, verse 24",
+   "pieces": [
+    {
+     "timestamp": "00:00",
+     "timestamp_end": "00:03",
+     "quote": "واخفض لهما جناح الذل",
+     "voice": "source",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": "17:24 وَاخْفِضْ لَهُمَا جَنَاحَ الذُّلِّ مِنَ الرَّحْمَةِ وَقُل رَّبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا",
+   "verse_en": "And lower unto them the wing of submission and humility through mercy, and say: \"My Lord! Bestow on them Your Mercy as they did bring me up when I was young.\"",
+   "verse_key": "17:24",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 2,
+   "kind": "ruling",
+   "timestamp": "00:04",
+   "timestamp_end": "00:23",
+   "quote": "علاقة الصديق بصديقه هي علاقة أنداد، أما علاقة الولد بوالديه هي علاقة أدنى لأعلى. مسألة إنه والله تحترمني أحترمك، ترفع صوتك علي أرفع صوتي عليك، هذه لا مكان لها في علاقتك بوالديك، هذا خلل سلوكي وتصور مغلوط عن طبيعة العلاقة معهما.",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "Treating parents as peers or reacting to them with conditional respect and raised voices is unacceptable and constitutes a behavioral flaw in Islamic ethics.",
+   "key_ar": null,
+   "unit": "The impermissibility of treating parents as peers or conditioning respect toward them",
+   "pieces": [
+    {
+     "timestamp": "00:04",
+     "timestamp_end": "00:23",
+     "quote": "علاقة الصديق بصديقه هي علاقة أنداد، أما علاقة الولد بوالديه هي علاقة أدنى لأعلى. مسألة إنه والله تحترمني أحترمك، ترفع صوتك علي أرفع صوتي عليك، هذه لا مكان لها في علاقتك بوالديك، هذا خلل سلوكي وتصور مغلوط عن طبيعة العلاقة معهما.",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 3,
+   "kind": "other",
+   "timestamp": "00:24",
+   "timestamp_end": "00:52",
+   "quote": "مفاهيم التربية الحديثة المستوردة من المجتمع الغربي فيها أفكار جميلة ومبرهنة علمياً، لكنها أيضاً تحوي أخطاء فادحة، منها التحريض على الوالدين، شحن الأبناء بفكرة أن العلاقة بين الأبناء والوالدين قائمة على المساواة المطلقة. هذه المفاهيم نشأت في بيئة متخلفة عن هدي القرآن في تعظيم حق الوالدين، ولم تستطع أن ترقى إلى المعدن الأخلاقي القرآني.",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "opinion",
+   "claim_en": "Western modern parenting models, despite having scientifically valid aspects, contain fatal errors such as instigating children against parents and promoting absolute equality contrary to Quranic guidance.",
+   "key_ar": null,
+   "unit": "Critique of imported Western modern parenting theories regarding absolute parent-child equality",
+   "pieces": [
+    {
+     "timestamp": "00:24",
+     "timestamp_end": "00:52",
+     "quote": "مفاهيم التربية الحديثة المستوردة من المجتمع الغربي فيها أفكار جميلة ومبرهنة علمياً، لكنها أيضاً تحوي أخطاء فادحة، منها التحريض على الوالدين، شحن الأبناء بفكرة أن العلاقة بين الأبناء والوالدين قائمة على المساواة المطلقة. هذه المفاهيم نشأت في بيئة متخلفة عن هدي القرآن في تعظيم حق الوالدين، ولم تستطع أن ترقى إلى المعدن الأخلاقي القرآني.",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  }
+ ],
+ "seconds": 52
+}

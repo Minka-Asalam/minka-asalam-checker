@@ -1,0 +1,94 @@
+{
+  "language": "ar-mixed",
+  "summary_ar": "يحث المتحدث على عدم إحباط أجر التعب والمشقة بالتشكي وكثرة التسوخط، ويدعو إلى الصبر والاحتساب وبث الشكوى والحزن إلى الله سبحانه وتعالى وحده مستشهداً بالقرآن الكريم.",
+  "summary_en": "The speaker urges believers not to forfeit the reward of fatigue and hardship through frequent complaining and discontent, advising them to practice patience, seek Allah's reward, and direct their grievances to Him alone.",
+  "tags": [
+    {
+      "node_path": "التزكية والأخلاق/القلب وأعماله/أعمال القلوب/الصبر",
+      "timestamp": "00:05",
+      "quote_ar": "لا تتسخط، اصبر واحتسب، احتسب اجعلها عند الله خلاص احتسب، لا تشتكي ولا تتسخط",
+      "why": "The speaker commands exercising patience (sabr) and seeking Allah's reward when facing hardship.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/القلب وأعماله/أعمال القلوب/الصبر",
+      "tag_ar": "الصبر",
+      "new_tag": false
+    },
+    {
+      "node_path": "التزكية والأخلاق/القلب وأعماله/أعمال القلوب/الرضا والتسليم",
+      "timestamp": "00:00",
+      "quote_ar": "لا تفسد أجرك بالتعب والمشقة بكثرة التسخط، فإن التسخط تذهب الأجر",
+      "why": "The speaker warns against discontent (tasakhkhut) with decree and fatigue, which opposes contentment (rida).",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/القلب وأعماله/أعمال القلوب/الرضا والتسليم",
+      "tag_ar": "الرضا والتسليم",
+      "new_tag": false
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "none",
+    "why": "A brief, accessible reminder in simple language about patience and avoiding complaining."
+  },
+  "claims": [
+    {
+      "kind": "ruling",
+      "unit": "Ruling that expressing discontent over hardship deprives a person of their reward",
+      "pieces": [
+        {
+          "timestamp": "00:00",
+          "timestamp_end": "00:05",
+          "quote": "لا تفسد أجرك بالتعب والمشقة بكثرة التسخط، فإن التسخط تذهب الأجر",
+          "voice": "retelling",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Being discontented and complaining excessively about fatigue and hardship takes away one's spiritual reward.",
+      "timestamp": "00:00",
+      "timestamp_end": "00:05",
+      "quote": "لا تفسد أجرك بالتعب والمشقة بكثرة التسخط، فإن التسخط تذهب الأجر"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah Yusuf, verse 86",
+      "pieces": [
+        {
+          "timestamp": "00:11",
+          "timestamp_end": "00:13",
+          "quote": "إنما أشكو بثي وحزني إلى الله",
+          "voice": "source",
+          "cue": "قل"
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "12:86",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Recitation of the verse expressing that complaint of grief and anguish should be directed solely to Allah.",
+      "timestamp": "00:11",
+      "timestamp_end": "00:13",
+      "quote": "إنما أشكو بثي وحزني إلى الله"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 30859
+}

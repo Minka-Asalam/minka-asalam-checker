@@ -1,0 +1,39 @@
+{
+ "id": "1c54d810-45c5-4c12-a5fb-440bdbedb902",
+ "title": "تلاوة خاشعة",
+ "speaker": "سليمان المطيري",
+ "speaker_kind": "scholar",
+ "language": "ar-msa",
+ "units": true,
+ "extractor_model": "gemini-3.7-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "quran",
+   "timestamp": "00:00",
+   "timestamp_end": "02:56",
+   "quote": "recites Maryam 19:77-96",
+   "attribution": "",
+   "reference": "19:77-96",
+   "stated_as": "definitive",
+   "claim_en": "Recitation of Surah Maryam (19:77-96) dealing with the denial of resurrection, refutation of taking idols or sons to Allah, and the final assembly of all creation as servants before Him.",
+   "key_ar": null,
+   "unit": "Surah Maryam verses 77 to 96",
+   "pieces": [
+    {
+     "timestamp": "00:00",
+     "timestamp_end": "02:56",
+     "quote": "recites Maryam 19:77-96",
+     "voice": "source",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": "19:77 أَفَرَأَيْتَ الَّذِي كَفَرَ بِآيَاتِنَا وَقَالَ لَأُوتَيَنَّ مَالًا وَوَلَدًا\n19:78 أَطَّلَعَ الْغَيْبَ أَمِ اتَّخَذَ عِندَ الرَّحْمَٰنِ عَهْدًا\n19:79 كَلَّا ۚ سَنَكْتُبُ مَا يَقُولُ وَنَمُدُّ لَهُ مِنَ الْعَذَابِ مَدًّا\n19:80 وَنَرِثُهُ مَا يَقُولُ وَيَأْتِينَا فَرْدًا\n19:81 وَاتَّخَذُوا مِن دُونِ اللَّهِ آلِهَةً لِّيَكُونُوا لَهُمْ عِزًّا\n19:82 كَلَّا ۚ سَيَكْفُرُونَ بِعِبَادَتِهِمْ وَيَكُونُونَ عَلَيْهِمْ ضِدًّا\n19:83 أَلَمْ تَرَ أَنَّا أَرْسَلْنَا الشَّيَاطِينَ عَلَى الْكَافِرِينَ تَؤُزُّهُمْ أَزًّا\n19:84 فَلَا تَعْجَلْ عَلَيْهِمْ ۖ إِنَّمَا نَعُدُّ لَهُمْ عَدًّا\n19:85 يَوْمَ نَحْشُرُ الْمُتَّقِينَ إِلَى الرَّحْمَٰنِ وَفْدًا\n19:86 وَنَسُوقُ الْمُجْرِمِينَ إِلَىٰ جَهَنَّمَ وِرْدًا\n19:87 لَّا يَمْلِكُونَ الشَّفَاعَةَ إِلَّا مَنِ اتَّخَذَ عِندَ الرَّحْمَٰنِ عَهْدًا\n19:88 وَقَالُوا اتَّخَذَ الرَّحْمَٰنُ وَلَدًا\n19:89 لَّقَدْ جِئْتُمْ شَيْئًا إِدًّا\n19:90 تَكَادُ السَّمَاوَاتُ يَتَفَطَّرْنَ مِنْهُ وَتَنشَقُّ الْأَرْضُ وَتَخِرُّ الْجِبَالُ هَدًّا\n19:91 أَن دَعَوْا لِلرَّحْمَٰنِ وَلَدًا\n19:92 وَمَا يَنبَغِي لِلرَّحْمَٰنِ أَن يَتَّخِذَ وَلَدًا\n19:93 إِن كُلُّ مَن فِي السَّمَاوَاتِ وَالْأَرْضِ إِلَّا آتِي الرَّحْمَٰنِ عَبْدًا\n19:94 لَّقَدْ أَحْصَاهُمْ وَعَدَّهُمْ عَدًّا\n19:95 وَكُلُّهُمْ آتِيهِ يَوْمَ الْقِيَامَةِ فَرْدًا\n19:96 إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ سَيَجْعَلُ لَهُمُ الرَّحْمَٰنُ وُدًّا",
+   "verse_en": "Have you seen him who disbelieved in Our Ayât (this Qur’ân and Muhammad صلى الله عليه وسلم) and said: \"I shall certainly be given wealth and children [if I will be alive (again)].\" Has he known the Unseen or has he taken a covenant from the Most Gracious (Allâh)? Nay, We shall record what he says, and We shall increase his torment (in the Hell); And We shall inherit from him (at his death) all that he talks of (i.e. wealth and children which We have bestowed upon him in this world), and he shall come to Us alone. And they have taken (for worship) âlihah (gods) besides Allâh, that they might give them honour, power and glory (and also protect them from Allâh’s punishment). Nay, but they (the so-called gods) will deny their worship of them, and become opponents to them (on the Day of Resurrection). See you not that We have sent the Shayâtîn (devils) against the disbelievers to push them to do evil. So make no haste against them; We only count out to them a (limited) number (of the days of the life of this world and delay their term so that they may increase in evil and sins). The Day We shall gather the Muttaqûn (the pious - See V.2:2) unto the Most Gracious (Allâh), like a delegation (presented before a king for honour). And We shall drive the Mujrimûn (polytheists, sinners, criminals, disbelievers in the Oneness of Allâh) to Hell, in a thirsty state (like a thirsty herd driven down to water). None shall have the power of intercession, but such a one as has received permission (or promise) from the Most Gracious (Allâh). And they say: \"The Most Gracious (Allâh) has begotten a son (or offspring or children) [as the Jews say: ‘Uzair (Ezra) is the son of Allâh, and the Christians say that He has begotten a son [‘Îsâ (Jesus) عليه السلام], and the pagan Arabs say that He has begotten daughters (angels and others.)].\" Indeed you have brought forth (said) a terrible evil thing. Whereby the heavens are almost torn, and the earth is split asunder, and the mountains fall in ruins, That they ascribe a son (or offspring or children) to the Most Gracious (Allâh). But it is not suitable for (the Majesty of) the Most Gracious (Allâh) that He should beget a son (or offspring or children). There is none in the heavens and the earth but comes unto the Most Gracious (Allâh) as a slave. Verily He knows each one of them, and has counted them a full counting. And everyone of them will come to Him alone on the Day of Resurrection (without any helper, or protector or defender). Verily, those who believe [in the Oneness of Allâh and in His Messenger (Muhammad صلى الله عليه وسلم)] and work deeds of righteousness, the Most Gracious (Allâh) will bestow love for them (in the hearts of the believers).",
+   "verse_key": "19:77-96",
+   "verse_translation_id": "203"
+  }
+ ],
+ "seconds": 177
+}

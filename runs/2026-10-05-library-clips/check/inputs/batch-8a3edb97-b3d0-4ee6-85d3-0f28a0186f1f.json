@@ -1,0 +1,114 @@
+{
+ "id": "8a3edb97-b3d0-4ee6-85d3-0f28a0186f1f",
+ "title": "سورة الرعد",
+ "speaker": "نايف بن نهار",
+ "speaker_kind": "scholar",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.8-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "history",
+   "timestamp": "00:18",
+   "timestamp_end": "00:23",
+   "quote": "موسى عنده عصا، عيسى كان يحيي الموتى، إلى آخره، أين معجزاتك الحسية؟",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "Past prophets were given sensory miracles, such as Moses having the staff and Jesus resurrecting the dead.",
+   "key_ar": null,
+   "unit": "Miracles of Moses and Jesus compared to the Prophet's signs",
+   "pieces": [
+    {
+     "timestamp": "00:18",
+     "timestamp_end": "00:23",
+     "quote": "موسى عنده عصا، عيسى كان يحيي الموتى، إلى آخره، أين معجزاتك الحسية؟",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 2,
+   "kind": "quran",
+   "timestamp": "00:30",
+   "timestamp_end": "00:33",
+   "quote": "لكل أجل كتاب",
+   "attribution": "الله عز وجل",
+   "reference": "13:38",
+   "stated_as": "definitive",
+   "claim_en": "Allah states: 'For every term there is a decree.'",
+   "key_ar": null,
+   "unit": "Surah Ar-Ra'd ayah 38",
+   "pieces": [
+    {
+     "timestamp": "00:30",
+     "timestamp_end": "00:33",
+     "quote": "لكل أجل كتاب",
+     "voice": "source",
+     "cue": "لكن الله عز وجل قال"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "13:38 وَلَقَدْ أَرْسَلْنَا رُسُلًا مِّن قَبْلِكَ وَجَعَلْنَا لَهُمْ أَزْوَاجًا وَذُرِّيَّةً ۚ وَمَا كَانَ لِرَسُولٍ أَن يَأْتِيَ بِآيَةٍ إِلَّا بِإِذْنِ اللَّهِ ۗ لِكُلِّ أَجَلٍ كِتَابٌ",
+   "verse_en": "And indeed We sent Messengers before you (O Muhammad صلى الله عليه و سلم) and made for them wives and offspring. And it was not for a Messenger to bring a sign except by Allâh’s Leave. (For) every matter there is a Decree (from Allâh). [Tafsir Al-Tabari]",
+   "verse_key": "13:38",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 3,
+   "kind": "saying",
+   "timestamp": "00:34",
+   "timestamp_end": "00:46",
+   "quote": "هي المفترض أن تكون لكل كتاب أجل، يعني الكتاب مثلا التوراة له أجل إلى مجيء الإنجيل ثم انتهى، والإنجيل إلى مجيء القرآن ثم ينتهي، والقرآن يستمر إلى يوم القيامة ثم ينتهي",
+   "attribution": "بعض المفسرين والعلماء",
+   "reference": "",
+   "stated_as": "opinion",
+   "claim_en": "Some exegetes interpret the verse as meaning every revealed scripture has a designated time span until abrogation.",
+   "key_ar": null,
+   "unit": "Tafsir opinion on 'For every book there is a term'",
+   "pieces": [
+    {
+     "timestamp": "00:34",
+     "timestamp_end": "00:46",
+     "quote": "هي المفترض أن تكون لكل كتاب أجل، يعني الكتاب مثلا التوراة له أجل إلى مجيء الإنجيل ثم انتهى، والإنجيل إلى مجيء القرآن ثم ينتهي، والقرآن يستمر إلى يوم القيامة ثم ينتهي",
+     "voice": "retelling",
+     "cue": "بعض المفسرين والعلماء قالوا"
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 4,
+   "kind": "ruling",
+   "timestamp": "00:48",
+   "timestamp_end": "00:55",
+   "quote": "يعني لكل زمن حكم مختلف، الكتاب يأتي بمعنى أحيانا الحكم، كتابا موقوتا يعني حكم مؤقت",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "The word 'kitab' in the verse signifies a decree or ruling, meaning each era has a distinct divine ruling.",
+   "key_ar": null,
+   "unit": "Linguistic meaning of kitab as hukm in the verse",
+   "pieces": [
+    {
+     "timestamp": "00:48",
+     "timestamp_end": "00:55",
+     "quote": "يعني لكل زمن حكم مختلف، الكتاب يأتي بمعنى أحيانا الحكم، كتابا موقوتا يعني حكم مؤقت",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  }
+ ],
+ "seconds": 99
+}

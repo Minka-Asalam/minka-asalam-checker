@@ -1,0 +1,72 @@
+{
+  "language": "ar-msa",
+  "summary_ar": "يؤكد المتحدث أن من غض بصره وحفظ عينه عن المحرمات حَفِظَ الله قلبه، وأورثه الطمأنينة ومحبة الله ورسوله والدار الآخرة.",
+  "summary_en": "The speaker affirms that whoever lowers their gaze and guards their eyes from forbidden sights will have their heart preserved by Allah, gaining inner tranquility and love for Allah, His Messenger, and the Hereafter.",
+  "tags": [
+    {
+      "node_path": "التزكية والأخلاق/الأخلاق/محاسن الأخلاق/العفة",
+      "timestamp": "00:00",
+      "quote_ar": "والله الذي لا إله غيره أن من غض بصره وحفظ عينه وأغلق عليه يعني منافذ الشيطان فإن الله سبحانه وتعالى سيحفظ عليه قلبه",
+      "why": "The speaker discusses the virtue of guarding one's gaze and maintaining chastity to protect the heart.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/الأخلاق/محاسن الأخلاق/العفة",
+      "tag_ar": "العفة",
+      "new_tag": true
+    },
+    {
+      "node_path": "التزكية والأخلاق/مجاهدة النفس/مجاهدة الهوى",
+      "timestamp": "00:04",
+      "quote_ar": "وأغلق عليه يعني منافذ الشيطان فإن الله سبحانه وتعالى سيحفظ عليه قلبه ويلقي في فؤاده حبه",
+      "why": "The speaker emphasizes closing off the pathways of temptation and striving against desires to attain peace and love of Allah.",
+      "confidence": "medium",
+      "path_ar": "التزكية والأخلاق/مجاهدة النفس/مجاهدة الهوى",
+      "tag_ar": "مجاهدة الهوى",
+      "new_tag": false
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "none",
+    "why": "The speech is clear, motivational, and uses accessible language suitable for all audiences without assuming prior technical knowledge."
+  },
+  "claims": [
+    {
+      "kind": "saying",
+      "unit": "Aphorism on finding Allah versus losing Allah",
+      "pieces": [
+        {
+          "timestamp": "00:23",
+          "timestamp_end": "00:29",
+          "quote": "ومن وجد الله فماذا فقد؟ ومن فقد الله فماذا وجد؟",
+          "voice": "source",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Traditional wisdom asserting that whoever finds Allah loses nothing, and whoever loses Allah gains nothing.",
+      "timestamp": "00:23",
+      "timestamp_end": "00:29",
+      "quote": "ومن وجد الله فماذا فقد؟ ومن فقد الله فماذا وجد؟"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.6-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 32427
+}

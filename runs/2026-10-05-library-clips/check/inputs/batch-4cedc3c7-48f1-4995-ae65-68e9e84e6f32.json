@@ -1,0 +1,64 @@
+{
+ "id": "4cedc3c7-48f1-4995-ae65-68e9e84e6f32",
+ "title": "Don’T Rush Away After Salah, Stay",
+ "speaker": "Ousama Alshurafa",
+ "speaker_kind": "creator",
+ "language": "en",
+ "units": true,
+ "extractor_model": "gemini-3.8-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "hadith",
+   "timestamp": "00:08",
+   "timestamp_end": "00:18",
+   "quote": "until I finish the 33, 33, 34: 33 SubhanAllah, 33 Alhamdulillah, 34 Allahu Akbar. There's different versions, that's good enough.",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "Reciting SubhanAllah 33 times, Alhamdulillah 33 times, and Allahu Akbar 34 times is an established form of dhikr after prayer.",
+   "key_ar": "معقبات لا يخيب قائلهن ثلاث وثلاثون تسبيحة وثلاث وثلاثون تحميدة وأربع وثلاثون تكبيرة",
+   "unit": "Prophetic dhikr after prayer: 33 tasbih, 33 tahmid, and 34 takbir",
+   "pieces": [
+    {
+     "timestamp": "00:08",
+     "timestamp_end": "00:18",
+     "quote": "until I finish the 33, 33, 34: 33 SubhanAllah, 33 Alhamdulillah, 34 Allahu Akbar. There's different versions, that's good enough.",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 2,
+   "kind": "quran",
+   "timestamp": "00:37",
+   "timestamp_end": "00:40",
+   "quote": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+   "attribution": "Allah says",
+   "reference": "29:69",
+   "stated_as": "definitive",
+   "claim_en": "Allah promises guidance along His paths to those who strive sincerely for His sake.",
+   "key_ar": null,
+   "unit": "Surah Al-Ankabut, verse 69",
+   "pieces": [
+    {
+     "timestamp": "00:37",
+     "timestamp_end": "00:40",
+     "quote": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+     "voice": "source",
+     "cue": "Because Allah says"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "29:69 وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا ۚ وَإِنَّ اللَّهَ لَمَعَ الْمُحْسِنِينَ",
+   "verse_en": "As for those who strive hard in Us (Our Cause), We will surely guide them to Our Paths (i.e. Allâh’s religion - Islâmic Monotheism). And verily, Allâh is with the Muhsinûn (good doers).\"",
+   "verse_key": "29:69",
+   "verse_translation_id": "203"
+  }
+ ],
+ "seconds": 43
+}

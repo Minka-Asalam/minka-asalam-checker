@@ -1,0 +1,231 @@
+{
+ "id": "0e566a99-5dfd-4f9f-81fd-f08a2d993460",
+ "title": "الا تعلو علي",
+ "speaker": "نايف بن نهار",
+ "speaker_kind": "scholar",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.6-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "quran",
+   "timestamp": "00:00",
+   "timestamp_end": "00:02",
+   "quote": "أَلَّا تَعْلُوا عَلَيَّ وَأْتُونِي مُسْلِمِينَ",
+   "attribution": "",
+   "reference": "27:31",
+   "stated_as": "definitive",
+   "claim_en": "Reciting Surah An-Naml verse 31 regarding not rising up in arrogance.",
+   "key_ar": null,
+   "unit": "Surah An-Naml (27:31)",
+   "pieces": [
+    {
+     "timestamp": "00:00",
+     "timestamp_end": "00:02",
+     "quote": "أَلَّا تَعْلُوا عَلَيَّ وَأْتُونِي مُسْلِمِينَ",
+     "voice": "source",
+     "cue": "قال"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "27:31 أَلَّا تَعْلُوا عَلَيَّ وَأْتُونِي مُسْلِمِينَ",
+   "verse_en": "\"Be you not exalted against me, but come to me as Muslims (true believers who submit to Allâh with full submission).’ \"",
+   "verse_key": "27:31",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 2,
+   "kind": "quran",
+   "timestamp": "00:12",
+   "timestamp_end": "00:14",
+   "quote": "أَسْتَكْبَرْتَ أَمْ كُنتَ مِنَ الْعَالِينَ",
+   "attribution": "",
+   "reference": "38:75",
+   "stated_as": "definitive",
+   "claim_en": "Reciting Surah Sad verse 75 where Allah questions Iblis on his arrogance.",
+   "key_ar": null,
+   "unit": "Surah Sad (38:75)",
+   "pieces": [
+    {
+     "timestamp": "00:12",
+     "timestamp_end": "00:14",
+     "quote": "أَسْتَكْبَرْتَ أَمْ كُنتَ مِنَ الْعَالِينَ",
+     "voice": "source",
+     "cue": "فلما سأل إبليس"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "38:75 قَالَ يَا إِبْلِيسُ مَا مَنَعَكَ أَن تَسْجُدَ لِمَا خَلَقْتُ بِيَدَيَّ ۖ أَسْتَكْبَرْتَ أَمْ كُنتَ مِنَ الْعَالِينَ",
+   "verse_en": "(Allâh) said: \"O Iblîs (Satan)! What prevents you from prostrating yourself to one whom I have created with Both My Hands. Are you too proud (to fall prostrate to Adam) or are you one of the high exalted?\"",
+   "verse_key": "38:75",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 3,
+   "kind": "quran",
+   "timestamp": "00:15",
+   "timestamp_end": "00:16",
+   "quote": "أَنَا خَيْرٌ مِّنْهُ",
+   "attribution": "",
+   "reference": "38:76",
+   "stated_as": "definitive",
+   "claim_en": "Reciting Iblis's words 'I am better than him' from the Quran.",
+   "key_ar": null,
+   "unit": "Surah Sad (38:76)",
+   "pieces": [
+    {
+     "timestamp": "00:15",
+     "timestamp_end": "00:16",
+     "quote": "أَنَا خَيْرٌ مِّنْهُ",
+     "voice": "source",
+     "cue": "قال"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "38:76 قَالَ أَنَا خَيْرٌ مِّنْهُ ۖ خَلَقْتَنِي مِن نَّارٍ وَخَلَقْتَهُ مِن طِينٍ",
+   "verse_en": "[Iblîs (Satan)] said: \"I am better than he. You created me from fire, and You created him from clay.\"",
+   "verse_key": "38:76",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 4,
+   "kind": "quran",
+   "timestamp": "00:41",
+   "timestamp_end": "00:44",
+   "quote": "فَتَلَقَّىٰ آدَمُ مِن رَّبِّهِ كَلِمَاتٍ فَتَابَ عَلَيْهِ",
+   "attribution": "",
+   "reference": "2:37",
+   "stated_as": "definitive",
+   "claim_en": "Reciting Surah Al-Baqarah verse 37 about Adam receiving words from his Lord and repenting.",
+   "key_ar": null,
+   "unit": "Surah Al-Baqarah (2:37)",
+   "pieces": [
+    {
+     "timestamp": "00:41",
+     "timestamp_end": "00:44",
+     "quote": "فَتَلَقَّىٰ آدَمُ مِن رَّبِّهِ كَلِمَاتٍ فَتَابَ عَلَيْهِ",
+     "voice": "source",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": "2:37 فَتَلَقَّىٰ آدَمُ مِن رَّبِّهِ كَلِمَاتٍ فَتَابَ عَلَيْهِ ۚ إِنَّهُ هُوَ التَّوَّابُ الرَّحِيمُ",
+   "verse_en": "Then Adam received from his Lord Words. And his Lord pardoned him (accepted his repentance). Verily, He is the One Who forgives (accepts repentance), the Most Merciful.",
+   "verse_key": "2:37",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 5,
+   "kind": "quran",
+   "timestamp": "01:03",
+   "timestamp_end": "01:05",
+   "quote": "فَفَسَقَ عَنْ أَمْرِ رَبِّهِ",
+   "attribution": "",
+   "reference": "18:50",
+   "stated_as": "definitive",
+   "claim_en": "Reciting Surah Al-Kahf verse 50 describing Iblis's rebellion.",
+   "key_ar": null,
+   "unit": "Surah Al-Kahf (18:50)",
+   "pieces": [
+    {
+     "timestamp": "01:03",
+     "timestamp_end": "01:05",
+     "quote": "فَفَسَقَ عَنْ أَمْرِ رَبِّهِ",
+     "voice": "source",
+     "cue": "لما جاء عند إبليس قال"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "18:50 وَإِذْ قُلْنَا لِلْمَلَائِكَةِ اسْجُدُوا لِآدَمَ فَسَجَدُوا إِلَّا إِبْلِيسَ كَانَ مِنَ الْجِنِّ فَفَسَقَ عَنْ أَمْرِ رَبِّهِ ۗ أَفَتَتَّخِذُونَهُ وَذُرِّيَّتَهُ أَوْلِيَاءَ مِن دُونِي وَهُمْ لَكُمْ عَدُوٌّ ۚ بِئْسَ لِلظَّالِمِينَ بَدَلًا",
+   "verse_en": "And (remember) when We said to the angels: \"Prostrate yourselves unto Adam.\" So they prostrated themselves except Iblîs (Satan). He was one of the jinn; he disobeyed the Command of his Lord. Will you then take him (Iblîs) and his offspring as protectors and helpers rather than Me while they are enemies to you? What an evil is the exchange for the Zâlimûn (polytheists, and wrong-doers).",
+   "verse_key": "18:50",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 6,
+   "kind": "quran",
+   "timestamp": "01:08",
+   "timestamp_end": "01:10",
+   "quote": "وَعَصَىٰ آدَمُ رَبَّهُ فَغَوَىٰ",
+   "attribution": "",
+   "reference": "20:121",
+   "stated_as": "definitive",
+   "claim_en": "Reciting Surah Taha verse 121 describing Adam's disobedience.",
+   "key_ar": null,
+   "unit": "Surah Taha (20:121)",
+   "pieces": [
+    {
+     "timestamp": "01:08",
+     "timestamp_end": "01:10",
+     "quote": "وَعَصَىٰ آدَمُ رَبَّهُ فَغَوَىٰ",
+     "voice": "source",
+     "cue": "لما جاء عند آدم قال"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "20:121 فَأَكَلَا مِنْهَا فَبَدَتْ لَهُمَا سَوْآتُهُمَا وَطَفِقَا يَخْصِفَانِ عَلَيْهِمَا مِن وَرَقِ الْجَنَّةِ ۚ وَعَصَىٰ آدَمُ رَبَّهُ فَغَوَىٰ",
+   "verse_en": "Then they both ate of the tree, and so their private parts became manifest to them, and they began to cover themselves with the leaves of the Paradise for their covering. Thus did Adam disobey his Lord, so he went astray.",
+   "verse_key": "20:121",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 7,
+   "kind": "ruling",
+   "timestamp": "01:34",
+   "timestamp_end": "01:46",
+   "quote": "أو يشرب خمر مثلاً يقول إن شاء الله الله عز وجل يتوب عليه هذا ذنب نتيجة شهوة … يقول لك أصلاً الخمر مش حرام بشكل واضح في القرآن، ما في دليل واضح في القرآن على أن الخمر حرام",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "Drinking alcohol out of desire is a sin subject to repentance, whereas denying its prohibition is a form of legitimizing sin.",
+   "key_ar": null,
+   "unit": "Prohibition of alcohol and the danger of denying its prohibition",
+   "pieces": [
+    {
+     "timestamp": "01:34",
+     "timestamp_end": "01:37",
+     "quote": "أو يشرب خمر مثلاً يقول إن شاء الله الله عز وجل يتوب عليه هذا ذنب نتيجة شهوة",
+     "voice": "retelling",
+     "cue": ""
+    },
+    {
+     "timestamp": "01:41",
+     "timestamp_end": "01:46",
+     "quote": "يقول لك أصلاً الخمر مش حرام بشكل واضح في القرآن، ما في دليل واضح في القرآن على أن الخمر حرام",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 8,
+   "kind": "ruling",
+   "timestamp": "01:47",
+   "timestamp_end": "01:52",
+   "quote": "أصلاً الربا ليش حرام؟ أنا أنتفع والبنك ينتفع وكلنا منتفعين، ليش حرام أصلاً؟",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "Riba (usury/interest) is prohibited in Islam, and attempting to rationalize it moves one from committing a sin to legalizing prohibited acts.",
+   "key_ar": null,
+   "unit": "Prohibition of usury (riba) and the danger of legitimizing it",
+   "pieces": [
+    {
+     "timestamp": "01:47",
+     "timestamp_end": "01:52",
+     "quote": "أصلاً الربا ليش حرام؟ أنا أنتفع والبنك ينتفع وكلنا منتفعين، ليش حرام أصلاً؟",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  }
+ ],
+ "seconds": 126
+}

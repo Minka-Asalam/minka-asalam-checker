@@ -1,0 +1,11 @@
+{
+ "id": "8b70f8bb-882e-473a-8f61-7e57ad272600",
+ "title": "العبقري",
+ "speaker": "نايف بن نهار",
+ "speaker_kind": "scholar",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.8-flash",
+ "claims": [],
+ "seconds": 52
+}

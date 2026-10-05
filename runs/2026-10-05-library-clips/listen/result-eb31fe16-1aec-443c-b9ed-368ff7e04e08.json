@@ -1,0 +1,87 @@
+{
+  "language": "ar-mixed",
+  "summary_ar": "يبيّن المتحدث فضل سيّد الاستغفار، موضحاً أنّ من قاله في يومه أو ليلته فمات دخل الجنة، ثم يسرد صيغة هذا الدعاء المأثور عن النبي صلى الله عليه وسلم.",
+  "summary_en": "The speaker highlights the virtue of Sayyid al-Istighfar (the Master Supplication for Forgiveness), stating that whoever recites it during the day or night and dies will enter Paradise, and recites its prophetic text.",
+  "tags": [
+    {
+      "node_path": "التزكية والأخلاق/التوبة والاستقامة/الاستغفار",
+      "timestamp": "00:08",
+      "quote_ar": "أعظم دعاء في في التوبة الذي يقوله النبي",
+      "why": "The speaker teaches about the foremost supplication for seeking forgiveness and repentance.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/التوبة والاستقامة/الاستغفار",
+      "tag_ar": "الاستغفار",
+      "new_tag": false
+    },
+    {
+      "node_path": "التزكية والأخلاق/الأذكار والأوراد/أذكار الصباح والمساء",
+      "timestamp": "00:00",
+      "quote_ar": "من قال هذا الدعاء في يومه ومات دخل الجنة ومن قاله في ليلته ومات دخل الجنة",
+      "why": "The hadith discussed is a central part of the morning and evening remembrances.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/الأذكار والأوراد/أذكار الصباح والمساء",
+      "tag_ar": "أذكار الصباح والمساء",
+      "new_tag": true
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens",
+      "new_to_islam"
+    ],
+    "assumes": "none",
+    "why": "The reminder is simple, accessible to all Muslims, and briefly clarifies the meaning of unfamiliar vocabulary."
+  },
+  "claims": [
+    {
+      "kind": "hadith",
+      "unit": "Hadith of Sayyid al-Istighfar (The Master Supplication for Forgiveness)",
+      "pieces": [
+        {
+          "timestamp": "00:00",
+          "timestamp_end": "00:07",
+          "quote": "من قال هذا الدعاء في يومه ومات دخل الجنة، ومن قاله في ليلته ومات دخل الجنة",
+          "voice": "retelling",
+          "cue": ""
+        },
+        {
+          "timestamp": "00:12",
+          "timestamp_end": "00:24",
+          "quote": "اللهم أنت ربي، خلقتني وأنا عبدك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شر ما صنعت، أبوء لك بنعمتي بنعمتك",
+          "voice": "source",
+          "cue": "الذي يقوله النبي"
+        },
+        {
+          "timestamp": "00:25",
+          "timestamp_end": "00:32",
+          "quote": "وأبوء لك بذنبي، فاغفر لي، فإنه لا يغفر الذنوب إلا أنت.",
+          "voice": "source",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "الذي يقوله النبي",
+      "reference": "",
+      "key_ar": "سيد الاستغفار أن تقول اللهم أنت ربي لا إله إلا أنت",
+      "stated_as": "definitive",
+      "claim_en": "Reciting Sayyid al-Istighfar during the day or night grants Paradise to whoever dies during that day or night.",
+      "timestamp": "00:00",
+      "timestamp_end": "00:32",
+      "quote": "من قال هذا الدعاء في يومه ومات دخل الجنة، ومن قاله في ليلته ومات دخل الجنة … اللهم أنت ربي، خلقتني وأنا عبدك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شر ما صنعت، أبوء لك بنعمتي بنعمتك … وأبوء لك بذنبي، فاغفر لي، فإنه لا يغفر الذنوب إلا أنت."
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 32282
+}

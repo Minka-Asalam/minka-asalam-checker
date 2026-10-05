@@ -1,0 +1,44 @@
+{
+ "id": "8264f19d-ca26-4d91-9baf-be09a03d1007",
+ "title": "Are You Going To Divorce Her",
+ "speaker": "Tim Humble",
+ "speaker_kind": "scholar",
+ "language": "en",
+ "units": true,
+ "extractor_model": "gemini-3.8-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "saying",
+   "timestamp": "00:00",
+   "timestamp_end": "00:30",
+   "quote": "this woman there's something strange about her. The intelligent people have divorced her three times: talaq, talaq, talaq. … I see that you're in love with a woman, a beautiful woman, she's covered with a veil, you want to marry her and you're in love with her. But this woman there's something strange about her. The intelligent people have divorced her three times: talaq, talaq, talaq. Intelligent people, they knew this woman is no good, they've already given her three times divorce.",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "The dunya is like an enticing veiled woman whom the truly wise and discerning have permanently divorced.",
+   "key_ar": null,
+   "unit": "Allegorical advice comparing the dunya to a veiled woman whom the wise have divorced three times",
+   "pieces": [
+    {
+     "timestamp": "00:00",
+     "timestamp_end": "00:07",
+     "quote": "this woman there's something strange about her. The intelligent people have divorced her three times: talaq, talaq, talaq.",
+     "voice": "retelling",
+     "cue": ""
+    },
+    {
+     "timestamp": "00:08",
+     "timestamp_end": "00:30",
+     "quote": "I see that you're in love with a woman, a beautiful woman, she's covered with a veil, you want to marry her and you're in love with her. But this woman there's something strange about her. The intelligent people have divorced her three times: talaq, talaq, talaq. Intelligent people, they knew this woman is no good, they've already given her three times divorce.",
+     "voice": "retelling",
+     "cue": "He says to this person he's advising"
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  }
+ ],
+ "seconds": 48
+}

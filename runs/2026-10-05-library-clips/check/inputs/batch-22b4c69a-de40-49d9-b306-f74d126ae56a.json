@@ -1,0 +1,194 @@
+{
+ "id": "22b4c69a-de40-49d9-b306-f74d126ae56a",
+ "title": "عجبت لمن",
+ "speaker": "الشيخ محمد متولي الشعراوي",
+ "speaker_kind": "scholar",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.5-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "quran",
+   "timestamp": "00:05",
+   "timestamp_end": "00:23",
+   "quote": "حسبنا الله ونعم الوكيل … فانقلبوا بنعمة من الله وفضل لم يمسسهم سوء",
+   "attribution": "",
+   "reference": "3:173-174",
+   "stated_as": "definitive",
+   "claim_en": "Reciting 'Sufficient for us is Allah, and [He is] the best Disposer of affairs' brings about Allah's grace and bounty.",
+   "key_ar": null,
+   "unit": "Quranic passage regarding the response to fear",
+   "pieces": [
+    {
+     "timestamp": "00:05",
+     "timestamp_end": "00:08",
+     "quote": "حسبنا الله ونعم الوكيل",
+     "voice": "source",
+     "cue": "قول الله سبحانه"
+    },
+    {
+     "timestamp": "00:19",
+     "timestamp_end": "00:23",
+     "quote": "فانقلبوا بنعمة من الله وفضل لم يمسسهم سوء",
+     "voice": "source",
+     "cue": "يقول"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "3:173 الَّذِينَ قَالَ لَهُمُ النَّاسُ إِنَّ النَّاسَ قَدْ جَمَعُوا لَكُمْ فَاخْشَوْهُمْ فَزَادَهُمْ إِيمَانًا وَقَالُوا حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ\n3:174 فَانقَلَبُوا بِنِعْمَةٍ مِّنَ اللَّهِ وَفَضْلٍ لَّمْ يَمْسَسْهُمْ سُوءٌ وَاتَّبَعُوا رِضْوَانَ اللَّهِ ۗ وَاللَّهُ ذُو فَضْلٍ عَظِيمٍ",
+   "verse_en": "Those (i.e. believers) unto whom the people (hypocrites) said, \"Verily, the people (pagans) have gathered against you (a great army), therefore, fear them.\" But it (only) increased them in Faith, and they said: \"Allâh (Alone) is Sufficient for us, and He is the Best Disposer of affairs (for us).\" So they returned with Grace and Bounty from Allâh. No harm touched them; and they followed the good Pleasure of Allâh. And Allâh is the Owner of Great Bounty.",
+   "verse_key": "3:173-174",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 2,
+   "kind": "quran",
+   "timestamp": "00:48",
+   "timestamp_end": "00:58",
+   "quote": "وأفوض أمري إلى الله إن الله بصير بالعباد … فوقاه الله سيئات ما مكروا",
+   "attribution": "",
+   "reference": "40:44-45",
+   "stated_as": "definitive",
+   "claim_en": "Entrusting one's affairs to Allah protects against the evil plots of others.",
+   "key_ar": null,
+   "unit": "Quranic passage regarding being plotted against",
+   "pieces": [
+    {
+     "timestamp": "00:48",
+     "timestamp_end": "00:52",
+     "quote": "وأفوض أمري إلى الله إن الله بصير بالعباد",
+     "voice": "source",
+     "cue": "قول الله سبحانه"
+    },
+    {
+     "timestamp": "00:55",
+     "timestamp_end": "00:58",
+     "quote": "فوقاه الله سيئات ما مكروا",
+     "voice": "source",
+     "cue": "يقول"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "40:44 فَسَتَذْكُرُونَ مَا أَقُولُ لَكُمْ ۚ وَأُفَوِّضُ أَمْرِي إِلَى اللَّهِ ۚ إِنَّ اللَّهَ بَصِيرٌ بِالْعِبَادِ\n40:45 فَوَقَاهُ اللَّهُ سَيِّئَاتِ مَا مَكَرُوا ۖ وَحَاقَ بِآلِ فِرْعَوْنَ سُوءُ الْعَذَابِ",
+   "verse_en": "\"And you will remember what I am telling you, and my affair I leave it to Allâh. Verily, Allâh is the All-Seer of (His) slaves.\" So Allâh saved him from the evils that they plotted (against him), while an evil torment encompassed Fir‘aun’s (Pharaoh) people.",
+   "verse_key": "40:44-45",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 3,
+   "kind": "quran",
+   "timestamp": "01:08",
+   "timestamp_end": "01:25",
+   "quote": "ما شاء الله لا قوة إلا بالله … إن ترن أنا أقل منك مالا وولدا فعسى ربي أن يؤتين خيرا من جنتك",
+   "attribution": "",
+   "reference": "18:39-40",
+   "stated_as": "definitive",
+   "claim_en": "Saying 'What Allah willed [has occurred]; there is no power except in Allah' preserves blessings and brings goodness.",
+   "key_ar": null,
+   "unit": "Quranic passage regarding seeking worldly life and blessings",
+   "pieces": [
+    {
+     "timestamp": "01:08",
+     "timestamp_end": "01:11",
+     "quote": "ما شاء الله لا قوة إلا بالله",
+     "voice": "source",
+     "cue": "قول الله"
+    },
+    {
+     "timestamp": "01:19",
+     "timestamp_end": "01:25",
+     "quote": "إن ترن أنا أقل منك مالا وولدا فعسى ربي أن يؤتين خيرا من جنتك",
+     "voice": "source",
+     "cue": "يقول"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "18:39 وَلَوْلَا إِذْ دَخَلْتَ جَنَّتَكَ قُلْتَ مَا شَاءَ اللَّهُ لَا قُوَّةَ إِلَّا بِاللَّهِ ۚ إِن تَرَنِ أَنَا أَقَلَّ مِنكَ مَالًا وَوَلَدًا\n18:40 فَعَسَىٰ رَبِّي أَن يُؤْتِيَنِ خَيْرًا مِّن جَنَّتِكَ وَيُرْسِلَ عَلَيْهَا حُسْبَانًا مِّنَ السَّمَاءِ فَتُصْبِحَ صَعِيدًا زَلَقًا",
+   "verse_en": "\"It was better for you to say, when you entered your garden: ‘That which Allâh wills (will come to pass)! There is no power but with Allâh!’ If you see me less than you in wealth, and children, \"It may be that my Lord will give me something better than your garden, and will send on it Husbân (torment, bolt) from the sky, then it will be a barren slippery earth.",
+   "verse_key": "18:39-40",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 4,
+   "kind": "quran",
+   "timestamp": "01:43",
+   "timestamp_end": "01:59",
+   "quote": "لا إله إلا أنت سبحانك إني كنت من الظالمين … فاستجبنا له ونجيناه من الغم وكذلك ننجي المؤمنين",
+   "attribution": "",
+   "reference": "21:87-88",
+   "stated_as": "definitive",
+   "claim_en": "The supplication of Dhul-Nun (Jonah) is answered by Allah to rescue believers from distress and grief.",
+   "key_ar": null,
+   "unit": "Quranic passage regarding overcoming grief and distress",
+   "pieces": [
+    {
+     "timestamp": "01:43",
+     "timestamp_end": "01:48",
+     "quote": "لا إله إلا أنت سبحانك إني كنت من الظالمين",
+     "voice": "source",
+     "cue": "قول الله سبحانه"
+    },
+    {
+     "timestamp": "01:52",
+     "timestamp_end": "01:59",
+     "quote": "فاستجبنا له ونجيناه من الغم وكذلك ننجي المؤمنين",
+     "voice": "source",
+     "cue": "يقول"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "21:87 وَذَا النُّونِ إِذ ذَّهَبَ مُغَاضِبًا فَظَنَّ أَن لَّن نَّقْدِرَ عَلَيْهِ فَنَادَىٰ فِي الظُّلُمَاتِ أَن لَّا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ\n21:88 فَاسْتَجَبْنَا لَهُ وَنَجَّيْنَاهُ مِنَ الْغَمِّ ۚ وَكَذَٰلِكَ نُنجِي الْمُؤْمِنِينَ",
+   "verse_en": "And (remember) Dhun-Nûn (Jonah), when he went off in anger, and imagined that We shall not punish him (i.e. the calamities which had befallen him)! But he cried through the darkness (saying): Lâ ilâha illâ Anta [none has the right to be worshipped but You (O, Allâh)], Glorified (and Exalted) be You [above all that (evil) they associate with You]! Truly, I have been of the wrong-doers.\" So We answered his call, and delivered him from the distress. And thus We do deliver the believers (who believe in the Oneness of Allâh, abstain from evil and work righteousness).",
+   "verse_key": "21:87-88",
+   "verse_translation_id": "203"
+  },
+  {
+   "i": 5,
+   "kind": "saying",
+   "timestamp": "00:01",
+   "timestamp_end": "01:48",
+   "quote": "عجبت لمن خاف ولم يفزع إلى قول الله سبحانه حسبنا الله ونعم الوكيل … وعجبت لمن مكر به كيف لا يفزع إلى قول الله سبحانه وأفوض أمري إلى الله إن الله بصير بالعباد … وعجبت لمن طلب الدنيا وزينتها... كيف لا يفزع إلى قول الله ما شاء الله لا قوة إلا بالله … وعجبت لمن اغتم... كيف لا يفزع إلى قول الله سبحانه لا إله إلا أنت سبحانك إني كنت من الظالمين",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "An early wisdom (historically attributed to Ja'far al-Sadiq) expresses wonder at those who neglect specific Quranic statements when facing fear, plots, worldly desire, or grief.",
+   "key_ar": null,
+   "unit": "The saying attributed to Ja'far al-Sadiq regarding the four states",
+   "pieces": [
+    {
+     "timestamp": "00:01",
+     "timestamp_end": "00:08",
+     "quote": "عجبت لمن خاف ولم يفزع إلى قول الله سبحانه حسبنا الله ونعم الوكيل",
+     "voice": "source",
+     "cue": ""
+    },
+    {
+     "timestamp": "00:41",
+     "timestamp_end": "00:52",
+     "quote": "وعجبت لمن مكر به كيف لا يفزع إلى قول الله سبحانه وأفوض أمري إلى الله إن الله بصير بالعباد",
+     "voice": "source",
+     "cue": ""
+    },
+    {
+     "timestamp": "01:02",
+     "timestamp_end": "01:11",
+     "quote": "وعجبت لمن طلب الدنيا وزينتها... كيف لا يفزع إلى قول الله ما شاء الله لا قوة إلا بالله",
+     "voice": "source",
+     "cue": ""
+    },
+    {
+     "timestamp": "01:37",
+     "timestamp_end": "01:48",
+     "quote": "وعجبت لمن اغتم... كيف لا يفزع إلى قول الله سبحانه لا إله إلا أنت سبحانك إني كنت من الظالمين",
+     "voice": "source",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  }
+ ],
+ "seconds": 120
+}

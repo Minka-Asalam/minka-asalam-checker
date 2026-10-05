@@ -1,0 +1,212 @@
+{
+ "id": "c5c47362-c0ce-4a44-a09e-bf8503ba43c1",
+ "title": "اركان الاسلام كم؟",
+ "speaker": "د. عبد الرحمن الحرمي",
+ "speaker_kind": "scholar",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.6-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "ruling",
+   "timestamp": "00:00",
+   "timestamp_end": "00:02",
+   "quote": "كم أركان الإسلام؟ خمسة",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "Islam is built upon five pillars.",
+   "key_ar": null,
+   "unit": "The pillars of Islam are five",
+   "pieces": [
+    {
+     "timestamp": "00:00",
+     "timestamp_end": "00:02",
+     "quote": "كم أركان الإسلام؟ خمسة",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 2,
+   "kind": "ruling",
+   "timestamp": "00:07",
+   "timestamp_end": "00:11",
+   "quote": "باقي الزكاة. لو كان فقير يزكي؟ ما يقدر... ما عليه زكاة",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "Zakat is not obligatory upon a poor person who lacks the required wealth.",
+   "key_ar": null,
+   "unit": "Zakat is not required from a poor person who cannot afford it",
+   "pieces": [
+    {
+     "timestamp": "00:07",
+     "timestamp_end": "00:11",
+     "quote": "باقي الزكاة. لو كان فقير يزكي؟ ما يقدر... ما عليه زكاة",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 3,
+   "kind": "ruling",
+   "timestamp": "00:12",
+   "timestamp_end": "00:15",
+   "quote": "طيب بما أنه فقير ما يقدر يحج؟ شيل الحج",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "Hajj is not obligatory upon those who lack financial and physical capability.",
+   "key_ar": null,
+   "unit": "Hajj is not obligatory upon a person who cannot afford it",
+   "pieces": [
+    {
+     "timestamp": "00:12",
+     "timestamp_end": "00:15",
+     "quote": "طيب بما أنه فقير ما يقدر يحج؟ شيل الحج",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 4,
+   "kind": "ruling",
+   "timestamp": "00:16",
+   "timestamp_end": "00:18",
+   "quote": "وقد يكون مريض فما يقدر يصوم، شيل الصيام",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "Fasting during Ramadan is waived or conceded for a sick person unable to fast.",
+   "key_ar": null,
+   "unit": "Fasting is exempted for a sick person who is unable to fast",
+   "pieces": [
+    {
+     "timestamp": "00:16",
+     "timestamp_end": "00:18",
+     "quote": "وقد يكون مريض فما يقدر يصوم، شيل الصيام",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 5,
+   "kind": "ruling",
+   "timestamp": "00:27",
+   "timestamp_end": "00:30",
+   "quote": "تسقط عني الصلاة إذا كنت مسافر؟ غير صحيح",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "Obligatory prayer is not waived due to travel.",
+   "key_ar": null,
+   "unit": "Prayer is not waived during travel",
+   "pieces": [
+    {
+     "timestamp": "00:27",
+     "timestamp_end": "00:30",
+     "quote": "تسقط عني الصلاة إذا كنت مسافر؟ غير صحيح",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 6,
+   "kind": "ruling",
+   "timestamp": "00:34",
+   "timestamp_end": "00:36",
+   "quote": "طيب لو ما وجدت ماء تسقط؟ تتيمم",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "If water is unavailable for wudu, prayer is not waived and Tayammum (dry ablution) must be performed.",
+   "key_ar": null,
+   "unit": "If water is absent, prayer is performed with Tayammum rather than dropped",
+   "pieces": [
+    {
+     "timestamp": "00:34",
+     "timestamp_end": "00:36",
+     "quote": "طيب لو ما وجدت ماء تسقط؟ تتيمم",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 7,
+   "kind": "ruling",
+   "timestamp": "00:37",
+   "timestamp_end": "00:43",
+   "quote": "طيب لو مش قادر أوقف أصلي تسقط؟ تصلي وأنت قاعد. طيب لو ما أقدر أقعد تسقط عني الصلاة؟ تصلي وأنت منسدح",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "A person unable to stand prays sitting down, and if unable to sit, prays lying down.",
+   "key_ar": null,
+   "unit": "Prayer posture concessions for the sick (sitting or lying down)",
+   "pieces": [
+    {
+     "timestamp": "00:37",
+     "timestamp_end": "00:43",
+     "quote": "طيب لو مش قادر أوقف أصلي تسقط؟ تصلي وأنت قاعد. طيب لو ما أقدر أقعد تسقط عني الصلاة؟ تصلي وأنت منسدح",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 8,
+   "kind": "saying",
+   "timestamp": "00:47",
+   "timestamp_end": "00:52",
+   "quote": "عندما فرضت الصلاة الصحابة الكرام ماذا قالوا؟ قالوا قضيت الحوائج",
+   "attribution": "الصحابة الكرام",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "The speaker states that when prayer was made obligatory, the companions said: 'Our needs have been fulfilled'.",
+   "key_ar": null,
+   "unit": "Saying attributed to the Prophet's companions upon the prescription of prayer",
+   "pieces": [
+    {
+     "timestamp": "00:47",
+     "timestamp_end": "00:52",
+     "quote": "عندما فرضت الصلاة الصحابة الكرام ماذا قالوا؟ قالوا قضيت الحوائج",
+     "voice": "retelling",
+     "cue": "الصحابة الكرام ماذا قالوا؟"
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  }
+ ],
+ "seconds": 84
+}

@@ -1,0 +1,159 @@
+{
+  "language": "ar-mixed",
+  "summary_ar": "يجيب المتحدث عن شبهة التكاسل عن العمل بحجة أن القدر مكتوب والعبد إما شقي أو سعيد، ناقلاً جواب الشيخ ابن عثيمين في قياس الهداية على الرزق ووجوب بذل الأسباب فيهما، مستشهداً بآيات من سورة العنكبوت على وجوب المجاهدة والصبر على الفتن.",
+  "summary_en": "The speaker addresses the misconception of fatalism and abandoning righteous deeds because destiny is already written, citing Sheikh Ibn Uthaymeen's analogy between seeking provision and seeking guidance through taking the necessary means, supported by verses from Surah al-Ankabut.",
+  "tags": [
+    {
+      "node_path": "العقيدة/أركان الإيمان/الإيمان بالقدر/القدر والأسباب",
+      "timestamp": "00:54",
+      "quote_ar": "الشيخ بن عثيمين يقول كما أنك مطالب بالاجتهاد بأخذ الأسباب لتحصيل الرزق فأنت أيضا مطالب بالأسباب التي توصلك إلى الهداية",
+      "why": "The speaker explicitly explains the obligation of taking the necessary means (asbab) alongside believing in divine decree.",
+      "confidence": "high",
+      "path_ar": "العقيدة/أركان الإيمان/الإيمان بالقدر/القدر والأسباب",
+      "tag_ar": "القدر والأسباب",
+      "new_tag": false
+    },
+    {
+      "node_path": "العقيدة/أركان الإيمان/الإيمان بالقدر/الاحتجاج بالقدر",
+      "timestamp": "00:00",
+      "quote_ar": "لماذا يا شيخ مادام أن الإنسان قد كتب هو شقي أو سعيد فمعناه أن الله سبحانه وتعالى كتب علينا ذلك قبل أن نخلق، لماذا يعني نجتهد؟",
+      "why": "The video opens by presenting and refuting the misconception of using divine decree as an excuse to abandon good deeds.",
+      "confidence": "high",
+      "path_ar": "العقيدة/أركان الإيمان/الإيمان بالقدر/الاحتجاج بالقدر",
+      "tag_ar": "الاحتجاج بالقدر",
+      "new_tag": true
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "basic",
+    "why": "The speaker addresses a common theological dilemma in accessible everyday language with an intuitive practical analogy."
+  },
+  "claims": [
+    {
+      "kind": "hadith",
+      "unit": "Hadith of Ibn Mas'ud on the writing of destiny (four matters: provision, lifespan, deeds, misery or happiness)",
+      "pieces": [
+        {
+          "timestamp": "00:02",
+          "timestamp_end": "00:05",
+          "quote": "أن الإنسان قد كتب هو شقي أو سعيد",
+          "voice": "retelling",
+          "cue": ""
+        },
+        {
+          "timestamp": "00:26",
+          "timestamp_end": "00:28",
+          "quote": "بكتب رزقه",
+          "voice": "source",
+          "cue": "قال"
+        }
+      ],
+      "inside": 0,
+      "attribution": "الحديث",
+      "reference": "",
+      "key_ar": "يؤمر بأربع كلمات بكتب رزقه وأجله وعمله وشقي أو سعيد",
+      "stated_as": "definitive",
+      "claim_en": "The hadith states that a person's provision, deeds, and status as wretched or blessed are written.",
+      "timestamp": "00:02",
+      "timestamp_end": "00:28",
+      "quote": "أن الإنسان قد كتب هو شقي أو سعيد … بكتب رزقه"
+    },
+    {
+      "kind": "saying",
+      "unit": "Ibn Uthaymeen's analogy refuting the excuse of destiny by comparing striving for guidance to striving for provision",
+      "pieces": [
+        {
+          "timestamp": "00:15",
+          "timestamp_end": "00:25",
+          "quote": "فقال الشيخ بن عثيمين لفتة جميلة جدا من هذا الحديث مع هذا الحديث، قال أنت أخذت جزءا من الحديث وتركت الجزء الآخر",
+          "voice": "retelling",
+          "cue": "فقال الشيخ بن عثيمين"
+        },
+        {
+          "timestamp": "00:30",
+          "timestamp_end": "00:41",
+          "quote": "طب لماذا لم تقل مثل هذا الكلام في الرزق؟ لماذا تخرج في كل صباح وتجتهد في البحث عن الرزق؟ وعندما يسألك أحد لماذا تبحث عن رزقك تقول أنا لابد أبذل السبب",
+          "voice": "retelling",
+          "cue": ""
+        },
+        {
+          "timestamp": "00:53",
+          "timestamp_end": "01:12",
+          "quote": "الشيخ بن عثيمين يقول كما أنك مطالب بالاجتهاد بأخذ الأسباب لتحصيل الرزق فأنت أيضا مطالب بالأسباب التي توصلك إلى الهداية أن تتخذ كل السبل المتاحة لتصل إلى الهداية",
+          "voice": "retelling",
+          "cue": "الشيخ بن عثيمين يقول"
+        }
+      ],
+      "inside": 0,
+      "attribution": "الشيخ بن عثيمين",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Ibn Uthaymeen pointed out that just as people exert effort to seek provision because it is written, they must also take the means to attain guidance.",
+      "timestamp": "00:15",
+      "timestamp_end": "01:12",
+      "quote": "فقال الشيخ بن عثيمين لفتة جميلة جدا من هذا الحديث مع هذا الحديث، قال أنت أخذت جزءا من الحديث وتركت الجزء الآخر … طب لماذا لم تقل مثل هذا الكلام في الرزق؟ لماذا تخرج في كل صباح وتجتهد في البحث عن الرزق؟ وعندما يسألك أحد لماذا تبحث عن رزقك تقول أنا لابد أبذل السبب … الشيخ بن عثيمين يقول كما أنك مطالب بالاجتهاد بأخذ الأسباب لتحصيل الرزق فأنت أيضا مطالب بالأسباب التي توصلك إلى الهداية أن تتخذ كل السبل المتاحة لتصل إلى الهداية"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah al-Ankabut verse 69",
+      "pieces": [
+        {
+          "timestamp": "01:13",
+          "timestamp_end": "01:17",
+          "quote": "والذين جاهدوا فينا لنهدينهم سبلنا",
+          "voice": "source",
+          "cue": "ولذلك قال الله جل وعلا"
+        }
+      ],
+      "inside": 0,
+      "attribution": "قال الله جل وعلا",
+      "reference": "29:69",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Allah promises to guide those who strive in His cause to His paths.",
+      "timestamp": "01:13",
+      "timestamp_end": "01:17",
+      "quote": "والذين جاهدوا فينا لنهدينهم سبلنا"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah al-Ankabut verse 2",
+      "pieces": [
+        {
+          "timestamp": "01:23",
+          "timestamp_end": "01:26",
+          "quote": "أحسب الناس أن يتركوا أن يقولوا آمنا وهم لا يفتنون",
+          "voice": "source",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "29:2",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "People will not be left unchallenged merely because they say they believe, but will be tested.",
+      "timestamp": "01:23",
+      "timestamp_end": "01:26",
+      "quote": "أحسب الناس أن يتركوا أن يقولوا آمنا وهم لا يفتنون"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 34036
+}

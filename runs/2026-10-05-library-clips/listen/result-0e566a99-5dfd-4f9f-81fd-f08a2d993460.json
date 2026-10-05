@@ -1,0 +1,243 @@
+{
+  "language": "ar-mixed",
+  "summary_ar": "يتناول المتحدث أنواع الأخطاء والمعاصي البشرية مستدلاً بقصص القرآن، مميزاً بين المعصية الناشئة عن الشهوة أو الضعف كذنب آدم عليه السلام والتي علاجها التوبة، وبين الفسق والتمرد القائم على الكبر كذنب إبليس. ويحذر من التمادي في المعصية بالانتقال من اقترافها إلى شرعنتها وتحليلها كالربا والخمر.",
+  "summary_en": "The speaker explains the types of human errors and sins through Quranic verses, distinguishing between disobedience caused by desire or weakness—like Adam's sin, which is cured by repentance—and rebellion stemming from arrogance, like Iblis's sin. He warns against escalating from committing a sin to rationalizing and legitimizing forbidden acts like usury and alcohol.",
+  "tags": [
+    {
+      "node_path": "التزكية والأخلاق/التوبة والاستقامة/الصغائر والكبائر",
+      "timestamp": "00:28",
+      "quote_ar": "أن يبين للبشرية أن كل أخطائها لا تتجاوز هذه الأمور الثلاثة: إما خطأ الغفلة وحلوها بالعلم... أو خطأ الضعف وحلوه بالتوبة... أو خطأ التمرد وهذا الفسق.",
+      "why": "The speaker categorizes human sins and errors into three main types: ignorance, weakness, and rebellion.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/التوبة والاستقامة/الصغائر والكبائر",
+      "tag_ar": "الصغائر والكبائر",
+      "new_tag": true
+    },
+    {
+      "node_path": "التزكية والأخلاق/أمراض القلوب/الكِبر والعُجب",
+      "timestamp": "00:14",
+      "quote_ar": "إبليس ما كان عالياً، قال ايش؟ قال أنا خير منه، لا مشكلتي مع الأمر",
+      "why": "The speaker analyzes Iblis's sin of arrogance and feelings of superiority over Adam.",
+      "confidence": "medium",
+      "path_ar": "التزكية والأخلاق/أمراض القلوب/الكِبر والعُجب",
+      "tag_ar": "الكِبر والعُجب",
+      "new_tag": false
+    },
+    {
+      "node_path": "العقيدة/حقيقة الإيمان/مرتكب الكبيرة",
+      "timestamp": "01:53",
+      "quote_ar": "انتقلنا من مسألة أن أنا أذنب وأخطأت وأنا سأحتاج إلى التوبة إلى لا، أصلاً يشرعن المعصية! يحلل المعصية!",
+      "why": "The speaker discusses the shift from committing a sin out of desire to legalizing and declaring forbidden sins permissible.",
+      "confidence": "medium",
+      "path_ar": "العقيدة/حقيقة الإيمان/مرتكب الكبيرة",
+      "tag_ar": "مرتكب الكبيرة",
+      "new_tag": true
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "basic",
+    "why": "The speaker uses modern colloquial Arabic with clear everyday examples to explain Quranic lessons on sin and repentance."
+  },
+  "claims": [
+    {
+      "kind": "quran",
+      "unit": "Surah An-Naml (27:31)",
+      "pieces": [
+        {
+          "timestamp": "00:00",
+          "timestamp_end": "00:02",
+          "quote": "أَلَّا تَعْلُوا عَلَيَّ وَأْتُونِي مُسْلِمِينَ",
+          "voice": "source",
+          "cue": "قال"
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "27:31",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Reciting Surah An-Naml verse 31 regarding not rising up in arrogance.",
+      "timestamp": "00:00",
+      "timestamp_end": "00:02",
+      "quote": "أَلَّا تَعْلُوا عَلَيَّ وَأْتُونِي مُسْلِمِينَ"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah Sad (38:75)",
+      "pieces": [
+        {
+          "timestamp": "00:12",
+          "timestamp_end": "00:14",
+          "quote": "أَسْتَكْبَرْتَ أَمْ كُنتَ مِنَ الْعَالِينَ",
+          "voice": "source",
+          "cue": "فلما سأل إبليس"
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "38:75",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Reciting Surah Sad verse 75 where Allah questions Iblis on his arrogance.",
+      "timestamp": "00:12",
+      "timestamp_end": "00:14",
+      "quote": "أَسْتَكْبَرْتَ أَمْ كُنتَ مِنَ الْعَالِينَ"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah Sad (38:76)",
+      "pieces": [
+        {
+          "timestamp": "00:15",
+          "timestamp_end": "00:16",
+          "quote": "أَنَا خَيْرٌ مِّنْهُ",
+          "voice": "source",
+          "cue": "قال"
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "38:76",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Reciting Iblis's words 'I am better than him' from the Quran.",
+      "timestamp": "00:15",
+      "timestamp_end": "00:16",
+      "quote": "أَنَا خَيْرٌ مِّنْهُ"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah Al-Baqarah (2:37)",
+      "pieces": [
+        {
+          "timestamp": "00:41",
+          "timestamp_end": "00:44",
+          "quote": "فَتَلَقَّىٰ آدَمُ مِن رَّبِّهِ كَلِمَاتٍ فَتَابَ عَلَيْهِ",
+          "voice": "source",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "2:37",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Reciting Surah Al-Baqarah verse 37 about Adam receiving words from his Lord and repenting.",
+      "timestamp": "00:41",
+      "timestamp_end": "00:44",
+      "quote": "فَتَلَقَّىٰ آدَمُ مِن رَّبِّهِ كَلِمَاتٍ فَتَابَ عَلَيْهِ"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah Al-Kahf (18:50)",
+      "pieces": [
+        {
+          "timestamp": "01:03",
+          "timestamp_end": "01:05",
+          "quote": "فَفَسَقَ عَنْ أَمْرِ رَبِّهِ",
+          "voice": "source",
+          "cue": "لما جاء عند إبليس قال"
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "18:50",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Reciting Surah Al-Kahf verse 50 describing Iblis's rebellion.",
+      "timestamp": "01:03",
+      "timestamp_end": "01:05",
+      "quote": "فَفَسَقَ عَنْ أَمْرِ رَبِّهِ"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah Taha (20:121)",
+      "pieces": [
+        {
+          "timestamp": "01:08",
+          "timestamp_end": "01:10",
+          "quote": "وَعَصَىٰ آدَمُ رَبَّهُ فَغَوَىٰ",
+          "voice": "source",
+          "cue": "لما جاء عند آدم قال"
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "20:121",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Reciting Surah Taha verse 121 describing Adam's disobedience.",
+      "timestamp": "01:08",
+      "timestamp_end": "01:10",
+      "quote": "وَعَصَىٰ آدَمُ رَبَّهُ فَغَوَىٰ"
+    },
+    {
+      "kind": "ruling",
+      "unit": "Prohibition of alcohol and the danger of denying its prohibition",
+      "pieces": [
+        {
+          "timestamp": "01:34",
+          "timestamp_end": "01:37",
+          "quote": "أو يشرب خمر مثلاً يقول إن شاء الله الله عز وجل يتوب عليه هذا ذنب نتيجة شهوة",
+          "voice": "retelling",
+          "cue": ""
+        },
+        {
+          "timestamp": "01:41",
+          "timestamp_end": "01:46",
+          "quote": "يقول لك أصلاً الخمر مش حرام بشكل واضح في القرآن، ما في دليل واضح في القرآن على أن الخمر حرام",
+          "voice": "retelling",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Drinking alcohol out of desire is a sin subject to repentance, whereas denying its prohibition is a form of legitimizing sin.",
+      "timestamp": "01:34",
+      "timestamp_end": "01:46",
+      "quote": "أو يشرب خمر مثلاً يقول إن شاء الله الله عز وجل يتوب عليه هذا ذنب نتيجة شهوة … يقول لك أصلاً الخمر مش حرام بشكل واضح في القرآن، ما في دليل واضح في القرآن على أن الخمر حرام"
+    },
+    {
+      "kind": "ruling",
+      "unit": "Prohibition of usury (riba) and the danger of legitimizing it",
+      "pieces": [
+        {
+          "timestamp": "01:47",
+          "timestamp_end": "01:52",
+          "quote": "أصلاً الربا ليش حرام؟ أنا أنتفع والبنك ينتفع وكلنا منتفعين، ليش حرام أصلاً؟",
+          "voice": "retelling",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Riba (usury/interest) is prohibited in Islam, and attempting to rationalize it moves one from committing a sin to legalizing prohibited acts.",
+      "timestamp": "01:47",
+      "timestamp_end": "01:52",
+      "quote": "أصلاً الربا ليش حرام؟ أنا أنتفع والبنك ينتفع وكلنا منتفعين، ليش حرام أصلاً؟"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.6-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 38640
+}

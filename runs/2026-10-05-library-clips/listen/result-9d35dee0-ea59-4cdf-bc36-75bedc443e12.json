@@ -1,0 +1,72 @@
+{
+  "language": "en",
+  "summary_ar": "يحذر المتحدث من الاغترار بمجرد أداء العبادات كالصلاة والزكاة مع التفريط في حقوق العباد وظلمهم، مستشهداً بحديث المفلس الذي تُؤخذ حسناته وتُعطى لمن اعتدى عليهم. ويضرب مثلاً بشخص يتعب في غرس شجرة وسقايتها بينما تتدلى ثمارها ليأكلها غيره، حاثاً على حفظ الأعمال الصالحة من الضياع.",
+  "summary_en": "The speaker warns against complacency in performing ritual worship like prayer and charity while violating the rights of others, citing the hadith of the bankrupt person (al-muflis) whose good deeds are given to those he wronged. He illustrates this with an analogy of a tree carefully nurtured by someone only for its fruits to hang over the wall and be eaten by others, urging believers to guard their good deeds.",
+  "tags": [
+    {
+      "node_path": "التزكية والأخلاق/الأخلاق/مساوئ الأخلاق/الظلم",
+      "timestamp": "00:22",
+      "quote_ar": "he has a lot of salah, a lot of zakah, a lot of ibadah, but he slandered this one, he belittled that one, he abused that one, he ate the wealth of this one, and all those good deeds were done for someone else",
+      "why": "The speaker warns against wronging and abusing people, showing how acts of injustice negate the spiritual benefit of one's worship.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/الأخلاق/مساوئ الأخلاق/الظلم",
+      "tag_ar": "الظلم",
+      "new_tag": true
+    },
+    {
+      "node_path": "العقيدة/أركان الإيمان/الإيمان باليوم الآخر/الحساب والميزان",
+      "timestamp": "00:15",
+      "quote_ar": "go and read the hadith of al-Muflis, go and read the hadith of the bankrupt person, he has a lot of salah, a lot of zakah, a lot of ibadah, but he slandered this one, he belittled that one, he abused that one, he ate the wealth of this one, and all those good deeds were done for someone else",
+      "why": "The hadith cited explains how deeds and sins are settled and weighed between people during the reckoning on the Day of Judgment.",
+      "confidence": "medium",
+      "path_ar": "العقيدة/أركان الإيمان/الإيمان باليوم الآخر/الحساب والميزان",
+      "tag_ar": "الحساب والميزان",
+      "new_tag": true
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "basic",
+    "why": "The speaker delivers an accessible moral lecture in clear English using a visual analogy and basic Islamic concepts like salah and zakah."
+  },
+  "claims": [
+    {
+      "kind": "hadith",
+      "unit": "Hadith of the bankrupt person (al-muflis) on the Day of Judgment",
+      "pieces": [
+        {
+          "timestamp": "00:14",
+          "timestamp_end": "00:31",
+          "quote": "go and read the hadith of al-Muflis, go and read the hadith of the bankrupt person, he has a lot of salah, a lot of zakah, a lot of ibadah, but he slandered this one, he belittled that one, he abused that one, he ate the wealth of this one, and all those good deeds were done for someone else",
+          "voice": "retelling",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "إن المفلس من أمتي يأتي يوم القيامة بصلاة وصيام وزكاة",
+      "stated_as": "definitive",
+      "claim_en": "The Prophet ﷺ explained that the bankrupt person on the Day of Judgment is one who brings many deeds of worship, but whose good deeds are distributed to the people he wronged, slandered, and abused.",
+      "timestamp": "00:14",
+      "timestamp_end": "00:31",
+      "quote": "go and read the hadith of al-Muflis, go and read the hadith of the bankrupt person, he has a lot of salah, a lot of zakah, a lot of ibadah, but he slandered this one, he belittled that one, he abused that one, he ate the wealth of this one, and all those good deeds were done for someone else"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 34395
+}

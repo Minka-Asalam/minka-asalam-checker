@@ -1,0 +1,106 @@
+{
+  "language": "ar-msa",
+  "summary_ar": "يؤكد المتحدث أن علاقة الولد بوالديه مبنية على خفض الجناح والتبجيل وليست علاقة ندية قائمة على المعاملة بالمثل كالأصدقاء. وينتقد بعض مفاهيم التربية الغربية المستوردة التي تروّج للمساواة المطلقة بين الأبناء والآباء وتخالف الهدي القرآني في تعظيم حق الوالدين.",
+  "summary_en": "The speaker emphasizes that the relationship between children and parents is founded on humility and reverence rather than peer equality or conditional respect. He critiques certain imported Western parenting concepts that advocate absolute equality between children and parents, noting that they fall short of Quranic ethics regarding parents' rights.",
+  "tags": [
+    {
+      "node_path": "التزكية والأخلاق/الحقوق/حقوق الوالدين",
+      "timestamp": "00:04",
+      "quote_ar": "علاقة الصديق بصديقه هي علاقة أنداد، أما علاقة الولد بوالديه هي علاقة أدنى لأعلى.",
+      "why": "The speaker contrasts friendship with the parent-child relationship to establish the religious obligation of humility and filial duty toward parents.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/الحقوق/حقوق الوالدين",
+      "tag_ar": "حقوق الوالدين",
+      "new_tag": false
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "none",
+    "why": "The speech is clear, contemporary, and deals with family dynamics and filial behavior without requiring advanced technical knowledge."
+  },
+  "claims": [
+    {
+      "kind": "quran",
+      "unit": "Surah Al-Isra, verse 24",
+      "pieces": [
+        {
+          "timestamp": "00:00",
+          "timestamp_end": "00:03",
+          "quote": "واخفض لهما جناح الذل",
+          "voice": "source",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "17:24",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "A recitation of part of Quran 17:24 commanding humility toward parents.",
+      "timestamp": "00:00",
+      "timestamp_end": "00:03",
+      "quote": "واخفض لهما جناح الذل"
+    },
+    {
+      "kind": "ruling",
+      "unit": "The impermissibility of treating parents as peers or conditioning respect toward them",
+      "pieces": [
+        {
+          "timestamp": "00:04",
+          "timestamp_end": "00:23",
+          "quote": "علاقة الصديق بصديقه هي علاقة أنداد، أما علاقة الولد بوالديه هي علاقة أدنى لأعلى. مسألة إنه والله تحترمني أحترمك، ترفع صوتك علي أرفع صوتي عليك، هذه لا مكان لها في علاقتك بوالديك، هذا خلل سلوكي وتصور مغلوط عن طبيعة العلاقة معهما.",
+          "voice": "retelling",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Treating parents as peers or reacting to them with conditional respect and raised voices is unacceptable and constitutes a behavioral flaw in Islamic ethics.",
+      "timestamp": "00:04",
+      "timestamp_end": "00:23",
+      "quote": "علاقة الصديق بصديقه هي علاقة أنداد، أما علاقة الولد بوالديه هي علاقة أدنى لأعلى. مسألة إنه والله تحترمني أحترمك، ترفع صوتك علي أرفع صوتي عليك، هذه لا مكان لها في علاقتك بوالديك، هذا خلل سلوكي وتصور مغلوط عن طبيعة العلاقة معهما."
+    },
+    {
+      "kind": "other",
+      "unit": "Critique of imported Western modern parenting theories regarding absolute parent-child equality",
+      "pieces": [
+        {
+          "timestamp": "00:24",
+          "timestamp_end": "00:52",
+          "quote": "مفاهيم التربية الحديثة المستوردة من المجتمع الغربي فيها أفكار جميلة ومبرهنة علمياً، لكنها أيضاً تحوي أخطاء فادحة، منها التحريض على الوالدين، شحن الأبناء بفكرة أن العلاقة بين الأبناء والوالدين قائمة على المساواة المطلقة. هذه المفاهيم نشأت في بيئة متخلفة عن هدي القرآن في تعظيم حق الوالدين، ولم تستطع أن ترقى إلى المعدن الأخلاقي القرآني.",
+          "voice": "retelling",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "opinion",
+      "claim_en": "Western modern parenting models, despite having scientifically valid aspects, contain fatal errors such as instigating children against parents and promoting absolute equality contrary to Quranic guidance.",
+      "timestamp": "00:24",
+      "timestamp_end": "00:52",
+      "quote": "مفاهيم التربية الحديثة المستوردة من المجتمع الغربي فيها أفكار جميلة ومبرهنة علمياً، لكنها أيضاً تحوي أخطاء فادحة، منها التحريض على الوالدين، شحن الأبناء بفكرة أن العلاقة بين الأبناء والوالدين قائمة على المساواة المطلقة. هذه المفاهيم نشأت في بيئة متخلفة عن هدي القرآن في تعظيم حق الوالدين، ولم تستطع أن ترقى إلى المعدن الأخلاقي القرآني."
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 33328
+}

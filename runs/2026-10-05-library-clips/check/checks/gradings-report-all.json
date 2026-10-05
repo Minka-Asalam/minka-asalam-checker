@@ -1,0 +1,493 @@
+{
+ "input": "run-all.json",
+ "at": "2026-10-05T11:32:55.887Z",
+ "lines": 24,
+ "match": [
+  {
+   "id": "68ee08d6-b2a1-4071-b0a3-a5d4deb09487#4.1",
+   "where": "68ee08d6-b2a1-4071-b0a3-a5d4deb09487 · ",
+   "url": "https://dorar.net/h/jbAML0Wf",
+   "line": {
+    "book": "صحيح مسلم",
+    "number": "2822",
+    "grader": "مسلم",
+    "grading": "[صحيح]"
+   },
+   "page": {
+    "ruling": "[صحيح]",
+    "grader": "مسلم",
+    "book": "صحيح مسلم",
+    "ref": "2822",
+    "takhrij": "من أفراد مسلم على البخاري"
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "9d35dee0-ea59-4cdf-bc36-75bedc443e12#1.1",
+   "where": "9d35dee0-ea59-4cdf-bc36-75bedc443e12 · ",
+   "url": "https://dorar.net/h/kwlXLxcl",
+   "line": {
+    "book": "صحيح مسلم",
+    "number": "2581",
+    "grader": "مسلم",
+    "grading": "[صحيح]"
+   },
+   "page": {
+    "ruling": "[صحيح]",
+    "grader": "مسلم",
+    "book": "صحيح مسلم",
+    "ref": "2581",
+    "takhrij": "من أفراد مسلم على البخاري"
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "7dd1d6a5-c1ee-449d-97e9-d4dea2a8743d#1.1",
+   "where": "7dd1d6a5-c1ee-449d-97e9-d4dea2a8743d · ",
+   "url": "https://dorar.net/h/PlSKZAGo",
+   "line": {
+    "book": "صحيح مسلم",
+    "number": "2643",
+    "grader": "مسلم",
+    "grading": "[صحيح]"
+   },
+   "page": {
+    "ruling": "[صحيح]",
+    "grader": "مسلم",
+    "book": "صحيح مسلم",
+    "ref": "2643",
+    "takhrij": "أخرجه البخاري (3208) باختلاف يسير"
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "21152a3d-a9ef-4d8c-853e-f185c8ffe280#1.1",
+   "where": "21152a3d-a9ef-4d8c-853e-f185c8ffe280 · ",
+   "url": "https://dorar.net/h/2cmaZ8GL",
+   "line": {
+    "book": "السلسلة الصحيحة",
+    "number": "199",
+    "grader": "الألباني",
+    "grading": "صحيح"
+   },
+   "page": {
+    "ruling": "صحيح",
+    "grader": "الألباني",
+    "book": "السلسلة الصحيحة",
+    "ref": "199",
+    "takhrij": "أخرجه أحمد (3712) واللفظ له، وابن حبان (972)، والطبراني (10/210) (10352) باختلاف يسير."
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "21152a3d-a9ef-4d8c-853e-f185c8ffe280#1.1/g1",
+   "where": "21152a3d-a9ef-4d8c-853e-f185c8ffe280 · ",
+   "url": "https://dorar.net/h/1GcvRrtv",
+   "line": {
+    "book": "تخريج المسند لشعيب",
+    "number": "3712",
+    "grader": "شعيب الأرناؤوط",
+    "grading": "إسناده ضعيف"
+   },
+   "page": {
+    "ruling": "إسناده ضعيف",
+    "grader": "شعيب الأرناؤوط",
+    "book": "تخريج المسند لشعيب",
+    "ref": "3712",
+    "takhrij": "أخرجه أحمد (3712) واللفظ له، وابن أبي شيبة (29930)، والبزار (1994)"
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "21152a3d-a9ef-4d8c-853e-f185c8ffe280#1.1/g2",
+   "where": "21152a3d-a9ef-4d8c-853e-f185c8ffe280 · ",
+   "url": "https://dorar.net/h/PR9XdzJR",
+   "line": {
+    "book": "تخريج صحيح ابن حبان",
+    "number": "972",
+    "grader": "شعيب الأرناؤوط",
+    "grading": "إسناده صحيح، رجاله رجال الصحيح"
+   },
+   "page": {
+    "ruling": "إسناده صحيح، رجاله رجال الصحيح",
+    "grader": "شعيب الأرناؤوط",
+    "book": "تخريج صحيح ابن حبان",
+    "ref": "972",
+    "takhrij": "أخرجه أحمد (3712)، والطبراني (10/210) (10352)، والحاكم (1877)"
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "21152a3d-a9ef-4d8c-853e-f185c8ffe280#1.2",
+   "where": "21152a3d-a9ef-4d8c-853e-f185c8ffe280 · ",
+   "url": "https://dorar.net/h/2cmaZ8GL",
+   "line": {
+    "book": "السلسلة الصحيحة",
+    "number": "199",
+    "grader": "الألباني",
+    "grading": "صحيح"
+   },
+   "page": {
+    "ruling": "صحيح",
+    "grader": "الألباني",
+    "book": "السلسلة الصحيحة",
+    "ref": "199",
+    "takhrij": "أخرجه أحمد (3712) واللفظ له، وابن حبان (972)، والطبراني (10/210) (10352) باختلاف يسير."
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "21152a3d-a9ef-4d8c-853e-f185c8ffe280#1.2/g1",
+   "where": "21152a3d-a9ef-4d8c-853e-f185c8ffe280 · ",
+   "url": "https://dorar.net/h/1GcvRrtv",
+   "line": {
+    "book": "تخريج المسند لشعيب",
+    "number": "3712",
+    "grader": "شعيب الأرناؤوط",
+    "grading": "إسناده ضعيف"
+   },
+   "page": {
+    "ruling": "إسناده ضعيف",
+    "grader": "شعيب الأرناؤوط",
+    "book": "تخريج المسند لشعيب",
+    "ref": "3712",
+    "takhrij": "أخرجه أحمد (3712) واللفظ له، وابن أبي شيبة (29930)، والبزار (1994)"
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "21152a3d-a9ef-4d8c-853e-f185c8ffe280#1.2/g2",
+   "where": "21152a3d-a9ef-4d8c-853e-f185c8ffe280 · ",
+   "url": "https://dorar.net/h/PR9XdzJR",
+   "line": {
+    "book": "تخريج صحيح ابن حبان",
+    "number": "972",
+    "grader": "شعيب الأرناؤوط",
+    "grading": "إسناده صحيح، رجاله رجال الصحيح"
+   },
+   "page": {
+    "ruling": "إسناده صحيح، رجاله رجال الصحيح",
+    "grader": "شعيب الأرناؤوط",
+    "book": "تخريج صحيح ابن حبان",
+    "ref": "972",
+    "takhrij": "أخرجه أحمد (3712)، والطبراني (10/210) (10352)، والحاكم (1877)"
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "29c6cd88-6947-46fc-b6fb-a7b134021a21#1.1",
+   "where": "29c6cd88-6947-46fc-b6fb-a7b134021a21 · ",
+   "url": "https://dorar.net/h/aFYkn7MY",
+   "line": {
+    "book": "صحيح الترمذي",
+    "number": "2254",
+    "grader": "الألباني",
+    "grading": "صحيح"
+   },
+   "page": {
+    "ruling": "صحيح",
+    "grader": "الألباني",
+    "book": "صحيح الترمذي",
+    "ref": "2254",
+    "takhrij": "أخرجه الترمذي (2254)، وابن ماجة (4016)، والبزار (2790) واللفظ لهم."
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "29c6cd88-6947-46fc-b6fb-a7b134021a21#1.1/g1",
+   "where": "29c6cd88-6947-46fc-b6fb-a7b134021a21 · ",
+   "url": "https://dorar.net/h/REnareCQ",
+   "line": {
+    "book": "الأمالي المطلقة",
+    "number": "166",
+    "grader": "ابن حجر العسقلاني",
+    "grading": "حسن"
+   },
+   "page": {
+    "ruling": "حسن",
+    "grader": "ابن حجر العسقلاني",
+    "book": "الأمالي المطلقة",
+    "ref": "166",
+    "takhrij": "أخرجه الترمذي (2254)، وابن ماجة (4016)، وأحمد (23444) واللفظ لهم."
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "29c6cd88-6947-46fc-b6fb-a7b134021a21#1.1/g2",
+   "where": "29c6cd88-6947-46fc-b6fb-a7b134021a21 · ",
+   "url": "https://dorar.net/h/6baUoLnw",
+   "line": {
+    "book": "صحيح ابن ماجه",
+    "number": "3259",
+    "grader": "الألباني",
+    "grading": "حسن"
+   },
+   "page": {
+    "ruling": "حسن",
+    "grader": "الألباني",
+    "book": "صحيح ابن ماجه",
+    "ref": "3259",
+    "takhrij": "أخرجه الترمذي (2254)، وابن ماجة (4016)، والبزار (2790) واللفظ لهم."
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "1bfc6dd4-0f65-487b-9c7b-406fb9c9cd3c#1.1",
+   "where": "1bfc6dd4-0f65-487b-9c7b-406fb9c9cd3c · ",
+   "url": "https://dorar.net/h/ugnDemwy",
+   "line": {
+    "book": "صحيح مسلم",
+    "number": "2858",
+    "grader": "مسلم",
+    "grading": "[صحيح]"
+   },
+   "page": {
+    "ruling": "[صحيح]",
+    "grader": "مسلم",
+    "book": "صحيح مسلم",
+    "ref": "2858",
+    "takhrij": "أخرجه أحمد (18009)، والطبراني (20/ 302) (716)، وأبو عوانة (12468) واللفظ لهم."
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "43c1fba3-7510-4c27-a0b8-99fd88b8e6ec#1.1",
+   "where": "43c1fba3-7510-4c27-a0b8-99fd88b8e6ec · ",
+   "url": "https://dorar.net/h/x5wiiqJU",
+   "line": {
+    "book": "السلسلة الصحيحة",
+    "number": "4/345",
+    "grader": "الألباني",
+    "grading": "إسناده حسن، رجاله ثقات غير محمد بن مالك"
+   },
+   "page": {
+    "ruling": "إسناده حسن، رجاله ثقات غير محمد بن مالك",
+    "grader": "الألباني",
+    "book": "السلسلة الصحيحة",
+    "ref": "4/345",
+    "takhrij": "أخرجه أحمد (18601) واللفظ له، وابن ماجه (4195) بنحوه مختصرا، والطبراني في ((المعجم الأوسط)) (2588)، والبيهقي (6589) بنحوهما."
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "43c1fba3-7510-4c27-a0b8-99fd88b8e6ec#1.1/g1",
+   "where": "43c1fba3-7510-4c27-a0b8-99fd88b8e6ec · ",
+   "url": "https://dorar.net/h/VCNyCSQt",
+   "line": {
+    "book": "تخريج المسند لشعيب",
+    "number": "18601",
+    "grader": "شعيب الأرناؤوط",
+    "grading": "إسناده ضعيف"
+   },
+   "page": {
+    "ruling": "إسناده ضعيف",
+    "grader": "شعيب الأرناؤوط",
+    "book": "تخريج المسند لشعيب",
+    "ref": "18601",
+    "takhrij": "أخرجه ابن ماجه (4195) مختصراً، وأحمد (18601) واللفظ له"
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "43c1fba3-7510-4c27-a0b8-99fd88b8e6ec#1.2",
+   "where": "43c1fba3-7510-4c27-a0b8-99fd88b8e6ec · ",
+   "url": "https://dorar.net/h/v3Ky7CkK",
+   "line": {
+    "book": "صحيح أبي داود",
+    "number": "4753",
+    "grader": "الألباني",
+    "grading": "صحيح"
+   },
+   "page": {
+    "ruling": "صحيح",
+    "grader": "الألباني",
+    "book": "صحيح أبي داود",
+    "ref": "4753",
+    "takhrij": "أخرجه أبو داود (4753) واللفظ له، والنسائي (2001)، وابن ماجه (1549) مختصراً، وأحمد (18557) باختلاف يسير"
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "8e797724-7beb-4059-9fbc-e67b4da3d9bf#3.1/g1",
+   "where": "8e797724-7beb-4059-9fbc-e67b4da3d9bf · ",
+   "url": "https://dorar.net/h/RwrWyNgH",
+   "line": {
+    "book": "تخريج المسند لشعيب",
+    "number": "17311",
+    "grader": "شعيب الأرناؤوط",
+    "grading": "حسن"
+   },
+   "page": {
+    "ruling": "حسن",
+    "grader": "شعيب الأرناؤوط",
+    "book": "تخريج المسند لشعيب",
+    "ref": "17311",
+    "takhrij": "أخرجه أحمد (17311) واللفظ له، والطبراني (17/330) (913)، والبيهقي في ((شعب الإيمان)) (4540)"
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "8e797724-7beb-4059-9fbc-e67b4da3d9bf#3.2/g1",
+   "where": "8e797724-7beb-4059-9fbc-e67b4da3d9bf · ",
+   "url": "https://dorar.net/h/RwrWyNgH",
+   "line": {
+    "book": "تخريج المسند لشعيب",
+    "number": "17311",
+    "grader": "شعيب الأرناؤوط",
+    "grading": "حسن"
+   },
+   "page": {
+    "ruling": "حسن",
+    "grader": "شعيب الأرناؤوط",
+    "book": "تخريج المسند لشعيب",
+    "ref": "17311",
+    "takhrij": "أخرجه أحمد (17311) واللفظ له، والطبراني (17/330) (913)، والبيهقي في ((شعب الإيمان)) (4540)"
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "eb31fe16-1aec-443c-b9ed-368ff7e04e08#1.1",
+   "where": "eb31fe16-1aec-443c-b9ed-368ff7e04e08 · ",
+   "url": "https://dorar.net/h/1Xe5exzh",
+   "line": {
+    "book": "صحيح البخاري",
+    "number": "6306",
+    "grader": "البخاري",
+    "grading": "[صحيح]"
+   },
+   "page": {
+    "ruling": "[صحيح]",
+    "grader": "البخاري",
+    "book": "صحيح البخاري",
+    "ref": "6306",
+    "takhrij": "من أفراد البخاري على مسلم"
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "eb31fe16-1aec-443c-b9ed-368ff7e04e08#1.2",
+   "where": "eb31fe16-1aec-443c-b9ed-368ff7e04e08 · ",
+   "url": "https://dorar.net/h/1Xe5exzh",
+   "line": {
+    "book": "صحيح البخاري",
+    "number": "6306",
+    "grader": "البخاري",
+    "grading": "[صحيح]"
+   },
+   "page": {
+    "ruling": "[صحيح]",
+    "grader": "البخاري",
+    "book": "صحيح البخاري",
+    "ref": "6306",
+    "takhrij": "من أفراد البخاري على مسلم"
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "4cedc3c7-48f1-4995-ae65-68e9e84e6f32#1.1",
+   "where": "4cedc3c7-48f1-4995-ae65-68e9e84e6f32 · ",
+   "url": "https://dorar.net/h/dgfrEeib",
+   "line": {
+    "book": "صحيح مسلم",
+    "number": "596",
+    "grader": "مسلم",
+    "grading": "[صحيح]"
+   },
+   "page": {
+    "ruling": "[صحيح]",
+    "grader": "مسلم",
+    "book": "صحيح مسلم",
+    "ref": "596",
+    "takhrij": "أخرجه مسلم ( (596) واللفظ له، والترمذي (3412)، والنسائي (1349) باحتلاف يسير"
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  },
+  {
+   "id": "c8376e53-a81f-42a4-b0f2-7473a3a7942e#1.1",
+   "where": "c8376e53-a81f-42a4-b0f2-7473a3a7942e · ",
+   "url": "https://dorar.net/h/jbAML0Wf",
+   "line": {
+    "book": "صحيح مسلم",
+    "number": "2822",
+    "grader": "مسلم",
+    "grading": "[صحيح]"
+   },
+   "page": {
+    "ruling": "[صحيح]",
+    "grader": "مسلم",
+    "book": "صحيح مسلم",
+    "ref": "2822",
+    "takhrij": "من أفراد مسلم على البخاري"
+   },
+   "problems": [],
+   "cited": "the page's own book"
+  }
+ ],
+ "mismatch": [],
+ "unclear": [
+  {
+   "id": "8e797724-7beb-4059-9fbc-e67b4da3d9bf#3.1",
+   "where": "8e797724-7beb-4059-9fbc-e67b4da3d9bf · ",
+   "url": "https://dorar.net/h/o9xm4x1b",
+   "line": {
+    "book": "السلسلة الصحيحة",
+    "number": "413",
+    "grader": "الألباني",
+    "grading": "إسناده قوي"
+   },
+   "page": {
+    "ruling": "إسناده قوي",
+    "grader": "الألباني",
+    "book": "السلسلة الصحيحة",
+    "ref": "413",
+    "takhrij": "أخرجه أحمد (17311) واللفظ له، والطبراني (17/330 رقم 913)، والروياني (260)"
+   },
+   "problems": [],
+   "note": "the page gives a note, not a grade: «إسناده قوي»",
+   "cited": "the page's own book"
+  },
+  {
+   "id": "8e797724-7beb-4059-9fbc-e67b4da3d9bf#3.2",
+   "where": "8e797724-7beb-4059-9fbc-e67b4da3d9bf · ",
+   "url": "https://dorar.net/h/o9xm4x1b",
+   "line": {
+    "book": "السلسلة الصحيحة",
+    "number": "413",
+    "grader": "الألباني",
+    "grading": "إسناده قوي"
+   },
+   "page": {
+    "ruling": "إسناده قوي",
+    "grader": "الألباني",
+    "book": "السلسلة الصحيحة",
+    "ref": "413",
+    "takhrij": "أخرجه أحمد (17311) واللفظ له، والطبراني (17/330 رقم 913)، والروياني (260)"
+   },
+   "problems": [],
+   "note": "the page gives a note, not a grade: «إسناده قوي»",
+   "cited": "the page's own book"
+  }
+ ],
+ "unchecked": []
+}

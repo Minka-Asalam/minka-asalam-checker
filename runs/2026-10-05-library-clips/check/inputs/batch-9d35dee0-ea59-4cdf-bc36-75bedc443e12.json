@@ -1,0 +1,37 @@
+{
+ "id": "9d35dee0-ea59-4cdf-bc36-75bedc443e12",
+ "title": "You Grew It, They Ate It",
+ "speaker": "إسماعيل بن موسى منك",
+ "speaker_kind": "scholar",
+ "language": "en",
+ "units": true,
+ "extractor_model": "gemini-3.8-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "hadith",
+   "timestamp": "00:14",
+   "timestamp_end": "00:31",
+   "quote": "go and read the hadith of al-Muflis, go and read the hadith of the bankrupt person, he has a lot of salah, a lot of zakah, a lot of ibadah, but he slandered this one, he belittled that one, he abused that one, he ate the wealth of this one, and all those good deeds were done for someone else",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "The Prophet ﷺ explained that the bankrupt person on the Day of Judgment is one who brings many deeds of worship, but whose good deeds are distributed to the people he wronged, slandered, and abused.",
+   "key_ar": "إن المفلس من أمتي يأتي يوم القيامة بصلاة وصيام وزكاة",
+   "unit": "Hadith of the bankrupt person (al-muflis) on the Day of Judgment",
+   "pieces": [
+    {
+     "timestamp": "00:14",
+     "timestamp_end": "00:31",
+     "quote": "go and read the hadith of al-Muflis, go and read the hadith of the bankrupt person, he has a lot of salah, a lot of zakah, a lot of ibadah, but he slandered this one, he belittled that one, he abused that one, he ate the wealth of this one, and all those good deeds were done for someone else",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  }
+ ],
+ "seconds": 88
+}

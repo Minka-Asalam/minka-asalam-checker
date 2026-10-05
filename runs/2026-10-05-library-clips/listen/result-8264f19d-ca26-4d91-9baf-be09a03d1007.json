@@ -1,0 +1,79 @@
+{
+  "language": "en",
+  "summary_ar": "يورد المتحدث موعظة رمزية تُشبِّه الدنيا بامرأة حسناء محجبة طلّقها العقلاء والأذكياء ثلاث تطليقات؛ مبيناً أن حقيقة الدنيا خفية لا يدركها إلا الكيِّس الفطن.",
+  "summary_en": "The speaker shares a parable advising someone smitten with the worldly life, depicting the dunya as a beautiful, veiled woman whom wise people have divorced thrice because only the clever and discerning perceive its true reality.",
+  "tags": [
+    {
+      "node_path": "التزكية والأخلاق/الرقائق والزهد/الزهد والورع",
+      "timestamp": "00:31",
+      "quote_ar": "Who is this woman? Dunya. The woman is the dunya.",
+      "why": "Explains the necessity of ascetic detachment from the worldly life through the metaphor of divorcing it.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/الرقائق والزهد/الزهد والورع",
+      "tag_ar": "الزهد والورع",
+      "new_tag": true
+    },
+    {
+      "node_path": "التزكية والأخلاق/أمراض القلوب/حبّ الدنيا",
+      "timestamp": "00:10",
+      "quote_ar": "I see that you're in love with a woman, a beautiful woman, she's covered with a veil, you want to marry her and you're in love with her.",
+      "why": "Warns against infatuation and delusion with worldly allurements.",
+      "confidence": "medium",
+      "path_ar": "التزكية والأخلاق/أمراض القلوب/حبّ الدنيا",
+      "tag_ar": "حبّ الدنيا",
+      "new_tag": true
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "none",
+    "why": "Delivered as an accessible, allegorical spiritual reminder in English suitable for a general audience."
+  },
+  "claims": [
+    {
+      "kind": "saying",
+      "unit": "Allegorical advice comparing the dunya to a veiled woman whom the wise have divorced three times",
+      "pieces": [
+        {
+          "timestamp": "00:00",
+          "timestamp_end": "00:07",
+          "quote": "this woman there's something strange about her. The intelligent people have divorced her three times: talaq, talaq, talaq.",
+          "voice": "retelling",
+          "cue": ""
+        },
+        {
+          "timestamp": "00:08",
+          "timestamp_end": "00:30",
+          "quote": "I see that you're in love with a woman, a beautiful woman, she's covered with a veil, you want to marry her and you're in love with her. But this woman there's something strange about her. The intelligent people have divorced her three times: talaq, talaq, talaq. Intelligent people, they knew this woman is no good, they've already given her three times divorce.",
+          "voice": "retelling",
+          "cue": "He says to this person he's advising"
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "The dunya is like an enticing veiled woman whom the truly wise and discerning have permanently divorced.",
+      "timestamp": "00:00",
+      "timestamp_end": "00:30",
+      "quote": "this woman there's something strange about her. The intelligent people have divorced her three times: talaq, talaq, talaq. … I see that you're in love with a woman, a beautiful woman, she's covered with a veil, you want to marry her and you're in love with her. But this woman there's something strange about her. The intelligent people have divorced her three times: talaq, talaq, talaq. Intelligent people, they knew this woman is no good, they've already given her three times divorce."
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 31743
+}

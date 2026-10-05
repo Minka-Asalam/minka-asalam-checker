@@ -1,0 +1,112 @@
+{
+ "id": "29c6cd88-6947-46fc-b6fb-a7b134021a21",
+ "title": "ارحم نفسك",
+ "speaker": "د. عبدالرحمن ذاكر الهامشي",
+ "speaker_kind": "scholar",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.5-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "hadith",
+   "timestamp": "00:04",
+   "timestamp_end": "00:14",
+   "quote": "لا يحل لمسلم أن يذل نفسه. قالوا وكيف يذلها يا رسول الله؟ قال يكلفها من البلاء ما لا تطيق",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "A Muslim is not permitted to humiliate himself by taking on more trials or burdens than he can bear.",
+   "key_ar": "لا ينبغي للمؤمن أن يذل نفسه يتعرض من البلاء لما لا يطيق",
+   "unit": "Hadith: 'It is not fitting for a believer to humiliate himself...'",
+   "pieces": [
+    {
+     "timestamp": "00:04",
+     "timestamp_end": "00:14",
+     "quote": "لا يحل لمسلم أن يذل نفسه. قالوا وكيف يذلها يا رسول الله؟ قال يكلفها من البلاء ما لا تطيق",
+     "voice": "source",
+     "cue": "الرسول عنده حديث جميل يقول"
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 2,
+   "kind": "other",
+   "timestamp": "00:17",
+   "timestamp_end": "00:20",
+   "quote": "وأحياناً ملحد لا يؤمن لا ديني، إذا ضاقت به الحياة ينظر إلى السماء",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "When a non-believer or atheist faces extreme hardship and narrowness in life, they instinctively look up to the sky.",
+   "key_ar": null,
+   "unit": "Atheists look up to the sky when in severe distress",
+   "pieces": [
+    {
+     "timestamp": "00:17",
+     "timestamp_end": "00:20",
+     "quote": "وأحياناً ملحد لا يؤمن لا ديني، إذا ضاقت به الحياة ينظر إلى السماء",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 3,
+   "kind": "other",
+   "timestamp": "00:34",
+   "timestamp_end": "00:41",
+   "quote": "هذا الإنسان له قيمة عند الله سبحانه وتعالى، له قيمة، ليش له قيمة؟ لأن ما خلق السموات والأرض إلا له",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "Human beings have great value in the sight of Allah, as He did not create the heavens and the earth except for them.",
+   "key_ar": null,
+   "unit": "The universe was created for humanity",
+   "pieces": [
+    {
+     "timestamp": "00:34",
+     "timestamp_end": "00:41",
+     "quote": "هذا الإنسان له قيمة عند الله سبحانه وتعالى، له قيمة، ليش له قيمة؟ لأن ما خلق السموات والأرض إلا له",
+     "voice": "retelling",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  },
+  {
+   "i": 4,
+   "kind": "saying",
+   "timestamp": "00:44",
+   "timestamp_end": "00:47",
+   "quote": "أصلاً كمال الإنسان في اعترافه بنقصه",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "The spiritual perfection of a human being lies in their recognition and admission of their own flaws and deficiencies.",
+   "key_ar": null,
+   "unit": "Human perfection lies in admitting deficiency",
+   "pieces": [
+    {
+     "timestamp": "00:44",
+     "timestamp_end": "00:47",
+     "quote": "أصلاً كمال الإنسان في اعترافه بنقصه",
+     "voice": "source",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  }
+ ],
+ "seconds": 52
+}

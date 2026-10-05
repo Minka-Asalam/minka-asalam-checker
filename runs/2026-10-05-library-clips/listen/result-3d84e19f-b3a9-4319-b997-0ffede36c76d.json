@@ -1,0 +1,72 @@
+{
+  "language": "ar-msa",
+  "summary_ar": "يتحدث المقطع عن مراقبة الله عز وجل في الخلوات، حيث يستشهد المتحدث بأبيات شعرية تحث المرء على الاستحياء من الله وتذكر رؤيته له عند دواعي المعصية.",
+  "summary_en": "The video highlights the concept of mindfulness of Allah (Muraqabah) in times of solitude, quoting poetry that urges the soul to feel shame before Allah and remember His all-seeing nature when tempted to sin.",
+  "tags": [
+    {
+      "node_path": "التزكية والأخلاق/القلب وأعماله/المراقبة والمحاسبة",
+      "timestamp": "00:00",
+      "quote_ar": "وإذا خلوت بريبة في ظلمة والنفس داعية إلى العصيان فاستحي من نظر الإله وقل لها إن الذي خلق الظلام يراني",
+      "why": "The quoted lines directly discuss the concept of Muraqabah (mindfulness of Allah's watchfulness) when alone and tempted to sin.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/القلب وأعماله/المراقبة والمحاسبة",
+      "tag_ar": "المراقبة والمحاسبة",
+      "new_tag": false
+    },
+    {
+      "node_path": "علوم الآلة/الأدب والشعر/الشعر العربي",
+      "timestamp": "00:00",
+      "quote_ar": "وإذا خلوت بريبة في ظلمة والنفس داعية إلى العصيان فاستحي من نظر الإله وقل لها إن الذي خلق الظلام يراني",
+      "why": "The speaker delivers the entire message through the recitation of classical Arabic poetic verses.",
+      "confidence": "high",
+      "path_ar": "علوم الآلة/الأدب والشعر/الشعر العربي",
+      "tag_ar": "الشعر العربي",
+      "new_tag": true
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "basic",
+    "why": "The poetry is simple, clear, and addresses basic spiritual themes of self-restraint and piety accessible to a general audience."
+  },
+  "claims": [
+    {
+      "kind": "saying",
+      "unit": "أبيات شعرية في مراقبة الله في الخلوات",
+      "pieces": [
+        {
+          "timestamp": "00:00",
+          "timestamp_end": "00:12",
+          "quote": "وإذا خلوت بريبة في ظلمة والنفس داعية إلى العصيان فاستحي من نظر الإله وقل لها إن الذي خلق الظلام يراني",
+          "voice": "source",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "One must feel shy before Allah's gaze when alone and tempted to sin, remembering that the One who created the darkness sees everything.",
+      "timestamp": "00:00",
+      "timestamp_end": "00:12",
+      "quote": "وإذا خلوت بريبة في ظلمة والنفس داعية إلى العصيان فاستحي من نظر الإله وقل لها إن الذي خلق الظلام يراني"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.5-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 31227
+}

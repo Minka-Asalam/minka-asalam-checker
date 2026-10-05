@@ -1,0 +1,60 @@
+{
+ "id": "d975b346-49ce-4f24-bf6a-95ebab32237a",
+ "title": "اية سيدنا إبراهيم",
+ "speaker": "Dr. Haifaa Younis",
+ "speaker_kind": "scholar",
+ "language": "ar-mixed",
+ "units": true,
+ "extractor_model": "gemini-3.8-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "quran",
+   "timestamp": "00:04",
+   "timestamp_end": "01:07",
+   "quote": "وقال الشيطان لما قضي الأمر … وقال الشيطان لما قضي الأمر أن الله وعدكم وعد الحق ووعدتكم فأخلفتكم … وما كان لي عليكم من سلطان إلا أن دعوتكم فاستجبتم لي … فلا تلوموني ولوموا أنفسكم ما أنا بمصرخكم وما أنتم بمصرخي إني كفرت سبحان الله بما أشركتموني من قبل وإن الظالمين لهم عذاب أليم",
+   "attribution": "آية إبراهيم",
+   "reference": "14:22",
+   "stated_as": "definitive",
+   "claim_en": "Recitation of Surah Ibrahim verse 22 recounting Satan's confession and disavowal of his followers on the Day of Judgment.",
+   "key_ar": null,
+   "unit": "Surah Ibrahim, verse 22",
+   "pieces": [
+    {
+     "timestamp": "00:04",
+     "timestamp_end": "00:06",
+     "quote": "وقال الشيطان لما قضي الأمر",
+     "voice": "source",
+     "cue": ""
+    },
+    {
+     "timestamp": "00:12",
+     "timestamp_end": "00:18",
+     "quote": "وقال الشيطان لما قضي الأمر أن الله وعدكم وعد الحق ووعدتكم فأخلفتكم",
+     "voice": "source",
+     "cue": ""
+    },
+    {
+     "timestamp": "00:31",
+     "timestamp_end": "00:36",
+     "quote": "وما كان لي عليكم من سلطان إلا أن دعوتكم فاستجبتم لي",
+     "voice": "source",
+     "cue": "شوف اللي بعدها"
+    },
+    {
+     "timestamp": "00:53",
+     "timestamp_end": "01:07",
+     "quote": "فلا تلوموني ولوموا أنفسكم ما أنا بمصرخكم وما أنتم بمصرخي إني كفرت سبحان الله بما أشركتموني من قبل وإن الظالمين لهم عذاب أليم",
+     "voice": "source",
+     "cue": "بعدين شو يقول لنا؟"
+    }
+   ],
+   "inside": 0,
+   "verse_text": "14:22 وَقَالَ الشَّيْطَانُ لَمَّا قُضِيَ الْأَمْرُ إِنَّ اللَّهَ وَعَدَكُمْ وَعْدَ الْحَقِّ وَوَعَدتُّكُمْ فَأَخْلَفْتُكُمْ ۖ وَمَا كَانَ لِيَ عَلَيْكُم مِّن سُلْطَانٍ إِلَّا أَن دَعَوْتُكُمْ فَاسْتَجَبْتُمْ لِي ۖ فَلَا تَلُومُونِي وَلُومُوا أَنفُسَكُم ۖ مَّا أَنَا بِمُصْرِخِكُمْ وَمَا أَنتُم بِمُصْرِخِيَّ ۖ إِنِّي كَفَرْتُ بِمَا أَشْرَكْتُمُونِ مِن قَبْلُ ۗ إِنَّ الظَّالِمِينَ لَهُمْ عَذَابٌ أَلِيمٌ",
+   "verse_en": "And Shaitân (Satan) will say when the matter has been decided: \"Verily, Allâh promised you a promise of truth. And I too promised you, but I betrayed you. I had no authority over you except that I called you, and you responded to me. So blame me not, but blame yourselves. I cannot help you, nor can you help me. I deny your former act in associating me (Satan) as a partner with Allâh (by obeying me in the life of the world). Verily, there is a painful torment for the Zâlimûn (polytheists and wrong-doers).\"",
+   "verse_key": "14:22",
+   "verse_translation_id": "203"
+  }
+ ],
+ "seconds": 68
+}

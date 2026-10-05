@@ -1,0 +1,116 @@
+{
+  "language": "ar-mixed",
+  "summary_ar": "يحث المتحدث على إعطاء الصلاة الأولوية والمبادرة إليها فور دخول وقتها وقطع الانشغال عنها بالعمل أو الصحبة، مبيناً عظم أجر هذه المسارعة عند الله ومستشهداً بآيات الحث على استباق الخيرات والمسابقة إليها.",
+  "summary_en": "The speaker urges prioritizing prayer and performing it promptly upon the entrance of its time despite worldly distractions like work or socializing, citing Quranic verses that command hastening and racing toward good deeds and forgiveness.",
+  "tags": [
+    {
+      "node_path": "الفقه/الصلاة/مواقيت الصلاة",
+      "timestamp": "00:00",
+      "quote_ar": "يعني مثلا لما يدخل وقت الصلاة وأنت منهمك في عمل أو في خرجة مع أصحاب الدقائق البسيطة التي ستخصصها للصلاة وتترك انشغالك فيها ليست هينة عند الله.",
+      "why": "The speaker addresses leaving worldly occupations immediately when the prayer time enters to pray.",
+      "confidence": "high",
+      "path_ar": "الفقه/الصلاة/مواقيت الصلاة",
+      "tag_ar": "مواقيت الصلاة",
+      "new_tag": true
+    },
+    {
+      "node_path": "الفقه/الصلاة/فضل الصلاة",
+      "timestamp": "00:12",
+      "quote_ar": "أن تعطي صلاتك الأولوية ليس شيئا قليلا عند الله.",
+      "why": "The speaker stresses the high virtue and spiritual value of giving prayer precedence over daily tasks.",
+      "confidence": "high",
+      "path_ar": "الفقه/الصلاة/فضل الصلاة",
+      "tag_ar": "فضل الصلاة",
+      "new_tag": false
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens"
+    ],
+    "assumes": "basic",
+    "why": "The talk uses accessible language and common life scenarios to encourage timely observance of prayer."
+  },
+  "claims": [
+    {
+      "kind": "quran",
+      "unit": "Surah Al-Baqarah, verse 148 (or Al-Ma'idah, verse 48): competing in good deeds",
+      "pieces": [
+        {
+          "timestamp": "00:16",
+          "timestamp_end": "00:17",
+          "quote": "فاستبقوا الخيرات",
+          "voice": "source",
+          "cue": "الله الذي يقول"
+        }
+      ],
+      "inside": 0,
+      "attribution": "الله الذي يقول",
+      "reference": "2:148",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "God commands believers to race toward good deeds.",
+      "timestamp": "00:16",
+      "timestamp_end": "00:17",
+      "quote": "فاستبقوا الخيرات"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah Ali 'Imran, verse 133: hastening to forgiveness",
+      "pieces": [
+        {
+          "timestamp": "00:17",
+          "timestamp_end": "00:19",
+          "quote": "وسارعوا إلى مغفرة من ربكم",
+          "voice": "source",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "3:133",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "God commands believers to hasten to forgiveness from their Lord.",
+      "timestamp": "00:17",
+      "timestamp_end": "00:19",
+      "quote": "وسارعوا إلى مغفرة من ربكم"
+    },
+    {
+      "kind": "quran",
+      "unit": "Surah Al-Hadid, verse 21: racing toward forgiveness",
+      "pieces": [
+        {
+          "timestamp": "00:19",
+          "timestamp_end": "00:21",
+          "quote": "سابقوا إلى مغفرة من ربكم",
+          "voice": "source",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "57:21",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "God commands believers to vie with one another for forgiveness from their Lord.",
+      "timestamp": "00:19",
+      "timestamp_end": "00:21",
+      "quote": "سابقوا إلى مغفرة من ربكم"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 32693
+}

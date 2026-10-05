@@ -1,0 +1,37 @@
+{
+ "id": "3d84e19f-b3a9-4319-b997-0ffede36c76d",
+ "title": "الخلوات؟",
+ "speaker": "الشيخ ياسر الدوسري",
+ "speaker_kind": "scholar",
+ "language": "ar-msa",
+ "units": true,
+ "extractor_model": "gemini-3.5-flash",
+ "claims": [
+  {
+   "i": 1,
+   "kind": "saying",
+   "timestamp": "00:00",
+   "timestamp_end": "00:12",
+   "quote": "وإذا خلوت بريبة في ظلمة والنفس داعية إلى العصيان فاستحي من نظر الإله وقل لها إن الذي خلق الظلام يراني",
+   "attribution": "",
+   "reference": "",
+   "stated_as": "definitive",
+   "claim_en": "One must feel shy before Allah's gaze when alone and tempted to sin, remembering that the One who created the darkness sees everything.",
+   "key_ar": null,
+   "unit": "أبيات شعرية في مراقبة الله في الخلوات",
+   "pieces": [
+    {
+     "timestamp": "00:00",
+     "timestamp_end": "00:12",
+     "quote": "وإذا خلوت بريبة في ظلمة والنفس داعية إلى العصيان فاستحي من نظر الإله وقل لها إن الذي خلق الظلام يراني",
+     "voice": "source",
+     "cue": ""
+    }
+   ],
+   "inside": 0,
+   "verse_text": null,
+   "verse_en": null
+  }
+ ],
+ "seconds": 12
+}

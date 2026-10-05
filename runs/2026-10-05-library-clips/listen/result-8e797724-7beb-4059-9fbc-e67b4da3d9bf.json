@@ -1,0 +1,143 @@
+{
+  "language": "ar-mixed",
+  "summary_ar": "يوضح الشيخ الحكمة من فتح أبواب النعم على العصاة في قوله تعالى {فلما نسوا ما ذكروا به فتحنا عليهم أبواب كل شيء}، مبينًا أن هذا الإعطاء إنما هو ابتلاء واستدراج، ويستدل على ذلك بحديث النبي ﷺ المفسِّر للآية.",
+  "summary_en": "The speaker explains the wisdom behind granting worldly abundance to sinners in Quran 6:44, clarifying that such blessings are a form of trial and gradual luring (istidraj), citing the prophetic hadith that interprets the verse.",
+  "tags": [
+    {
+      "node_path": "القرآن وعلومه/التفسير/التفسير بالمأثور/القرآن بالسنة",
+      "timestamp": "00:21",
+      "quote_ar": "ولهذا جاء في الحديث عن النبي صلى الله عليه وسلم إذا رأيت العبد على المعصية والله يعطيه ما يحب... فإنما هو استدراج ثم قرأ قوله تبارك وتعالى",
+      "why": "The speaker interprets the Quranic verse by citing the prophetic hadith that explicitly explains it.",
+      "confidence": "high",
+      "path_ar": "القرآن وعلومه/التفسير/التفسير بالمأثور/القرآن بالسنة",
+      "tag_ar": "القرآن بالسنة",
+      "new_tag": true
+    },
+    {
+      "node_path": "القرآن وعلومه/تدبّر القرآن",
+      "timestamp": "00:06",
+      "quote_ar": "مع أن الإنسان قد يقول لا، الأصل فلما تركوا ما أمرهم الله به عذبهم، أخذهم أخذ عزيز مقتدر، كيف فتحنا عليهم أبواب كل شيء؟",
+      "why": "The speaker contemplates the deeper meaning and divine wisdom behind the unexpected phrasing of the verse.",
+      "confidence": "medium",
+      "path_ar": "القرآن وعلومه/تدبّر القرآن",
+      "tag_ar": "تدبّر القرآن",
+      "new_tag": true
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult"
+    ],
+    "assumes": "basic",
+    "why": "Explains a Quranic verse and hadith clearly in everyday language with basic theological concepts."
+  },
+  "claims": [
+    {
+      "kind": "quran",
+      "unit": "Surah Al-An'am (6:44)",
+      "pieces": [
+        {
+          "timestamp": "00:00",
+          "timestamp_end": "00:05",
+          "quote": "فلما نسوا ما ذكروا به فتحنا عليهم أبواب كل شيء",
+          "voice": "source",
+          "cue": ""
+        },
+        {
+          "timestamp": "00:48",
+          "timestamp_end": "00:55",
+          "quote": "فلما نسوا ما ذكروا به فتحنا عليهم أبواب كل شيء حتى إذا فرحوا بما أوتوا أخذناهم بغتة فإذا هم مبلسون",
+          "voice": "source",
+          "cue": "ثم قرأ قوله تبارك وتعالى"
+        }
+      ],
+      "inside": 0,
+      "attribution": "قوله تبارك وتعالى",
+      "reference": "6:44",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Recitation of Quran 6:44 describing how worldly gates are opened for those who forget admonition before sudden punishment strikes them.",
+      "timestamp": "00:00",
+      "timestamp_end": "00:55",
+      "quote": "فلما نسوا ما ذكروا به فتحنا عليهم أبواب كل شيء … فلما نسوا ما ذكروا به فتحنا عليهم أبواب كل شيء حتى إذا فرحوا بما أوتوا أخذناهم بغتة فإذا هم مبلسون"
+    },
+    {
+      "kind": "saying",
+      "unit": "Scholarly statement that granting blessings to the disobedient is a trial",
+      "pieces": [
+        {
+          "timestamp": "00:17",
+          "timestamp_end": "00:20",
+          "quote": "قال أهل العلم: هذا من الابتلاء، هذا من الابتلاء",
+          "voice": "source",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "أهل العلم",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Scholars explain that opening worldly blessings for those who disobey Allah is a form of trial and test.",
+      "timestamp": "00:17",
+      "timestamp_end": "00:20",
+      "quote": "قال أهل العلم: هذا من الابتلاء، هذا من الابتلاء"
+    },
+    {
+      "kind": "hadith",
+      "unit": "Prophetic hadith defining continuous worldly blessings during sin as istidraj",
+      "pieces": [
+        {
+          "timestamp": "00:25",
+          "timestamp_end": "00:29",
+          "quote": "إذا رأيت العبد",
+          "voice": "source",
+          "cue": "ولهذا جاء في الحديث عن النبي صلى الله عليه وسلم"
+        },
+        {
+          "timestamp": "00:30",
+          "timestamp_end": "00:38",
+          "quote": "إذا رأيت العبد على المعصية والله يعطيه ما يحب",
+          "voice": "source",
+          "cue": "يقول النبي صلى الله عليه وسلم"
+        },
+        {
+          "timestamp": "00:43",
+          "timestamp_end": "00:45",
+          "quote": "فإنما هو استدراج",
+          "voice": "source",
+          "cue": "يقول النبي صلى الله عليه وسلم"
+        },
+        {
+          "timestamp": "00:46",
+          "timestamp_end": "00:55",
+          "quote": "ثم قرأ قوله تبارك وتعالى فلما نسوا ما ذكروا به فتحنا عليهم أبواب كل شيء حتى إذا فرحوا بما أوتوا أخذناهم بغتة فإذا هم مبلسون",
+          "voice": "retelling",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "في الحديث عن النبي صلى الله عليه وسلم",
+      "reference": "",
+      "key_ar": "إذا رأيت الله يعطي العبد من الدنيا على معاصيه ما يحب فإنما هو استدراج",
+      "stated_as": "definitive",
+      "claim_en": "The Prophet ﷺ stated that if a servant persists in sin while Allah continues to grant him what he desires, it is merely istidraj (luring to doom), reciting verse 6:44.",
+      "timestamp": "00:25",
+      "timestamp_end": "00:55",
+      "quote": "إذا رأيت العبد … إذا رأيت العبد على المعصية والله يعطيه ما يحب … فإنما هو استدراج … ثم قرأ قوله تبارك وتعالى فلما نسوا ما ذكروا به فتحنا عليهم أبواب كل شيء حتى إذا فرحوا بما أوتوا أخذناهم بغتة فإذا هم مبلسون"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.8-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 35762
+}

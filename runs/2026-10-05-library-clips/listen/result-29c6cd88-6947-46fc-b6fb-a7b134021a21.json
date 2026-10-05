@@ -1,0 +1,149 @@
+{
+  "language": "ar-mixed",
+  "summary_ar": "يدعو المتحدث إلى الرفق بالنفس وعدم تحميلها ما يتجاوز طاقتها مستشهداً بحديث نبوي، ويذكر بسعة رحمة الله التي تسع ضعف الإنسان ونقصه، حاثاً على التقرب إليه بالافتقار والاعتراف بالتقصير.",
+  "summary_en": "The speaker advises being gentle with oneself and not overburdening one's soul, citing a prophetic hadith. He highlights Allah's vast mercy toward human weakness and encourages drawing closer to Him through humility and acknowledging one's deficiencies.",
+  "tags": [
+    {
+      "node_path": "التزكية والأخلاق/الأخلاق/الأخلاق مع النفس",
+      "timestamp": "00:01",
+      "quote_ar": "ارحم نفسك، ارحم نفسك... لا يحل لمسلم أن يذل نفسه",
+      "why": "The speaker advises the listener to have mercy on their own soul, avoid self-humiliation, and not take on trials beyond their capacity.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/الأخلاق/الأخلاق مع النفس",
+      "tag_ar": "الأخلاق مع النفس",
+      "new_tag": true
+    },
+    {
+      "node_path": "العقيدة/أركان الإيمان/الإيمان بالله/وجود الله/دلالة الفطرة",
+      "timestamp": "00:17",
+      "quote_ar": "وأحياناً ملحد لا يؤمن لا ديني، إذا ضاقت به الحياة ينظر إلى السماء",
+      "why": "The speaker points out the instinctive human inclination to look to the heavens during distress, which is a key argument for the existence of God based on innate nature (fitrah).",
+      "confidence": "high",
+      "path_ar": "العقيدة/أركان الإيمان/الإيمان بالله/وجود الله/دلالة الفطرة",
+      "tag_ar": "دلالة الفطرة",
+      "new_tag": true
+    },
+    {
+      "node_path": "التزكية والأخلاق/القلب وأعماله/أعمال القلوب/الإنابة والخشوع",
+      "timestamp": "00:41",
+      "quote_ar": "دائماً أقبل على عتبات رحمته وتمرغ بنقصك، أصلاً كمال الإنسان في اعترافه بنقصه",
+      "why": "The speaker teaches approaching Allah with absolute humility, brokenness, and acknowledgment of one's shortcomings.",
+      "confidence": "high",
+      "path_ar": "التزكية والأخلاق/القلب وأعماله/أعمال القلوب/الإنابة والخشوع",
+      "tag_ar": "الإنابة والخشوع",
+      "new_tag": false
+    }
+  ],
+  "not_covered": "",
+  "audience": {
+    "for": [
+      "general_adult",
+      "teens",
+      "new_to_islam"
+    ],
+    "assumes": "none",
+    "why": "The discourse is motivational, uses simple colloquial-infused language, explains basic concepts gently, and requires no specialized theological background."
+  },
+  "claims": [
+    {
+      "kind": "hadith",
+      "unit": "Hadith: 'It is not fitting for a believer to humiliate himself...'",
+      "pieces": [
+        {
+          "timestamp": "00:04",
+          "timestamp_end": "00:14",
+          "quote": "لا يحل لمسلم أن يذل نفسه. قالوا وكيف يذلها يا رسول الله؟ قال يكلفها من البلاء ما لا تطيق",
+          "voice": "source",
+          "cue": "الرسول عنده حديث جميل يقول"
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "لا ينبغي للمؤمن أن يذل نفسه يتعرض من البلاء لما لا يطيق",
+      "stated_as": "definitive",
+      "claim_en": "A Muslim is not permitted to humiliate himself by taking on more trials or burdens than he can bear.",
+      "timestamp": "00:04",
+      "timestamp_end": "00:14",
+      "quote": "لا يحل لمسلم أن يذل نفسه. قالوا وكيف يذلها يا رسول الله؟ قال يكلفها من البلاء ما لا تطيق"
+    },
+    {
+      "kind": "other",
+      "unit": "Atheists look up to the sky when in severe distress",
+      "pieces": [
+        {
+          "timestamp": "00:17",
+          "timestamp_end": "00:20",
+          "quote": "وأحياناً ملحد لا يؤمن لا ديني، إذا ضاقت به الحياة ينظر إلى السماء",
+          "voice": "retelling",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "When a non-believer or atheist faces extreme hardship and narrowness in life, they instinctively look up to the sky.",
+      "timestamp": "00:17",
+      "timestamp_end": "00:20",
+      "quote": "وأحياناً ملحد لا يؤمن لا ديني، إذا ضاقت به الحياة ينظر إلى السماء"
+    },
+    {
+      "kind": "other",
+      "unit": "The universe was created for humanity",
+      "pieces": [
+        {
+          "timestamp": "00:34",
+          "timestamp_end": "00:41",
+          "quote": "هذا الإنسان له قيمة عند الله سبحانه وتعالى، له قيمة، ليش له قيمة؟ لأن ما خلق السموات والأرض إلا له",
+          "voice": "retelling",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "Human beings have great value in the sight of Allah, as He did not create the heavens and the earth except for them.",
+      "timestamp": "00:34",
+      "timestamp_end": "00:41",
+      "quote": "هذا الإنسان له قيمة عند الله سبحانه وتعالى، له قيمة، ليش له قيمة؟ لأن ما خلق السموات والأرض إلا له"
+    },
+    {
+      "kind": "saying",
+      "unit": "Human perfection lies in admitting deficiency",
+      "pieces": [
+        {
+          "timestamp": "00:44",
+          "timestamp_end": "00:47",
+          "quote": "أصلاً كمال الإنسان في اعترافه بنقصه",
+          "voice": "source",
+          "cue": ""
+        }
+      ],
+      "inside": 0,
+      "attribution": "",
+      "reference": "",
+      "key_ar": "",
+      "stated_as": "definitive",
+      "claim_en": "The spiritual perfection of a human being lies in their recognition and admission of their own flaws and deficiencies.",
+      "timestamp": "00:44",
+      "timestamp_end": "00:47",
+      "quote": "أصلاً كمال الإنسان في اعترافه بنقصه"
+    }
+  ],
+  "flags": {
+    "takfir_of_persons": false,
+    "sectarian_polemic": false,
+    "sensitive_for_teens": false,
+    "political": false,
+    "why": ""
+  },
+  "model": "gemini-3.5-flash",
+  "mode": "deep",
+  "claims_mode": "full",
+  "units": true,
+  "tokens": 34301
+}
