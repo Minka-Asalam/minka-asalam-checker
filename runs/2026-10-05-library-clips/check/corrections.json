@@ -208,10 +208,10 @@
   {
    "video": "040b936e-74e1-4ea3-a418-b06bdb3ccfbc",
    "i": 1,
-   "by": "the owner (5 Oct): al-Hikam confirmed as the place the words are found, with his note",
+   "by": "the owner (5 Oct): al-Hikam confirmed as where the words are found; the unreviewed-book note, version C",
    "claim": {
-    "note_ar": "ثبوت وجود العبارة في الكتاب لا يعني صحة مضمونها شرعًا أو اتفاق العلماء عليه.",
-    "note_en": "That the words are found in the book does not mean their content is sound in the Sharia, or that scholars agree on it."
+    "note_ar": "كتابٌ لم يراجعه مختصٌّ بعد — وجدنا العبارة في هذا الكتاب، ووجودُها فيه لا يعني صحةَ مضمونها، ولا اتفاقَ العلماء عليه.",
+    "note_en": "Book not yet reviewed by a specialist — We found these words in this book. Being in it does not mean the content is sound, or that scholars agree on it."
    },
    "parts_replace": [
     {
@@ -225,8 +225,8 @@
      "exit_id": "x_saying_own_work",
      "state": "matches",
      "level": 1,
-     "difference_ar": "في كتابه بلفظه. ثبوت وجود العبارة في الكتاب لا يعني صحة مضمونها شرعًا أو اتفاق العلماء عليه.",
-     "difference_en": "In his own work, in his words. That the words are found in the book does not mean their content is sound in the Sharia, or that scholars agree on it.",
+     "difference_ar": "في كتابه بلفظه. [كتابٌ لم يراجعه مختصٌّ بعد] وجدنا العبارة في هذا الكتاب، ووجودُها فيه لا يعني صحةَ مضمونها، ولا اتفاقَ العلماء عليه.",
+     "difference_en": "In his own work, in his words. [Book not yet reviewed by a specialist] We found these words in this book. Being in it does not mean the content is sound, or that scholars agree on it.",
      "source": {
       "site": "usul.ai",
       "link": "https://usul.ai/t/al-hikam-al-ataiyya/9?versionId=I0rAzTA3UZ",
