@@ -10,6 +10,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { compare } from './c3/verses2.mjs';
 import { hadithPath } from './c3/hadith.mjs';
+import { rulingsPath } from './c3/rulings.mjs';
 import { runChecker2, prepareRunDir } from './checker2.mjs';
 
 // What happens to a quote with no Checker 3 path: 'none' (shown as not checked; the owner's call, 6 Oct)
@@ -53,6 +54,14 @@ export async function runChecker3(runDir, batchFile, batch, { spend, log, onProg
     const h = await hadithPath(batch, hadith, { ledger, spend, log });
     for (const rec of h.done) { done.set(rec.i, rec); route[rec.i] = 'hadith tree'; }
     for (const i of h.unfinished) { toC2.push(i); treeMissed.add(i); route[i] = 'hadith tree: nothing in dorar it could stand behind'; }
+  }
+  onProgress?.(done.size);
+
+  // Rulings: the rulings ladder (method v4), wired 6 Oct; RULINGS=off sends them back to "not checked".
+  const rulings = claims.filter((c) => c.kind === 'ruling');
+  if (rulings.length && process.env.CHECKER3_RULINGS !== 'off') {
+    const r = await rulingsPath(batch, rulings, { spend, log });
+    for (const rec of r.done) { done.set(rec.i, rec); route[rec.i] = `rulings ladder: ${rec.state}`; }
   }
   onProgress?.(done.size);
 
