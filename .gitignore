@@ -4,3 +4,4 @@ node_modules/
 !.env.example
 *.jsonl
 cloud-probe-report.json
+*.log
