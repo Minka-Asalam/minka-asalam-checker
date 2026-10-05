@@ -1,1 +1,209 @@
-{"items":[{"video":"3d84e19f-b3a9-4319-b997-0ffede36c76d","i":1,"by":"the poetry kind (live 5 Oct, migrations 242+243), re-checked with method-v4/poetry/poetry.mjs","claim":{"flow_kind":"poetry","sub_kind":null,"state":"by_meaning","level":1,"line_ar":"بيتان من الشعر في الحياء من نظر الله عند الخلوة؛ أقدم سجلّ وجدناه: نونية القحطاني الأندلسي (العصر الأندلسي)","line_en":"Two lines of poetry on feeling shy before Allah's sight when alone; the oldest record we found: the Nuniyya of al-Qahtani al-Andalusi (Andalusian era)","reason_ar":"البيتان في نونية القحطاني على الديوان، بفرق كلمة واحدة: قال «العصيان» والقصيدة «الطغيان».","reason_en":"Both lines are in al-Qahtani's Nuniyya on aldiwan.net, with one word different: he said «العصيان», the poem has «الطغيان».","note_ar":"قرارك: هل الكلمة المختلفة بالمعنى نفسه؟ إن كانت كذلك فاعتمد كما هو (بالمعنى). وإن غيّرت المعنى فاختر «يُعدَّل» واكتب «غيّرت المعنى» فيصير «مُصحَّح».","note_en":"Your call: does the different word keep the same meaning? If so, accept as it is (by meaning). If it changes the meaning, choose Change and write 'changed meaning'; it becomes corrected.","load_bearing":true},"parts_replace":[{"position":1,"kind":"quote","origin":"spoken","said_text":"وإذا خلوت بريبة في ظلمة والنفس داعية إلى العصيان فاستحي من نظر الإله وقل لها إن الذي خلق الظلام يراني","text_ar":"البيتان كما في أقدم سجلّ وجدناه، نونية القحطاني الأندلسي","text_en":"The two lines as in the oldest record we found, al-Qahtani's Nuniyya","flow_kind":"poetry","exit_id":"x_poem_variant","state":"by_meaning","level":1,"difference_ar":"كلمة واحدة: «العصيان» في كلامه، و«الطغيان» في القصيدة.","difference_en":"One word: «العصيان» as he said it, «الطغيان» in the poem.","source":{"site":"aldiwan.net","link":"https://www.aldiwan.net/poem134646.html","quote":"وإذا خلوت بريبة في ظلمة والنفس داعية إلى الطغيان فاستحي من نظر الإله وقل لها إن الذي خلق الظلام يراني","collection":null,"number":null,"grader":null,"grading":null,"narrator":null,"work_ar":"نونية القحطاني ( يا منزل الآيات والفرقان ) — القحطاني الأندلسي، العصر الأندلسي (أقدم سجلّ وجدناه)","ref_ar":null,"volume":null,"page":null,"page_url":null,"confirm_url":null,"gradings":null},"search_log":[{"source":"aldiwan.net (poetry.mjs)","query":"الذي خلق الظلام يراني","found":true}]}]}]}
+{
+ "items": [
+  {
+   "video": "3d84e19f-b3a9-4319-b997-0ffede36c76d",
+   "i": 1,
+   "by": "the poetry kind (live 5 Oct, migrations 242+243), re-checked with method-v4/poetry/poetry.mjs",
+   "claim": {
+    "flow_kind": "poetry",
+    "sub_kind": null,
+    "state": "by_meaning",
+    "level": 1,
+    "line_ar": "بيتان من الشعر في الحياء من نظر الله عند الخلوة؛ أقدم سجلّ وجدناه: نونية القحطاني الأندلسي (العصر الأندلسي)",
+    "line_en": "Two lines of poetry on feeling shy before Allah's sight when alone; the oldest record we found: the Nuniyya of al-Qahtani al-Andalusi (Andalusian era)",
+    "reason_ar": "البيتان في نونية القحطاني على الديوان، بفرق كلمة واحدة: قال «العصيان» والقصيدة «الطغيان».",
+    "reason_en": "Both lines are in al-Qahtani's Nuniyya on aldiwan.net, with one word different: he said «العصيان», the poem has «الطغيان».",
+    "note_ar": "قرارك: هل الكلمة المختلفة بالمعنى نفسه؟ إن كانت كذلك فاعتمد كما هو (بالمعنى). وإن غيّرت المعنى فاختر «يُعدَّل» واكتب «غيّرت المعنى» فيصير «مُصحَّح».",
+    "note_en": "Your call: does the different word keep the same meaning? If so, accept as it is (by meaning). If it changes the meaning, choose Change and write 'changed meaning'; it becomes corrected.",
+    "load_bearing": true
+   },
+   "parts_replace": [
+    {
+     "position": 1,
+     "kind": "quote",
+     "origin": "spoken",
+     "said_text": "وإذا خلوت بريبة في ظلمة والنفس داعية إلى العصيان فاستحي من نظر الإله وقل لها إن الذي خلق الظلام يراني",
+     "text_ar": "البيتان كما في أقدم سجلّ وجدناه، نونية القحطاني الأندلسي",
+     "text_en": "The two lines as in the oldest record we found, al-Qahtani's Nuniyya",
+     "flow_kind": "poetry",
+     "exit_id": "x_poem_variant",
+     "state": "by_meaning",
+     "level": 1,
+     "difference_ar": "كلمة واحدة: «العصيان» في كلامه، و«الطغيان» في القصيدة.",
+     "difference_en": "One word: «العصيان» as he said it, «الطغيان» in the poem.",
+     "source": {
+      "site": "aldiwan.net",
+      "link": "https://www.aldiwan.net/poem134646.html",
+      "quote": "وإذا خلوت بريبة في ظلمة والنفس داعية إلى الطغيان فاستحي من نظر الإله وقل لها إن الذي خلق الظلام يراني",
+      "collection": null,
+      "number": null,
+      "grader": null,
+      "grading": null,
+      "narrator": null,
+      "work_ar": "نونية القحطاني ( يا منزل الآيات والفرقان ) — القحطاني الأندلسي، العصر الأندلسي (أقدم سجلّ وجدناه)",
+      "ref_ar": null,
+      "volume": null,
+      "page": null,
+      "page_url": null,
+      "confirm_url": null,
+      "gradings": null
+     },
+     "search_log": [
+      {
+       "source": "aldiwan.net (poetry.mjs)",
+       "query": "الذي خلق الظلام يراني",
+       "found": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "video": "eb31fe16-1aec-443c-b9ed-368ff7e04e08",
+   "i": 1,
+   "by": "the owner’s review note (is there a narration that matches?): al-Tirmidhi 3393, cited from dorar",
+   "claim": {
+    "state": "matches",
+    "level": 1,
+    "reason_ar": "الدعاء موافق بالمعنى لصحيح البخاري ٦٣٠٦، والفضل كما قاله موافق للفظ الترمذي ٣٣٩٣ (صححه الألباني) الذي ليس فيه شرط «موقنًا بها».",
+    "reason_en": "The supplication matches al-Bukhari 6306 by meaning; the reward as he told it matches al-Tirmidhi 3393 (al-Albani: sahih), which carries no «موقنًا بها» condition."
+   },
+   "parts_replace": [
+    {
+     "position": 1,
+     "kind": "hadith",
+     "origin": "spoken",
+     "said_text": "من قال هذا الدعاء في يومه ومات دخل الجنة، ومن قاله في ليلته ومات دخل الجنة",
+     "text_ar": "من قال سيد الاستغفار في نهاره فمات من يومه، أو في ليله فمات من ليلته، دخل الجنة.",
+     "text_en": "Whoever says Sayyid al-Istighfar in the day and dies that day, or at night and dies that night, enters Paradise.",
+     "flow_kind": "hadith",
+     "exit_id": "x_sahih",
+     "state": "matches",
+     "level": 1,
+     "difference_ar": "موافق للمصدر بالمعنى: لفظ الترمذي في الفضل بلا شرط اليقين («لا يقولها أحدكم حين يمسي فيأتي عليه قدر قبل أن يصبح إلا وجبت له الجنة»)، وفي رواية البخاري ٦٣٠٦ زيادة «موقنًا بها».",
+     "difference_en": "Matches the source by meaning: al-Tirmidhi’s wording gives the reward without the condition of certainty; al-Bukhari 6306 adds «موقنًا بها».",
+     "source": {
+      "site": "dorar.net",
+      "link": "https://dorar.net/h/XHhukYr3",
+      "quote": "… لا يقولُها أحدُكُم حينَ يُمسي فيأتي علَيهِ قَدرٌ قبلَ أن يُصْبِحَ إلَّا وجبَت لَهُ الجنَّةُ ، ولا يقولُها حينَ يصبحُ فيأتي علَيهِ قَدرٌ قبلَ أن يُمْسيَ إلَّا وجبت لَهُ الجنَّةُ .",
+      "collection": "صحيح الترمذي",
+      "number": "3393",
+      "grader": "الألباني",
+      "grading": "صحيح",
+      "narrator": "شداد بن أوس",
+      "work_ar": null,
+      "ref_ar": null,
+      "volume": null,
+      "page": null,
+      "page_url": null,
+      "confirm_url": null,
+      "gradings": null
+     },
+     "search_log": [
+      {
+       "source": "dorar.net",
+       "query": "سيد الاستغفار أن تقول اللهم أنت ربي",
+       "found": true
+      },
+      {
+       "source": "dorar.net",
+       "query": "فيأتي عليه قدر قبل أن يصبح إلا وجبت له الجنة",
+       "found": true
+      }
+     ]
+    },
+    {
+     "position": 2,
+     "kind": "hadith",
+     "origin": "spoken",
+     "said_text": "اللهم أنت ربي، خلقتني وأنا عبدك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شر ما صنعت، أبوء لك بنعمتي بنعمتك … وأبوء لك بذنبي، فاغفر لي، فإنه لا يغفر الذنوب إلا أنت.",
+     "text_ar": "نصّ دعاء سيد الاستغفار من قول النبي ﷺ: اللهم أنت ربي… فاغفر لي فإنه لا يغفر الذنوب إلا أنت.",
+     "text_en": "The Prophet's wording of Sayyid al-Istighfar: O Allah, You are my Lord… forgive me, for none forgives sins but You.",
+     "flow_kind": "hadith",
+     "exit_id": "x_sahih",
+     "state": "matches",
+     "level": 1,
+     "difference_ar": "موافق للمصدر. رُوي بالمعنى. جزءٌ من الحديث؛ تمامه في المصدر.",
+     "difference_en": "Matches the source. Quoted by meaning. A portion of the hadith; the whole is in the source.",
+     "source": {
+      "site": "dorar.net",
+      "link": "https://dorar.net/h/1Xe5exzh",
+      "quote": "سَيِّدُ الاستِغفارِ أن تَقولَ : اللهُمَّ أنتَ رَبِّي لا إلَهَ إلَّا أنتَ، خَلَقتَني وأنا عَبدُك، وأنا على عَهدِك ووَعدِك ما استَطَعتُ، أعوذُ بك مِن شَرِّ ما صَنَعتُ، أبوءُ لك بنِعمَتِك عَلَيَّ، وأبوءُ لك بذَنبي، فاغفِرْ لي؛ فإنَّه لا يَغفِرُ الذُّنوبَ إلَّا أنتَ. …",
+      "collection": "صحيح البخاري",
+      "number": "6306",
+      "grader": "البخاري",
+      "grading": "[صحيح]",
+      "narrator": "شداد بن أوس",
+      "work_ar": null,
+      "ref_ar": null,
+      "volume": null,
+      "page": null,
+      "page_url": null,
+      "confirm_url": null,
+      "gradings": null
+     },
+     "search_log": [
+      {
+       "source": "dorar.net",
+       "query": "سيد الاستغفار أن تقول اللهم أنت ربي",
+       "found": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "video": "68ee08d6-b2a1-4071-b0a3-a5d4deb09487",
+   "i": 1,
+   "by": "the owner’s review: approve as a verse, for this case only (the rule for woven-in phrases is unchanged)",
+   "claim": {
+    "state": "matches",
+    "level": 1,
+    "line_ar": "«فألهمها فجورها وتقواها» من سورة الشمس ٨",
+    "line_en": "‘fa-alhamaha fujuraha wa-taqwaha’, al-Shams 91:8",
+    "reason_ar": "الكلمات مطابقة لنص الآية؛ اعتمدها المالك آيةً في هذه الحالة.",
+    "reason_en": "The words match the verse exactly; the owner approved it as a verse in this case."
+   },
+   "parts_replace": [
+    {
+     "position": 1,
+     "kind": "verse",
+     "origin": "spoken",
+     "said_text": "فألهمها فجورها وتقواها",
+     "text_ar": "قوله تعالى: «فألهمها فجورها وتقواها» من سورة الشمس ٨",
+     "text_en": "Allah’s words ‘and inspired it with its wickedness and its righteousness’, al-Shams 91:8",
+     "flow_kind": "quran",
+     "exit_id": "x_exact",
+     "state": "matches",
+     "level": 1,
+     "difference_ar": "مطابق لنص المصحف.",
+     "difference_en": "Matches the mushaf text.",
+     "source": {
+      "site": "quran.com",
+      "link": "https://quran.com/91/8",
+      "quote": "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَاهَا",
+      "collection": "سورة الشمس",
+      "number": "91:8",
+      "grader": null,
+      "grading": null,
+      "narrator": null,
+      "work_ar": null,
+      "ref_ar": "الشمس ٨",
+      "volume": null,
+      "page": null,
+      "page_url": null,
+      "confirm_url": null,
+      "gradings": null
+     },
+     "search_log": [
+      {
+       "source": "quran.com (verse_text 91:8 in the batch)",
+       "query": "فألهمها فجورها وتقواها",
+       "found": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
