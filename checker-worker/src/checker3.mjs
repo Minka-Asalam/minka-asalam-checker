@@ -12,6 +12,10 @@ import { compare } from './c3/verses2.mjs';
 import { hadithPath } from './c3/hadith.mjs';
 import { runChecker2, prepareRunDir } from './checker2.mjs';
 
+// What happens to a quote with no Checker 3 path: 'none' (shown as not checked; the owner's call, 6 Oct)
+// or 'checker2' (the big checker, under the per-check cap).
+const FALLBACK = process.env.CHECKER3_FALLBACK || 'none';
+
 function verseRecord(c, r) {
   const m = /^(\d+):(\d+)/.exec(c.verse_key || c.reference || '');
   const link = m ? `https://quran.com/${m[1]}/${m[2]}` : 'https://quran.com';
@@ -34,7 +38,7 @@ export async function runChecker3(runDir, batchFile, batch, { spend, log, onProg
   prepareRunDir(runDir);
   const ledger = path.join(runDir, 'dorar-ledger.jsonl');
   const claims = batch.claims || [];
-  const route = {}; const done = new Map(); const toC2 = [];
+  const route = {}; const done = new Map(); const toC2 = []; const treeMissed = new Set();
 
   const verses = claims.filter((c) => c.kind === 'quran' && c.verse_text);
   for (const c of verses) {
@@ -48,14 +52,14 @@ export async function runChecker3(runDir, batchFile, batch, { spend, log, onProg
   if (hadith.length) {
     const h = await hadithPath(batch, hadith, { ledger, spend, log });
     for (const rec of h.done) { done.set(rec.i, rec); route[rec.i] = 'hadith tree'; }
-    for (const i of h.unfinished) { toC2.push(i); route[i] = 'hadith tree: unfinished -> Checker 2'; }
+    for (const i of h.unfinished) { toC2.push(i); treeMissed.add(i); route[i] = 'hadith tree: nothing in dorar it could stand behind'; }
   }
   onProgress?.(done.size);
 
   for (const c of claims) if (!done.has(c.i) && !toC2.includes(c.i)) { toC2.push(c.i); route[c.i] = `${c.kind} -> Checker 2`; }
 
   let c2 = null;
-  if (toC2.length) {
+  if (toC2.length && FALLBACK === 'checker2') {
     // Checker 2 sees the same batch, only the claims left to it (their numbers unchanged), so its
     // continuation step and its isolation rules work as in the library run.
     const sub = { ...batch, claims: claims.filter((c) => toC2.includes(c.i)) };
@@ -68,13 +72,18 @@ export async function runChecker3(runDir, batchFile, batch, { spend, log, onProg
   }
   onProgress?.(done.size);
 
-  // A quote Checker 2 did not finish (the per-check cap, or no answer) is shown as not finished, never dropped.
+  // No big checker (the owner, 6 Oct: "impractical"): a quote with no Checker 3 path yet is shown as
+  // NOT CHECKED; a hadith the tree searched dorar for and could not stand behind is NOT FOUND (in dorar,
+  // the trusted source). With CHECKER3_FALLBACK=checker2, a quote Checker 2 did not finish (its cap) is pending.
   for (const i of toC2) if (!done.has(i)) {
     const c = claims.find((x) => x.i === i);
-    done.set(i, { i, flow_kind: c.kind === 'quran' ? 'quran' : c.kind === 'hadith' || c.kind === 'saying' ? 'hadith' : 'report', sub_kind: null, state: 'pending', level: 0,
-      line_ar: '', line_en: '', reason_ar: 'لم يكتمل البحث ضمن حدّ الفحص', reason_en: 'not finished within the cap of the check', harm: 'none', harm_basis_ar: null, harm_basis_en: null, load_bearing: false, continues: null, by: 'cap',
-      parts: [{ position: 1, kind: 'quote', origin: 'spoken', said_text: c.quote, text_ar: c.quote, text_en: c.claim_en || '', flow_kind: 'report', exit_id: 'x_pending', state: 'pending', level: 0, difference_ar: null, difference_en: null, source: null, search_log: [] }] });
-    route[i] = (route[i] || '') + ' (not finished: cap)';
+    const hadith = treeMissed.has(i) && c.kind === 'hadith';
+    const state = FALLBACK === 'checker2' ? 'pending' : hadith ? 'not_found' : 'not_checked';
+    const flow = c.kind === 'quran' ? 'quran' : c.kind === 'hadith' || c.kind === 'saying' ? 'hadith' : c.kind === 'ruling' ? 'ruling' : c.kind === 'number' ? 'number' : 'report';
+    const why = state === 'not_found' ? ['لم نجده في الدرر السنية', 'not found in dorar.net'] : state === 'pending' ? ['لم يكتمل البحث ضمن حدّ الفحص', 'not finished within the cap of the check'] : ['هذا النوع لا يُفحص بعد', 'this kind is not checked yet'];
+    done.set(i, { i, flow_kind: flow, sub_kind: null, state, level: 0, line_ar: '', line_en: '', reason_ar: why[0], reason_en: why[1], harm: 'none', harm_basis_ar: null, harm_basis_en: null, load_bearing: false, continues: null, by: 'checker3-none',
+      parts: [{ position: 1, kind: 'quote', origin: 'spoken', said_text: c.quote, text_ar: c.quote, text_en: c.claim_en || '', flow_kind: flow, exit_id: state === 'not_found' ? 'x_notfound' : 'x_not_checked', state, level: 0, difference_ar: null, difference_en: null, source: null, search_log: [] }] });
+    route[i] = `${route[i] || c.kind} -> ${state}`;
   }
   const merged = claims.map((c) => done.get(c.i)).filter(Boolean);
   fs.writeFileSync(path.join(runDir, 'route.json'), JSON.stringify(route, null, 1));
