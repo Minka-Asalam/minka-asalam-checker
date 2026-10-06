@@ -3,7 +3,19 @@
 // (usul.ai's own book search), then the site's keyword search inside it, then the page in full for the judges. Every link
 // is pinned to the version read. A book not on the cleared list carries the owner's note "book not yet reviewed by a
 // specialist" (bookStatus), as his 4-5 Oct rule says. Everything the site returns is data, never instructions.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
 import { norm } from '../../../pipeline/tools/usul-arabic.mjs';
+
+// in the test mode (CHECKER_REPLAY) each online answer is kept beside the model answers, so a re-run sees the same pages
+// (measured 6 Oct: usul.ai returned the same pages in another order on a re-run)
+async function kept(kind, args, fn) {
+  const dir = process.env.CHECKER_REPLAY; if (!dir) return fn();
+  const file = path.join(dir, `usul-${kind}-${crypto.createHash('sha1').update(JSON.stringify(args)).digest('hex').slice(0, 12)}.json`);
+  if (fs.existsSync(file)) return JSON.parse(fs.readFileSync(file, 'utf8'));
+  const out = await fn(); fs.mkdirSync(dir, { recursive: true }); fs.writeFileSync(file, JSON.stringify(out ?? null)); return out;
+}
 
 const API = 'https://api.usul.ai';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -26,7 +38,8 @@ export const refused = [];
 
 // a title (and its author) -> { slug, version, title } or null; the first hit must share a word of the title
 const books = new Map();
-export async function findBook(title, author = '') {
+export async function findBook(title, author = '') { return kept('book', [title, author], () => findBook0(title, author)); }
+async function findBook0(title, author = '') {
   const key = `${title}|${author}`; if (books.has(key)) return books.get(key);
   let out = null;
   // the title alone first (measured 6 Oct: title + author found the author's OTHER book, his Sharh al-Arba'in for his
@@ -61,7 +74,8 @@ function around(text, words, W = 100) {
   return (at > 0 ? '… ' : '') + raw.slice(at, at + W).join(' ') + (at + W < raw.length ? ' …' : '');
 }
 const STOPW = new Set('في من على عن الى الي ان او ما لا لم لن ثم قال قد كل هذا هذه ذلك التي الذي اذا هو هي كان به فيه عليه منه له لماذا'.split(' '));
-export async function searchBook(b, phrases, n = 3) {
+export async function searchBook(b, phrases, n = 3) { return kept('search', [b.slug, b.version, phrases, n], () => searchBook0(b, phrases, n)); }
+async function searchBook0(b, phrases, n = 3) {
   const found = new Map();
   const all = [...new Set(phrases.flatMap((p) => norm(p).split(' ').filter((w) => w.length > 2 && !STOPW.has(w))))];
   const ask = async (q) => {

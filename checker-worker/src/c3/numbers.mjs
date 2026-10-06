@@ -118,7 +118,8 @@ function rec(c, state, exit, level, why, part = {}) {
 // the narration's grade level (hadith.mjs: 1 sahih, 2 hasan, 3 graders differ, 4 weak, 5 fabricated, 0 no grade read) -> the number exit
 const fromHadith = (lv) => (lv === 1 || lv === 2 ? ['matches', 'x_in_text', 1] : lv === 3 ? ['matches', 'x_in_text', 3] : lv === 4 ? ['matches', 'x_weak_report', 5] : lv === 5 ? ['matches', 'x_fabricated', 6] : ['pending', 'x_pending', 0]);
 // the reports ladder's verdict on the figure's page -> the number exit
-const LADDER = { same: ['matches', 'x_scholars_figure', 3], narrower: ['not_found', 'x_case_not_stated', 0], differs: ['corrected', 'x_corrected', 2], other_person: ['corrected', 'x_wrong_holder', 3], no: ['not_found', 'x_not_found', 0] };
+const LADDER = { same: ['matches', 'x_scholars_figure', 3], narrower: ['not_found', 'x_case_not_stated', 0], differs: ['pending', 'x_pending', 0], other_person: ['pending', 'x_pending', 0], // never a correction from one page (6 Oct): held for the owner
+  accounts_differ: ['matches', 'x_scholars_figure', 3], no: ['not_found', 'x_not_found', 0] };
 
 // claims: batch claims with a figure (listen kind number) -> { done: [C2-shaped claims] }
 export async function numbersPath(batch, claims, { spend, log, ledger } = {}) {
@@ -184,8 +185,8 @@ export async function numbersPath(batch, claims, { spend, log, ledger } = {}) {
       parts: [{ id: 'p1', kind: 'detail', said: x.fix.said, text: x.fix.text, who: '', key_terms: [x.fix.counted, x.fix.figure].filter(Boolean) }] }));
     await reportLadder(lad, { spend });
     for (const x of lad) {
-      const p = x.parts[0]; const v = !p.pick ? 'no' : p.look ? p.look.states : null; const [s, e, l] = LADDER[v] || ['pending', 'x_pending', 0];
-      const shown = ['same', 'differs', 'other_person'].includes(v) ? p.pick : null; // a page the second look rejected is never shown
+      const p = x.parts[0]; const v = p.accountsDiffer ? 'accounts_differ' : !p.pick ? 'no' : p.look ? p.look.states : null; const [s, e, l] = LADDER[v] || ['pending', 'x_pending', 0];
+      const shown = ['same', 'accounts_differ'].includes(v) ? p.pick : null; // a page the second look rejected is never shown
       done.push(rec(x.c, s, e, l, ['', [p.look?.why, s === 'corrected' ? 'a correction: the owner confirms every one' : null].filter(Boolean).join(' | ')], {
         said: p.said, text: p.text, difference_en: v === 'differs' || v === 'other_person' ? p.look?.why || null : null,
         source: shown ? { site: 'usul.ai', link: shown.link, quote: p.look?.evidence && inText(p.look.evidence, pageTextSafe(shown)) ? p.look.evidence : p.evidence || null, collection: null, number: null, grader: null, grading: null, narrator: null, work_ar: shown.title || null, ref_ar: null, volume: shown.vol ?? null, page: shown.page ?? null, page_url: shown.link, confirm_url: null, gradings: null } : null,

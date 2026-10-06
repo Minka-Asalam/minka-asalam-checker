@@ -53,6 +53,20 @@ ${REPLY}
 {"claims":[{"tag":"<tag>","is":"report|own_view|hadith|ruling|verse","parts":[{"id":"p1","kind":"report|detail|standing","said":"<his exact words>","text":"<arabic>","who":"<name or empty>","key_terms":["<arabic>"]}]}]}
 One entry per claim, same tags; part ids p1, p2, … in order; "parts" is [] unless "is" is "report".`;
 
+const KNOWN = (items) => `${GUARD}
+
+A speaker in a religious video said each thing below. A first reading took it for HIS OWN view: his opinion, advice, image or lesson in his own words. Look again: is it in fact a KNOWN saying, image or wisdom that he is retelling — of the Prophet, a Companion, a Successor, a scholar, an ascetic, a poet or a sage — even in other words, in a dialect, or translated into another language?
+- "yes" ONLY if you can name who is known to have said it AND give its well-known Arabic wording as the books write it. A common idea, a general truth, a lesson anyone could draw, or a phrase that merely sounds wise is "no".
+- kind: "hadith" if the known saying is the Prophet's words (or Allah's words told by the Prophet), else "report".
+- who: the person as the books name him; wording_ar: the known wording in Arabic; key_terms: the distinctive Arabic words of that wording;
+- said: his EXACT words that carry it, copied character for character from "the speaker's words".
+
+${items.map(claimBlock).join('\n\n')}
+
+${REPLY}
+{"claims":[{"tag":"<tag>","known":"yes|no","kind":"report|hadith","who":"<name or empty>","wording_ar":"<arabic or empty>","key_terms":["<arabic>"],"said":"<his exact words or empty>"}]}
+One entry per claim, same tags.`;
+
 const WHERE = (items) => `${GUARD}
 
 A speaker in a religious video told each report below (a story, an event, a saying of a Companion or a scholar, history or sira), already split into PARTS. We look for the page of a trusted book that states each part. The shelf (use the slug exactly):
@@ -102,6 +116,16 @@ ${REPLY}
 {"claims":[{"tag":"<key>","states":"same|narrower|differs|other_person|no","evidence":"<the one sentence of the source that decides it, copied>","why":"<one short English sentence>"}]}
 One entry per key, using the key as the tag.`;
 
+const HIS_VERSION = (items) => `${GUARD}
+
+A speaker in a religious video told each report below. For each PART, one page of a trusted book tells it with a DIFFERENT detail or gives it to a different person. Before anyone says he is wrong: does ANY of the OTHER passages below state it AS HE TOLD IT (his detail, the person he named)? Judge ONLY from the passage text shown, never from what you know. pick = that passage's number, or 0 if none states his version; copy into "evidence" the ONE sentence of it, character for character, that states it.
+
+${items.map((x) => `${claimBlock(x)}\n${x.parts.map((p) => `${partLine(p)}\n  (the page that differs: ${p.pick.title}${p.pick.vol ? ` vol ${p.pick.vol}` : ''}${p.pick.page ? ` p.${p.pick.page}` : ''})\n${p.others.map((h, i) => `   [${i + 1}] ${h.title}${h.vol ? ` vol ${h.vol}` : ''}${h.page ? ` p.${h.page}` : ''}: ${h.excerpt}`).join('\n')}`).join('\n')}`).join('\n\n')}
+
+${REPLY}
+{"claims":[{"tag":"<tag>","parts":[{"id":"p1","pick":<number or 0>,"evidence":"<the sentence, copied>"}]}]}
+One entry per claim, same tags, one entry per part shown.`;
+
 const byTag = (ans) => Object.fromEntries((ans?.claims || []).map((a) => [a.tag, a]));
 const chunks = (arr, n) => { const o = []; for (let k = 0; k < arr.length; k += n) o.push(arr.slice(k, k + n)); return o; };
 async function askAll(model, items, size, build, spend, effort) {
@@ -116,14 +140,19 @@ const EXIT = {
   // a page that states only part of it counts as found, with a flag, as in the rulings ladder (measured 6 Oct: the owner's
   // review approved such pages as "matches"; "part found, part not found" is kept for a claim whose OTHER parts have no page)
   narrower: { state: 'matches', exit: 'x_reported', level: 3, flag: 'our page states only part of it: find a fuller page or accept (our gap, not his)' },
-  differs: { state: 'corrected', exit: 'x_misworded', level: 3, flag: 'a detail differs from the page: the owner confirms every correction' },
-  other_person: { state: 'corrected', exit: 'x_reversed', level: 3, flag: 'the page gives it to another person: the owner confirms every correction' },
+  // NEVER A CORRECTION FROM ONE PAGE (6 Oct, after a page reporting Ibn 'Abbas naming other days would have "corrected" his
+  // well-known "the ten days"): a page that differs first sends the checker back over the other pages for HIS version
+  // (found -> "the accounts differ"); none -> held as pending, because the owner confirms every correction and the Checker
+  // tab has no owner in the loop
+  differs: { state: 'pending', exit: 'x_pending', level: 0, flag: 'a page gives another detail and no page found gives his: held for the owner, never shown as a correction' },
+  other_person: { state: 'pending', exit: 'x_pending', level: 0, flag: 'a page gives it to another person and no page found gives his: held for the owner, never shown as a correction' },
+  accounts_differ: { state: 'matches', exit: 'x_accounts_differ', level: 4, flag: 'his version is on this page; another page tells it differently' },
   no: { state: 'not_found', exit: 'x_notfound', level: 0, flag: null },
 };
-const SHOWN = new Set(['same', 'narrower', 'differs', 'other_person']); // the verdicts where the page itself is shown
+const SHOWN = new Set(['same', 'narrower', 'accounts_differ']); // the verdicts where the page itself is shown
 
 function partRecord(c, p, flow) {
-  const v = !p.pick ? 'no' : p.look ? p.look.states : null; const e = EXIT[v] || { state: 'pending', exit: 'x_pending', level: 0, flag: 'not checked by the second look' };
+  const v = p.accountsDiffer ? 'accounts_differ' : !p.pick ? 'no' : p.look ? p.look.states : null; const e = EXIT[v] || { state: 'pending', exit: 'x_pending', level: 0, flag: 'not checked by the second look' };
   const h = SHOWN.has(v) ? p.pick : null; // a page the second look rejected is never shown
   const book = h ? bookStatus(h.link) : 'n/a';
   return {
@@ -191,6 +220,16 @@ export async function reportLadder(items, { spend, frame = { WHERE, JUDGE, LOOK 
     const v2 = await look(MODELS.sonnet, (p) => p.by === 'opus' && p.pick);
     for (const x of items) for (const p of x.parts) if (p.by === 'opus' && p.pick) p.look = v2[`${x.tag}@${p.id}`] || null;
   }
+  // a page that differs: is HIS version on any other page found? (Sonnet, over the other candidates)
+  const doubt = items.map((x) => ({ ...x, parts: x.parts.filter((p) => p.pick && ['differs', 'other_person'].includes(p.look?.states) && p.cands.some((h) => h !== p.pick)) })).filter((x) => x.parts.length);
+  if (doubt.length) {
+    for (const x of doubt) for (const p of x.parts) p.others = p.cands.filter((h) => h !== p.pick);
+    const hv = await askAll(MODELS.sonnet, doubt, 3, HIS_VERSION, spend, 'medium');
+    for (const x of doubt) for (const p of x.parts) {
+      const a = ((hv[x.tag] || {}).parts || []).find((y) => y.id === p.id); const h = a && a.pick > 0 ? p.others[a.pick - 1] : null;
+      if (h && inText(a.evidence, `${h.excerpt || ''} ${pageTextSafe(h)}`)) Object.assign(p, { accountsDiffer: { title: p.pick.title, why: p.look?.why || null }, pick: h, evidence: a.evidence, look: { states: 'same', evidence: a.evidence, why: `his version; ${p.pick.title} tells it differently` } });
+    }
+  }
   return items;
 }
 
@@ -199,6 +238,18 @@ export async function reportsPath(batch, claims, { spend, log, ledger } = {}) {
   const items = claims.map((c) => ({ tag: `${batch.id}#${c.i}`, c, quote: c.quote, attribution: c.attribution, reference: c.reference, meaning: c.claim_en }));
   const s0 = await askAll(MODELS.sonnet, items, 7, SPLIT, spend, 'medium');
   const done = []; const reports = []; const toHadith = []; const toRuling = [];
+  // the second look at "his own view" (a different model): a known saying retold in his own words, in a dialect or in
+  // English is a report, searched by its KNOWN wording (measured 6 Oct: 2 of 13 approved sources were lost here)
+  const own = items.filter((x) => (s0[x.tag] || {}).is === 'own_view');
+  const kn = own.length ? await askAll(MODELS.opus, own, 6, KNOWN, spend, 'medium') : {};
+  for (const x of own) {
+    const k = kn[x.tag];
+    if (!k || k.known !== 'yes' || !String(k.wording_ar || '').trim() || !String(k.who || '').trim()) continue;
+    const said = inText(k.said, x.quote) ? k.said : x.quote;
+    if (k.kind === 'hadith') { s0[x.tag] = { is: 'hadith' }; continue; }
+    s0[x.tag] = { is: 'report', parts: [{ id: 'p1', kind: 'report', said, text: k.wording_ar, who: k.who, key_terms: k.key_terms || [] }] };
+    x.retold = k.who;
+  }
   for (const x of items) {
     const a = s0[x.tag] || {};
     if (a.is === 'own_view') { done.push(simple(x.c, 'report', 'not_a_claim', 'x_not_a_claim', ['رأي المتحدث نفسه، لا خبرٌ ينقله', 'The speaker\'s own view, not a report he transmits'])); continue; }
@@ -221,7 +272,8 @@ export async function reportsPath(batch, claims, { spend, log, ledger } = {}) {
   for (const x of reports) {
     const parts = x.parts.map((p) => partRecord(x.c, p, 'report'));
     const st = claimState(parts);
-    done.push({ i: x.c.i, flow_kind: 'report', sub_kind: null, state: st.state, level: st.level, line_ar: '', line_en: '', reason_ar: parts.map((p) => p.note).filter(Boolean).join(' | '), reason_en: '', harm: 'none', harm_basis_ar: null, harm_basis_en: null, load_bearing: false, parts, continues: null, by: 'checker3-reports' });
+    const notes = [x.retold ? `a known saying (${x.retold}) he retold in his own words` : null, ...parts.map((p) => p.note)].filter(Boolean);
+    done.push({ i: x.c.i, flow_kind: 'report', sub_kind: null, state: st.state, level: st.level, line_ar: '', line_en: '', reason_ar: notes.join(' | '), reason_en: '',harm: 'none', harm_basis_ar: null, harm_basis_en: null, load_bearing: false, parts, continues: null, by: 'checker3-reports' });
   }
   log?.(`reports ladder: ${items.length} claims (${reports.length} reports, ${toHadith.length} hadith, ${toRuling.length} rulings), ${done.filter((d) => d.parts.some((p) => p.source)).length} with a source`);
   const order = new Map(claims.map((c, k) => [c.i, k]));

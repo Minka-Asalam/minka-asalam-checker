@@ -23,6 +23,9 @@ const WEB_SEARCH_USD = 0.01; // $10 per 1,000 searches
 
 let client;
 export function anthropic() {
+  // the test mode spends nothing: a direct call (the rulings ladder's fatwa web search) is refused, and its caller's own
+  // catch treats it as "no fatwa pages found"
+  if (process.env.CHECKER_REPLAY) throw new Error('test mode (CHECKER_REPLAY): no direct API call');
   if (!client) client = new Anthropic({ apiKey: need('ANTHROPIC_API_KEY'), maxRetries: 4, timeout: 15 * 60 * 1000 });
   return client;
 }

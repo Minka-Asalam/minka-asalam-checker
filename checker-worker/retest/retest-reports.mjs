@@ -8,18 +8,33 @@ import { Spend, ReplayPending } from '../src/claude.mjs';
 import { reportsPath } from '../src/c3/reports.mjs';
 
 const CLIP = 'D:/Deeni Docs/curation/2026-10-05 Clip library run/check';
-const OUT = 'D:/checker-runs/retest-reports-2026-10-06';
+const OUT = `D:/checker-runs/retest-reports-2026-10-06${process.env.SET ? `-${process.env.SET}` : ''}`;
 fs.mkdirSync(OUT, { recursive: true });
 const J = (f) => JSON.parse(fs.readFileSync(f, 'utf8'));
 // the sample: four with an approved page in a book this PC holds, one approved in a book it does not hold, one the owner
 // approved as not found, one he ruled not a claim
 const SAMPLE = (process.env.SAMPLE || '8a3edb97#1,8a3edb97#3,8e797724#2,7dd1d6a5#2,040b936e#1,22b4c69a#5,4cbf4efe#1').split(',');
 
-const key = new Map();
-for (const v of J(`${CLIP}/run-all.json`).videos) for (const c of v.result.claims) key.set(`${v.id}#${c.i}`, c);
-for (const it of J(`${CLIP}/corrections.json`).items) { const k = `${it.video}#${it.i}`; const c = { ...(key.get(k) || {}), ...(it.claim || {}) }; if (it.parts_replace) c.parts = it.parts_replace; key.set(k, c); }
-const all = [];
-for (const x of J(`${CLIP}/run/index.json`)) { const b = J(`${CLIP}/run/${x.file}`); for (const c of b.claims || []) all.push({ b, c, tag: `${b.id}#${c.i}` }); }
+const key = new Map(); const all = [];
+if (process.env.SET === 'v2test') {
+  // a THIRD set, never used to build the checklist: the ten test videos the owner reviewed on 1 Oct (Checker v2 test),
+  // its batches as the listen wrote them, its reviewed records + his corrections as the key
+  const V2 = 'D:/Deeni Docs/curation/2026-09-30 Checker v2 test';
+  const res = J(`${V2}/run 2026-10-01/results.json`).data.videos; const corr = J(`${V2}/run 2026-10-01/corrections.json`).items;
+  for (const v of res) {
+    const b = J(`${V2}/inputs/batch-${v.id}.json`);
+    for (const c of v.claims) {
+      const k = JSON.parse(JSON.stringify(c.new || {}));
+      for (const x of corr.filter((y) => y.video === v.id && y.i === c.i)) { Object.assign(k, x.claim || {}); for (const p of x.parts || []) { const at = (k.parts || []).findIndex((q) => q.position === p.position); if (at >= 0) k.parts[at] = { ...k.parts[at], ...p }; } }
+      key.set(`${v.id}#${c.i}`, k);
+    }
+    for (const c of b.claims || []) all.push({ b, c, tag: `${b.id}#${c.i}` });
+  }
+} else {
+  for (const v of J(`${CLIP}/run-all.json`).videos) for (const c of v.result.claims) key.set(`${v.id}#${c.i}`, c);
+  for (const it of J(`${CLIP}/corrections.json`).items) { const k = `${it.video}#${it.i}`; const c = { ...(key.get(k) || {}), ...(it.claim || {}) }; if (it.parts_replace) c.parts = it.parts_replace; key.set(k, c); }
+  for (const x of J(`${CLIP}/run/index.json`)) { const b = J(`${CLIP}/run/${x.file}`); for (const c of b.claims || []) all.push({ b, c, tag: `${b.id}#${c.i}` }); }
+}
 const sample = SAMPLE.map((s) => all.find((x) => x.tag.startsWith(s.split('#')[0]) && x.tag.endsWith(`#${s.split('#')[1]}`))).filter(Boolean);
 
 const spend = new Spend(); const rows = []; let pending = 0;
