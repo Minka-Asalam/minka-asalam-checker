@@ -35,7 +35,10 @@ export async function listen(target, log) {
   const id = remote ? remote.remoteId : target;
   if (!/^[A-Za-z0-9_-]{6,64}$/.test(String(id || ''))) return { ok: false, why: 'bad id' };
   const arg = remote ? `remote:${id}` : id;
-  const env = remote ? { ...process.env, CHECKER_REMOTE_URL: remote.url, CHECKER_REMOTE_MIME: remote.mime || 'video/mp4' } : process.env;
+  // GEMINI_API_STYLE=generate: the script sends Gemini's usual request type (7 Oct: the newer
+  // "interactions" one answered "exceeded a quota" on every project, even for plain text);
+  // the library's own runs keep the script's default.
+  const env = { ...process.env, GEMINI_API_STYLE: 'generate', ...(remote ? { CHECKER_REMOTE_URL: remote.url, CHECKER_REMOTE_MIME: remote.mime || 'video/mp4' } : {}) };
   const file = path.join(GEMINI_OUT, `result-${id}.json`);
   try { fs.unlinkSync(file); } catch { /* none yet */ }
   // Gemini answers "busy" at times (5 Oct evening: three models in a row); the script already
