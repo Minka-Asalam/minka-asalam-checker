@@ -1,17 +1,32 @@
-// Checker 3 (the redesign from scratch, owner 4-5 Oct) as one program, first build (5 Oct night):
-//   verses           the script alone (method v4 verses2: in-order comparison with the canonical text)
+// Checker 3 (the redesign from scratch, owner 4-5 Oct) as one program; complete, with no fallback, since 6 Oct:
+//   verses           the script alone (method v4 verses2: in-order comparison with the canonical text); one letter off
+//                    -> a moderator listens; anything else -> one small question (c3/verse-differs.mjs)
+//   poetry           sayings first: aldiwan.net, "the oldest record we found" (c3/poetry-path.mjs)
 //   hadith, sayings  the hadith tree (src/c3/hadith.mjs): Haiku answers small questions, the script searches dorar,
 //                    Opus looks second; what is left goes once more with Opus, Sonnet looking second
-//   everything else  Checker 2 (the "big checker last" of the design), with the same prompts as the library run:
-//                    rulings (the rulings ladder is not wired in yet), reports, numbers, fatwas, verses that differ
-//                    from the text, hadith the tree could not finish
+//   rulings          the rulings ladder (c3/rulings.mjs)
+//   numbers          the hadith tree, then the books (c3/numbers.mjs); a worldly figure is "not checked"
+//   reports          history, "other", a saying the tree could not find (c3/reports.mjs): the reports ladder, the
+//                    known-saying look, the verse-meaning path (c3/verse-meaning.mjs)
+//   anything left    "not checked" (or Checker 2 with CHECKER3_FALLBACK=checker2)
 // The output has Checker 2's shape, so the same two gates and the same result builder apply.
 import fs from 'node:fs';
 import path from 'node:path';
 import { compare } from './c3/verses2.mjs';
 import { hadithPath } from './c3/hadith.mjs';
 import { rulingsPath } from './c3/rulings.mjs';
+import { verseDiffers, verseHold } from './c3/verse-differs.mjs';
+import { poetryPath } from './c3/poetry-path.mjs';
+import { numbersPath } from './c3/numbers.mjs';
+import { reportsPath } from './c3/reports.mjs';
 import { runChecker2, prepareRunDir } from './checker2.mjs';
+import { ReplayPending } from './claude.mjs';
+
+// Each checklist added on 6 Oct can be switched off without code (CHECKER3_<NAME>=off): its quotes then show "not checked".
+const on = (name) => process.env[`CHECKER3_${name}`] !== 'off';
+// A checklist that fails (a site down, an answer that is not JSON) is logged and its quotes left "not checked"; the check
+// itself goes on (6 Oct).
+const safe = (name, log, p) => Promise.resolve(p).catch((e) => { if (e instanceof ReplayPending) throw e; log?.(`${name} failed, its quotes left not checked: ${e?.message || e}`); return { done: [], rest: [] }; });
 
 // What happens to a quote with no Checker 3 path: 'none' (shown as not checked; the owner's call, 6 Oct)
 // or 'checker2' (the big checker, under the per-check cap).
@@ -41,29 +56,52 @@ export async function runChecker3(runDir, batchFile, batch, { spend, log, onProg
   const claims = batch.claims || [];
   const route = {}; const done = new Map(); const toC2 = []; const treeMissed = new Set();
 
+  const shown = () => [...done.values()].filter((x) => x.by !== 'checker3-none');
+  // 1 verses: the script compares in order; one letter off -> a moderator listens; anything else -> the one small question
+  // (verse-differs.mjs, 6 Oct). The poetry search for sayings runs at the same time (free, about a minute a saying).
   const verses = claims.filter((c) => c.kind === 'quran' && c.verse_text);
-  for (const c of verses) {
+  const versesStep = Promise.all(verses.map(async (c) => {
     const r = compare(c.quote, c.verse_text);
     route[c.i] = `verse: ${r.state}`;
-    if (r.state === 'matches') done.set(c.i, verseRecord(c, r)); else toC2.push(c.i);
-  }
-  onProgress?.(done.size, [...done.values()].filter((x) => x.by !== 'checker3-none'));
+    if (r.state === 'matches') done.set(c.i, verseRecord(c, r));
+    else if (!on('VERSES_DIFFER')) toC2.push(c.i);
+    else if (r.state.startsWith('one letter')) done.set(c.i, verseHold(c, r));
+    else {
+      try { const rec = await verseDiffers(c, r, { spend }); done.set(c.i, rec); route[c.i] = `verse differs: ${rec.parts[0].exit_id}`; }
+      catch (e) { if (e instanceof ReplayPending) throw e; log?.(`verse differs failed for ${c.i}: ${e?.message || e}`); toC2.push(c.i); }
+    }
+  }));
+  const sayings = claims.filter((c) => c.kind === 'saying' || c.kind === 'other');
+  const poetryStep = sayings.length && on('POETRY') ? safe('poetry', log, poetryPath(batch, sayings, { spend, log })) : Promise.resolve({ done: [], rest: sayings.map((c) => c.i) });
+  const [, poems] = await Promise.all([versesStep, poetryStep]);
+  for (const rec of poems.done) { done.set(rec.i, rec); route[rec.i] = `poetry: ${rec.parts[0].exit_id}`; }
+  onProgress?.(done.size, shown());
 
-  const hadith = claims.filter((c) => c.kind === 'hadith' || c.kind === 'saying');
+  // 2 hadith, and the sayings that are not lines of poetry: the hadith tree
+  const hadith = claims.filter((c) => !done.has(c.i) && (c.kind === 'hadith' || c.kind === 'saying'));
   if (hadith.length) {
     const h = await hadithPath(batch, hadith, { ledger, spend, log });
     for (const rec of h.done) { done.set(rec.i, rec); route[rec.i] = 'hadith tree'; }
-    for (const i of h.unfinished) { toC2.push(i); treeMissed.add(i); route[i] = 'hadith tree: nothing in dorar it could stand behind'; }
+    for (const i of h.unfinished) { treeMissed.add(i); route[i] = 'hadith tree: nothing in dorar it could stand behind'; }
   }
-  onProgress?.(done.size, [...done.values()].filter((x) => x.by !== 'checker3-none'));
+  onProgress?.(done.size, shown());
 
-  // Rulings: the rulings ladder (method v4), wired 6 Oct; RULINGS=off sends them back to "not checked".
+  // 3 at the same time: rulings (the rulings ladder; CHECKER3_RULINGS=off sends them back to "not checked"), numbers
+  // (numbers.mjs), and the reports path (reports.mjs: history, "other", and a saying the hadith tree could not find; inside
+  // it the known-saying look and the verse-meaning path)
   const rulings = claims.filter((c) => c.kind === 'ruling');
-  if (rulings.length && process.env.CHECKER3_RULINGS !== 'off') {
-    const r = await rulingsPath(batch, rulings, { spend, log });
-    for (const rec of r.done) { done.set(rec.i, rec); route[rec.i] = `rulings ladder: ${rec.state}`; }
-  }
-  onProgress?.(done.size, [...done.values()].filter((x) => x.by !== 'checker3-none'));
+  const numbers = claims.filter((c) => c.kind === 'number');
+  const reports = claims.filter((c) => !done.has(c.i) && (c.kind === 'history' || c.kind === 'other' || (c.kind === 'saying' && treeMissed.has(c.i))));
+  const [rr, nn, pp] = await Promise.all([
+    rulings.length && on('RULINGS') ? safe('rulings', log, rulingsPath(batch, rulings, { spend, log })) : { done: [] },
+    numbers.length && on('NUMBERS') ? safe('numbers', log, numbersPath(batch, numbers, { spend, log, ledger })) : { done: [] },
+    reports.length && on('REPORTS') ? safe('reports', log, reportsPath(batch, reports, { spend, log, ledger })) : { done: [] },
+  ]);
+  for (const rec of rr.done) { done.set(rec.i, rec); route[rec.i] = `rulings ladder: ${rec.state}`; }
+  for (const rec of nn.done) { done.set(rec.i, rec); route[rec.i] = `numbers: ${rec.state}`; }
+  for (const rec of pp.done) { done.set(rec.i, rec); route[rec.i] = `reports: ${rec.state} (${rec.by})`; }
+  for (const i of treeMissed) if (!done.has(i)) toC2.push(i);
+  onProgress?.(done.size, shown());
 
   for (const c of claims) if (!done.has(c.i) && !toC2.includes(c.i)) { toC2.push(c.i); route[c.i] = `${c.kind} -> Checker 2`; }
 
