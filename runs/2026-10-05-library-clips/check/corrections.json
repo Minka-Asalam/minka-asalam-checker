@@ -288,6 +288,112 @@
      ]
     }
    ]
+  },
+  {
+   "video": "29c6cd88-6947-46fc-b6fb-a7b134021a21",
+   "i": 3,
+   "by": "owner, 6 Oct 2026 (correction to his 5 Oct review, checked with the Checker 3 session against quran.com and al-Baghawi on this PC): the statement has the Qur'an as its source, not \"no origin\"",
+   "claim": {
+    "flow_kind": "quran",
+    "sub_kind": null,
+    "state": "by_meaning",
+    "level": 2,
+    "line_ar": "أن الله سخّر للإنسان ما في السماوات والأرض: معنى نصّت عليه آياتٌ منها الجاثية ١٣ والبقرة ٢٩",
+    "line_en": "That Allah made the heavens and the earth for man: the meaning of verses such as al-Jathiya 45:13 and al-Baqara 2:29",
+    "reason_ar": "قال تعالى «هو الذي خلق لكم ما في الأرض جميعا» (البقرة ٢٩) و«وسخر لكم ما في السماوات وما في الأرض جميعا منه» (الجاثية ١٣، ومثلها لقمان ٢٠)؛ وقال البغوي: «ومعنى تسخيرها أنه خلقها لمنافعنا» (٤/١٨٥).",
+    "reason_en": "The Qur'an: \"He created for you all that is on the earth\" (2:29) and \"He subjected to you whatever is in the heavens and on the earth, all of it from Him\" (45:13; likewise 31:20). Al-Baghawi on 45:13: \"the meaning of subjecting them is that He created them for our benefit\" (4/185).",
+    "note_ar": "كلمة «إلا له» (أي: له وحده) من تأكيد المتحدث؛ الآيات تقول «لكم» ولا تقول «لكم وحدكم»، وذكر القرآن حِكَمًا أخرى لخلق السماوات والأرض (الطلاق ١٢، ص ٢٧، الدخان ٣٨). ملاحظة لا تصحيح.",
+    "note_en": "His \"only for him\" is his emphasis: the verses say \"for you\", not \"for you alone\", and the Qur'an names other purposes for creating the heavens and the earth (65:12, 38:27, 44:38). A note, not a correction.",
+    "load_bearing": false
+   },
+   "parts_replace": [
+    {
+     "position": 1,
+     "kind": "quote",
+     "origin": "spoken",
+     "said_text": "هذا الإنسان له قيمة عند الله سبحانه وتعالى، له قيمة، ليش له قيمة؟ لأن ما خلق السموات والأرض إلا له",
+     "text_ar": "سخّر الله للإنسان ما في السماوات وما في الأرض",
+     "text_en": "Allah subjected to man whatever is in the heavens and on the earth",
+     "flow_kind": "quran",
+     "exit_id": "x_by_meaning",
+     "state": "by_meaning",
+     "level": 2,
+     "difference_ar": "قال «ما خلق السموات والأرض إلا له»، والآية «سخر لكم ما في السماوات وما في الأرض» بلا حصر.",
+     "difference_en": "He said \"created the heavens and the earth only for him\"; the verse says \"subjected to you whatever is in the heavens and on the earth\", with no \"only\".",
+     "source": {
+      "site": "quran.com",
+      "link": "https://quran.com/45/13",
+      "quote": "وَسَخَّرَ لَكُم مَّا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ جَمِيعًا مِّنْهُ ۚ إِنَّ فِى ذَٰلِكَ لَـَٔايَـٰتٍ لِّقَوْمٍ يَتَفَكَّرُونَ",
+      "collection": null,
+      "number": "45:13",
+      "grader": null,
+      "grading": null,
+      "narrator": null,
+      "work_ar": null,
+      "ref_ar": null,
+      "volume": null,
+      "page": null,
+      "page_url": null,
+      "confirm_url": null,
+      "gradings": null
+     },
+     "search_log": [
+      {
+       "source": "quran.com",
+       "query": "سخر لكم ما في السماوات وما في الأرض",
+       "found": true
+      },
+      {
+       "source": "usul.ai (al-Baghawi 4/185, on this PC)",
+       "query": "ومعنى تسخيرها أنه خلقها لمنافعنا",
+       "found": true
+      }
+     ]
+    },
+    {
+     "position": 2,
+     "kind": "quote",
+     "origin": "spoken",
+     "said_text": "هذا الإنسان له قيمة عند الله سبحانه وتعالى، له قيمة، ليش له قيمة؟ لأن ما خلق السموات والأرض إلا له",
+     "text_ar": "خلق الله للإنسان ما في الأرض جميعا",
+     "text_en": "Allah created for man all that is on the earth",
+     "flow_kind": "quran",
+     "exit_id": "x_by_meaning",
+     "state": "by_meaning",
+     "level": 2,
+     "difference_ar": null,
+     "difference_en": null,
+     "source": {
+      "site": "quran.com",
+      "link": "https://quran.com/2/29",
+      "quote": "هُوَ ٱلَّذِى خَلَقَ لَكُم مَّا فِى ٱلْأَرْضِ جَمِيعًا ثُمَّ ٱسْتَوَىٰٓ إِلَى ٱلسَّمَآءِ فَسَوَّىٰهُنَّ سَبْعَ سَمَـٰوَٰتٍ ۚ وَهُوَ بِكُلِّ شَىْءٍ عَلِيمٌ",
+      "collection": null,
+      "number": "2:29",
+      "grader": null,
+      "grading": null,
+      "narrator": null,
+      "work_ar": null,
+      "ref_ar": null,
+      "volume": null,
+      "page": null,
+      "page_url": null,
+      "confirm_url": null,
+      "gradings": null
+     },
+     "search_log": [
+      {
+       "source": "quran.com",
+       "query": "خلق لكم ما في الأرض جميعا",
+       "found": true
+      },
+      {
+       "source": "usul.ai (al-Baghawi 1/101, on this PC)",
+       "query": "لكي تعتبروا وتستدلوا وقيل لكي تنتفعوا",
+       "found": true
+      }
+     ]
+    }
+   ]
   }
  ]
 }

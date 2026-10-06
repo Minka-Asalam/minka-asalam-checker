@@ -1,4 +1,9 @@
 {
-  "at": "2026-10-05T12:18:03.145Z",
-  "decision": "accept"
+  "at": "2026-10-06T06:10:00.000Z",
+  "decision": "edit",
+  "edit": "it is actually correct: Allah says «خلق لكم» in the Quran in many places and mentions the heavens and the earth too (checked: 2:29, 45:13, 31:20, al-Baghawi 4/185 and 1/101). Recorded as Quran, by meaning; «إلا له» noted as his emphasis, not a correction. See corrections.json.",
+  "previous": {
+    "at": "2026-10-05T12:18:03.145Z",
+    "decision": "accept"
+  }
 }
