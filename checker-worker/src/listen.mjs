@@ -22,10 +22,16 @@ function run(cmd, args, opts) {
   });
 }
 
+// target: a YouTube id, or { remoteId, url, mime } for a clip uploaded from a phone (the
+// script reads the short-lived link from its environment, never from the command line).
 // -> { ok: true, result, file, usd } | { ok: false, why }
-export async function listen(youtubeId, log) {
-  if (!/^[A-Za-z0-9_-]{11}$/.test(youtubeId)) return { ok: false, why: 'bad id' };
-  const file = path.join(GEMINI_OUT, `result-${youtubeId}.json`);
+export async function listen(target, log) {
+  const remote = typeof target === 'object' && target ? target : null;
+  const id = remote ? remote.remoteId : target;
+  if (!/^[A-Za-z0-9_-]{6,64}$/.test(String(id || ''))) return { ok: false, why: 'bad id' };
+  const arg = remote ? `remote:${id}` : id;
+  const env = remote ? { ...process.env, CHECKER_REMOTE_URL: remote.url, CHECKER_REMOTE_MIME: remote.mime || 'video/mp4' } : process.env;
+  const file = path.join(GEMINI_OUT, `result-${id}.json`);
   try { fs.unlinkSync(file); } catch { /* none yet */ }
   // Gemini answers "busy" at times (5 Oct evening: three models in a row); the script already
   // rotates models, and the whole listen is tried up to three times, a minute apart.
@@ -33,8 +39,8 @@ export async function listen(youtubeId, log) {
   for (let attempt = 1; attempt <= 3 && !fs.existsSync(file); attempt++) {
     if (attempt > 1) await new Promise((res) => setTimeout(res, 60000));
     // npx on Windows is a .cmd: it needs a shell; the id was checked above, so nothing else reaches the command line.
-    r = await run(`npx tsx mobile/scripts/tag-with-gemini.ts ${youtubeId} --claims-only --models=${MODELS}`, [], {
-      cwd: DEENI, shell: true, timeout: 9 * 60 * 1000,
+    r = await run(`npx tsx mobile/scripts/tag-with-gemini.ts ${arg} --claims-only --models=${MODELS}`, [], {
+      cwd: DEENI, shell: true, timeout: 9 * 60 * 1000, env,
     });
     log?.(`listen attempt ${attempt} exit ${r.code}\n${r.stdout.slice(-1500)}\n${r.stderr.slice(-800)}`);
   }

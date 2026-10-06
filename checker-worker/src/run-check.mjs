@@ -12,7 +12,7 @@ import { RUNS } from './env.mjs';
 import { Spend } from './claude.mjs';
 import { clipInfo } from './youtube.mjs';
 import { gate1 } from './gate1.mjs';
-import { listen, buildBatch } from './listen.mjs';
+import { listen, buildBatch, timeToSeconds } from './listen.mjs';
 import { runChecker2 } from './checker2.mjs';
 import { runGates, applyGates } from './gates.mjs';
 import { buildResult } from './result.mjs';
@@ -22,15 +22,21 @@ export const MAX_SECONDS = 180;
 export const CAP_USD = Number(process.env.CHECKER_CAP_USD || 1.0);
 const SLACK = 5; // YouTube rounds; a "3:00" clip may report 181 s
 
-// progress({ step, done, total }) ; log(text)
+// progress({ step, done, total, result? }) — result = the rows found so far, while the check runs; log(text)
+// source 'youtube' takes youtubeId; source 'file' takes file = { url (short-lived link), mime, name, seconds }.
 // -> { status: 'done'|'refused'|'failed', refusal, counted, result, costUsd, info }
-export async function runCheck({ runId, youtubeId, engine = 'checker2', rulesVersion = '1', progress, log }) {
+export async function runCheck({ runId, source = 'youtube', youtubeId, file, engine = 'checker2', rulesVersion = '1', progress, log }) {
   const spend = new Spend();
   const runDir = path.join(RUNS, `${new Date().toISOString().slice(0, 10)}_${runId || youtubeId}`);
   fs.mkdirSync(runDir, { recursive: true });
   const logFile = path.join(runDir, 'worker.log');
   const say = (t) => { fs.appendFileSync(logFile, `[${new Date().toISOString()}] ${t}\n`); log?.(t); };
   const out = (o) => { say(`end: ${o.status} ${o.refusal || ''} cost $${spend.usd.toFixed(4)}`); return { ...o, costUsd: spend.usd, spend }; };
+
+  // A CLIP FROM THE PHONE (owner, 6 Oct): no YouTube metadata, so no gate 1 (the plan of 3 Oct: "unclear and
+  // every file go on to the listen"); Gemini reads the file through a short-lived link; its length is checked
+  // again after listening, from the moments it heard.
+  if (source === 'file') return runFileCheck();
 
   let info;
   try {
@@ -51,8 +57,22 @@ export async function runCheck({ runId, youtubeId, engine = 'checker2', rulesVer
   progress?.({ step: 'listen' });
   const heard = await listen(youtubeId, say);
   if (!heard.ok) { say(`listen failed: ${heard.why}`); return out({ status: 'failed', refusal: 'failed', counted: false, ...base }); }
+  return afterListen(heard, info.channelTitle, base);
+
+  async function runFileCheck() {
+    const fbase = { info: { title: file?.name || null, channelTitle: null, seconds: file?.seconds ?? null } };
+    if (!file?.url) return out({ status: 'failed', refusal: 'file_unreadable', counted: false, ...fbase });
+    progress?.({ step: 'listen' });
+    const heard = await listen({ remoteId: String(runId).replace(/[^A-Za-z0-9_-]/g, ''), url: file.url, mime: file.mime }, say);
+    if (!heard.ok) { say(`listen failed on the file: ${heard.why}`); return out({ status: 'refused', refusal: 'file_unreadable', counted: false, ...fbase }); }
+    const heardSeconds = Math.max(0, ...(heard.result.claims || []).flatMap((c) => [timeToSeconds(c.timestamp_end), timeToSeconds(c.timestamp)]).filter((x) => x != null));
+    if (heardSeconds > MAX_SECONDS + 10) { spend.addUsd('gemini', heard.usd); say(`the file runs past 3 minutes (a quote at ${heardSeconds}s)`); return out({ status: 'refused', refusal: 'too_long', counted: false, ...fbase }); }
+    return afterListen(heard, null, fbase);
+  }
+
+  async function afterListen(heard, speaker, base) {
   spend.addUsd('gemini', heard.usd);
-  const { file: batchFile, batch } = await buildBatch(runDir, heard.file, info.channelTitle, say);
+  const { file: batchFile, batch } = await buildBatch(runDir, heard.file, speaker, say);
   const quotable = (batch.claims || []).length;
   say(`listen: ${quotable} quotes (${(batch.claims || []).map((c) => c.kind).join(', ')})`);
   if (!quotable) return out({ status: 'refused', refusal: 'nothing_to_check', counted: false, ...base });
@@ -61,7 +81,7 @@ export async function runCheck({ runId, youtubeId, engine = 'checker2', rulesVer
   let ret;
   if (engine === 'checker3') {
     const { runChecker3 } = await import('./checker3.mjs');
-    ret = await runChecker3(runDir, batchFile, batch, { spend, log: say, capUsd: CAP_USD, onProgress: (d) => progress?.({ step: 'checking', done: d, total: quotable }), onPhase: (p) => { if (p === 'Verify') progress?.({ step: 'second_look' }); } });
+    ret = await runChecker3(runDir, batchFile, batch, { spend, log: say, capUsd: CAP_USD, onProgress: (d, claimsSoFar) => progress?.({ step: 'checking', done: d, total: quotable, result: claimsSoFar ? buildResult({ ret: { videos: [{ result: { claims: claimsSoFar } }] }, batch, engine, rulesVersion }) : undefined }), onPhase: (p) => { if (p === 'Verify') progress?.({ step: 'second_look' }); } });
   } else {
     ret = await runChecker2(runDir, [{ id: batch.id, file: batchFile }], {
       spend, log: say, capUsd: CAP_USD,
@@ -81,4 +101,5 @@ export async function runCheck({ runId, youtubeId, engine = 'checker2', rulesVer
   fs.writeFileSync(path.join(runDir, 'result.json'), JSON.stringify(result, null, 1));
   say(`spend by model: ${JSON.stringify(spend.byModel)} tokens ${JSON.stringify(spend.tokens)}`);
   return out({ status: 'done', refusal: null, counted: true, result, ...base });
+  }
 }

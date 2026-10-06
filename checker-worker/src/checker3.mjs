@@ -47,7 +47,7 @@ export async function runChecker3(runDir, batchFile, batch, { spend, log, onProg
     route[c.i] = `verse: ${r.state}`;
     if (r.state === 'matches') done.set(c.i, verseRecord(c, r)); else toC2.push(c.i);
   }
-  onProgress?.(done.size);
+  onProgress?.(done.size, [...done.values()].filter((x) => x.by !== 'checker3-none'));
 
   const hadith = claims.filter((c) => c.kind === 'hadith' || c.kind === 'saying');
   if (hadith.length) {
@@ -55,7 +55,7 @@ export async function runChecker3(runDir, batchFile, batch, { spend, log, onProg
     for (const rec of h.done) { done.set(rec.i, rec); route[rec.i] = 'hadith tree'; }
     for (const i of h.unfinished) { toC2.push(i); treeMissed.add(i); route[i] = 'hadith tree: nothing in dorar it could stand behind'; }
   }
-  onProgress?.(done.size);
+  onProgress?.(done.size, [...done.values()].filter((x) => x.by !== 'checker3-none'));
 
   // Rulings: the rulings ladder (method v4), wired 6 Oct; RULINGS=off sends them back to "not checked".
   const rulings = claims.filter((c) => c.kind === 'ruling');
@@ -63,7 +63,7 @@ export async function runChecker3(runDir, batchFile, batch, { spend, log, onProg
     const r = await rulingsPath(batch, rulings, { spend, log });
     for (const rec of r.done) { done.set(rec.i, rec); route[rec.i] = `rulings ladder: ${rec.state}`; }
   }
-  onProgress?.(done.size);
+  onProgress?.(done.size, [...done.values()].filter((x) => x.by !== 'checker3-none'));
 
   for (const c of claims) if (!done.has(c.i) && !toC2.includes(c.i)) { toC2.push(c.i); route[c.i] = `${c.kind} -> Checker 2`; }
 
@@ -79,7 +79,7 @@ export async function runChecker3(runDir, batchFile, batch, { spend, log, onProg
     c2 = ret?.videos?.[0];
     for (const c of c2?.result?.claims || []) if (toC2.includes(c.i)) done.set(c.i, { ...c, by: 'checker2' });
   }
-  onProgress?.(done.size);
+  onProgress?.(done.size, [...done.values()].filter((x) => x.by !== 'checker3-none'));
 
   // No big checker (the owner, 6 Oct: "impractical"): a quote with no Checker 3 path yet is shown as
   // NOT CHECKED; a hadith the tree searched dorar for and could not stand behind is NOT FOUND (in dorar,
