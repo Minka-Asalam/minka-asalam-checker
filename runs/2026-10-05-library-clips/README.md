@@ -22,4 +22,12 @@ The owner's review decisions, then the records published from them.
 - **Placements:** all 27 clips reviewed; 50 topics accepted, 1 rejected; live in the app.
 - **Sources:** all 70 claims decided (`review/claims/`): 65 accepted as the checker wrote them, 5 changed from his notes (a matching narration found, al-Tirmidhi 3393; a woven-in verse approved as a verse in that one case; three books confirmed, which joined the app's cleared sources). The poetry line (clip 11) was re-checked with the new poetry kind and accepted as the same meaning.
 - **His rule for books outside the verified ones** (`review/book-rule.md`): a book confirmed in review shows no note; one not confirmed shows "Book not yet reviewed by a specialist" with the reason on tap.
-- **The sources were not written into the app** (his decision): the reviewed records stand here and on the review page.
+- ~~The sources were not written into the app~~: that note was a misunderstanding. On 6 October (challenge day 3) the owner asked for them to be live.
+
+## The published records (6 October, challenge day 3)
+
+The owner asked for the reviewed sources to be live: what a clip’s Sources button shows. `tools/gen-249.mjs` read the checker’s results, his 5 corrections and his decision on every claim (70 of 70; each of the 6 "edit" decisions is accounted for in the generator), named every source in both languages (`tools/titles-249.json`), and wrote one database change. It ran first as a trial that was always undone, then for real at his yes. Every claim went in held, then was published under the database’s publishing guard, which refuses any part on a hidden outcome and never publishes a line that is not a claim.
+
+- **Published:** 65 claims on 24 clips, 76 parts with their sources. The 5 lines the checker called "not a claim" stay held, so one clip shows none.
+- **`published/records.json`** is exactly what any visitor reads, fetched with the app’s public key after the change: each claim’s words and times, its state and level, and each part’s source, the source’s own words, its name in Arabic and English and its difference. The checker’s private notes on each claim are not public and are not here.
+- The one book nobody has reviewed yet (al-Hikam al-Ata’iyya) carries "Book not yet reviewed by a specialist" under its name, as his rule says.
