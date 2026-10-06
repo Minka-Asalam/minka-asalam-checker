@@ -10,7 +10,7 @@ The Checker listens to a short Islamic clip or lesson and writes down every chec
 
 **How the AI is used.** Google Gemini listens to the clip once and writes each quote with its moment. Then scripts hold the steps, and Claude (Opus 5.5, Sonnet 5.5, Haiku 4.5) answers one small question at a time: where to look, which search result is the same text, whether a page says what the speaker said. Each answer is checked by the script or by a second model before it is used. Anything the tools did not print, such as a link, a grading or a page, is never shown.
 
-This repository is Minka Asalam's entry in the Bāzil Foundation challenge "AI in Service of Islamic Content" (4–6 October 2026). The app itself is live at **https://app.minkasalam.com** (the Checker tab needs a tester code, given in the submission). The project's site is https://minkasalam.com.
+This repository is Minka Asalam's entry in the Bāzil Foundation challenge "AI in Service of Islamic Content" (4–6 October 2026). The working app's link and the Checker's tester code are given to the judges in the submission. The project's site is https://minkasalam.com.
 
 ## What is here
 
@@ -105,7 +105,7 @@ Test mode, which spends no API credit: set `CHECKER_REPLAY=<folder>`. Each quest
 
 ## What is not in this repository, and why
 
-The rest of the app (the knowledge map, accounts, feeds, the clip pages) is private ahead of its store release. It is shown working at https://app.minkasalam.com. The clips' sound and stream addresses belong to their creators and are not here.
+The rest of the app (the knowledge map, accounts, feeds, the clip pages) is private ahead of its store release. It is shown working through the link given in the submission. The clips' sound and stream addresses belong to their creators and are not here.
 
 ## Licence and name
 
@@ -125,7 +125,7 @@ All rights reserved; you may read and run this code for evaluation only (`LICENS
 
 **كيف يُستعمل الذكاء الاصطناعي:** يستمع «جيميناي» من «جوجل» إلى المقطع مرةً واحدة، ويكتب كلَّ استشهادٍ بلحظته. ثم يتولى السكربتُ الخطوات، ويجيب «كلود» (Opus 5.5 وSonnet 5.5 وHaiku 4.5) عن سؤالٍ صغيرٍ واحد في كل مرة: أين يُبحث؟ وأيُّ نتائج البحث هو النصُّ نفسه؟ وهل تقول الصفحةُ ما قاله المتكلم؟ ويُتحقَّق من كل جوابٍ بالسكربت أو بنموذجٍ ثانٍ قبل استعماله. وما لم تطبعه الأدوات، من رابطٍ أو حكمٍ على حديثٍ أو صفحة، لا يُعرض أبدًا.
 
-هذا المستودع مشاركة «منك السلام» في تحدي مؤسسة «بازل» «الذكاء الاصطناعي في خدمة المحتوى الإسلامي» (4–6 أكتوبر 2026). والتطبيق نفسه يعمل على **https://app.minkasalam.com** (ويحتاج تبويب «التبيّن» إلى رمز المختبِر المرفق في التسليم)، وموقع المشروع https://minkasalam.com.
+هذا المستودع مشاركة «منك السلام» في تحدي مؤسسة «بازل» «الذكاء الاصطناعي في خدمة المحتوى الإسلامي» (4–6 أكتوبر 2026). ورابط التطبيق العامل ورمز المختبِر لتبويب «التبيّن» مرفقان للمحكّمين في التسليم، وموقع المشروع https://minkasalam.com.
 
 ## ما في المستودع
 
@@ -171,7 +171,7 @@ All rights reserved; you may read and run this code for evaluation only (`LICENS
 
 ## ما ليس في المستودع، ولماذا
 
-بقية التطبيق (خريطة العلوم، والحسابات، والصفحة الرئيسية، وصفحات المقاطع) خاصةٌ قبل إطلاقه في المتاجر، وتُرى عاملةً على https://app.minkasalam.com. وأصوات المقاطع وعناوين بثها ملكٌ لأصحابها، فليست هنا.
+بقية التطبيق (خريطة العلوم، والحسابات، والصفحة الرئيسية، وصفحات المقاطع) خاصةٌ قبل إطلاقه في المتاجر، وتُرى عاملةً عبر الرابط المرفق في التسليم. وأصوات المقاطع وعناوين بثها ملكٌ لأصحابها، فليست هنا.
 
 ## الترخيص والاسم
 
