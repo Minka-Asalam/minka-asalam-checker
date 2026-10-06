@@ -47,7 +47,7 @@ What it changed, measured during the days against the owner's reviewed answers:
 |---|---|---|
 | Hadith (64 known answers) | 64 of 64, ≈ 25¢ a quote with one large agent | 64 of 64, ≈ 1.3¢ (a small model first, a larger one only for what it misses) |
 | Rulings (the reviewed set) | 35 of 35 | 35 of 35, ≈ 10¢ a ruling |
-| Cost of a whole check | ≈ 25–62¢ a quote | ≈ 3–16¢ a quote on the samples above |
+| Cost per quote | ≈ 25–62¢ | ≈ 0.3–16¢ by kind, on the samples measured |
 
 The agent is kept only as a fallback idea; since 6 October Checker 3 runs with no Checker 2 fallback (the owner's call).
 
@@ -167,7 +167,7 @@ All rights reserved; you may read and run this code for evaluation only (`LICENS
 
 كانت النسخة الابتدائية («التبيّن 2»، المجلد `pipeline/`) تعطي العمل كله لوكيلٍ ذكيٍّ واحد كبير. ويوم 4 أكتوبر أعدنا تصميمها من الصفر: السكربت يتولى الخطوات، والنموذج يجيب عن سؤالٍ صغيرٍ واحد في كل مرة. وفي المجلد `redesign-2026-10-04/` هذا العمل كما كُتب يومي 4 و5 أكتوبر في مستودع وثائق صاحب المشروع، منقولًا دون تغيير يوم 6 أكتوبر: جرد ما بُني وقيس قبلُ، والتصميم ومراحله السبع، وقاعدة صاحب المشروع حين يختلف الحاكمون على الحديث، والطريقة المقيسة (`method-v4/`) مع اختباراتها. والمجلد `src/c3/` في العامل هو هذه الطريقة مبنيةً في «التبيّن» يوم 6 أكتوبر.
 
-وما غيّرته، مقيسًا على إجابات صاحب المشروع المراجَعة: الأحاديث 64 من 64 في الحالين، بكلفة نحو 1.3 سنت بدل نحو 25 سنتًا للاستشهاد؛ والأحكام 35 من 35 في الحالين، بنحو 10 سنتات للحكم؛ وكلفة الفحص كله نحو 3–16 سنتًا للاستشهاد في العيّنات بدل نحو 25–62 سنتًا.
+وما غيّرته، مقيسًا على إجابات صاحب المشروع المراجَعة: الأحاديث 64 من 64 في الحالين، بكلفة نحو 1.3 سنت بدل نحو 25 سنتًا للاستشهاد؛ والأحكام 35 من 35 في الحالين، بنحو 10 سنتات للحكم؛ وكلفة الفحص كله نحو 0.3–16 سنتًا للاستشهاد بحسب نوعه في العيّنات بدل نحو 25–62 سنتًا.
 
 ## النتائج المقيسة في أيام التحدي
 
