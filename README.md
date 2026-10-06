@@ -16,6 +16,7 @@ This repository is Minka Asalam's entry in the Bāzil Foundation challenge "AI i
 
 | Folder | What it is | When |
 |---|---|---|
+| `redesign-2026-10-04/` | The redesign from Checker 2 to Checker 3: inventory, design, decisions and the measured method | 4–5 Oct |
 | `pipeline/` | **The starting version:** the checker as it stood on 2 October 2026, copied unchanged | before the challenge |
 | `runs/2026-10-05-library-clips/` | The first run of the challenge: the app's 27 library clips listened, placed on the knowledge map and checked; the two automatic checks; the review page; the owner's review decisions; and the records published from them | 5–6 Oct |
 | `checker-worker/` | The Checker tab's worker and **Checker 3**, the redesign built on the days: the script holds the steps, a model answers one small question at a time. Its own README explains each step. | 5–6 Oct |
@@ -35,6 +36,20 @@ The tag `starting-version-2026-10-04` marks the first commit. **Every later comm
 - **6 Oct, Checker 3** (`cc71907` … `8d57614`). Verses are compared with the Mushaf by script, with one small question when they differ. Then come the hadith tree, the rulings ladder, poetry, numbers, reports and the verse-meaning look. Each is measured against the owner's review, has a hard cost cap per check ($1.00), and has a test mode that spends nothing.
 - **6 Oct, the published records** (`d83306d`). The owner's reviewed sources went live in the app: 65 claims on 24 clips, 76 parts.
 - **6 Oct, the file route** (`6a85186`). A clip uploaded from the phone is checked the same way, rows arrive as they are found, and the person is notified when the check is done.
+
+## From Checker 2 to Checker 3: the redesign (4–6 October)
+
+The starting version (Checker 2, `pipeline/`) gave one large AI agent the whole job. On 4 October we redesigned it from scratch: the script holds the steps, and a model answers one small question at a time. `redesign-2026-10-04/` holds that work, written on 4–5 October in the owner's documents repository and copied here unchanged on 6 October: the inventory of what was built and measured before (`inventory-*.md`), the design and its seven stages (`design.html`, `decisions.md`), the owner's rule when graders differ, and the measured method (`method-v4/`: the hadith chain, the rulings ladder, verses, poetry, books, and their tests). The worker's `src/c3/` is that method built into the Checker on 6 October.
+
+What it changed, measured during the days against the owner's reviewed answers:
+
+| | Checker 2 (starting version) | Checker 3 |
+|---|---|---|
+| Hadith (64 known answers) | 64 of 64, ≈ 25¢ a quote with one large agent | 64 of 64, ≈ 1.3¢ (a small model first, a larger one only for what it misses) |
+| Rulings (the reviewed set) | 35 of 35 | 35 of 35, ≈ 10¢ a ruling |
+| Cost of a whole check | ≈ 25–62¢ a quote | ≈ 3–16¢ a quote on the samples above |
+
+The agent is kept only as a fallback idea; since 6 October Checker 3 runs with no Checker 2 fallback (the owner's call).
 
 ## How a check works
 
@@ -147,6 +162,12 @@ All rights reserved; you may read and run this code for evaluation only (`LICENS
 - **6 أكتوبر، «التبيّن 3»:** تُقارَن الآيات بالمصحف بالسكربت، مع سؤالٍ صغيرٍ واحد عند الاختلاف. ثم شجرة الحديث، وسُلَّم الأحكام، والشعر، والأرقام، والأخبار، والبحث عن آيةٍ تؤدي المعنى. وكلٌّ منها مقيسٌ على مراجعة صاحب المشروع، وله سقفُ كلفةٍ لكل فحص (دولار واحد)، ووضعُ اختبارٍ لا ينفق شيئًا.
 - **6 أكتوبر، السجلات المنشورة:** صارت المصادر المراجَعة ظاهرةً في التطبيق: 65 استشهادًا على 24 مقطعًا، في 76 جزءًا.
 - **6 أكتوبر، الملف من الهاتف:** يُفحص المقطع المرفوع من الهاتف بالطريقة نفسها، وتصل السطور تباعًا كلما وُجدت، ويُنبَّه صاحب الطلب عند انتهاء الفحص.
+
+## من «التبيّن 2» إلى «التبيّن 3»: إعادة التصميم (4–6 أكتوبر)
+
+كانت النسخة الابتدائية («التبيّن 2»، المجلد `pipeline/`) تعطي العمل كله لوكيلٍ ذكيٍّ واحد كبير. ويوم 4 أكتوبر أعدنا تصميمها من الصفر: السكربت يتولى الخطوات، والنموذج يجيب عن سؤالٍ صغيرٍ واحد في كل مرة. وفي المجلد `redesign-2026-10-04/` هذا العمل كما كُتب يومي 4 و5 أكتوبر في مستودع وثائق صاحب المشروع، منقولًا دون تغيير يوم 6 أكتوبر: جرد ما بُني وقيس قبلُ، والتصميم ومراحله السبع، وقاعدة صاحب المشروع حين يختلف الحاكمون على الحديث، والطريقة المقيسة (`method-v4/`) مع اختباراتها. والمجلد `src/c3/` في العامل هو هذه الطريقة مبنيةً في «التبيّن» يوم 6 أكتوبر.
+
+وما غيّرته، مقيسًا على إجابات صاحب المشروع المراجَعة: الأحاديث 64 من 64 في الحالين، بكلفة نحو 1.3 سنت بدل نحو 25 سنتًا للاستشهاد؛ والأحكام 35 من 35 في الحالين، بنحو 10 سنتات للحكم؛ وكلفة الفحص كله نحو 3–16 سنتًا للاستشهاد في العيّنات بدل نحو 25–62 سنتًا.
 
 ## النتائج المقيسة في أيام التحدي
 

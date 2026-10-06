@@ -1,0 +1,65 @@
+{
+ "at": "2026-10-05T15:31:13.591Z",
+ "cleared": [
+  {
+   "slug": "al-mughni-sharh-mukhtasar-al-khiraqi",
+   "version": "5HK0y3GSR2",
+   "verified_copy": true
+  },
+  {
+   "slug": "al-majmu-sharh-al-madhhab",
+   "version": "PbfpimTmc3",
+   "verified_copy": true
+  },
+  {
+   "slug": "kuwaiti-encyclopedia-of-jurisprudence",
+   "version": "MT3i8pDNoM",
+   "verified_copy": true
+  },
+  {
+   "slug": "zad-al-maad-fi-hady-khayr-al-ibad",
+   "version": "WSf0JYN_je",
+   "verified_copy": true
+  },
+  {
+   "slug": "al-ashbah-wa'l-nazair-1",
+   "version": "6eav2s3cQR",
+   "verified_copy": true
+  },
+  {
+   "slug": "al-sira-al-nabawiyya-1",
+   "version": "J12DhNftIZ",
+   "verified_copy": true
+  },
+  {
+   "slug": "tafsir-al-baghawi",
+   "version": "2Ne0qTu9VW",
+   "verified_copy": true
+  },
+  {
+   "slug": "tafsir-al-tabari-jami-al-bayan",
+   "version": "OdKMqDaKpW",
+   "verified_copy": true
+  },
+  {
+   "slug": "tarikh-al-tabari",
+   "version": "RufjdRPoLW",
+   "verified_copy": true
+  },
+  {
+   "slug": "a-treatise-on-predestination-and-fate",
+   "version": "9Oh-dWgoTC",
+   "verified_copy": false
+  },
+  {
+   "slug": "riyad-salihin",
+   "version": "iIOeGbEJmk",
+   "verified_copy": false
+  },
+  {
+   "slug": "hilyat-awliya",
+   "version": "PmkKxjex9a",
+   "verified_copy": false
+  }
+ ]
+}

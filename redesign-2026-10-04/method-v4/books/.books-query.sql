@@ -1,0 +1,1 @@
+select usul_slug, usul_version, status, verified_copy from claim_sources where usul_slug is not null;

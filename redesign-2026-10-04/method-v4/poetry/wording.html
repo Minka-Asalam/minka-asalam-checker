@@ -1,0 +1,64 @@
+<title>Poetry Kind Wording</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F3E9;--surface:#FFFFFF;--ink:#1F2A3C;--muted:#5D6675;--rule:#E4DBC3;--gold:#9A7426;--tint:#F5EBD9;--green:#2F6B4F;--red:#9B3B3B;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141A24;--surface:#1C2431;--ink:#ECE6D8;--muted:#A3ABB8;--rule:#2E3846;--gold:#D9B25E;--tint:#2A2618;--green:#7FC4A0;--red:#E39A9A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141A24;--surface:#1C2431;--ink:#ECE6D8;--muted:#A3ABB8;--rule:#2E3846;--gold:#D9B25E;--tint:#2A2618;--green:#7FC4A0;--red:#E39A9A;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:15px/1.6 "IBM Plex Sans",system-ui,sans-serif;margin:0}
+.wrap{max-width:820px;margin:0 auto;padding-inline:16px;padding-block:28px 48px;display:flex;flex-direction:column;gap:22px}
+h1{font-size:1.5rem;margin:0;text-wrap:balance}
+h2{font-size:1.05rem;margin:0 0 8px;color:var(--gold);letter-spacing:.02em}
+p{margin:0;max-width:66ch}
+.muted{color:var(--muted);font-size:.9rem}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:start}
+.ar{font-family:"IBM Plex Sans Arabic",sans-serif;direction:rtl;text-align:right;font-size:1.02rem}
+.label{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.pill{display:inline-block;padding:1px 10px;border-radius:999px;background:var(--tint);color:var(--gold);font-weight:600;font-size:.85rem}
+.pill.red{color:var(--red)} .pill.green{color:var(--green)}
+.ex{background:var(--tint);border-radius:8px;padding:10px 12px}
+@media (max-width:560px){.row{grid-template-columns:minmax(0,1fr)}}
+</style>
+<div class="wrap">
+  <div>
+    <h1>The poetry kind: the words viewers would read</h1>
+    <p class="muted">For the owner to approve before database change 242 goes live. Arabic as it would ship, English beside it. Nothing is live yet.</p>
+  </div>
+
+  <section class="card">
+    <h2>How it reads under a clip (the al-Dosari lines)</h2>
+    <div class="ex ar">«وإذا خلوت بريبة في ظلمة والنفس داعية إلى العصيان …»<br>
+      <span class="pill">بالمعنى</span> أقدم ما وجدناه: القحطاني الأندلسي، «نونية القحطاني» (العصر الأندلسي) · الديوان ↗<br>
+      قالها بلفظ قريب من لفظ القصيدة، والمعنى واحد.</div>
+    <div class="ex">«…» <span class="pill">By meaning</span> The oldest record we found: al-Qahtani al-Andalusi, “the Nuniyya of al-Qahtani” (Andalusian era) · aldiwan ↗<br>He said it in wording close to the poem's; the meaning is the same.</div>
+    <p class="muted">He said “al-ʿiṣyān” where the poem has “al-ṭughyān”. If you judge that this changes the meaning, the same card reads “Corrected” instead, with the poem's wording, after your confirmation.</p>
+  </section>
+
+  <section class="card">
+    <h2>The levels (the strength label)</h2>
+    <div class="row"><div class="ar"><span class="pill">في قصيدة</span><br>وجدنا الأبيات في قصيدة على موقع الديوان. نذكر أقدم ما وجدناه: الشاعر والقصيدة والعصر، ولا نجزم بأوّل من قالها؛ فالأبيات تتناقلها الألسن، وقد تُنسب إلى أكثر من شاعر.</div>
+      <div><span class="pill">In a poem</span><br>We found the lines in a poem on aldiwan. We name the oldest record we found (poet, poem, era) and do not claim who said them first: lines travel, and are sometimes attributed to more than one poet.</div></div>
+    <div class="row"><div class="ar"><span class="pill">شعرٌ متداول</span><br>وجدنا البيت في مختارات الشعر، ولم نجد القصيدة التي هو منها.</div>
+      <div><span class="pill">Quoted verse</span><br>We found the line among poetry quotations, but not the poem it comes from.</div></div>
+    <div class="row"><div class="ar"><span class="pill">لا مصدر</span><br>لم نجد الأبيات في الديوان، ولا يعني ذلك أنها بلا أصل.</div>
+      <div><span class="pill">No source</span><br>We did not find the lines in aldiwan; that does not mean they have no origin.</div></div>
+  </section>
+
+  <section class="card">
+    <h2>The outcomes (what the card says about his words)</h2>
+    <div class="row"><div class="ar"><span class="pill green">في قصيدة</span> في قصيدة، كما قالها — الأبيات كما في القصيدة.</div><div>In a poem, as he said it — The lines are as in the poem.</div></div>
+    <div class="row"><div class="ar"><span class="pill">بالمعنى</span> في قصيدة، بلفظ قريب — قالها بلفظ قريب من لفظ القصيدة، والمعنى واحد.</div><div>In a poem, in close wording — He said it in wording close to the poem's; the meaning is the same.</div></div>
+    <div class="row"><div class="ar"><span class="pill red">مُصحَّح</span> لفظٌ يغيّر معنى القصيدة — في القصيدة: «…»، وما قاله يغيّر معناها.</div><div>Wording that changes the poem's meaning — The poem has «…»; his wording changes its meaning. (Only after your confirmation.)</div></div>
+    <div class="row"><div class="ar"><span class="pill">شعرٌ متداول</span> بيتٌ متداول لم نجد قصيدته — وجدنا البيت في المختارات، ولم نجد القصيدة التي هو منها.</div><div>A quoted line whose poem we did not find — We found the line among quotations, not in its poem.</div></div>
+    <div class="row"><div class="ar"><span class="pill">لم يوجد</span> لم نجده في الديوان — بحثنا عن الأبيات في الديوان فلم نجدها.</div><div>Not found in aldiwan — We searched aldiwan for the lines and did not find them.</div></div>
+    <div class="row"><div class="ar"><span class="pill">معلّق</span> محجوز حتى يستمع المشرف — حرفٌ واحد بين ما سُمع وما في القصيدة: يستمع المشرف إلى المقطع.</div><div>Held for a moderator to listen — One letter between what was heard and the poem (not shown to viewers until a moderator listens).</div></div>
+  </section>
+
+  <section class="card">
+    <h2>The rule behind it (the rulebook entry)</h2>
+    <div class="row"><div class="ar"><b>الشعر: أقدم ما وجدناه</b><br>أن الشعر يُنقل بالرواية فتتعدّد ألفاظه، وأن نسبته إلى شاعر قد يُختلف فيها؛ فنذكر أقدم مصدر وجدناه ولا نحكم على قائله، ولا نعدّ ذكرَ المتحدث شاعرًا آخر خطأً.</div>
+      <div><b>Poetry: the oldest record we found</b><br>That poetry is passed on by recitation, so its wording varies, and its attribution to a poet can be disputed: we name the oldest record we found and do not rule on who said it, and a speaker naming another poet is not counted an error.</div></div>
+  </section>
+</div>

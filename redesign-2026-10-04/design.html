@@ -1,0 +1,231 @@
+<title>Claims Pipeline Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&family=Reem+Kufi:wght@600&display=swap">
+<style>
+/* Layout: one reading column in pipeline order. Each stage is a ledger of what was built or tried, with a status chip and its measured number. The app's own palette: cream/ink-green/gold by day, navy by night. */
+:root{
+  --bg:#F7F3E9; --surface:#FFFFFF; --well:#EFE8D6; --rule:#E4DBC3;
+  --ink:#1B3A2F; --text:#2A2724; --muted:#5B7566; --faint:#8E8570;
+  --gold:#B8935F; --gold-text:#86653A; --maroon:#7A2E2E;
+  --tint-gold:#F5EBD9; --tint-ink:#E3EFE7; --tint-maroon:#F6E3E3; --on-ink:#F7F3E9;
+  --f-body:"IBM Plex Sans Arabic","Segoe UI",system-ui,sans-serif;
+  --f-display:"Reem Kufi","IBM Plex Sans Arabic",serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#000B1A; --surface:#0F1B2D; --well:#16253A; --rule:#223247;
+  --ink:#EDE9DC; --text:#EDE9DC; --muted:#8FA396; --faint:#8A949E;
+  --gold:#D4AC77; --gold-text:#D4AC77; --maroon:#D4736D;
+  --tint-gold:#2A2214; --tint-ink:#10231C; --tint-maroon:#33181A; --on-ink:#001F49; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#000B1A; --surface:#0F1B2D; --well:#16253A; --rule:#223247;
+  --ink:#EDE9DC; --text:#EDE9DC; --muted:#8FA396; --faint:#8A949E;
+  --gold:#D4AC77; --gold-text:#D4AC77; --maroon:#D4736D;
+  --tint-gold:#2A2214; --tint-ink:#10231C; --tint-maroon:#33181A; --on-ink:#001F49; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--f-body);font-size:15px;line-height:1.6;margin:0;padding-inline:16px}
+.wrap{max-width:780px;margin:0 auto;padding-block:28px 80px;display:flex;flex-direction:column;gap:40px}
+h1,h2,h3{margin:0;color:var(--ink);text-wrap:balance}
+h1{font-family:var(--f-display);font-weight:600;font-size:clamp(30px,7.5vw,42px);line-height:1.1}
+h2{font-size:22px;line-height:1.3}
+h3{font-size:15px;line-height:1.35}
+p{margin:0}
+a{color:var(--gold-text)}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:4px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-text);font-weight:600}
+.lead{max-width:64ch}
+.small{font-size:13px;color:var(--muted)}
+section{display:flex;flex-direction:column;gap:14px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px}
+nav.toc a{font-size:13.5px;font-weight:600;text-decoration:none;background:var(--surface);color:var(--ink);padding:7px 12px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--rule)}
+/* the key */
+.key{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:13px;color:var(--muted);align-items:center}
+.chip{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:2px 8px;border-radius:6px;white-space:nowrap;text-transform:uppercase}
+.c-live{background:var(--tint-ink);color:var(--ink)}
+.c-tested{background:var(--tint-gold);color:var(--gold-text)}
+.c-dropped{background:var(--tint-maroon);color:var(--maroon)}
+.c-fix{background:var(--maroon);color:var(--on-ink)}
+.c-open{box-shadow:inset 0 0 0 1.5px var(--rule);color:var(--muted)}
+/* the stage strip */
+.strip{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.strip a{display:flex;flex-direction:column;gap:2px;text-decoration:none;background:var(--ink);color:var(--on-ink);border-radius:10px;padding:8px 9px;min-width:0}
+.strip b{font-family:var(--f-mono);font-size:12px;opacity:.75}
+.strip span{font-size:12.5px;font-weight:600;line-height:1.25}
+@media (max-width:620px){.strip{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:380px){.strip{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* a stage ledger */
+.stagehead{display:flex;align-items:baseline;gap:12px}
+.stagehead .no{font-family:var(--f-mono);color:var(--gold-text);font-size:15px}
+.ledger{background:var(--surface);border-radius:16px;overflow:hidden}
+.sub{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);font-weight:700;padding:12px 16px 2px;border-top:1px solid var(--rule)}
+.ledger>.sub:first-child{border-top:0}
+.item{display:flex;flex-direction:column;gap:3px;padding:11px 16px;border-top:1px solid var(--rule)}
+.ledger>.item:first-child{border-top:0}
+.sub+.item{border-top:0}
+.item .top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.item .top h3{min-width:0}
+.item p{font-size:14px;min-width:0}
+.item .num{font-family:var(--f-mono);font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+/* cost block */
+.bars{display:flex;flex-direction:column;gap:10px;background:var(--surface);border-radius:16px;padding:16px}
+.bar{display:grid;grid-template-columns:150px 1fr 70px;gap:10px;align-items:center;font-size:13.5px}
+.bar .track{height:12px;background:var(--well);border-radius:6px;overflow:hidden}
+.bar .fill{height:100%;background:var(--gold);border-radius:6px}
+.bar .v{font-family:var(--f-mono);font-size:12.5px;text-align:end;font-variant-numeric:tabular-nums}
+@media (max-width:480px){.bar{grid-template-columns:1fr 64px}.bar .track{grid-column:1/-1;grid-row:2}}
+/* rules + open lists */
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:600px){.cols{grid-template-columns:1fr}}
+.box{background:var(--surface);border-radius:16px;padding:16px 18px;display:flex;flex-direction:column;gap:8px;min-width:0}
+ol.cut{margin:0;padding-inline-start:22px;display:flex;flex-direction:column;gap:6px;font-size:14px}
+.scroll{overflow-x:auto;background:var(--surface);border-radius:16px}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{text-align:start;vertical-align:top;padding:9px 12px;border-top:1px solid var(--rule)}
+thead th{border-top:0;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);font-weight:700}
+td.num{font-family:var(--f-mono);font-size:13px;white-space:nowrap;font-variant-numeric:tabular-nums}
+ul{margin:0;padding-inline-start:20px;display:flex;flex-direction:column;gap:5px;font-size:14px}
+.next{background:var(--ink);color:var(--on-ink);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.next h2{color:var(--on-ink)}
+.files{font-family:var(--f-mono);font-size:12.5px;color:var(--muted);overflow-wrap:anywhere}
+</style>
+<div class="wrap">
+
+<header style="display:flex;flex-direction:column;gap:10px">
+  <div class="eyebrow">Minka Asalam · the claims redesign · step 5 · draft of 4 October</div>
+  <h1>Claims Pipeline Design</h1>
+  <p class="lead">From a video to a reviewed record, designed from scratch on everything we built and measured before. Each stage below shows the owner's decision, who does each step, and what has been measured. One principle runs through it: <b>the script holds the steps, a model answers one small question at a time, and the costly agent is only the fallback.</b></p>
+  <div class="key" aria-label="Key">
+    <span><span class="chip c-live">Measured</span> decided and tested against reviewed answers</span>
+    <span><span class="chip c-tested">Decided</span> chosen; its test is in the plan below</span>
+    <span><span class="chip c-open">Kept</span> as it works today</span>
+  </div>
+</header>
+
+<section class="next" aria-label="The result so far">
+  <div class="eyebrow" style="color:var(--gold)">Where it stands</div>
+  <h2>Tested on three reviewed videos: as many sources as today, at a fraction of the cost</h2>
+  <p>On 4 October the new way and today's checker ran on the same three reviewed videos. <b>Rulings:</b> on the rulings both searched, a page for 35 of 35 each, stating it fully 14 against 15 (today's checker left 3 zakat rulings unsearched under a deadline, so they are not counted). <b>Verses:</b> 3 of 3 both. <b>Hadith:</b> the same hadith as approved for all but one Companion's report, which the fallback then found; no wrong hadith attached by either. <b>Cost:</b> about 10¢ a ruling and 1.3¢ a hadith, against 25¢ to 62¢ a claim for today's checker (estimates from token counts).</p>
+  <p><b>The review panel (4 Oct night, 12 experts and 6 simulated viewers) found what this test does not prove yet:</b> the scorer was the same kind of reader as the new way's own second look; the hadith were the ones the tree was tuned on, and all three videos are one speaker; the line viewers read was never written by the new way; "partly" and "the opposite" can be unfair to a speaker who gave a recognised view; and the cheap judge was once shown a website's menu instead of the fatwa. These are the next work, before batch A.</p>
+</section>
+
+<nav class="strip" aria-label="The pipeline, in order">
+  <a href="#s1"><b>1</b><span>Listen</span></a>
+  <a href="#s2"><b>2</b><span>Cut into claims</span></a>
+  <a href="#s3"><b>3</b><span>Route by kind</span></a>
+  <a href="#s4"><b>4</b><span>Find the source</span></a>
+  <a href="#s5"><b>5</b><span>Second look</span></a>
+  <a href="#s6"><b>6</b><span>The record</span></a>
+  <a href="#s7"><b>7</b><span>Review, write back</span></a>
+</nav>
+
+<section id="s1">
+  <div class="stagehead"><span class="no">1</span><h2>Listen</h2></div>
+  <div class="ledger">
+    <div class="item"><div class="top"><h3>Gemini hears the video, a script guards it</h3><span class="chip c-tested">Decided</span></div>
+      <p><b>Gemini:</b> one listen per video from its link. <b>The script:</b> refuses a result from a cheap "lite" model; compares the last claim's time with the video's length and listens again to the rest if it stopped early; records what each listen cost.</p>
+      <p class="num">why: lite found 1 claim where a full model found 12 · one listen stopped at 4:56 and lost a hadith · the paid cost was never measured</p></div>
+    <div class="item"><div class="top"><h3>To test: speech to text first, for our own clips</h3><span class="chip c-tested">Decided</span></div>
+      <p>For files we hold (the clips, the Checker's files): a speech-to-text service gives every word its exact time, then a model picks the claims from the text. Exact time buttons on the clip doors.</p>
+      <p class="num">ElevenLabs ≈ 1¢ a 3-minute clip (quoted) · never measured</p></div>
+  </div>
+</section>
+
+<section id="s2">
+  <div class="stagehead"><span class="no">2</span><h2>Cut into claims</h2></div>
+  <div class="ledger">
+    <div class="item"><div class="top"><h3>Gemini's cut by source, with a guard at 25 claims</h3><span class="chip c-tested">Decided</span></div>
+      <p>One verse passage, one narration, one ruling = one claim, in timed pieces. <b>The script:</b> a video that comes back with exactly 25 claims (the prompt's cap per video) has its second half heard separately. "Is this the rest of the same source?" stays a free script check.</p>
+      <p class="num">today's cut: narrations kept whole 4 of 5 (old cut 1 of 5) · claims lost 6 of 147</p></div>
+  </div>
+</section>
+
+<section id="s3">
+  <div class="stagehead"><span class="no">3</span><h2>Route by kind</h2></div>
+  <div class="ledger">
+    <div class="item"><div class="top"><h3>Gemini labels the paths' seven kinds, the script routes</h3><span class="chip c-live">Measured</span></div>
+      <p>Verse, hadith, ruling, fatwa, report, number, no origin. No model decides the route. A claim may change path only after its search (the Ayat al-Kursi case).</p>
+      <p class="num">the listen's label: 64 of 64 hadith right, 1 of 75 others called hadith · asking a model "is this a hadith?" did worse · the new list of kinds still to confirm in the test</p></div>
+  </div>
+</section>
+
+<section id="s4">
+  <div class="stagehead"><span class="no">4</span><h2>Find the source and its level</h2></div>
+  <div class="ledger">
+    <div class="sub">Verses</div>
+    <div class="item"><div class="top"><h3>The script alone</h3><span class="chip c-live">Measured</span></div>
+      <p><b>The script:</b> finds the verse on quran.com from the words or the reference, compares word by word, verse ranges included. One letter off → a moderator listens. More off → one small question to a model: a different reading, a slip, or a translation?</p>
+      <p class="num">a simple search found 26 of 26 · cost ≈ 0</p></div>
+
+    <div class="sub">Hadith · the owner's tree</div>
+    <div class="item"><div class="top"><h3>Haiku first, Opus for what it cannot finish</h3><span class="chip c-live">Measured</span></div>
+      <p><b>Haiku:</b> "Where can I find it?" · "Which of these did he mean?" · "Say it another way". <b>The script:</b> searches dorar from the PC, ranks what dorar printed, copies every detail, sets the level from the grading. <b>Opus:</b> the same tree again when Haiku finds nothing or picks a weak narration while a sound one was printed. <b>The big checker:</b> only if Opus also fails.</p>
+      <p class="num">64 of 64 the same hadith as approved · no wrong hadith published · ≈ 1.3¢ a hadith · today's checker ≈ 7¢</p></div>
+
+    <div class="sub">Rulings, reports, fatwas, figures</div>
+    <div class="item"><div class="top"><h3>Split first, then Opus asks where, the script searches books and fatwas, Haiku judges</h3><span class="chip c-live">Adopted 4 Oct</span></div>
+      <p><b>Sonnet, first:</b> how many rulings are in this sentence? One ruling, a general rule plus the case he applies it to, or two rulings packed together; each part gets the plain question a person would ask. <b>Opus:</b> per part, "which book, which chapter, and three sentences in the book's own words, each naming the thing ruled on". <b>The script:</b> searches the verified copies, and searches each plain question on islamweb and islamqa, opening the top five fatwas. <b>Haiku:</b> "which passage states this part: the same, partly, more than the source, the opposite, or none?" <b>Opus's second look:</b> reads the whole page. <b>Opus again</b> only where Haiku found nothing or the second look said no, and <b>Sonnet</b> checks Opus's pick. A page that says the opposite is a found source, shown as a correction. Figures are calculated by the script; a usul.ai book outside the nine is allowed but flagged for the owner.</p>
+      <p class="num">three reviewed videos: on the 35 rulings both searched, a page for 35 each (fully 14 against today's 15; 3 more found by the new way that today's checker left unsearched under a deadline) · Opus needed again on 4 of 63 parts · ≈ 10¢ a ruling · the owner's four fixes (split, ask as a question, name the key term, "the opposite") took it from 14 to 19 on the first 19, then 19 of 19 on unseen ones</p></div>
+  </div>
+</section>
+
+<section id="s5">
+  <div class="stagehead"><span class="no">5</span><h2>Second look</h2></div>
+  <div class="ledger">
+    <div class="item"><div class="top"><h3>Script checks, then a different model's judgement</h3><span class="chip c-tested">Decided</span></div>
+      <p><b>The script:</b> every link printed by a search, every quote on its page, every grade as dorar shows it, the speaker's words copied exactly, the whole ladder tried before "not found", the state the worst of its parts. <b>A different model from the one that picked:</b> does the source say what he said? Is the difference line fair to the speaker and natural Arabic?</p>
+      <p class="num">already proven in part: on rulings the page check caught every wrong page (12 of 12, then 4 of 4, then 4 in the three-video test, each re-judged by Opus); on hadith it caught Haiku's one wrong pick · to test: would it have caught the sceptic's 8 changes of 1 October?</p></div>
+  </div>
+</section>
+
+<section id="s6">
+  <div class="stagehead"><span class="no">6</span><h2>The record</h2></div>
+  <div class="ledger">
+    <div class="item"><div class="top"><h3>Today's record, with four additions</h3><span class="chip c-tested">Decided</span></div>
+      <p>Kept: said beside source, in parts; scholarly rules as data marked provisional or cleared; the publish guard. Added in one database change after the test: the rules version, how each part was found (script and Haiku · Opus · the big checker), what each claim cost, and the flag for a book outside the nine. Every read pages past 1,000 rows.</p></div>
+  </div>
+</section>
+
+<section id="s7">
+  <div class="stagehead"><span class="no">7</span><h2>Review and write back</h2></div>
+  <div class="ledger">
+    <div class="item"><div class="top"><h3>"What needs you" first</h3><span class="chip c-tested">Decided</span></div>
+      <p>One permanent page builder. Flagged parts first, each with its reason (Opus took over, a weak hadith held, "partly" or "more than the book", a book outside the nine, a letter off in a verse, a long story sourced whole). The rest in clean groups the owner scans and accepts with one tap; every item stays his decision. The page times the review. Write-back as today, guarded.</p></div>
+  </div>
+</section>
+
+<section id="cost">
+  <div class="eyebrow">Measured where it says so, estimated where it says so</div>
+  <h2>Cost per quote</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Kind</th><th>The new way</th><th>Today's checker</th></tr></thead>
+    <tbody>
+      <tr><td>Verse</td><td class="num">≈ 0</td><td rowspan="3">≈ 62¢ a claim, every kind together (measured 4 Oct on a test video, checker + sceptic at Opus prices); ≈ 25¢ on the ten videos of 1 Oct at Opus prices, 56¢ as it actually ran, on Fable</td></tr>
+      <tr><td>Hadith</td><td class="num">≈ 1.3¢</td></tr>
+      <tr><td>Ruling</td><td class="num">≈ 10¢ (estimated from token counts, 38 rulings)</td></tr>
+      <tr><td>The listen</td><td class="num">≈ 5¢ a clip (quoted)</td><td>the same listen</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">Illustration, not a measurement: a 3-minute clip with two hadith, one verse and two rulings would cost about 28¢ the new way, against about $1.30 to $3.15 with today's checker.</p>
+</section>
+
+<section id="test">
+  <div class="eyebrow">Step 4, run 4 October</div>
+  <h2>The test before anything is built</h2>
+  <div class="box"><ol class="cut">
+    <li><b>Done: today's checker on three reviewed videos</b> as the baseline: pkH5vlUGc5U (night prayer) and NyPugm_OXSQ (zakat) from their 2 October runs; vl5WtmIa1Fc (wudu) run again on 4 October.</li>
+    <li><b>Done: the new way on the same three</b>, with the answer key out of reach and every helper audited. Verses 3 of 3 · hadith all but one Companion's report · no wrong hadith · rulings 35 of 35 each where both searched (fully 14 against 15).</li>
+    <li><b>Done: the fallback</b> on what the new way left unsourced, one Companion's report. Today's checker found the approved entry (al-Bayhaqi's al-Khilafiyat 567) for $1.87 measured, judging it "accounts differ" where the owner approved "reported". With it, every approved source on these videos is found, at about 11¢ a claim all in against about 62¢.</li>
+    <li><b>The second look against the sceptic's 8 changes</b> of 1 October.</li>
+    <li><b>The listening guards and the seven kinds</b>: does Gemini still find as many claims with the new list?</li>
+    <li><b>Speech to text on our clips</b>: exact times against Gemini's.</li>
+    <li><b>Promising means:</b> at least as many approved sources as today's checker, no wrong hadith attached, clearly cheaper per quote.</li>
+  </ol></div>
+</section>
+
+<section>
+  <h3>The files</h3>
+  <p class="files">D:\Deeni Docs\Claims_Redesign_2026-10\decisions.md · inventory pages A, B, C · rulings-ladder\RESULTS.md · test-2videos\RESULTS.md and test-fresh\RESULTS.md (the step 4 test, rulings v3) · AI_Learning_2026-10\prompt-chain-L5\RESULTS.md and prompt-chain-L5-opus\RESULTS.md (hadith)</p>
+  <p class="small">The rules this design keeps and the full inventory of what came before: <a href="https://claude.ai/artifact/5cyppRF3phAT6E8mn2hAQy">Claims Pipeline Inventory</a>.</p>
+</section>
+
+</div>
