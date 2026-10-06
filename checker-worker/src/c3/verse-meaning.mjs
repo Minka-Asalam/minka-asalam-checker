@@ -5,8 +5,8 @@
 //   2  the verses (script) each fetched from quran.com: its own text, never the model's memory
 //   3  the look (Sonnet, a different model, judging ONLY from the fetched text): the verse states it / states part of it /
 //      he said more than the verse (e.g. "only") / no
-//   4  the record (script): Qur'an, by meaning (x_by_meaning, level 2), the verse as the source; "part" and "more" carry a
-//      note for the owner, never a correction; "no" leaves the statement as it was
+//   4  the record (script): Qur'an, by meaning (x_by_meaning, level 2), the verse as the source; "more" carries a note for
+//      the owner, never a correction; "part" and "no" leave the statement as it was (the owner, 6 Oct: "part" is too loose)
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { askJson, MODELS } from '../claude.mjs';
@@ -66,7 +66,9 @@ export async function verseMeaningPath(batch, claims, { spend, log } = {}) {
   const done = [];
   for (const x of withV) {
     const a = looks[x.tag]; const v = a && a.pick > 0 ? x.verses[a.pick - 1] : null;
-    if (!a || !['states', 'part', 'more'].includes(a.verdict) || !v || !inText(a.words, v.text)) continue; // the words must be in the verse
+    // the owner (6 Oct): a verse that states only PART of it is too loose ("an atheist in hardship looks to the sky" for 39:8):
+    // it stays his own view; only "states" and "more" (he added an emphasis the verse lacks) attach the verse
+    if (!a || !['states', 'more'].includes(a.verdict) || !v || !inText(a.words, v.text)) continue; // the words must be in the verse
     const [s, n] = v.key.split(':');
     const note = [NOTE[a.verdict], a.verdict === 'more' && a.extra ? `(${a.extra}): a note, not a correction` : null].filter(Boolean).join(' ');
     done.push({
