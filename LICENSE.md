@@ -17,7 +17,7 @@ The only Minka Asalam records are the ones shown inside the app, after a person 
 
 ## Parts made by others
 
-Sources, tools and libraries made by others keep their own licences and terms. They are listed in `SOURCES_TOOLS_LICENSES.md` once that file is added.
+Sources, tools and libraries made by others keep their own licences and terms. They are listed in `SOURCES_TOOLS_LICENSES.md`.
 
 ---
 
@@ -40,4 +40,4 @@ Sources, tools and libraries made by others keep their own licences and terms. T
 
 ## ما صنعه غيرنا
 
-المصادر والأدوات والمكتبات التي صنعها غيرنا تبقى على تراخيصها وشروطها، وتُذكر في الملف `SOURCES_TOOLS_LICENSES.md` حين يُضاف.
+المصادر والأدوات والمكتبات التي صنعها غيرنا تبقى على تراخيصها وشروطها، وتُذكر في الملف `SOURCES_TOOLS_LICENSES.md`.
