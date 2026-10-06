@@ -5,7 +5,16 @@
 //   counts: { quotes, sourced, corrected, not_found, other },
 //   rows: [{ i, t, t_end, said, flow_kind, state, level, parts_total, parts_sourced,
 //            source: { title_ar, title_en, link, quote } | null }] }
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { timeToSeconds } from './listen.mjs';
+
+// The 114 chapter names as quran.com gives them (name_simple, name_arabic): the spellings the
+// reviewed records use (checked 7 Oct: 59 of 62 live labels identical; the records spell 20 "Ta-Ha",
+// so the table does too). Index = chapter - 1; each entry is [English, Arabic].
+const SURAHS = JSON.parse(fs.readFileSync(path.join(path.dirname(fileURLToPath(import.meta.url)), 'surahs.json'), 'utf8'));
+const arabicDigits = (n) => String(n).replace(/[0-9]/g, (d) => '٠١٢٣٤٥٦٧٨٩'[d]);
 
 const SOURCED = ['matches', 'by_meaning', 'overstated'];
 const HIDDEN = ['not_a_claim'];
@@ -17,9 +26,17 @@ function sourceOf(c) {
   const s = p.source;
   let ar = null, en = null;
   if (/quran\.com/.test(s.link)) {
-    const m = /quran\.com\/(\d+)\/(\d+(?:-\d+)?)/.exec(s.link);
-    ar = m ? `القرآن الكريم ${m[1]}:${m[2]}` : 'القرآن الكريم';
-    en = m ? `The Qur'an ${m[1]}:${m[2]}` : "The Qur'an";
+    // As the reviewed records label a verse (S5 / the owner, 7 Oct): "Ash-Shu'ara 26:62" and "الشعراء ٦٢";
+    // a range "Al-Kahf 18:39-40" and "الكهف ٣٩–٤٠" (Arabic-Indic digits, an en dash).
+    const m = /quran\.com\/(\d+)\/(\d+)(?:-(\d+))?/.exec(s.link);
+    const name = m ? SURAHS[Number(m[1]) - 1] : null;
+    if (name) {
+      en = `${name[0]} ${m[1]}:${m[2]}${m[3] ? `-${m[3]}` : ''}`;
+      ar = `${name[1]} ${arabicDigits(m[2])}${m[3] ? `–${arabicDigits(m[3])}` : ''}`;
+    } else {
+      ar = 'القرآن الكريم';
+      en = "The Qur'an";
+    }
   } else if (/dorar\.net/.test(s.link)) {
     ar = [s.collection, s.number].filter(Boolean).join(' ') || 'الدرر السنية';
     if (s.grader) ar += ` · ${s.grader}`;
