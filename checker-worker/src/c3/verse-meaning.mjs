@@ -30,10 +30,10 @@ One entry per claim, same tags.`;
 
 const LOOK = (items) => `${GUARD}
 
-A speaker in a religious video said each statement below, naming no source. Beside it are verses of the Qur'an, as quran.com prints them. Judge ONLY from the verse text shown, never from tafsir or from what you remember:
-- "states": a verse states what he said, in other words;
-- "part": a verse states part of what he said (the rest is not in it);
-- "more": a verse states it, but he said MORE than the verse does (for example "only", "always", "all", a reason the verse does not give);
+A speaker in a religious video said each statement below, naming no source. Beside it are verses of the Qur'an, as quran.com prints them. Judge ONLY from the verse text shown, never from tafsir or from what you remember. First find his MAIN POINT: who or what he speaks about, and what he says of it. Then:
+- "states": a verse states his main point, in other words, and he adds nothing;
+- "more": a verse states his main point about the SAME subject, and he only ADDS to it: an emphasis ("only", "always", "all", "nothing but"), or his own lesson or reason drawn from it (example: he says Allah created the heavens and the earth only for man, so man has value; the verse says Allah subjected to you what is in the heavens and the earth: "more");
+- "part": a verse is near his point, but his main point is about ANOTHER subject or another act than the verse's (example: he says an atheist in hardship looks to the sky; the verse says man in hardship calls on his Lord: "part", because the verse is not about an atheist or the sky);
 - "no": no verse shown states it (the same topic is not enough).
 pick = the number of the verse that states it (0 for "no"); words = the words of that verse, copied exactly, that carry the meaning; extra = for "more", what he added, in English.
 
@@ -84,6 +84,7 @@ export async function verseMeaningPath(batch, claims, { spend, log } = {}) {
       }],
     });
   }
+  for (const x of items) log?.(`verse meaning #${x.c.i}: named ${found[x.tag]?.meaning_of_verse || '(no answer)'} ${(found[x.tag]?.verses || []).join(' ')} | look ${looks[x.tag]?.verdict || '-'} ${looks[x.tag]?.why || ''}`);
   log?.(`verse meaning: ${items.length} statements, ${done.length} the meaning of a verse`);
   return { done, rest: items.filter((x) => !done.some((d) => d.i === x.c.i)).map((x) => x.c.i) };
 }
