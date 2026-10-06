@@ -13,6 +13,11 @@ const GEMINI_OUT = path.join(os.tmpdir(), 'deeni-gemini');
 const GEMINI_USD_PER_MTOK = 1;
 // 3.6 first: on 5 Oct evening 3.7 hung for 4 minutes before answering busy, 3.6 answered. Never a lite model (they under-extract).
 const MODELS = 'gemini-3.6-flash,gemini-3.7-flash,gemini-3.8-flash,gemini-3.5-flash';
+// Google's quota answers are not cleared by trying again a minute later: the project's daily
+// video allowance ("exceeded a quota"), every model's daily bucket, a rate limit that outlasted
+// the script's own waits, a billing refusal. On one of those the listen stops at once (7 Oct:
+// three tries over two minutes on a spent allowance kept every judge waiting for a "failed").
+const QUOTA_RE = /video allowance is spent|spent its daily free-tier bucket|exceeded a quota|rate-limited|RESOURCE_EXHAUSTED|too_many_requests|prepayment|billing/i;
 
 function run(cmd, args, opts) {
   return new Promise((resolve) => {
@@ -43,6 +48,10 @@ export async function listen(target, log) {
       cwd: DEENI, shell: true, timeout: 9 * 60 * 1000, env,
     });
     log?.(`listen attempt ${attempt} exit ${r.code}\n${r.stdout.slice(-1500)}\n${r.stderr.slice(-800)}`);
+    if (!fs.existsSync(file) && QUOTA_RE.test(`${r.stdout}\n${r.stderr}`)) {
+      log?.('listen stopped: Google says the quota is spent, so trying again now would only make the person wait');
+      return { ok: false, why: 'quota', quota: true };
+    }
   }
   if (!fs.existsSync(file)) return { ok: false, why: `no listen result (exit ${r?.code})` };
   const result = JSON.parse(fs.readFileSync(file, 'utf8'));

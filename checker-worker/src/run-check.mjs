@@ -64,7 +64,12 @@ export async function runCheck({ runId, source = 'youtube', youtubeId, file, eng
     if (!file?.url) return out({ status: 'failed', refusal: 'file_unreadable', counted: false, ...fbase });
     progress?.({ step: 'listen' });
     const heard = await listen({ remoteId: String(runId).replace(/[^A-Za-z0-9_-]/g, ''), url: file.url, mime: file.mime }, say);
-    if (!heard.ok) { say(`listen failed on the file: ${heard.why}`); return out({ status: 'refused', refusal: 'file_unreadable', counted: false, ...fbase }); }
+    if (!heard.ok) {
+      say(`listen failed on the file: ${heard.why}`);
+      // A spent Google quota is not the file's fault: "failed" (not counted, Try again), not "unreadable".
+      if (heard.quota) return out({ status: 'failed', refusal: 'failed', counted: false, ...fbase });
+      return out({ status: 'refused', refusal: 'file_unreadable', counted: false, ...fbase });
+    }
     const heardSeconds = Math.max(0, ...(heard.result.claims || []).flatMap((c) => [timeToSeconds(c.timestamp_end), timeToSeconds(c.timestamp)]).filter((x) => x != null));
     if (heardSeconds > MAX_SECONDS + 10) { spend.addUsd('gemini', heard.usd); say(`the file runs past 3 minutes (a quote at ${heardSeconds}s)`); return out({ status: 'refused', refusal: 'too_long', counted: false, ...fbase }); }
     return afterListen(heard, null, fbase);
