@@ -22,6 +22,7 @@ This repository is Minka Asalam's entry in the Bāzil Foundation challenge "AI i
 | `checker-worker/retest/` | The measurements: each part of Checker 3 run against the owner's review of the library clips | 6 Oct |
 | `supabase/247_checker_tab.sql` | The database change behind the Checker tab: requests, private results, and the limits | 5 Oct |
 | `SOURCES_TOOLS_LICENSES.md` | Every source, tool, model and library used, with its licence or terms | 6 Oct |
+| `docs/sources-and-verification.pdf` | The sources and how they are verified (deliverable 5), Arabic first with an English twin | 6 Oct |
 | `LICENSE.md` | All rights reserved; read and run for evaluation only | 4 Oct |
 
 The tag `starting-version-2026-10-04` marks the first commit. **Every later commit is challenge-days work**, with its real date and time (Riyadh time). Each commit message says what it did and what was measured.
@@ -134,6 +135,7 @@ All rights reserved; you may read and run this code for evaluation only (`LICENS
 - `checker-worker/retest/`: القياسات، أي كل جزءٍ من «التبيّن 3» مقيسًا على مراجعة صاحب المشروع لمقاطع المكتبة.
 - `supabase/247_checker_tab.sql`: تعديل قاعدة البيانات الذي يقوم عليه تبويب «التبيّن»: الطلبات، والنتائج الخاصة، والحدود.
 - `SOURCES_TOOLS_LICENSES.md`: كل مصدرٍ وأداةٍ ونموذجٍ ومكتبةٍ استُعملت، مع ترخيصها أو شروطها.
+- `docs/sources-and-verification.pdf`: المصادر وكيفية التحقق منها (التسليم الخامس)، بالعربية ثم بالإنجليزية.
 
 يدلّ الوسم `starting-version-2026-10-04` على الإيداع الأول. **وكل إيداعٍ بعده هو عمل أيام التحدي**، بتاريخه ووقته الحقيقيين بتوقيت الرياض، وتذكر رسالة كل إيداعٍ ما صُنع فيه وما قيس.
 
